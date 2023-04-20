@@ -1,0 +1,61 @@
+header {
+  padding: 30px 0;
+  margin: 0 0 30px;
+}
+header .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .logo {
+  margin: 0 60px 0 0;
+}
+
+.nav-menu {
+  margin: 0 auto 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.menu li {
+  margin: 0 0 0 40px;
+}
+.menu li a {
+  color: #363636;
+}
+.menu li a:hover {
+  color: #5D0896;
+}
+
+.link-tg {
+  margin: 0 32px;
+}
+
+.phone {
+  color: #363636;
+}
+.phone:hover {
+  color: #7C0DC6;
+}
+
+.btn-catalog__icon {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+}

@@ -1,0 +1,209 @@
+@import "vars"
+
+//home
+.home
+	.h1
+		margin: 8px 0
+	.tabs__content
+		.box-text
+			padding: 50px 0 0
+			max-width: 533px
+			.btn
+				margin: 40px 0 0
+		.description
+			max-width: 430px
+	.tabs__caption
+		margin: 76px 0 0
+	.box-image
+		position: absolute
+		right: 0
+		top: 0
+		max-width: 652px
+		width: 100%
+		@include d-flex
+
+.tabs__caption
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.tabs__caption-home
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+
+	li
+		border-radius: 8px
+		padding: 24px 90px 24px 24px
+		position: relative
+		cursor: pointer
+		transition: .5s ease
+		margin: 0 8px 0 0
+		&:last-child
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 0
+			height: 6px
+			border-radius: 0px 8px 0px 8px
+			transition: .5s ease
+			background: $accent
+		&.active
+			background: rgba(124, 13, 198, 0.05)
+			&::before
+				width: 237px	
+	h3
+		margin: 0 0 2px
+
+// advantages
+.advantages
+	padding: 88px 0 89px
+	backdrop-filter: blur(10px)
+	background: radial-gradient(37.71% 59.27% at 61.09% 50.05%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
+	h2
+		position: static
+		max-width: 460px
+		font-size: 46px
+	.container
+		align-items: flex-start
+			
+.advantages-list
+	margin: 0 0 0 auto
+	max-width: 769px
+	width: 100%
+
+.advantages-box
+	width: 100%
+	background: #fff
+	margin: 0 0 35px
+	padding: 40px
+	border-radius: 12px
+	display: flex
+	align-items: flex-start
+	&__icon
+		width: 40px
+		height: 40px
+		@include d-flex
+		border-radius: 8px
+		background: rgba(124, 13, 198, 0.08)
+		padding: 5px
+	&__text	
+		width: calc(100% - 40px)
+		padding: 0 0 0 32px
+	h3
+		margin: 0 0 6px	
+	&:last-child
+		margin: 0	
+
+//hot deals
+.product-card
+	width: 100%
+	height: 100%
+	position: relative
+	line-height: 150%
+	&__img	
+		padding: 28px
+		@include d-flex
+		background: #F8F8F8
+		height: 300px
+		width: 100%
+		border-radius: 8px
+		img
+			max-height: 100%
+	&__body
+		padding: 16px 0 0
+		width: 100%
+	&__head
+		width: 100%
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin: 0 0 16px
+	&__title
+		padding: 0 16px 0 0	
+		color: #161616
+		&:hover
+			color: $accent
+	&__footer
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		line-height: 100%
+	.btn
+		padding: 14px 24px	
+
+.price-wrapper		
+	white-space: nowrap	
+
+.price
+	font-size: 20px
+	font-weight: 500
+	color: #161616	
+
+.promo-label
+	display: flex
+	align-items: center
+	border-radius: 4px
+	padding: 6px 10px 7.5px 
+	line-height: normal
+	img
+		margin: 0 4px 0 0
+
+.promo-label-hit
+	background: rgba(124, 13, 198, 0.08)	
+	font-size: 12px
+	font-weight: 500
+	color: $accent
+	
+.promo-label-list
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	justify-content: flex-end
+	position: absolute
+	padding: 8px
+	top: 0
+	left: 0
+	li
+		margin: 0 5px 5px 0
+		&:last-child
+			margin: 0 0 5px	
+
+
+
+//news section
+.news-card
+	width: 100%
+	line-height: 150%
+	&__img
+		@include d-flex
+		width: 100%
+		height: 240px
+		border-radius: 8px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 8px
+	&__body
+		width: 100%
+		padding: 16px 0 0
+	&__title
+		margin: 16px 0 8px
+		&:hover
+			color: $accent
+
+.date
+	color: #767676
+	width: 100%				
+
+// seo-section
+.seo-section
+	h2
+		margin: 0 0 32px	
+	

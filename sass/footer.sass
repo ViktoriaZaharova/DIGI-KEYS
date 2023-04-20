@@ -1,0 +1,65 @@
+@import "vars"
+
+footer
+	color: #fff
+	margin: 120px 0 0
+	background: #030418
+	padding: 40px 0 104px
+	line-height: 150%
+	.logo
+		filter: brightness(0) invert(1)
+	.container
+		justify-content: space-between
+
+.copyright
+	font-size: 14px
+	font-weight: 300
+	margin: 24px 0 0
+	line-height: 150%
+
+.footer-box
+	&__title
+		width: 100%
+		margin: 0 0 16px
+		color: rgba(255, 255, 255, 0.75)
+		font-size: 20px
+		font-weight: 500
+	&__menu
+		font-size: 16px
+		font-weight: 500
+		li
+			margin: 0 0 12px
+			&:last-child
+				margin: 0
+			a
+				color: #fff
+				&:hover
+					color: rgba(255, 255, 255, 0.75)
+
+.document-list
+	font-size: 14px
+	font-weight: 300
+	margin: 24px 0 0
+	line-height: 130%
+	li
+		margin: 0 0 12px
+		&:last-child
+			margin: 0
+
+.mail-link
+	margin: 0 0 12px
+
+.phone-link, .mail-link
+	display: flex
+	align-items: center
+	color: #fff
+	font-weight: 500
+	&:hover
+		color: $accent
+	&__icon
+		stroke: #fff	
+		width: 24px
+		height: 24px
+		min-width: 24px
+		margin: 0 8px 0 0
+		
