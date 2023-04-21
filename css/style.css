@@ -261,6 +261,13 @@ ul, ol {
   padding: 0 15px;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 130%;
+  color: #161616;
+}
+
 .h1 {
   font-size: 46px;
   font-weight: bold;
@@ -294,6 +301,10 @@ h3 {
   margin: 80px 0;
 }
 
+.m-60 {
+  margin: 60px 0;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -309,6 +320,11 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.col-70 {
+  width: 66.66%;
+  padding: 0 17.5px;
 }
 
 .col-30 {
@@ -362,4 +378,86 @@ a.color-accent:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav-breadcrumb {
+  width: 100%;
+  margin: 30px 0 24px;
+}
+
+.breadcrumb {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #161616;
+}
+.breadcrumb li a {
+  color: #767676;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumb li a:hover {
+  color: #7C0DC6;
+}
+.breadcrumb li a:after {
+  content: "/";
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.title-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 40px;
+}
+
+.sorting-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 auto;
+  color: #363636;
+  font-size: 14px;
+  font-weight: normal;
+}
+.sorting-wrapper p {
+  margin: 0 5px 0 0;
+}
+
+.select-my {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: auto;
+  padding: 0 28px 0 0;
+  background: url("../img/arrow-select.svg") no-repeat right center;
+  background-size: 24px;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  border: none;
 }

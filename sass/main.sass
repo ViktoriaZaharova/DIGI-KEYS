@@ -247,3 +247,63 @@
 	h2
 		margin: 0 0 32px	
 	
+
+// catalog page
+
+.page-catalog-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.page-catalog-content
+	width: calc(100% - 310px)
+	padding: 0 0 0 35px	
+
+.sidebar
+	border: 1.3px solid #F8F8F8
+	border-radius: 8px
+	max-width: 310px
+	width: 100%
+	padding: 24px
+	line-height: 150%
+	h3
+		margin: 0 0 16px
+
+.sidebar-menu
+	li
+		margin: 0 0 16px
+		&:last-child
+			margin: 0
+		a
+			color: #363636
+			&:hover
+				color: $accent		
+				.dropdown-toggle__icon
+					stroke: $accent
+
+.dropdown-toggle
+	display: flex
+	align-items: center
+	&__icon
+		stroke: #363636
+		fill: none
+		width: 16px
+		height: 16px
+		margin: 0 0 0 8px	
+			
+.dropdown.open
+	.dropdown-toggle
+		color: $accent	
+		.dropdown-toggle__icon
+			stroke: $accent
+			transform: rotate(180deg)
+
+.dropdown-menu
+	margin: 8px 0 0
+	padding: 0 0 0 12px
+	display: none
+	.dropdown-item
+		margin: 0 0 8px
+		&:last-child
+			margin: 0	
