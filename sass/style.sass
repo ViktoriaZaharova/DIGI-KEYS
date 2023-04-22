@@ -87,19 +87,26 @@ input, textarea, select
 		outline: none
 		box-shadow: none
 		border-color: #7C0DC6
+	
 
 label
 	display: block
 	width: 100%
-	margin: 0 0 13px
-
-	&:last-child
-		margin: 0
+	margin: 0 0 32px
+	position: relative
+	&.focus
+		input, textarea
+			padding: 23px 16px 0
+			border-color: #7C0DC6
+		.input-text
+			color: #828282
+			font-size: 10px
+			top: 8px
 
 textarea
 	resize: none
-	padding: 12px 17px
-	height: 103px
+	padding: 12px 16px
+	height: 200px
 
 button, .btn
 	outline: none
@@ -127,6 +134,15 @@ button, .btn
 	font-size: 16px
 	border-radius: 6px
 	transition: 0.3s ease
+
+.btn-group
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	.btn
+		margin: 0 8px 0 0
+		&:last-child
+			margin: 0	
 
 .btn-sm
 	height: 44px
@@ -156,6 +172,13 @@ button, .btn
 	&:focus
 		color: #7C0DC6
 		border-color: #7C0DC6
+
+.btn-white
+	background: #fff
+	color: #7C0DC6
+	&:hover
+		background: $accent
+		color: #fff
 
 .svg-icon
 	display: flex
@@ -226,7 +249,7 @@ h3
 	margin: 80px 0
 
 .m-60
-	margin: 60px 0	
+	margin: 60px 0
 
 .mb-40
 	margin-bottom: 40px
@@ -239,9 +262,29 @@ h3
 	display: flex
 	flex-wrap: wrap
 
+.col-100
+	width: 100%
+	padding: 0 17.5px
+
+.col-75
+	width: 75%
+	padding: 0 17.5px
+
 .col-70
 	width: 66.66%
 	padding: 0 17.5px
+
+.col-55	
+	width: 55%	
+	padding: 0 17.5px
+
+.col-50
+	width: 50%	
+	padding: 0 17.5px
+
+.col-45
+	width: 45%
+	padding: 0 17.5px	
 
 .col-30
 	width: 33.33%
@@ -254,6 +297,12 @@ h3
 .w-100
 	width: 100%
 
+
+.link-inline
+	display: inline
+	border-bottom: 1px solid #161616		
+	color: inherit
+
 .color-grey
 	color: #767676
 
@@ -263,6 +312,12 @@ h3
 a.color-accent
 	&:hover
 		color: #5D0896
+
+.bg-light-green
+	background: #E5F4EF
+
+.bg-light-red
+	background: #FCECED			
 
 .box-text
 	line-height: 150%
@@ -284,7 +339,7 @@ a.color-accent
 
 .nav-breadcrumb
 	width: 100%
-	margin: 30px 0 24px
+	margin: 0 0 24px
 
 .breadcrumb
 	width: 100%
@@ -333,9 +388,7 @@ a.color-accent
 	border-radius: 0
 	box-shadow: none
 	cursor: pointer
-	border: none			
-
-
+	border: none
 
 //checkbox my
 // .label-checkbox
