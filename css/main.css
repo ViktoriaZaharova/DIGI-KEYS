@@ -53,13 +53,14 @@
       flex-wrap: wrap;
 }
 .tabs__caption-home li {
-  border-radius: 8px;
-  padding: 24px 90px 24px 24px;
+  border-radius: 12px;
+  padding: 24px 60px 24px 24px;
   position: relative;
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   margin: 0 8px 0 0;
+  border: 1.3px solid transparent;
 }
 .tabs__caption-home li:last-child {
   margin: 0;
@@ -77,7 +78,7 @@
   background: #7C0DC6;
 }
 .tabs__caption-home li.active {
-  background: rgba(124, 13, 198, 0.05);
+  border: 1.3px solid #F8F3FC;
 }
 .tabs__caption-home li.active::before {
   width: 237px;
@@ -128,7 +129,7 @@
   color: #161616;
   margin: 0 0 106px;
 }
-.chapter-card__title:hover {
+.chapter-card:hover .chapter-card__title {
   color: #7C0DC6;
 }
 
@@ -160,10 +161,12 @@
 .advantages {
   margin: 40px 0 0;
   padding: 88px 0 89px;
-  background: radial-gradient(37.71% 59.27% at 61.09% 50.05%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: radial-gradient(31.3% 49.2% at 61.09% 50.05%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .advantages h2 {
-  top: 0;
+  top: 100px;
   position: sticky;
   max-width: 460px;
   font-size: 46px;
@@ -201,7 +204,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 8px;
-  background: rgba(124, 13, 198, 0.08);
+  background: #F8F3FC;
   padding: 5px;
 }
 .advantages-box__text {
@@ -371,6 +374,9 @@
   padding: 16px 0 0;
 }
 .news-card__title {
+  color: #161616;
+  font-size: 20px;
+  font-weight: 500;
   margin: 16px 0 8px;
 }
 .news-card__title:hover {
@@ -555,6 +561,8 @@
   height: 530px;
   max-width: 425px;
   width: 100%;
+  position: sticky;
+  top: 30px;
 }
 .product-image img {
   max-height: 100%;
@@ -564,7 +572,7 @@
   border-left: 1px solid #EBEBEB;
   padding: 0 0 115px 32px;
   position: sticky;
-  top: 10px;
+  top: 30px;
 }
 .checkout-box .list-characteristics {
   margin: 24px 0;
@@ -689,6 +697,7 @@
 }
 .amount input {
   border: none;
+  border-radius: 0;
   padding: 0;
   text-align: center;
   background: transparent;
@@ -696,6 +705,8 @@
   font-size: 20px;
   font-weight: 600;
   height: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .list-payment {
@@ -1005,4 +1016,80 @@
 
 .recommended {
   margin: 40px 0;
+}
+
+.reviews h2 {
+  margin: 0 0 24px;
+}
+
+.reviews-services {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 32px;
+}
+.reviews-services h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 32px 0 0;
+}
+
+.reviews-services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.reviews-services-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 8px 0 0;
+  margin: 0 8px 0 0;
+  border-right: 1px solid #EBEBEB;
+}
+.reviews-services-list li:last-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.reviews-services-list__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px 0 0;
+}
+.reviews-services-list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #363636;
+}
+.reviews-services-list a:hover {
+  color: #7C0DC6;
 }

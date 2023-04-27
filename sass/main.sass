@@ -33,12 +33,13 @@
 	flex-wrap: wrap
 
 	li
-		border-radius: 8px
-		padding: 24px 90px 24px 24px
+		border-radius: 12px
+		padding: 24px 60px 24px 24px
 		position: relative
 		cursor: pointer
 		transition: .5s ease
 		margin: 0 8px 0 0
+		border: 1.3px solid transparent
 		&:last-child
 			margin: 0
 		&::before
@@ -52,7 +53,7 @@
 			transition: .5s ease
 			background: $accent
 		&.active
-			background: rgba(124, 13, 198, 0.05)
+			border: 1.3px solid #F8F3FC
 			&::before
 				width: 237px
 	h3
@@ -84,7 +85,8 @@
 		line-height: 140%
 		color: #161616
 		margin: 0 0 106px
-		&:hover
+	&:hover
+		.chapter-card__title
 			color: $accent
 
 .link
@@ -102,9 +104,12 @@
 .advantages
 	margin: 40px 0 0
 	padding: 88px 0 89px
-	background: radial-gradient(37.71% 59.27% at 61.09% 50.05%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
+	// background: rgba(255, 255, 255, 0.01)
+	backdrop-filter: blur(10px)
+	background: radial-gradient(31.3% 49.2% at 61.09% 50.05%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
+	// background: radial-gradient(37.71% 59.27% at 61.09% 50.05%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
 	h2
-		top: 0
+		top: 100px
 		position: sticky
 		max-width: 460px
 		font-size: 46px
@@ -127,7 +132,7 @@
 		height: 40px
 		@include d-flex
 		border-radius: 8px
-		background: rgba(124, 13, 198, 0.08)
+		background: #F8F3FC
 		padding: 5px
 	&__text
 		width: calc(100% - 40px)
@@ -234,6 +239,9 @@
 		width: 100%
 		padding: 16px 0 0
 	&__title
+		color: #161616
+		font-size: 20px
+		font-weight: 500
 		margin: 16px 0 8px
 		&:hover
 			color: $accent
@@ -374,6 +382,8 @@
 	height: 530px
 	max-width: 425px
 	width: 100%
+	position: sticky
+	top: 30px
 	img
 		max-height: 100%
 
@@ -381,7 +391,7 @@
 	border-left: 1px solid #EBEBEB
 	padding: 0 0 115px 32px
 	position: sticky
-	top: 10px
+	top: 30px
 	.list-characteristics
 		margin: 24px 0
 
@@ -452,6 +462,7 @@
 		min-width: 24px
 	input
 		border: none
+		border-radius: 0
 		padding: 0
 		text-align: center
 		background: transparent
@@ -459,6 +470,8 @@
 		font-size: 20px
 		font-weight: 600
 		height: 100%
+		box-shadow: none
+
 
 .list-payment
 	margin: 24px 0 14px
@@ -648,3 +661,43 @@
 
 .recommended
 	margin: 40px 0			
+
+.reviews
+	h2
+		margin: 0 0 24px
+
+.reviews-services
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 32px
+	h3
+		width: fit-content
+		margin: 0 32px 0 0			
+
+.reviews-services-list
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	li
+		display: flex
+		align-items: center
+		padding: 0 8px 0 0
+		margin: 0 8px 0 0
+		border-right: 1px solid #EBEBEB
+		&:last-child
+			padding: 0
+			margin: 0
+			border: none	
+	&__icon
+		@include d-flex
+		width: 20px
+		height: 20px
+		margin: 0 8px 0 0
+	a
+		display: flex
+		align-items: center
+		color: #363636
+		&:hover
+			color: $accent
