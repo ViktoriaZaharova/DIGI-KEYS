@@ -49,6 +49,10 @@ body {
   color: #363636;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -220,6 +224,19 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   fill: #fff;
 }
 
+.btn-light-accent {
+  background: #F8F3FC;
+  color: #7C0DC6;
+}
+.btn-light-accent:hover {
+  background: #F8F3FC;
+  color: #5D0896;
+}
+.btn-light-accent:focus {
+  background: #F8F3FC;
+  color: #7C0DC6;
+}
+
 .btn-border-accent {
   border: 1.3px solid #7C0DC6;
   color: #7C0DC6;
@@ -306,6 +323,7 @@ h1 {
   font-weight: bold;
   width: 100%;
   line-height: normal;
+  color: #161616;
 }
 
 h2 {
@@ -320,6 +338,24 @@ h3 {
   font-weight: 500;
   color: #161616;
   width: 100%;
+}
+
+.title-wrapper {
+  margin: 0 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.title-wrapper h2 {
+  margin: 0 auto 0 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .font-500 {
@@ -397,6 +433,13 @@ h3 {
 
 .w-100 {
   width: 100%;
+}
+
+a.color-accent {
+  color: #7C0DC6;
+}
+a.color-accent:hover {
+  color: #5D0896;
 }
 
 .link-inline {

@@ -1,6 +1,12 @@
 header {
   padding: 30px 0;
   margin: 0 0 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background: #fff;
 }
 header .container {
   -webkit-box-align: center;
@@ -21,6 +27,9 @@ header .logo {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.nav-menu .btn-mail, .nav-menu .link-tg, .nav-menu .phone {
+  display: none;
 }
 
 .menu {
@@ -58,4 +67,21 @@ header .logo {
   width: 24px;
   height: 24px;
   stroke: #fff;
+  margin: 0 4px 0 0;
+}
+.btn-catalog__icon-close {
+  display: none;
+}
+
+.btn-burger {
+  width: 24px;
+  height: 24px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  stroke: #161616;
 }

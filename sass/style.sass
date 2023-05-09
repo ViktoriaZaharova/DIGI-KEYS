@@ -46,6 +46,9 @@ body
 	background: #fff
 	color: #363636
 
+html, body
+	overflow-x: hidden	
+
 img
 	display: block
 	max-width: 100%
@@ -87,7 +90,6 @@ input, textarea, select
 		outline: none
 		box-shadow: none
 		border-color: #7C0DC6
-	
 
 label
 	display: block
@@ -142,7 +144,7 @@ button, .btn
 	.btn
 		margin: 0 8px 0 0
 		&:last-child
-			margin: 0	
+			margin: 0
 
 .btn-sm
 	height: 44px
@@ -162,6 +164,16 @@ button, .btn
 		background: $accent
 		.svg-icon
 			fill: #fff
+
+.btn-light-accent
+	background: #F8F3FC
+	color: $accent
+	&:hover
+		background: #F8F3FC
+		color: #5D0896
+	&:focus
+		background: #F8F3FC
+		color: #7C0DC6
 
 .btn-border-accent
 	border: 1.3px solid #7C0DC6
@@ -226,6 +238,7 @@ h1
 	font-weight: bold
 	width: 100%
 	line-height: normal
+	color: #161616
 
 h2
 	width: 100%
@@ -238,6 +251,15 @@ h3
 	font-weight: 500
 	color: #161616
 	width: 100%
+
+.title-wrapper
+	margin: 0 0 40px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	h2
+		margin: 0 auto 0 0
+		width: fit-content
 
 .font-500
 	font-weight: 500
@@ -274,17 +296,17 @@ h3
 	width: 66.66%
 	padding: 0 17.5px
 
-.col-55	
-	width: 55%	
+.col-55
+	width: 55%
 	padding: 0 17.5px
 
 .col-50
-	width: 50%	
+	width: 50%
 	padding: 0 17.5px
 
 .col-45
 	width: 45%
-	padding: 0 17.5px	
+	padding: 0 17.5px
 
 .col-30
 	width: 33.33%
@@ -297,10 +319,14 @@ h3
 .w-100
 	width: 100%
 
+a.color-accent
+	color: #7C0DC6
+	&:hover
+		color: $hover
 
 .link-inline
 	display: inline
-	border-bottom: 1px solid #161616		
+	border-bottom: 1px solid #161616
 	color: inherit
 
 .color-grey
@@ -317,7 +343,7 @@ a.color-accent
 	background: #E5F4EF
 
 .bg-light-red
-	background: #FCECED			
+	background: #FCECED
 
 .box-text
 	line-height: 150%

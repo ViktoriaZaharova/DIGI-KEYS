@@ -1,3 +1,102 @@
+$('.home-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false,
+	autoplay: false,
+	infinite: true,
+	speed: 1000,
+	swipe: false
+});
+
+$(document).ready(function ($) {
+	var sliderTimer = 4000;
+	// var beforeEnd = 500;
+	var $imageSlider = $(".home-slider-nav");
+	$imageSlider.slick({
+		autoplay: true,
+		autoplaySpeed: sliderTimer,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		asNavFor: '.home-slider',
+		fade: true,
+		swipe: false
+	});
+
+	function progressBar() {
+		$(".slider-progress").find("span").removeAttr("style");
+		$(".slider-progress").find("span").removeClass("active");
+		setTimeout(function () {
+			$(".slider-progress")
+				.find("span")
+				.css("transition-duration", sliderTimer / 1000 + "s")
+				.addClass("active");
+		}, 100);
+	}
+	progressBar();
+	$imageSlider.on("beforeChange", function (e, slick) {
+		progressBar();
+	});
+});
+
+
+// $(document).ready(function () {
+// 	//ticking machine
+// 	var percentTime;
+// 	var tick;
+// 	var time = .1;
+// 	var progressBarIndex = 0;
+
+// 	$('.progressBarContainer .progressBar').each(function (index) {
+// 		var progress = "<div class='inProgress inProgress" + index + "'></div>";
+// 		$(this).html(progress);
+// 	});
+
+// 	function startProgressbar() {
+// 		resetProgressbar();
+// 		percentTime = 0;
+// 		tick = setInterval(interval, 8);
+// 	}
+
+// 	function interval() {
+// 		if (($('.slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
+// 			progressBarIndex = $('.home-slider .slick-track div[aria-hidden="false"]').data("slickIndex");
+// 			startProgressbar();
+// 		} else {
+// 			percentTime += 1 / (time + 5);
+// 			$('.inProgress' + progressBarIndex).css({
+// 				width: percentTime + "%"
+// 			});
+// 			if (percentTime >= 100) {
+// 				$('.home-slider').slick('slickNext');
+// 				progressBarIndex++;
+// 				if (progressBarIndex > 1) {
+// 					progressBarIndex = 0;
+// 				}
+// 				startProgressbar();
+// 			}
+// 		}
+// 	}
+
+// 	function resetProgressbar() {
+// 		$('.inProgress').css({
+// 			width: 0 + '%'
+// 		});
+// 		clearInterval(tick);
+// 	}
+// 	startProgressbar();
+// 	// End ticking machine
+
+// 	$('.home-slider-nav__item').click(function () {
+// 		clearInterval(tick);
+// 		var goToThisIndex = $(this).find("span").data("slickIndex");
+// 		$('.home-slider').slick('slickGoTo', goToThisIndex, false);
+// 		startProgressbar();
+// 	});
+// });
+
 // tabs
 $(function () {
 	$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
@@ -119,3 +218,8 @@ $(function () {
 	});
 });
 //end
+
+$('.btn-burger').on('click', function (e) {
+	e.preventDefault();
+	$('.nav-menu').fadeToggle();
+});

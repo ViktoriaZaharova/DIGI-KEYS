@@ -2,25 +2,76 @@
 
 //home
 .home
+	padding: 144px 0 0
 	.h1
 		margin: 8px 0
-	.tabs__content
+
+.home-slider
+	&__item
+		padding: 100px 0 190px
 		.box-text
-			padding: 50px 0 0
 			max-width: 533px
+			position: relative
+			z-index: 1
 			.btn
 				margin: 40px 0 0
 		.description
 			max-width: 430px
-	.tabs__caption
-		margin: 76px 0 0
 	.box-image
 		position: absolute
 		right: 0
 		top: 0
-		max-width: 652px
+		max-width: 752px
 		width: 100%
+		mix-blend-mode: darken
 		@include d-flex
+
+.home-slider-nav
+	width: 100%
+	h3
+		margin: 0 0 2px
+	&__item
+		width: 360px
+		border-radius: 12px
+		padding: 24px 13px 24px 24px
+		position: relative
+		cursor: pointer
+		transition: .5s ease
+		border: 1.3px solid #F8F3FC
+		margin: 0 8px 0 0
+		background: #fff
+		&:last-child
+			margin: 0
+	.slick-current
+		.home-slider-nav__item
+			border: 1.3px solid #F8F3FC
+			&::before
+				width: 237px
+	&__wrapper
+		margin: -100px 0 0
+		position: relative
+		width: 100%
+
+.slider-progress
+	border-radius: 0px 8px 0px 8px
+	position: absolute
+	left: 0
+	bottom: 6px
+	transition: .5s ease
+	height: 6px
+	// width: calc(100% - 123px)
+	width: 237px
+	span
+		border-radius: 0px 8px 0px 8px
+		background: $accent
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 0
+		transition: all 0s linear
+		&.active
+			width: 100%
 
 .tabs__caption
 	display: flex
@@ -42,16 +93,7 @@
 		border: 1.3px solid transparent
 		&:last-child
 			margin: 0
-		&::before
-			content: ''
-			position: absolute
-			left: 0
-			bottom: 0
-			width: 0
-			height: 6px
-			border-radius: 0px 8px 0px 8px
-			transition: .5s ease
-			background: $accent
+
 		&.active
 			border: 1.3px solid #F8F3FC
 			&::before
@@ -117,7 +159,7 @@
 .advantages-list
 	margin: 0 0 0 auto
 	max-width: 769px
-	width: 100%
+	width: calc(100% - 500px)
 
 .advantages-box
 	width: 100%
@@ -151,9 +193,10 @@
 	&__img
 		padding: 28px
 		@include d-flex
-		background: #F8F8F8
+		// background: #F8F8F8
 		height: 300px
 		width: 100%
+		border: 1px solid #F8F3FC
 		border-radius: 8px
 		img
 			max-height: 100%
@@ -200,13 +243,13 @@
 	border-radius: 4px
 	padding: 6px 10px 7.5px
 	line-height: normal
+	font-size: 12px
+	font-weight: 500
 	img
 		margin: 0 4px 0 0
 
 .promo-label-hit
 	background: rgba(124, 13, 198, 0.08)
-	font-size: 12px
-	font-weight: 500
 	color: $accent
 
 .promo-label-list
@@ -292,16 +335,22 @@
 .dropdown-toggle
 	display: flex
 	align-items: center
+	padding: 8px 24px
+	width: 100%
 	&__icon
 		stroke: #363636
 		fill: none
 		width: 16px
 		height: 16px
 		margin: 0 0 0 8px
+	&:hover
+		background: #F8F3FC
+		color: $accent
 
 .dropdown.open
 	.dropdown-toggle
 		color: $accent
+
 		.dropdown-toggle__icon
 			stroke: $accent
 			transform: rotate(180deg)
@@ -311,9 +360,36 @@
 	padding: 0 0 0 12px
 	display: none
 	.dropdown-item
-		margin: 0 0 8px
-		&:last-child
-			margin: 0
+		padding: 8px 24px
+		width: 100%
+		&:hover
+			background: #F8F3FC
+
+.dropdown-catalog
+	.btn-catalog.dropdown-toggle
+		padding: 14px 24px 14px 19px
+		width: fit-content
+		&:hover
+			background: #5D0896
+			color: #fff
+	&.open
+		.btn-catalog__icon
+			display: none
+			&-close
+				display: flex
+		>.dropdown-toggle
+			color: #fff
+		>.dropdown-menu
+			display: block
+	>.dropdown-menu
+		position: absolute
+		border: 1px solid #F8F3FC
+		border-radius: 10px
+		background: #FFFFFF
+		z-index: 10
+		display: none
+	.sidebar-menu li
+		margin: 0
 
 // information page
 .page-information
@@ -472,7 +548,6 @@
 		height: 100%
 		box-shadow: none
 
-
 .list-payment
 	margin: 24px 0 14px
 	display: flex
@@ -507,7 +582,7 @@
 		flex-wrap: wrap
 		margin: 0 0 24px
 	.promo-label-list
-		width: fit-content	
+		width: fit-content
 
 .rating
 	display: flex
@@ -527,16 +602,16 @@
 		fill: #F2994A
 		@include d-flex
 		&:last-child
-			margin: 0	
+			margin: 0
 		&.star0
-			fill: #FCEFCA		
+			fill: #FCEFCA
 
 .rating-value
 	color: $accent
 	line-height: 100%
 	padding: 0 0 4px
-	border-bottom: 1.3px dashed #7C0DC6			
-	margin: 0 0 0 8px		
+	border-bottom: 1.3px dashed #7C0DC6
+	margin: 0 0 0 8px
 
 .link-share
 	@include d-flex
@@ -545,13 +620,13 @@
 	fill: none
 	width: 24px
 	height: 24px
-	min-width: 24px			
+	min-width: 24px
 
 .difference
-	margin: 0 0 0 24px	
+	margin: 0 0 0 24px
 
 .logo-partner
-	margin: 0 0 8px	
+	margin: 0 0 8px
 
 .information-box
 	width: 100%
@@ -587,8 +662,8 @@
 		transition: .3s ease
 		border-radius: 6px 6px 0 0
 		&:first-child
-			border-radius: 6px 6px 0px 6px	
-		&.active	
+			border-radius: 6px 6px 0px 6px
+		&.active
 			background: $accent
 			color: #fff
 
@@ -618,8 +693,7 @@
 		.panel_heading-icon
 			transform: rotate(180deg)
 	&:last-child
-		margin: 0		
-
+		margin: 0
 
 .block_title
 	width: 100%
@@ -629,7 +703,7 @@
 	margin: 0
 	cursor: pointer
 	h3
-		margin: 0		
+		margin: 0
 
 .block_hover
 	display: none
@@ -655,12 +729,12 @@
 		width: 100%
 		padding: 20px 0 0
 	&__title
-		color: #161616		
+		color: #161616
 		&:hover
 			color: $accent
 
 .recommended
-	margin: 40px 0			
+	margin: 40px 0
 
 .reviews
 	h2
@@ -674,7 +748,7 @@
 	margin: 0 0 32px
 	h3
 		width: fit-content
-		margin: 0 32px 0 0			
+		margin: 0 32px 0 0
 
 .reviews-services-list
 	display: flex
@@ -689,7 +763,7 @@
 		&:last-child
 			padding: 0
 			margin: 0
-			border: none	
+			border: none
 	&__icon
 		@include d-flex
 		width: 20px

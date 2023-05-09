@@ -4,6 +4,12 @@
 header
 	padding: 30px 0
 	margin: 0 0 30px
+	position: absolute
+	left: 0
+	top: 0
+	z-index: 10
+	width: 100%
+	background: #fff
 	.container
 		align-items: center
 	.logo
@@ -14,6 +20,8 @@ header
 	display: flex
 	align-items: center
 	flex-wrap: wrap
+	.btn-mail, .link-tg, .phone
+		display: none
 
 .menu
 	display: flex
@@ -39,3 +47,14 @@ header
 		width: 24px
 		height: 24px		
 		stroke: #fff
+		margin: 0 4px 0 0
+		&-close
+			display: none
+
+.btn-burger
+	width: 24px
+	height: 24px
+	display: none
+	align-items: center
+	justify-content: center
+	stroke: #161616		

@@ -1,25 +1,31 @@
+.home {
+  padding: 144px 0 0;
+}
 .home .h1 {
   margin: 8px 0;
 }
-.home .tabs__content .box-text {
-  padding: 50px 0 0;
-  max-width: 533px;
+
+.home-slider__item {
+  padding: 100px 0 190px;
 }
-.home .tabs__content .box-text .btn {
+.home-slider__item .box-text {
+  max-width: 533px;
+  position: relative;
+  z-index: 1;
+}
+.home-slider__item .box-text .btn {
   margin: 40px 0 0;
 }
-.home .tabs__content .description {
+.home-slider__item .description {
   max-width: 430px;
 }
-.home .tabs__caption {
-  margin: 76px 0 0;
-}
-.home .box-image {
+.home-slider .box-image {
   position: absolute;
   right: 0;
   top: 0;
-  max-width: 652px;
+  max-width: 752px;
   width: 100%;
+  mix-blend-mode: darken;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +35,64 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.home-slider-nav {
+  width: 100%;
+}
+.home-slider-nav h3 {
+  margin: 0 0 2px;
+}
+.home-slider-nav__item {
+  width: 360px;
+  border-radius: 12px;
+  padding: 24px 13px 24px 24px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border: 1.3px solid #F8F3FC;
+  margin: 0 8px 0 0;
+  background: #fff;
+}
+.home-slider-nav__item:last-child {
+  margin: 0;
+}
+.home-slider-nav .slick-current .home-slider-nav__item {
+  border: 1.3px solid #F8F3FC;
+}
+.home-slider-nav .slick-current .home-slider-nav__item::before {
+  width: 237px;
+}
+.home-slider-nav__wrapper {
+  margin: -100px 0 0;
+  position: relative;
+  width: 100%;
+}
+
+.slider-progress {
+  border-radius: 0px 8px 0px 8px;
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  height: 6px;
+  width: 237px;
+}
+.slider-progress span {
+  border-radius: 0px 8px 0px 8px;
+  background: #7C0DC6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+}
+.slider-progress span.active {
+  width: 100%;
 }
 
 .tabs__caption {
@@ -64,18 +128,6 @@
 }
 .tabs__caption-home li:last-child {
   margin: 0;
-}
-.tabs__caption-home li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  border-radius: 0px 8px 0px 8px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background: #7C0DC6;
 }
 .tabs__caption-home li.active {
   border: 1.3px solid #F8F3FC;
@@ -175,7 +227,7 @@
 .advantages-list {
   margin: 0 0 0 auto;
   max-width: 769px;
-  width: 100%;
+  width: calc(100% - 500px);
 }
 
 .advantages-box {
@@ -235,9 +287,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #F8F8F8;
   height: 300px;
   width: 100%;
+  border: 1px solid #F8F3FC;
   border-radius: 8px;
 }
 .product-card__img img {
@@ -311,6 +363,8 @@
   border-radius: 4px;
   padding: 6px 10px 7.5px;
   line-height: normal;
+  font-size: 12px;
+  font-weight: 500;
 }
 .promo-label img {
   margin: 0 4px 0 0;
@@ -318,8 +372,6 @@
 
 .promo-label-hit {
   background: rgba(124, 13, 198, 0.08);
-  font-size: 12px;
-  font-weight: 500;
   color: #7C0DC6;
 }
 
@@ -444,6 +496,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 8px 24px;
+  width: 100%;
 }
 .dropdown-toggle__icon {
   stroke: #363636;
@@ -451,6 +505,10 @@
   width: 16px;
   height: 16px;
   margin: 0 0 0 8px;
+}
+.dropdown-toggle:hover {
+  background: #F8F3FC;
+  color: #7C0DC6;
 }
 
 .dropdown.open .dropdown-toggle {
@@ -468,9 +526,46 @@
   display: none;
 }
 .dropdown-menu .dropdown-item {
-  margin: 0 0 8px;
+  padding: 8px 24px;
+  width: 100%;
 }
-.dropdown-menu .dropdown-item:last-child {
+.dropdown-menu .dropdown-item:hover {
+  background: #F8F3FC;
+}
+
+.dropdown-catalog .btn-catalog.dropdown-toggle {
+  padding: 14px 24px 14px 19px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.dropdown-catalog .btn-catalog.dropdown-toggle:hover {
+  background: #5D0896;
+  color: #fff;
+}
+.dropdown-catalog.open .btn-catalog__icon {
+  display: none;
+}
+.dropdown-catalog.open .btn-catalog__icon-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dropdown-catalog.open > .dropdown-toggle {
+  color: #fff;
+}
+.dropdown-catalog.open > .dropdown-menu {
+  display: block;
+}
+.dropdown-catalog > .dropdown-menu {
+  position: absolute;
+  border: 1px solid #F8F3FC;
+  border-radius: 10px;
+  background: #FFFFFF;
+  z-index: 10;
+  display: none;
+}
+.dropdown-catalog .sidebar-menu li {
   margin: 0;
 }
 
