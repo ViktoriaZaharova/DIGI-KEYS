@@ -37,6 +37,11 @@
           justify-content: center;
 }
 
+.home-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .home-slider-nav {
   width: 100%;
 }
@@ -65,8 +70,9 @@
   width: 237px;
 }
 .home-slider-nav__wrapper {
-  margin: -100px 0 0;
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
   width: 100%;
 }
 
@@ -74,7 +80,7 @@
   border-radius: 0px 8px 0px 8px;
   position: absolute;
   left: 0;
-  bottom: 6px;
+  bottom: 0;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   height: 6px;
@@ -275,6 +281,13 @@
   height: 100%;
   position: relative;
   line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .product-card__img {
   padding: 28px;
@@ -298,6 +311,14 @@
 .product-card__body {
   padding: 16px 0 0;
   width: 100%;
+  height: calc(100% - 300px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .product-card__head {
   width: 100%;
@@ -329,6 +350,7 @@
       -ms-flex-align: center;
           align-items: center;
   line-height: 100%;
+  margin: auto 0 0;
 }
 .product-card .btn {
   padding: 14px 24px;
@@ -533,40 +555,39 @@
   background: #F8F3FC;
 }
 
-.dropdown-catalog .btn-catalog.dropdown-toggle {
-  padding: 14px 24px 14px 19px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.dropdown-catalog .btn-catalog.dropdown-toggle:hover {
-  background: #5D0896;
-  color: #fff;
-}
-.dropdown-catalog.open .btn-catalog__icon {
+.dropdown-catalog .btn-catalog.open .btn-catalog__icon {
   display: none;
 }
-.dropdown-catalog.open .btn-catalog__icon-close {
+.dropdown-catalog .btn-catalog.open .btn-catalog__icon-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.dropdown-catalog.open > .dropdown-toggle {
-  color: #fff;
+.dropdown-catalog .dropdown-menu {
+  padding: 0;
+  margin: 5px 0 0;
+  overflow: hidden;
 }
-.dropdown-catalog.open > .dropdown-menu {
-  display: block;
+.dropdown-catalog .sidebar-menu li {
+  margin: 0 0 8px;
 }
-.dropdown-catalog > .dropdown-menu {
+.dropdown-catalog .sidebar-menu li:last-child {
+  margin: 0;
+}
+.dropdown-catalog .sidebar-menu li .dropdown-item {
+  padding-left: 36px;
+}
+.dropdown-catalog .sidebar-menu li .dropdown-menu {
+  margin: 0;
+}
+
+.dropdown-menu-catalog {
   position: absolute;
   border: 1px solid #F8F3FC;
   border-radius: 10px;
   background: #FFFFFF;
   z-index: 10;
-  display: none;
-}
-.dropdown-catalog .sidebar-menu li {
-  margin: 0;
+  min-width: 270px;
 }
 
 .page-information h1 {

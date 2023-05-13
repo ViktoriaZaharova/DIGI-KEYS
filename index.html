@@ -26,8 +26,8 @@
 	<header>
 		<div class="container">
 			<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-			<div class="dropdown dropdown-catalog">
-				<a href="#" class="btn btn-accent btn-catalog dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown">
+			<div class="dropdown-catalog">
+				<a href="#" class="btn btn-accent btn-catalog">
 					<svg class="svg-icon btn-catalog__icon">
 						<use xlink:href="img/sprite.svg#burger-icon"></use>
 					</svg>
@@ -36,10 +36,10 @@
 					</svg>
 					<span class="btn-catalog__text">Каталог</span>
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<div class="dropdown-menu dropdown-menu-catalog">
 					<ul class="sidebar-menu my-ul">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+							<a href="#" class="dropdown-toggle">
 								<span>Microsoft Windows</span>
 								<svg class="svg-icon dropdown-toggle__icon">
 									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
@@ -140,6 +140,7 @@
 
 	<main class="home">
 		<div class="container">
+			<div class="home-wrapper">
 
 			<div class="home-slider">
 				<div class="slide">
@@ -178,7 +179,6 @@
 						<div class="home-slider-nav__item">
 							<h3>Microsoft Office 365</h3>
 							<p>Ваш верный помощник в учёбе и работе</p>
-							<span data-slick-index="0" class="progressBar"></span>
 						</div>
 					</div>
 					<div class="slide">
@@ -191,6 +191,7 @@
 				<div class="slider-progress">
 					<span></span>
 				</div>
+			</div>
 			</div>
 		</div>
 	</main>
@@ -592,7 +593,7 @@
 				<a href="news.html" class="link color-accent">Все статьи</a>
 			</div>
 			<div class="w-100">
-				<div class="row">
+				<div class="row row-scroll">
 					<div class="col-30 mb-20">
 						<div class="news-card">
 							<a href="article.html" class="news-card__img"><img src="img/news1.jpg" alt=""></a>
@@ -709,7 +710,7 @@
 			</div>
 
 			<div class="footer-box">
-				<h3 class="footer-box__title">Каталог товаров</h3>
+				<h3 class="footer-box__title footer-box__title-toggle">Каталог товаров</h3>
 				<ul class="footer-box__menu my-ul">
 					<li><a href="#">Microsoft Windows</a></li>
 					<li><a href="#">Microsoft Office</a></li>
@@ -720,7 +721,7 @@
 				</ul>
 			</div>
 			<div class="footer-box">
-				<h3 class="footer-box__title">Информация</h3>
+				<h3 class="footer-box__title footer-box__title-toggle">Информация</h3>
 				<ul class="footer-box__menu my-ul">
 					<li><a href="#">О магазине</a></li>
 					<li><a href="#">Юр. лицам</a></li>

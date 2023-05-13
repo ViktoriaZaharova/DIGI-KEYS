@@ -26,6 +26,10 @@
 		mix-blend-mode: darken
 		@include d-flex
 
+.home-wrapper
+	position: relative
+	width: 100%		
+
 .home-slider-nav
 	width: 100%
 	h3
@@ -48,15 +52,16 @@
 			&::before
 				width: 237px
 	&__wrapper
-		margin: -100px 0 0
-		position: relative
+		position: absolute
+		left: 0
+		bottom: 10px
 		width: 100%
 
 .slider-progress
 	border-radius: 0px 8px 0px 8px
 	position: absolute
 	left: 0
-	bottom: 6px
+	bottom: 0
 	transition: .5s ease
 	height: 6px
 	// width: calc(100% - 123px)
@@ -190,10 +195,11 @@
 	height: 100%
 	position: relative
 	line-height: 150%
+	display: flex
+	flex-direction: column
 	&__img
 		padding: 28px
 		@include d-flex
-		// background: #F8F8F8
 		height: 300px
 		width: 100%
 		border: 1px solid #F8F3FC
@@ -203,6 +209,9 @@
 	&__body
 		padding: 16px 0 0
 		width: 100%
+		height: calc(100% - 300px)
+		display: flex
+		flex-direction: column
 	&__head
 		width: 100%
 		display: flex
@@ -219,6 +228,7 @@
 		flex-wrap: wrap
 		align-items: center
 		line-height: 100%
+		margin: auto 0 0
 	.btn
 		padding: 14px 24px
 	.link-add-card
@@ -366,30 +376,33 @@
 			background: #F8F3FC
 
 .dropdown-catalog
-	.btn-catalog.dropdown-toggle
-		padding: 14px 24px 14px 19px
-		width: fit-content
-		&:hover
-			background: #5D0896
-			color: #fff
-	&.open
-		.btn-catalog__icon
-			display: none
-			&-close
-				display: flex
-		>.dropdown-toggle
-			color: #fff
-		>.dropdown-menu
-			display: block
-	>.dropdown-menu
-		position: absolute
-		border: 1px solid #F8F3FC
-		border-radius: 10px
-		background: #FFFFFF
-		z-index: 10
-		display: none
+	.btn-catalog
+		&.open
+			.btn-catalog__icon
+				display: none
+				&-close
+					display: flex
+
+	.dropdown-menu
+		padding: 0
+		margin: 5px 0 0
+		overflow: hidden
 	.sidebar-menu li
-		margin: 0
+		margin: 0 0 8px
+		&:last-child
+			margin: 0
+		.dropdown-item
+			padding-left: 36px
+		.dropdown-menu
+			margin: 0
+
+.dropdown-menu-catalog
+	position: absolute
+	border: 1px solid #F8F3FC
+	border-radius: 10px
+	background: #FFFFFF
+	z-index: 10
+	min-width: 270px
 
 // information page
 .page-information

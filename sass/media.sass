@@ -27,13 +27,17 @@
 
 	.col-25
 		padding: 0 10px
-		width: 33.33%	
+		width: 33.33%
 
 	.row
 		margin: 0 -7.5px
 
 	.container
 		padding: 0 15px
+
+	.col-75
+		width: 100%
+		padding: 0 10px
 
 @media only screen and (max-width: 992px)
 	header
@@ -90,11 +94,10 @@
 					margin: 32px 0 0
 
 	.home-slider-nav__wrapper
-		margin: -146px 0 0
+		bottom: 40px
 		padding: 0 24px
 
 	.slider-progress
-		bottom: 52px
 		left: 24px
 
 	.home-slider-nav__item
@@ -117,19 +120,19 @@
 	.mb-40
 		margin-bottom: 24px
 
-	.product-card 
+	.product-card
 		.btn
 			padding: 14px 13px
 			height: 42px
 		.link-add-card
-			margin: 0 0 0 12px	
+			margin: 0 0 0 12px
 		.promo-label-list
-			padding: 10px		
+			padding: 10px
 		&__footer
 			font-size: 14px
-		
+
 		&__head
-			flex-wrap: wrap		
+			flex-wrap: wrap
 		&__title
 			padding: 0
 			width: 100%
@@ -137,14 +140,16 @@
 		&__img
 			height: 255px
 			padding: 40px 30px
+		&__body
+			height: calc(100% - 255px)
 
 	.btn
-		font-size: 14px		
+		font-size: 14px
 
 	.promo-label
 		padding: 5.5px 10px
 		font-size: 10px
-		font-weight: 300		
+		font-weight: 300
 
 	.advantages-list
 		width: 100%
@@ -154,11 +159,19 @@
 		padding: 40px 0
 		h2
 			max-width: none
-			font-size: 30px		
+			font-size: 30px
+
+	.news
+		.col-30
+			width: 50%
+			display: none
+			&:nth-child(-n+2)
+				display: block
 
 @media only screen and (max-width: 768px)
 	header
 		position: fixed
+		margin: 0
 
 	.m-80
 		margin: 60px 0
@@ -166,14 +179,14 @@
 	h2
 		font-size: 24px
 		padding: 0 24px
-		margin: 0 0 24px		
+		margin: 0 0 24px
 
 	.title-wrapper
 		margin: 0 0 24px
 		h2
 			margin: 0
 		.link
-			display: none	
+			display: none
 
 	.your-choice
 		h2
@@ -187,22 +200,21 @@
 						bottom: -40px
 						right: 0
 					&__title
-						max-width: 284px	
-			
+						max-width: 284px
 
 	.chapter-card
 		padding: 32px 16px
 		min-height: 250px
 		&__title
 			margin: 0 0 60px
-			max-width: 180px		
+			max-width: 180px
 			font-size: 16px
-		&__img		
+		&__img
 			right: -20px
 			max-width: 200px
 
 	.advantages
-		background: radial-gradient(162.96% 71.34% at 100% 100%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%) 
+		background: radial-gradient(162.96% 71.34% at 100% 100%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
 		h2
 			font-size: 24px
 
@@ -215,13 +227,231 @@
 		.col-25
 			display: none
 			&:nth-child(-n+3)
-				display: flex
-						
+				display: block
+
+	.news-card
+		&__title
+			margin: 12px 0 5px
+
+	.seo-section
+		h2
+			margin: 0 0 24px
+			padding: 0
+
+	.reviews
+		h2
+			padding: 0
+			margin: 0 0 16px
+
+	.reviews-services h3
+		font-size: 16px
+
+	footer
+		margin: 100px 0 0
+		padding: 40px 0 50px
+
+	.footer-box
+		&:last-child
+			width: 40%
+			margin: -110px 0 0
+
+@media only screen and (max-width: 710px)
+	.home-slider .box-image
+		max-width: 500px
+
+	.col-25
+		width: 50%
 
 @media only screen and (max-width: 576px)
+	header
+		padding: 35px 0
+		transition: .3s ease
+		.logo
+			margin: 0 auto 0 0
+		&.fixed
+			padding: 22px 0
 
+	.logo
+		max-width: 120px
+
+	.dropdown-catalog
+		display: none
+
+	.btn
+		height: 38px
+		padding: 10px 16px
+		font-size: 14px
+
+	.home
+		.container
+			padding: 0 8px
+
+	.home-slider
+		&__item
+			display: flex
+			flex-wrap: wrap
+			padding: 20px 12px 135px
+			font-size: 14px
+			.description
+				max-width: none
+		.box-text
+			max-width: none
+			width: 100%
+			.btn
+				margin: 24px 0 0
+		.box-image
+			order: -1
+			margin: 0 auto 24px
+			max-width: 335px
+			position: relative
+			right: 0
+			top: 0
+
+	.h1
+		margin: 8px 0
+		font-size: 26px
+
+	.home-slider-nav__wrapper
+		padding: 0 12px
+		bottom: 18px
+
+	.home-slider-nav
+		&__item
+			font-size: 14px
+			width: 335px
+			padding: 24px
+
+	.slider-progress
+		left: 12px
+
+	h2
+		font-size: 20px
+		padding: 0
+
+	h3
+		font-size: 16px
+
+	.container
+		padding: 0 10px
+
+	.your-choice
+		.col-30
+			width: 100%
+			&:nth-child(2)
+				order: 0
+				.chapter-card__img
+					max-width: 258px
+
+	.chapter-card
+		min-height: 200px
+		&__img
+			max-width: 170px
+
+	.advantages
+		background: radial-gradient(75.51% 27.58% at 80.27% 54.82%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
+
+	.advantages-box
+		padding: 24px 12px
+		flex-wrap: wrap
+		font-size: 14px
+		margin: 0 0 24px
+		&__text
+			width: 100%
+			padding: 16px 0 0
+		h3
+			font-size: 18px
+
+	.advantages-list
+		width: calc(100% + 15px)
+		margin: 0 -7.5px
+
+	.hot-prices
+		.col-25
+			display: none
+			&:nth-child(-n+3)
+				display: none
+			&:nth-child(-n+2)
+				display: block
+
+	.news 
+		.col-30		
+			display: block
+			width: 320px	
+			min-width: 320px
+
+	.row-scroll
+		flex-wrap: nowrap
+		overflow-y: auto
+
+	.news-card
+		font-size: 14px
+		&__title
+			font-size: 18px
+		&__img
+			height: 200px
+
+	.m-100
+		margin: 80px 0
+
+	.seo-section
+		.box-text
+			font-size: 14px
+
+	.reviews-services 
+		h3
+			width: 100%
+			margin: 0 0 16px
+
+	footer
+		padding: 40px 0
+
+	.footer-box
+		width: 100%
+		margin: 0 0 24px
+		&:last-child
+			width: 100%
+			margin: 0	
+		&__menu
+			display: none
+			margin: 16px 0 0
+		&__title-toggle
+			display: flex
+			align-items: center
+			margin: 0
+			&:after
+				content: ''
+				background: url('../img/arrow-select.svg') no-repeat center
+				background-size: 100%
+				margin: 0 0 0 22px
+				width: 24px
+				height: 24px	
+				filter: brightness(0) invert(1)	
+
+	
+		
 @media only screen and (max-width: 480px)
+	.product-card
+		&__img
+			padding: 40px 0
+			border: none
+			background: #F8F8F8
+		.promo-label-list
+			padding: 8px 1px
+		&__footer
+			.btn
+				display: none
+		.link-add-card
+			margin: 0
+
+	.promo-label
+		font-size: 10px
+
+	.price
+		font-size: 18px
 
 @media only screen and (max-width: 420px)
 
 @media only screen and (max-width: 370px)
+	.home-slider-nav
+		&__item
+			width: 100%
