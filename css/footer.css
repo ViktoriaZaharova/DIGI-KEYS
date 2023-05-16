@@ -149,7 +149,7 @@ footer .container {
 }
 
 #thanksModal .modal__wrapper {
-  padding: 135px 28px;
+  padding: 70px 28px 44px;
 }
 
 .modal__close {
@@ -186,4 +186,8 @@ footer .container {
   left: 0;
   cursor: pointer;
   display: none;
+}
+
+.btn-close-modal {
+  margin: 32px auto 0;
 }

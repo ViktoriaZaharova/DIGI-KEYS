@@ -206,7 +206,7 @@ $('.promo-link').click(function (e) {
 $(function () {
 	var overlay = $('.overlay'),
 		open_modal = $('.open_modal'),
-		close = $('.modal__close, .overlay'),
+		close = $('.modal__close, .overlay, .btn-close-modal'),
 		modal = $('.modal__div');
 
 	open_modal.on('click', function (event) {
@@ -246,5 +246,21 @@ $(function () {
 
 $('.btn-burger').on('click', function (e) {
 	e.preventDefault();
-	$('.nav-menu').fadeToggle();
+	$('.mobile-menu').fadeToggle();
+});
+
+$('.mobile-menu__close').click(function () {
+	$('.mobile-menu').fadeOut();
+});
+
+$(".js-tab-trigger").click(function (e) {
+	e.preventDefault();
+	var id = $(this).attr('data-tab'),
+		content = $('.js-tab-content[data-tab="' + id + '"]');
+
+	$('.js-tab-trigger.active').removeClass('active'); // 1
+	$(this).addClass('active'); // 2
+
+	$('.js-tab-content.active').removeClass('active'); // 3
+	content.addClass('active'); // 4
 });

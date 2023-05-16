@@ -84,7 +84,7 @@ input, textarea, select
 	font-size: 14px
 
 	&::placeholder
-		color: #595959
+		color: #828282
 
 	&:hover, &:focus
 		outline: none
@@ -273,6 +273,9 @@ h3
 .m-60
 	margin: 60px 0
 
+.mb-60
+	margin-bottom: 60px	
+
 .mb-40
 	margin-bottom: 40px
 
@@ -366,9 +369,12 @@ a.color-accent
 .nav-breadcrumb
 	width: 100%
 	margin: 0 0 24px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
 
 .breadcrumb
-	width: 100%
+	width: fit-content
 	display: flex
 	align-items: center
 	flex-wrap: wrap

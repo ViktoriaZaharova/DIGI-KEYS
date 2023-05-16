@@ -26,24 +26,111 @@
 	<header>
 		<div class="container">
 			<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-
-			<nav class="nav-menu">
+			<div class="dropdown-catalog">
 				<a href="#" class="btn btn-accent btn-catalog">
 					<svg class="svg-icon btn-catalog__icon">
 						<use xlink:href="img/sprite.svg#burger-icon"></use>
 					</svg>
+					<svg class="svg-icon btn-catalog__icon btn-catalog__icon-close">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
 					<span class="btn-catalog__text">Каталог</span>
 				</a>
+				<div class="dropdown-menu dropdown-menu-catalog">
+					<ul class="sidebar-menu my-ul">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<span>Microsoft Windows</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+							</div>
+						</li>
+						<li class="dropdown open">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Microsoft Office</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Офисные приложения</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Офисные приложения</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Windows Server</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Windows Server</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Антивирусы</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Антивирусы</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Прочее</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Прочее</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="nav-menu">
 				<ul class="menu my-ul">
 					<li><a href="contacts.html">Контакты</a></li>
-					<li><a href="#">Юр.лицам</a></li>
+					<li><a href="information.html">Юр.лицам</a></li>
 				</ul>
 			</nav>
+
 			<a href="tel:+78003019309" class="phone">+7 800 301 93 09</a>
 
-			<a href="#" class="link-tg">Telegram</a>
+			<a href="#" class="link-tg color-accent">Telegram</a>
 
-			<a href="mailto:" class="btn btn-border-accent">Написать</a>
+			<a href="mailto:" class="btn btn-mail btn-border-accent">Написать</a>
+
+			<a href="#" class="btn-burger">
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#burger"></use>
+				</svg>
+			</a>
 		</div>
 	</header>
 
@@ -56,6 +143,11 @@
 					<li><a href="catalog.html">Windows</a></li>
 					<li><span>Microsoft Windows 10</span></li>
 				</ul>
+				<a href="#" class="link-share">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#share-icon"></use>
+					</svg>
+				</a>
 			</nav>
 
 			<div class="w-100">
@@ -66,7 +158,22 @@
 						<div class="w-100">
 							<div class="row">
 								<div class="col-45">
-									<div class="product-image"><img src="img/product1.png" alt=""></div>
+									<div class="product-image">
+										<ul class="promo-label-list my-ul">
+											<li>
+												<div class="promo-label promo-label-hit">
+													<span>-15%</span>
+												</div>
+											</li>
+											<li>
+												<div class="promo-label promo-label-hit">
+													<img src="img/fire-icon.png" alt="">
+													<span>Хит продаж</span>
+												</div>
+											</li>
+										</ul>
+										<img src="img/product1.png" alt="">
+									</div>
 								</div>
 								<div class="col-55">
 									<div class="product-info-box">
@@ -113,6 +220,31 @@
 											</a>
 										</div>
 										<h1>Лицензионный ключ активации для Microsoft Windows 10</h1>
+										<div class="product-info-box__footer">
+											<ul class="list-characteristics my-ul">
+												<li>
+													<p>Артикул:</p>
+													<span>DK-MW-10P</span>
+												</li>
+											</ul>
+											<div class="status-availability">
+												<img src="img/check.png" alt="">
+												<span>В наличии</span>
+											</div>
+											<div class="delivery-instant">
+												<img src="img/rocket.png" alt="">
+												<span>Моментальная доставка</span>
+											</div>
+											<ul class="list-payment my-ul">
+												<li><img src="img/pay1.svg" alt=""></li>
+												<li><img src="img/pay2.svg" alt=""></li>
+												<li><img src="img/pay3.svg" alt=""></li>
+												<li><img src="img/pay4.svg" alt=""></li>
+												<li><img src="img/pay5.svg" alt=""></li>
+												<li><img src="img/pay6.svg" alt=""></li>
+												<li><img src="img/pay7.svg" alt=""></li>
+											</ul>
+										</div>
 									</div>
 
 									<div class="product-info-box">
@@ -125,9 +257,52 @@
 											<img src="img/smile.png" alt="">
 											<span>В чём разница?</span>
 										</div>
+
+										<div class="product-info-box__footer">
+											<form method="post" class="checkout-box">
+												<h3>Оформление заказа</h3>
+												<ul class="list-characteristics my-ul">
+													<li>
+														<p>Артикул:</p>
+														<span>DK-MW-10P</span>
+													</li>
+													<li>
+														<p>Стоимость</p>
+														<span>
+															<div class="price">1990 ₽</div>
+														</span>
+													</li>
+												</ul>
+
+												<label>
+													<span class="input-text">E-mail</span>
+													<input type="text" name="mail">
+												</label>
+												<div class="buy-wrapper">
+													<div class="amount">
+														<span class="down"><img src="img/minus.svg" alt=""></span>
+														<input type="text" value="1" />
+														<span class="up"><img src="img/plus.svg" alt=""></span>
+													</div>
+													<a href="#thanksModal" class="btn btn-sm btn-accent open_modal">Купить</a>
+												</div>
+
+												<div class="promo-wrapper">
+													<a href="#" class="promo-link">
+														<img src="img/star-promo.png" alt="">
+														<span>У меня есть промокод</span>
+													</a>
+
+													<label class="promo-wrapper__label">
+														<span class="input-text">Введите промокод</span>
+														<input type="text" name="code">
+													</label>
+												</div>
+											</form>
+										</div>
 									</div>
 
-									<div class="product-info-box">
+									<div class="product-info-box d-pc">
 										<div class="logo-partner"><img src="img/microsoft.svg" alt=""></div>
 										<div class="box-text">
 											<p>Партнёр официального дистрибьютора Microsoft</p>
@@ -384,9 +559,12 @@
 										</svg>
 									</div>
 									<div class="block_hover">
-										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические права на
-										использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав интеллектуальной
-										собственности разработчиков программного обеспечения и обычно имеет ограничения на его использование и распространение.</p>
+										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические
+											права на
+											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав
+											интеллектуальной
+											собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+											использование и распространение.</p>
 									</div>
 								</div>
 
@@ -398,9 +576,12 @@
 										</svg>
 									</div>
 									<div class="block_hover">
-										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические права на
-											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав интеллектуальной
-											собственности разработчиков программного обеспечения и обычно имеет ограничения на его использование и
+										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические
+											права на
+											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав
+											интеллектуальной
+											собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+											использование и
 											распространение.</p>
 									</div>
 								</div>
@@ -413,9 +594,12 @@
 										</svg>
 									</div>
 									<div class="block_hover">
-										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические права на
-											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав интеллектуальной
-											собственности разработчиков программного обеспечения и обычно имеет ограничения на его использование и
+										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические
+											права на
+											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав
+											интеллектуальной
+											собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+											использование и
 											распространение.</p>
 									</div>
 								</div>
@@ -428,9 +612,12 @@
 										</svg>
 									</div>
 									<div class="block_hover">
-										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические права на
-											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав интеллектуальной
-											собственности разработчиков программного обеспечения и обычно имеет ограничения на его использование и
+										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические
+											права на
+											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав
+											интеллектуальной
+											собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+											использование и
 											распространение.</p>
 									</div>
 								</div>
@@ -443,9 +630,12 @@
 										</svg>
 									</div>
 									<div class="block_hover">
-										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические права на
-											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав интеллектуальной
-											собственности разработчиков программного обеспечения и обычно имеет ограничения на его использование и
+										<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют юридические
+											права на
+											использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту прав
+											интеллектуальной
+											собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+											использование и
 											распространение.</p>
 									</div>
 								</div>
@@ -455,12 +645,13 @@
 								<h2>Статьи о товаре</h2>
 
 								<div class="w-100">
-									<div class="row">
+									<div class="row row-scroll">
 										<div class="col-30 mb-40">
 											<div class="article-card">
 												<a href="#" class="article-card__img"><img src="img/article.jpg" alt=""></a>
 												<div class="article-card__body">
-													<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже лицензии на Microsoft 365 и Microsoft Office</a>
+													<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже
+														лицензии на Microsoft 365 и Microsoft Office</a>
 												</div>
 											</div>
 										</div>
@@ -468,7 +659,8 @@
 											<div class="article-card">
 												<a href="#" class="article-card__img"><img src="img/article.jpg" alt=""></a>
 												<div class="article-card__body">
-													<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже лицензии на Microsoft
+													<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже
+														лицензии на Microsoft
 														365 и Microsoft Office</a>
 												</div>
 											</div>
@@ -477,7 +669,8 @@
 											<div class="article-card">
 												<a href="#" class="article-card__img"><img src="img/article.jpg" alt=""></a>
 												<div class="article-card__body">
-													<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже лицензии на Microsoft
+													<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже
+														лицензии на Microsoft
 														365 и Microsoft Office</a>
 												</div>
 											</div>
@@ -504,14 +697,15 @@
 												<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
 												<div class="product-card__body">
 													<div class="product-card__head">
-														<a href="product.html" class="product-card__title">Microsoft Windows 10 Professional x32/x64</a>
+														<a href="product.html" class="product-card__title">Microsoft Windows 10 Professional
+															x32/x64</a>
 														<div class="price-wrapper">
 															<div class="price">1780 ₽</div>
 														</div>
 													</div>
-										
+
 													<div class="product-card__footer">
-														<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+														<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 														<a href="#" class="color-accent link-add-card">Купить в клик</a>
 													</div>
 												</div>
@@ -519,14 +713,14 @@
 										</div>
 										<div class="col-30 mb-40">
 											<div class="product-card">
-										<ul class="promo-label-list my-ul">
-											<li>
-												<div class="promo-label promo-label-hit">
-													<img src="img/fire-icon.png" alt="">
-													<span>Хит продаж</span>
-												</div>
-											</li>
-										</ul>
+												<ul class="promo-label-list my-ul">
+													<li>
+														<div class="promo-label promo-label-hit">
+															<img src="img/fire-icon.png" alt="">
+															<span>Хит продаж</span>
+														</div>
+													</li>
+												</ul>
 												<a href="product.html" class="product-card__img"><img src="img/product2.png" alt=""></a>
 												<div class="product-card__body">
 													<div class="product-card__head">
@@ -535,9 +729,9 @@
 															<div class="price">1580 ₽</div>
 														</div>
 													</div>
-										
+
 													<div class="product-card__footer">
-														<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+														<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 														<a href="#" class="color-accent link-add-card">Купить в клик</a>
 													</div>
 												</div>
@@ -556,14 +750,15 @@
 												<a href="product.html" class="product-card__img"><img src="img/product3.png" alt=""></a>
 												<div class="product-card__body">
 													<div class="product-card__head">
-														<a href="product.html" class="product-card__title">Microsoft Office 2021 Professional Plus</a>
+														<a href="product.html" class="product-card__title">Microsoft Office 2021 Professional
+															Plus</a>
 														<div class="price-wrapper">
 															<div class="price">1980 ₽</div>
 														</div>
 													</div>
-										
+
 													<div class="product-card__footer">
-														<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+														<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 														<a href="#" class="color-accent link-add-card">Купить в клик</a>
 													</div>
 												</div>
@@ -573,10 +768,42 @@
 								</div>
 							</div>
 
-							<div class="reviews">
+							<div class="reviews mb-60">
 								<h2>Отзывы наших покупателей</h2>
+								<div class="w-100">
+									<div class="row">
+										<div class="col-75">
+											<div class="reviews-services">
+												<h3>С других сервисов:</h3>
+												<ul class="reviews-services-list my-ul">
+													<li>
+														<a href="#" class="reviews-services-link">
+															<span class="reviews-services-list__icon"><img src="img/services-reviews1.svg"
+																	alt=""></span>
+															<span>Tustpilot</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="reviews-services-link">
+															<span class="reviews-services-list__icon"><img src="img/services-reviews2.svg"
+																	alt=""></span>
+															<span>Яндекс</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="reviews-services-link">
+															<span class="reviews-services-list__icon"><img src="img/services-reviews3.svg"
+																	alt=""></span>
+															<span>Отзывы.Ру</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							
+
 							<div class="seo-section">
 								<h2>Только оригинальный софт по лучшим ценам!</h2>
 								<div class="box-text">
@@ -596,7 +823,7 @@
 
 					</div>
 
-					<div class="col-25">
+					<div class="col-25 d-pc">
 						<form method="post" class="checkout-box">
 							<h3>Оформление заказа</h3>
 							<ul class="list-characteristics my-ul">
@@ -676,7 +903,7 @@
 			</div>
 
 			<div class="footer-box">
-				<h3 class="footer-box__title">Каталог товаров</h3>
+				<h3 class="footer-box__title footer-box__title-toggle">Каталог товаров</h3>
 				<ul class="footer-box__menu my-ul">
 					<li><a href="#">Microsoft Windows</a></li>
 					<li><a href="#">Microsoft Office</a></li>
@@ -687,7 +914,7 @@
 				</ul>
 			</div>
 			<div class="footer-box">
-				<h3 class="footer-box__title">Информация</h3>
+				<h3 class="footer-box__title footer-box__title-toggle">Информация</h3>
 				<ul class="footer-box__menu my-ul">
 					<li><a href="#">О магазине</a></li>
 					<li><a href="#">Юр. лицам</a></li>
@@ -719,16 +946,18 @@
 	<div class="modal__div" id="thanksModal">
 		<div class="modal__wrapper">
 			<span class="modal__close"><svg class="svg-icon">
-				<use xlink:href="img/sprite.svg#close"></use>
-			</svg></span>
+					<use xlink:href="img/sprite.svg#close"></use>
+				</svg></span>
 
 			<div class="check-image"><img src="img/check.png" alt=""></div>
 
-			<h3>Заказ принят</h3> 
-	
+			<h3>Заказ принят</h3>
+
 			<div class="box-text text-center">
 				<p>Как только мы получим подтверждение оплаты, письмо автоматически отправиться на ваш e-mail</p>
 			</div>
+
+			<a href="#" class="btn btn-light-accent btn-close-modal">Отлично</a>
 		</div>
 	</div>
 	<!-- Пoдлoжкa -->

@@ -26,24 +26,111 @@
 	<header>
 		<div class="container">
 			<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-
-			<nav class="nav-menu">
+			<div class="dropdown-catalog">
 				<a href="#" class="btn btn-accent btn-catalog">
 					<svg class="svg-icon btn-catalog__icon">
 						<use xlink:href="img/sprite.svg#burger-icon"></use>
 					</svg>
+					<svg class="svg-icon btn-catalog__icon btn-catalog__icon-close">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
 					<span class="btn-catalog__text">Каталог</span>
 				</a>
+				<div class="dropdown-menu dropdown-menu-catalog">
+					<ul class="sidebar-menu my-ul">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<span>Microsoft Windows</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+							</div>
+						</li>
+						<li class="dropdown open">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Microsoft Office</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Офисные приложения</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Офисные приложения</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Windows Server</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Windows Server</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Антивирусы</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Антивирусы</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Прочее</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Прочее</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="nav-menu">
 				<ul class="menu my-ul">
 					<li><a href="contacts.html">Контакты</a></li>
-					<li><a href="#">Юр.лицам</a></li>
+					<li><a href="information.html">Юр.лицам</a></li>
 				</ul>
 			</nav>
+	
 			<a href="tel:+78003019309" class="phone">+7 800 301 93 09</a>
-
-			<a href="#" class="link-tg">Telegram</a>
-
-			<a href="mailto:" class="btn btn-border-accent">Написать</a>
+	
+			<a href="#" class="link-tg color-accent">Telegram</a>
+	
+			<a href="mailto:" class="btn btn-mail btn-border-accent">Написать</a>
+	
+			<a href="#" class="btn-burger">
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#burger"></use>
+				</svg>
+			</a>
 		</div>
 	</header>
 
@@ -59,7 +146,7 @@
 			<div class="page-catalog-wrapper">
 				<div class="w-100">
 					<div class="row">
-						<div class="col-25">
+						<div class="col-25 d-pc">
 								<div class="sidebar">
 									<h3>Каталог</h3>
 									<ul class="sidebar-menu my-ul">
@@ -140,7 +227,9 @@
 						</div>
 						<div class="col-75">
 							<div class="title-wrapper">
-								<h1>Все товары</h1>
+								<h1>Все товары <a href="#" class="btn-toggle-sidebar"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg></a></h1>
 								<div class="sorting-wrapper">
 									<p>Сортировка:</p>
 									<select name="select" class="select-my">
@@ -173,7 +262,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -192,7 +281,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -218,7 +307,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -237,7 +326,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -256,7 +345,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -275,7 +364,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -301,7 +390,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -320,7 +409,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -339,7 +428,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -358,7 +447,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -384,7 +473,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -403,7 +492,7 @@
 												</div>
 							
 												<div class="product-card__footer">
-													<a href="product.html" class="btn btn-sm btn-accent">Подробнее</a>
+													<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
 													<a href="#" class="color-accent link-add-card">Купить в клик</a>
 												</div>
 											</div>
@@ -414,6 +503,36 @@
 							
 							<div class="reviews m-60">
 								<h2>Отзывы наших покупателей</h2>
+
+								<div class="w-100">
+									<div class="row">
+										<div class="col-75">
+											<div class="reviews-services">
+												<h3>С других сервисов:</h3>
+												<ul class="reviews-services-list my-ul">
+													<li>
+														<a href="#" class="reviews-services-link">
+															<span class="reviews-services-list__icon"><img src="img/services-reviews1.svg" alt=""></span>
+															<span>Tustpilot</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="reviews-services-link">
+															<span class="reviews-services-list__icon"><img src="img/services-reviews2.svg" alt=""></span>
+															<span>Яндекс</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="reviews-services-link">
+															<span class="reviews-services-list__icon"><img src="img/services-reviews3.svg" alt=""></span>
+															<span>Отзывы.Ру</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							
 							<div class="seo-section">
@@ -450,7 +569,7 @@
 			</div>
 
 			<div class="footer-box">
-				<h3 class="footer-box__title">Каталог товаров</h3>
+				<h3 class="footer-box__title footer-box__title-toggle">Каталог товаров</h3>
 				<ul class="footer-box__menu my-ul">
 					<li><a href="#">Microsoft Windows</a></li>
 					<li><a href="#">Microsoft Office</a></li>
@@ -461,7 +580,7 @@
 				</ul>
 			</div>
 			<div class="footer-box">
-				<h3 class="footer-box__title">Информация</h3>
+				<h3 class="footer-box__title footer-box__title-toggle">Информация</h3>
 				<ul class="footer-box__menu my-ul">
 					<li><a href="#">О магазине</a></li>
 					<li><a href="#">Юр. лицам</a></li>

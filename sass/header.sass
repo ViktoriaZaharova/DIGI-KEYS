@@ -20,8 +20,6 @@ header
 	display: flex
 	align-items: center
 	flex-wrap: wrap
-	.btn-mail, .link-tg, .phone
-		display: none
 
 .menu
 	display: flex
@@ -30,7 +28,7 @@ header
 	li
 		margin: 0 0 0 40px
 		a
-			color: #363636	
+			color: #363636
 			&:hover
 				color: #5D0896
 
@@ -40,12 +38,12 @@ header
 .phone
 	color: #363636
 	&:hover
-		color: $accent	
+		color: $accent
 
 .btn-catalog
 	&__icon
 		width: 24px
-		height: 24px		
+		height: 24px
 		stroke: #fff
 		margin: 0 4px 0 0
 		&-close
@@ -57,4 +55,154 @@ header
 	display: none
 	align-items: center
 	justify-content: center
-	stroke: #161616		
+	stroke: #161616
+
+.mobile-menu
+	position: fixed
+	z-index: 11
+	background: #fff
+	left: 0
+	top: 0
+	width: 100%
+	max-width: 375px
+	height: 100%
+	// display: none
+	&__close
+		@include d-flex
+		width: 24px
+		height: 24px
+		cursor: pointer
+		stroke: #161616
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 33px 20px
+		border-bottom: 1px solid #F8F3FC
+	&__body
+		padding: 24px 20px
+		height: calc(100% - 84px)
+		overflow-y: auto
+		position: relative
+		width: 100%
+	&__footer
+		width: 100%
+		margin: 250px 0 0
+
+		.btn
+			width: 100%
+	.logo
+		max-width: 120px
+
+.mobile-menu-wrapper
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background: #fff
+	z-index: 2
+
+.left-sidebar
+	width: 72px
+	height: 100%
+	border-right: 1px solid #F8F3FC
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 21px 0
+
+.right-sidebar
+	width: calc(100% - 72px)
+	padding: 21px 0
+	.sidebar-menu li
+		margin: 0 0 8px
+		&:last-child
+			margin: 0
+	.dropdown-toggle
+		padding: 10px 24px
+
+.js-tab-content
+	display: flex
+	flex-wrap: wrap
+	left: -100%
+	transition: .3s ease
+	&.active
+		left: 0
+
+.menu-home-mobile
+	display: flex
+	align-items: center
+	flex-direction: column
+	li
+		margin: 0 0 21px
+		&:last-child
+			margin: 0
+		a
+			width: 38px
+			height: 38px
+			fill: none
+			stroke: #161616
+			padding: 5px
+			border-radius: 6px
+			&.click
+				background: #F8F3FC
+				stroke: $accent
+	.js-tab-trigger
+		&.active
+			background: #F8F3FC
+			stroke: $accent
+
+.contacts-mobile
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 188px 0 0
+	li
+		margin: 0 0 11px
+		&:last-child
+			margin: 0
+		a
+			width: 32px
+			height: 32px
+			fill: none
+			stroke: $accent
+			border: 1.3px solid transparent
+			border-radius: 6px
+			&.mail-icon
+				border-color: #7C0DC6
+
+.mobile-menu-list
+	font-size: 20px
+	li
+		margin: 0 0 24px
+		&:last-child
+			margin: 0
+		a
+			color: #363636
+			display: flex
+			align-items: center
+			&:hover
+				color: $accent
+	.svg-icon
+		margin: 0 8px 0 0
+		width: 32px
+		min-width: 32px
+		height: 32px
+		fill: none
+		stroke: #161616
+
+.contacts-line
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 30px
+	.link-tg
+		margin: 0 auto 0 0
+
+.link-phone
+	color: #161616
+	&:hover
+		color: $accent

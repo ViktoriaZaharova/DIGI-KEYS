@@ -26,30 +26,122 @@
 	<header>
 		<div class="container">
 			<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-
-			<nav class="nav-menu">
+			<div class="dropdown-catalog">
 				<a href="#" class="btn btn-accent btn-catalog">
 					<svg class="svg-icon btn-catalog__icon">
 						<use xlink:href="img/sprite.svg#burger-icon"></use>
 					</svg>
+					<svg class="svg-icon btn-catalog__icon btn-catalog__icon-close">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
 					<span class="btn-catalog__text">Каталог</span>
 				</a>
+				<div class="dropdown-menu dropdown-menu-catalog">
+					<ul class="sidebar-menu my-ul">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<span>Microsoft Windows</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+								<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+							</div>
+						</li>
+						<li class="dropdown open">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Microsoft Office</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+								<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Офисные приложения</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Офисные приложения</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Windows Server</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Windows Server</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Антивирусы</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Антивирусы</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+								<span>Прочее</span>
+								<svg class="svg-icon dropdown-toggle__icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Прочее</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="nav-menu">
 				<ul class="menu my-ul">
 					<li><a href="contacts.html">Контакты</a></li>
-					<li><a href="#">Юр.лицам</a></li>
+					<li><a href="information.html">Юр.лицам</a></li>
 				</ul>
 			</nav>
+
 			<a href="tel:+78003019309" class="phone">+7 800 301 93 09</a>
 
-			<a href="#" class="link-tg">Telegram</a>
+			<a href="#" class="link-tg color-accent">Telegram</a>
 
-			<a href="mailto:" class="btn btn-border-accent">Написать</a>
+			<a href="mailto:" class="btn btn-mail btn-border-accent">Написать</a>
+
+			<a href="#" class="btn-burger">
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#burger"></use>
+				</svg>
+			</a>
 		</div>
 	</header>
 
 	<section class="page page-information">
 		<div class="container">
-
+			<nav class="nav-breadcrumb">
+				<ul class="breadcrumb my-ul">
+					<li><a href="index.html">Главная</a></li>
+					<li><span>Для юр. лиц</span></li>
+				</ul>
+			</nav>
 			<div class="w-100">
 
 				<div class="row">
@@ -65,6 +157,16 @@
 								продукцией работает как швейцарские часы.</p>
 							<p>Мы свяжемся с вами в ближайшее время и предоставим информацию по условиям приобретения электронных
 								ключей.</p>
+						</div>
+
+						<div class="banner d-tablet">
+							<h3>Нужна помощь?</h3>
+							<div class="box-text">
+								<p>Обратитесь к нашим специалистами они проконсультируют по любому вопросу</p>
+							</div>
+
+							<a href="#" class="btn btn-accent">Написать</a>
+							<div class="banner-img"><img src="img/banner-img.png" alt=""></div>
 						</div>
 
 						<form method="post" class="form">
@@ -101,21 +203,22 @@
 								</div>
 
 								<div class="col-100">
-									<button type="submit" class="btn btn-accent">Отправить</button>
+									<button type="submit" class="btn btn-light-accent">Отправить</button>
 								</div>
 							</div>
 						</form>
 
 					</div>
 
-					<div class="col-25">
+					<div class="col-25 d-pc">
 						<div class="banner">
 							<h3>Нужна помощь?</h3>
 							<div class="box-text">
 								<p>Обратитесь к нашим специалистами они проконсультируют по любому вопросу</p>
 							</div>
 
-							<a href="#" class="btn btn-white">Написать</a>
+							<a href="#" class="btn btn-accent">Написать</a>
+							<div class="banner-img"><img src="img/banner-img.png" alt=""></div>
 						</div>
 					</div>
 
@@ -135,7 +238,7 @@
 			</div>
 
 			<div class="footer-box">
-				<h3 class="footer-box__title">Каталог товаров</h3>
+				<h3 class="footer-box__title footer-box__title-toggle">Каталог товаров</h3>
 				<ul class="footer-box__menu my-ul">
 					<li><a href="#">Microsoft Windows</a></li>
 					<li><a href="#">Microsoft Office</a></li>
@@ -146,7 +249,7 @@
 				</ul>
 			</div>
 			<div class="footer-box">
-				<h3 class="footer-box__title">Информация</h3>
+				<h3 class="footer-box__title footer-box__title-toggle">Информация</h3>
 				<ul class="footer-box__menu my-ul">
 					<li><a href="#">О магазине</a></li>
 					<li><a href="#">Юр. лицам</a></li>
