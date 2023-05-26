@@ -125,6 +125,7 @@
 		right: 0
 		bottom: 0
 		z-index: -1
+		transition: .5s ease
 		@include d-flex
 	&__title
 		font-size: 20px
@@ -135,6 +136,12 @@
 	&:hover
 		.chapter-card__title
 			color: $accent
+		.link
+			color: $hover	
+		.link-icon
+			stroke: $hover
+		.chapter-card__img
+			transform: scale(1.09)	
 
 .link
 	display: flex
@@ -231,6 +238,7 @@
 		margin: auto 0 0
 	.btn
 		padding: 14px 24px
+		width: 100%
 	.link-add-card
 		margin: 0 0 0 24px
 	.promo-label-list
@@ -296,8 +304,9 @@
 		font-size: 20px
 		font-weight: 500
 		margin: 16px 0 8px
-		&:hover
-			color: $accent
+	&:hover
+		.news-card__title
+			color: $accent		
 
 .date
 	color: #767676
@@ -330,10 +339,11 @@
 	border-radius: 8px
 	max-width: 310px
 	width: 100%
-	padding: 24px
+	padding: 24px 0
 	line-height: 150%
-	h3
-		margin: 0 0 16px
+	&__head
+		padding: 0 24px
+		margin: 0 0 16px	
 
 .sidebar-menu
 	li
@@ -365,17 +375,15 @@
 .dropdown.open
 	.dropdown-toggle
 		color: $accent
-
 		.dropdown-toggle__icon
 			stroke: $accent
 			transform: rotate(180deg)
 
 .dropdown-menu
 	margin: 8px 0 0
-	padding: 0 0 0 12px
 	display: none
 	.dropdown-item
-		padding: 8px 24px
+		padding: 8px 10px 8px 32px
 		width: 100%
 		&:hover
 			background: #F8F3FC
@@ -389,7 +397,6 @@
 					display: flex
 
 	.dropdown-menu
-		padding: 0
 		margin: 5px 0 0
 		overflow: hidden
 	.sidebar-menu li
@@ -397,7 +404,7 @@
 		&:last-child
 			margin: 0
 		.dropdown-item
-			padding-left: 36px
+			padding-left: 32px
 		.dropdown-menu
 			margin: 0
 
@@ -408,12 +415,15 @@
 	background: #FFFFFF
 	z-index: 10
 	min-width: 270px
+	padding: 20px 0
 
 .btn-toggle-sidebar
 	margin: 0 0 0 8px
-	@include d-flex
+	display: none
+	align-items: center
+	justify-content: center
 	width: 24px
-	height: 24px 
+	height: 24px
 	fill: none
 	stroke: #161616
 
@@ -455,7 +465,7 @@
 		margin: 140px 0 0
 
 .d-tablet
-	display: none		
+	display: none
 
 .form
 	margin: 40px 0 0
@@ -475,7 +485,6 @@
 	padding: 0 16px
 	display: inline-block
 	color: #828282
-	
 
 // product page
 .product-image
@@ -491,7 +500,7 @@
 	img
 		max-height: 100%
 	.promo-label-list
-		display: none	
+		display: none
 
 .checkout-box
 	border-left: 1px solid #EBEBEB
@@ -514,7 +523,7 @@
 		&:last-child
 			margin: 0
 	span
-		text-align: right		
+		text-align: right
 	p
 		font-weight: 300
 
@@ -615,9 +624,9 @@
 	.promo-label-list
 		width: fit-content
 	&__footer
-		margin: 24px 0 0	
+		margin: 24px 0 0
 		width: 100%
-		display: none	
+		display: none
 		.list-payment
 			margin: 0
 			li
@@ -625,7 +634,7 @@
 	&:first-child
 		.product-info-box__footer
 			.list-characteristics
-				display: none	
+				display: none
 
 .rating
 	display: flex
@@ -692,7 +701,7 @@
 	&::before
 		content: ''
 		position: absolute
-		right: 0
+		left: 0
 		bottom: 0
 		width: calc(100% - 4px)
 		height: 2px
@@ -723,7 +732,7 @@
 	margin: 0 0 16px
 	background: #F8F8F8
 	border-radius: 8px
-	padding: 32px
+	
 	&-icon
 		@include d-flex
 		width: 24px
@@ -744,6 +753,7 @@
 	justify-content: space-between
 	margin: 0
 	cursor: pointer
+	padding: 32px
 	h3
 		margin: 0
 
@@ -752,6 +762,7 @@
 	margin: 16px 0 0
 	color: #363636
 	line-height: 150%
+	padding: 0 32px 32px
 
 .article-card
 	width: 100%
@@ -821,4 +832,4 @@
 .page-product
 	.nav-breadcrumb
 		.link-share
-			display: none			
+			display: none

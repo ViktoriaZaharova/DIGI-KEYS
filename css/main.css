@@ -170,6 +170,8 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,6 +191,16 @@
 }
 .chapter-card:hover .chapter-card__title {
   color: #7C0DC6;
+}
+.chapter-card:hover .link {
+  color: #5D0896;
+}
+.chapter-card:hover .link-icon {
+  stroke: #5D0896;
+}
+.chapter-card:hover .chapter-card__img {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 .link {
@@ -354,6 +366,7 @@
 }
 .product-card .btn {
   padding: 14px 24px;
+  width: 100%;
 }
 .product-card .link-add-card {
   margin: 0 0 0 24px;
@@ -453,7 +466,7 @@
   font-weight: 500;
   margin: 16px 0 8px;
 }
-.news-card__title:hover {
+.news-card:hover .news-card__title {
   color: #7C0DC6;
 }
 
@@ -500,10 +513,11 @@
   border-radius: 8px;
   max-width: 310px;
   width: 100%;
-  padding: 24px;
+  padding: 24px 0;
   line-height: 150%;
 }
-.sidebar h3 {
+.sidebar__head {
+  padding: 0 24px;
   margin: 0 0 16px;
 }
 
@@ -556,11 +570,10 @@
 
 .dropdown-menu {
   margin: 8px 0 0;
-  padding: 0 0 0 12px;
   display: none;
 }
 .dropdown-menu .dropdown-item {
-  padding: 8px 24px;
+  padding: 8px 10px 8px 32px;
   width: 100%;
 }
 .dropdown-menu .dropdown-item:hover {
@@ -576,7 +589,6 @@
   display: flex;
 }
 .dropdown-catalog .dropdown-menu {
-  padding: 0;
   margin: 5px 0 0;
   overflow: hidden;
 }
@@ -587,7 +599,7 @@
   margin: 0;
 }
 .dropdown-catalog .sidebar-menu li .dropdown-item {
-  padding-left: 36px;
+  padding-left: 32px;
 }
 .dropdown-catalog .sidebar-menu li .dropdown-menu {
   margin: 0;
@@ -600,13 +612,12 @@
   background: #FFFFFF;
   z-index: 10;
   min-width: 270px;
+  padding: 20px 0;
 }
 
 .btn-toggle-sidebar {
   margin: 0 0 0 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1059,7 +1070,7 @@
 .tabs__caption-product::before {
   content: "";
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: calc(100% - 4px);
   height: 2px;
@@ -1098,7 +1109,6 @@
   margin: 0 0 16px;
   background: #F8F8F8;
   border-radius: 8px;
-  padding: 32px;
 }
 .panel_heading-icon {
   display: -webkit-box;
@@ -1137,6 +1147,7 @@
           justify-content: space-between;
   margin: 0;
   cursor: pointer;
+  padding: 32px;
 }
 .block_title h3 {
   margin: 0;
@@ -1147,6 +1158,7 @@
   margin: 16px 0 0;
   color: #363636;
   line-height: 150%;
+  padding: 0 32px 32px;
 }
 
 .article-card {

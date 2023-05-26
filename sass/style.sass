@@ -46,8 +46,8 @@ body
 	background: #fff
 	color: #363636
 
-html, body
-	overflow-x: hidden	
+// html, body
+// 	overflow-x: hidden	
 
 img
 	display: block
@@ -82,6 +82,8 @@ input, textarea, select
 	background: #F7F7F7
 	color: #161616
 	font-size: 14px
+	position: relative
+	z-index: -1
 
 	&::placeholder
 		color: #828282
@@ -393,6 +395,8 @@ a.color-accent
 				content: '/'
 				display: inline-block
 				margin: 0 8px
+		span
+			font-weight: 400		
 
 .title-wrapper
 	width: 100%

@@ -7,6 +7,8 @@ header {
   z-index: 10;
   width: 100%;
   background: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 header .container {
   -webkit-box-align: center;
@@ -15,6 +17,9 @@ header .container {
 }
 header .logo {
   margin: 0 60px 0 0;
+}
+header.fixed {
+  position: fixed;
 }
 
 .nav-menu {
@@ -70,6 +75,19 @@ header .logo {
   display: none;
 }
 
+.overlay-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background: #030418;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  display: none;
+}
+
 .btn-burger {
   width: 24px;
   height: 24px;
@@ -87,11 +105,14 @@ header .logo {
   position: fixed;
   z-index: 11;
   background: #fff;
-  left: 0;
+  left: -100%;
   top: 0;
   width: 100%;
   max-width: 375px;
   height: 100%;
+  display: block;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 .mobile-menu__close {
   display: -webkit-box;
@@ -145,7 +166,6 @@ header .logo {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
   background: #fff;
   z-index: 2;
 }
@@ -164,7 +184,7 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 21px 0;
+  padding: 21px 0 40px;
 }
 
 .right-sidebar {
@@ -216,18 +236,17 @@ header .logo {
 .menu-home-mobile li a {
   width: 38px;
   height: 38px;
-  fill: none;
-  stroke: #161616;
+  fill: #161616;
   padding: 5px;
   border-radius: 6px;
 }
 .menu-home-mobile li a.click {
   background: #F8F3FC;
-  stroke: #7C0DC6;
+  fill: #7C0DC6;
 }
 .menu-home-mobile .js-tab-trigger.active {
   background: #F8F3FC;
-  stroke: #7C0DC6;
+  fill: #7C0DC6;
 }
 
 .contacts-mobile {
@@ -287,8 +306,7 @@ header .logo {
   width: 32px;
   min-width: 32px;
   height: 32px;
-  fill: none;
-  stroke: #161616;
+  fill: #161616;
 }
 
 .contacts-line {

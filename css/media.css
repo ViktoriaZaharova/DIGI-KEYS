@@ -169,6 +169,11 @@
   .information-box {
     margin: 40px 0;
   }
+  .btn-toggle-sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 @media only screen and (max-width: 992px) {
   header {
@@ -292,12 +297,15 @@
     max-width: none;
     font-size: 30px;
   }
-  .news .col-30 {
-    width: 50%;
-    display: none;
+  .news .row-scroll {
+    overflow-x: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
-  .news .col-30:nth-child(-n+2) {
+  .news .col-30 {
     display: block;
+    width: 320px;
+    min-width: 320px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -310,8 +318,13 @@
   }
   h2 {
     font-size: 24px;
-    padding: 0 24px;
     margin: 0 0 24px;
+  }
+  .tabs__caption-product {
+    border-bottom: 2px solid #7C0DC6;
+  }
+  .tabs__caption-product::before {
+    display: none;
   }
   .title-wrapper {
     margin: 0 0 24px;
@@ -321,9 +334,6 @@
   }
   .title-wrapper .link {
     display: none;
-  }
-  .your-choice h2 span {
-    display: block;
   }
   .your-choice .col-30:nth-child(2) .chapter-card__img {
     max-width: 305px;
@@ -460,6 +470,16 @@
   header.fixed {
     padding: 22px 0;
   }
+  .breadcrumb {
+    font-weight: 400;
+  }
+  .breadcrumb li:first-child a {
+    color: #767676;
+    font-weight: 300;
+  }
+  .breadcrumb li a {
+    color: #161616;
+  }
   .logo {
     max-width: 120px;
   }
@@ -580,11 +600,6 @@
   .hot-prices .col-25:nth-child(-n+2) {
     display: block;
   }
-  .news .col-30 {
-    display: block;
-    width: 320px;
-    min-width: 320px;
-  }
   .row-scroll {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -614,11 +629,14 @@
   }
   .footer-box {
     width: 100%;
-    margin: 0 0 24px;
+    margin: 0 0 32px;
   }
   .footer-box:last-child {
     width: 100%;
     margin: 0;
+  }
+  .footer-box:nth-child(2) {
+    margin: 0 0 24px;
   }
   .footer-box__menu {
     display: none;
@@ -642,6 +660,9 @@
     height: 24px;
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
+  }
+  .footer-box__title-toggle {
+    color: #fff;
   }
   .page {
     padding: 93px 0 0;
@@ -759,11 +780,14 @@
   .attention-box {
     margin: 40px 0 60px;
   }
-  .panel_heading {
-    padding: 24px 13px;
-  }
   .panel_heading h3 {
     font-size: 18px;
+  }
+  .block_title {
+    padding: 24px 13px;
+  }
+  .block_hover {
+    padding: 0 13px 24px;
   }
   .articles-product .col-30 {
     width: 320px;

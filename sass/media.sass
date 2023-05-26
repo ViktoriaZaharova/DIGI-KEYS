@@ -132,6 +132,9 @@
 	.information-box
 		margin: 40px 0	
 
+	.btn-toggle-sidebar
+		display: flex			
+
 @media only screen and (max-width: 992px)
 	header
 		padding: 30px 0 24px
@@ -241,11 +244,13 @@
 			font-size: 30px
 
 	.news
+		.row-scroll
+			overflow-x: auto
+			flex-wrap: nowrap
 		.col-30
-			width: 50%
-			display: none
-			&:nth-child(-n+2)
-				display: block
+			display: block
+			width: 320px
+			min-width: 320px
 
 @media only screen and (max-width: 768px)
 	header
@@ -257,8 +262,13 @@
 
 	h2
 		font-size: 24px
-		padding: 0 24px
+		// padding: 0 24px
 		margin: 0 0 24px
+
+	.tabs__caption-product
+		border-bottom: 2px solid #7C0DC6
+		&::before
+			display: none
 
 	.title-wrapper
 		margin: 0 0 24px
@@ -268,9 +278,6 @@
 			display: none
 
 	.your-choice
-		h2
-			span
-				display: block
 		.col-30
 			&:nth-child(2)
 				.chapter-card
@@ -369,7 +376,9 @@
 			padding: 0
 
 	.article-card__title
-		font-weight: 600							
+		font-weight: 600		
+		
+					
 
 @media only screen and (max-width: 710px)
 	.home-slider .box-image
@@ -408,6 +417,16 @@
 			margin: 0 auto 0 0
 		&.fixed
 			padding: 22px 0
+
+	.breadcrumb
+		font-weight: 400
+		li
+			&:first-child
+				a
+					color: #767676
+					font-weight: 300
+			a
+				color: #161616	
 
 	.logo
 		max-width: 120px
@@ -514,11 +533,7 @@
 			&:nth-child(-n+2)
 				display: block
 
-	.news
-		.col-30
-			display: block
-			width: 320px
-			min-width: 320px
+	
 
 	.row-scroll
 		flex-wrap: nowrap
@@ -548,10 +563,12 @@
 
 	.footer-box
 		width: 100%
-		margin: 0 0 24px
+		margin: 0 0 32px
 		&:last-child
 			width: 100%
 			margin: 0
+		&:nth-child(2)
+			margin: 0 0 24px
 		&__menu
 			display: none
 			margin: 16px 0 0
@@ -567,6 +584,9 @@
 				width: 24px
 				height: 24px
 				filter: brightness(0) invert(1)
+
+	.footer-box__title-toggle
+		color: #fff			
 
 	.page
 		padding: 93px 0 0
@@ -670,9 +690,14 @@
 		margin: 40px 0 60px
 
 	.panel_heading
-		padding: 24px 13px
 		h3
 			font-size: 18px
+
+	.block_title	
+		padding: 24px 13px
+
+	.block_hover
+		padding: 0 13px 24px		
 
 	.articles-product
 		.col-30
@@ -685,6 +710,8 @@
 			&:nth-child(-n+2)
 				display: block
 															
+	
+		
 
 @media only screen and (max-width: 480px)
 	.product-card
