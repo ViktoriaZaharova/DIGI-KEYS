@@ -181,6 +181,7 @@
 
 	.slider-progress
 		left: 24px
+		width: 404px
 
 	.home-slider-nav__item
 		width: 404px
@@ -270,12 +271,7 @@
 		&::before
 			display: none
 
-	.title-wrapper
-		margin: 0 0 24px
-		h2
-			margin: 0
-		.link
-			display: none
+	
 
 	.your-choice
 		.col-30
@@ -439,6 +435,14 @@
 		padding: 10px 16px
 		font-size: 16px
 
+	.title-wrapper
+		flex-wrap: wrap
+		margin: 0 0 24px
+		h2
+			margin: 0
+		.link
+			display: none	
+
 	.home
 		.container
 			padding: 0 8px
@@ -483,6 +487,7 @@
 
 	.slider-progress
 		left: 12px
+		width: 335px
 
 	h2
 		font-size: 20px
@@ -516,8 +521,11 @@
 		font-size: 14px
 		margin: 0 0 24px
 		&__text
-			width: 100%
-			padding: 16px 0 0
+			width: calc(100% - 32px)
+			padding: 0 0 0 16px
+		&__icon
+			width: 32px
+			height: 32px	
 		h3
 			font-size: 18px
 
@@ -709,9 +717,14 @@
 			display: none
 			&:nth-child(-n+2)
 				display: block
-															
+				
+	.form
+		.btn
+			width: 100%														
 	
-		
+	.seo-section
+		h2
+			max-width: 480px
 
 @media only screen and (max-width: 480px)
 	.product-card
@@ -739,3 +752,6 @@
 	.home-slider-nav
 		&__item
 			width: 100%
+
+	.slider-progress
+		width: calc(100% - 24px)		

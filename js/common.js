@@ -98,13 +98,13 @@ $(document).ready(function ($) {
 // });
 
 // header fixed
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 100) {
-		$('header').addClass('fixed');
-	} else {
-		$('header').removeClass('fixed');
-	}
-});
+// $(window).scroll(function () {
+// 	if ($(this).scrollTop() > 100) {
+// 		$('header').addClass('fixed');
+// 	} else {
+// 		$('header').removeClass('fixed');
+// 	}
+// });
 
 // footer menu toggle
 $('.footer-box__title-toggle').on('click', function () {
@@ -149,6 +149,11 @@ function accordeon2() {
 }
 
 accordeon2();
+
+$('.overlay-bg').on('click', function () {
+	$('.btn-catalog').removeClass('open').siblings('.dropdown-menu').slideUp();
+	$(this).fadeOut();
+});
 
 // menu catalog
 $(function () {
@@ -266,4 +271,34 @@ $(".js-tab-trigger").click(function (e) {
 
 	$('.js-tab-content.active').removeClass('active'); // 3
 	content.addClass('active'); // 4
+});
+
+
+$(function () {
+	// hidden list > 5
+	$('.table-products tbody').each(function () {
+		if ($(this).find('tr').length > 12) {
+			$(this).find('tr').slice(12).hide();
+			$(this).parents('.tabs__content').append('<a href="#" class="text-center load-more-wrap link-accent">Показать ещё</a>');
+			$(this).parents('.table-products').addClass('hide');
+		}
+
+	});
+
+	// hidden list > 5
+
+	// show list all
+	$('.load-more-wrap').on('click', function (e) {
+		e.preventDefault();
+		$(this).parents('.tabs__content').find('.table-products tbody').find('tr:hidden').slideDown();
+		$(this).parents('.tabs__content').find('.table-products').removeClass('hide');
+		var onBlock = $(this).parents('.tabs__content').find('.table-products tbody').find('tr:hidden').length;
+		if (onBlock <= 0) {
+			$(this).hide();
+		}
+	});
+
+	// show list all
+
+
 });

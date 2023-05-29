@@ -138,6 +138,8 @@ button, .btn
 	font-size: 16px
 	border-radius: 6px
 	transition: 0.3s ease
+	position: relative
+	z-index: 1
 
 .btn-group
 	display: flex
@@ -170,9 +172,25 @@ button, .btn
 .btn-light-accent
 	background: #F8F3FC
 	color: $accent
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% + 1.3px + 1.3px)
+		height: calc(100% + 1.3px + 1.3px)
+		background: linear-gradient(#F8F3FC, #F8F3FC) padding-box, linear-gradient(277.29deg, rgba(124, 13, 198, 0) 0%, #7C0DC6 51.91%, rgba(124, 13, 198, 0) 100%) border-box
+		z-index: -1
+		border-radius: 6px
+		border: 1.3px solid transparent
+		opacity: 0
+		transition: .3s ease
 	&:hover
 		background: #F8F3FC
 		color: #5D0896
+		&::before
+			opacity: 1
 	&:focus
 		background: #F8F3FC
 		color: #7C0DC6
@@ -180,9 +198,26 @@ button, .btn
 .btn-border-accent
 	border: 1.3px solid #7C0DC6
 	color: #7C0DC6
+	
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% + 1.3px + 1.3px)
+		height: calc(100% + 1.3px + 1.3px)
+		background: linear-gradient(white, white) padding-box, linear-gradient(277.29deg, rgba(124, 13, 198, 0) 0%, #7C0DC6 51.91%, rgba(124, 13, 198, 0) 100%) border-box
+		z-index: -1
+		border-radius: 6px
+		border: 1.3px solid transparent
+		opacity: 0
+		transition: .3s ease
 	&:hover
-		color: #5D0896
-		border-color: #5D0896
+		color: #7C0DC6
+		border: 1.3px solid transparent
+		&::before
+			opacity: 1
 	&:focus
 		color: #7C0DC6
 		border-color: #7C0DC6
@@ -258,7 +293,7 @@ h3
 	margin: 0 0 40px
 	display: flex
 	align-items: center
-	flex-wrap: wrap
+	width: 100%
 	h2
 		margin: 0 auto 0 0
 		width: fit-content
@@ -276,7 +311,7 @@ h3
 	margin: 60px 0
 
 .mb-60
-	margin-bottom: 60px	
+	margin-bottom: 60px
 
 .mb-40
 	margin-bottom: 40px
@@ -396,14 +431,7 @@ a.color-accent
 				display: inline-block
 				margin: 0 8px
 		span
-			font-weight: 400		
-
-.title-wrapper
-	width: 100%
-	display: flex
-	align-items: center
-	flex-wrap: wrap
-	margin: 0 0 40px
+			font-weight: 400
 
 .sorting-wrapper
 	display: flex

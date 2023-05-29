@@ -177,6 +177,8 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border-radius: 6px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-group {
@@ -226,9 +228,29 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   background: #F8F3FC;
   color: #7C0DC6;
 }
+.btn-light-accent::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% + 1.3px + 1.3px);
+  height: calc(100% + 1.3px + 1.3px);
+  background: linear-gradient(#F8F3FC, #F8F3FC) padding-box, linear-gradient(277.29deg, rgba(124, 13, 198, 0) 0%, #7C0DC6 51.91%, rgba(124, 13, 198, 0) 100%) border-box;
+  z-index: -1;
+  border-radius: 6px;
+  border: 1.3px solid transparent;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
 .btn-light-accent:hover {
   background: #F8F3FC;
   color: #5D0896;
+}
+.btn-light-accent:hover::before {
+  opacity: 1;
 }
 .btn-light-accent:focus {
   background: #F8F3FC;
@@ -239,9 +261,29 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border: 1.3px solid #7C0DC6;
   color: #7C0DC6;
 }
+.btn-border-accent::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% + 1.3px + 1.3px);
+  height: calc(100% + 1.3px + 1.3px);
+  background: linear-gradient(white, white) padding-box, linear-gradient(277.29deg, rgba(124, 13, 198, 0) 0%, #7C0DC6 51.91%, rgba(124, 13, 198, 0) 100%) border-box;
+  z-index: -1;
+  border-radius: 6px;
+  border: 1.3px solid transparent;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
 .btn-border-accent:hover {
-  color: #5D0896;
-  border-color: #5D0896;
+  color: #7C0DC6;
+  border: 1.3px solid transparent;
+}
+.btn-border-accent:hover::before {
+  opacity: 1;
 }
 .btn-border-accent:focus {
   color: #7C0DC6;
@@ -346,8 +388,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100%;
 }
 .title-wrapper h2 {
   margin: 0 auto 0 0;
@@ -546,19 +587,6 @@ a.color-accent:hover {
 }
 .breadcrumb li span {
   font-weight: 400;
-}
-
-.title-wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 0 40px;
 }
 
 .sorting-wrapper {
