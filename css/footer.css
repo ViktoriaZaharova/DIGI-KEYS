@@ -146,6 +146,11 @@ footer .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+.check-image img {
+  width: 100%;
 }
 
 #thanksModal .modal__wrapper, #errorModal .modal__wrapper {

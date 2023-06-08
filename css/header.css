@@ -9,6 +9,7 @@ header {
   background: #fff;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  border-bottom: 1px solid #F8F3FC;
 }
 header .container {
   -webkit-box-align: center;
@@ -20,6 +21,7 @@ header .logo {
 }
 header.fixed {
   position: fixed;
+  padding: 17.5px 0;
 }
 
 .nav-menu {

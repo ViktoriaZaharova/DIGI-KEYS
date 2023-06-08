@@ -98,13 +98,13 @@ $(document).ready(function ($) {
 // });
 
 // header fixed
-// $(window).scroll(function () {
-// 	if ($(this).scrollTop() > 100) {
-// 		$('header').addClass('fixed');
-// 	} else {
-// 		$('header').removeClass('fixed');
-// 	}
-// });
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 100) {
+		$('header').addClass('fixed');
+	} else {
+		$('header').removeClass('fixed');
+	}
+});
 
 // footer menu toggle
 $('.footer-box__title-toggle').on('click', function () {

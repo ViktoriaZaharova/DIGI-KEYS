@@ -81,6 +81,9 @@
 	display: flex
 	align-items: flex-start
 	flex-wrap: wrap
+	li
+		color: #7C0DC6
+		cursor: pointer
 
 .tabs__caption-home
 	display: flex
@@ -106,6 +109,11 @@
 		margin: 0 0 2px
 
 //your-choice
+.your-choice
+	.chapter-card
+		border: 1px solid #F8F3FC
+		background: transparent
+
 .chapter-card
 	width: 100%
 	height: 100%
@@ -158,8 +166,6 @@
 			color: $hover
 		.link-icon
 			stroke: $hover
-		// .chapter-card__img
-		// 	transform: scale(1.09)
 
 .link
 	text-align: right
@@ -183,7 +189,6 @@
 		top: 120px
 		position: sticky
 		max-width: 460px
-		font-size: 46px
 
 .advantages-list
 	margin: 0 0 0 auto
@@ -508,15 +513,14 @@
 
 // product page
 .product-image
-	background: #F8F8F8
-	border-radius: 8px
 	@include d-flex
-	padding: 65px 32px
 	height: 530px
 	max-width: 425px
 	width: 100%
 	position: sticky
 	top: 120px
+	border: 1px solid #F8F3FC
+	border-radius: 8px
 	img
 		max-height: 100%
 	.promo-label-list
@@ -655,6 +659,27 @@
 		.product-info-box__footer
 			.list-characteristics
 				display: none
+	.list-characteristics
+		li
+			position: relative
+			background: #fff
+			z-index: 1
+			p, span, a
+				position: relative
+				z-index: 1
+				background: #fff
+			p
+				padding: 0 5px 0 0
+			span, a
+				padding: 0 0 0 5px		
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				border-bottom: 1px dashed #DADADA
+				bottom: 2px
+				left: 0		
 
 .rating
 	display: flex
@@ -695,6 +720,9 @@
 
 .difference
 	margin: 0 0 0 24px
+	color: $accent
+	span
+		border-bottom: 1.3px solid #7C0DC6
 
 .logo-partner
 	margin: 0 0 8px
@@ -709,34 +737,26 @@
 	padding: 32px
 	line-height: 150%
 	.box-text
-		width: calc(100% - 175px)
+		width: calc(100% - 235px)
 		padding: 0 24px 0 0
+		margin: 0 auto 0 0
 
 .tabs__caption-product
 	width: 100%
-	margin: 0 0 32px
+	margin: 0 0 24px
 	position: relative
 	line-height: 140%
 	font-size: 20px
-	&::before
-		content: ''
-		position: absolute
-		left: 0
-		bottom: 0
-		width: calc(100% - 4px)
-		height: 2px
-		border-radius: 10px
-		background: #7C0DC6
+	
 	li
+		border: none
 		padding: 10px 24px
 		cursor: pointer
 		transition: .3s ease
-		border-radius: 6px 6px 0 0
-		&:first-child
-			border-radius: 6px 6px 0px 6px
+		border-radius: 6px
 		&.active
-			background: $accent
-			color: #fff
+			background: #F8F3FC
+			color: $accent
 
 .table
 	width: 100%
@@ -745,6 +765,7 @@
 	border-radius: 10px
 
 .table-products-title
+	border: none
 	thead
 		th
 			width: 50%
@@ -794,12 +815,27 @@
 
 .attention-box
 	margin: 64px 0 0
+	border: 1.3px solid #EB5757
+	border-radius: 8px
+	align-items: flex-start
 	h3
 		color: #EB5757
 		margin: 0 0 16px
 	.box-text
 		padding: 0
 		width: 100%
+	&__icon
+		@include d-flex
+		width: 80px
+		height: 80px
+		min-width: 80px
+		border-radius: 8px
+		background: #EB5757
+		padding: 8px
+	&__text
+		width: calc(100% - 80px)
+		padding: 0 0 0 28px	
+
 
 .panel_heading
 	width: 100%
@@ -1012,26 +1048,24 @@
 	h3
 		margin: 0 0 24px
 
-.tabs__caption
-	width: 100%
-	display: flex
-	align-items: flex-start
-	flex-wrap: wrap
-	li
-		margin: 0 16px 16px 0
-		border: 1.3px solid #7C0DC6
-		border-radius: 6px
-		padding: 11px 24px
-		color: #7C0DC6
-		&.active
-			color: #7C0DC6
-			background: #F8F3FC
-			border-color: transparent
-		&:last-child
-			margin: 0 0 16px
+	.tabs__caption
+		width: 100%
 
-.tabs__content
-	margin: 8px 0 0
+		li
+			margin: 0 16px 16px 0
+			border: 1.3px solid #7C0DC6
+			border-radius: 6px
+			padding: 11px 24px
+			color: #7C0DC6
+			&.active
+				color: #7C0DC6
+				background: #F8F3FC
+				border-color: transparent
+			&:last-child
+				margin: 0 0 16px
+
+	.tabs__content
+		margin: 8px 0 0
 
 // news page
 .page-news
