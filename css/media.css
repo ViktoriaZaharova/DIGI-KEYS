@@ -357,6 +357,7 @@
   .chapter-card {
     padding: 32px 16px;
     min-height: 250px;
+    overflow: hidden;
   }
   .chapter-card__title {
     margin: 0 0 60px;

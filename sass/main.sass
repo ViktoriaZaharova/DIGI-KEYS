@@ -110,13 +110,29 @@
 	width: 100%
 	height: 100%
 	position: relative
-	overflow: hidden
+	// overflow: hidden
 	background: #F8F8F8
 	border-radius: 8px
 	padding: 45px 70px 49px 28px
 	display: flex
 	flex-direction: column
 	z-index: 1
+	border: 1.3px solid transparent
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% + 1.3px + 1.3px)
+		height: calc(100% + 1.3px + 1.3px)
+		background: linear-gradient(#fff, #fff) padding-box, linear-gradient(277.29deg, rgba(124, 13, 198, 0) 0%, #7C0DC6 51.91%, rgba(124, 13, 198, 0) 100%) border-box
+		z-index: -1
+		border-radius: 6px
+		border: 1.3px solid transparent
+		opacity: 0
+		transition: .3s ease
+
 	.link
 		margin: auto 0 0
 	&__img
@@ -133,14 +149,17 @@
 		color: #161616
 		margin: 0 0 106px
 	&:hover
+		background: #fff
+		&::before
+			opacity: 1
 		.chapter-card__title
 			color: $accent
 		.link
 			color: $hover
 		.link-icon
 			stroke: $hover
-		.chapter-card__img
-			transform: scale(1.09)
+		// .chapter-card__img
+		// 	transform: scale(1.09)
 
 .link
 	text-align: right
@@ -533,7 +552,7 @@
 	align-items: center
 	img
 		margin: 0 6px 0 0
-		width: 16px
+		width: 24px
 
 .delivery-instant
 	justify-content: center
@@ -1176,9 +1195,9 @@
 		&:last-child
 			margin: 0
 		.list-category-news
-			margin: 0 16px 0 auto	
+			margin: 0 16px 0 auto
 		.list-category-news, .news-box__report
-			width: fit-content	
+			width: fit-content
 		.news-box__report
 			justify-content: flex-start
 			div
@@ -1189,17 +1208,17 @@
 					display: inline-block
 					border-radius: 50%
 					margin: 0 8px
-					background: #000	
+					background: #000
 					width: 4px
 					height: 4px
 				&:last-child
 					&:after
-						display: none	
+						display: none
 		.link-share
 			margin: 0
 	.box-text
 		ol, ul
-			margin: 10px 0		
+			margin: 10px 0
 
 .article-image
 	width: 100%
@@ -1209,7 +1228,7 @@
 		width: 100%
 		border-radius: 10px
 	&__name
-		margin: 16px auto 0				
+		margin: 16px auto 0
 
 .comparison
 	margin: 32px 0
@@ -1266,10 +1285,10 @@
 			fill: #D9D9D9
 
 .article-evaluation, .schare-box
-	display: flex 
+	display: flex
 	align-items: center
 	flex-wrap: wrap
-	font-size: 12px 
+	font-size: 12px
 	font-weight: 500
 	p
 		margin: 0 24px 0 0
@@ -1283,7 +1302,7 @@
 		display: flex
 		align-items: center
 		color: #363636
-		font-size: 12px 
+		font-size: 12px
 		font-weight: 300
 		&:hover
 			color: $accent
@@ -1297,7 +1316,4 @@
 			height: 4px
 		&:last-child
 			&:after
-				display: none	
-
-
-
+				display: none
