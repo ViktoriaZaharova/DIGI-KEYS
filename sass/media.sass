@@ -1,6 +1,10 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1820px)
+	.list-filter
+		margin: 0 0 0 auto 
+
 @media only screen and (max-width: 1200px)
 	header .logo
 		margin: 0 30px 0 0
@@ -81,13 +85,13 @@
 		&:first-child
 			align-items: flex-start
 		.link-share
-			display: none	
+			display: none
 		&__head
 			width: fit-content
 		.rating
 			margin: 0
 		.promo-label-list
-			display: none		
+			display: none
 		h1
 			max-width: 410px
 			order: -1
@@ -96,16 +100,15 @@
 			max-width: 526px
 			width: 100%
 			.btn
-				width: calc(50% - 4px)	
+				width: calc(50% - 4px)
 		&__footer
 			display: flex
 			align-items: center
 			justify-content: space-between
 			flex-wrap: wrap
-				
 
 	.rating-value
-		margin: 0 0 0 16px		
+		margin: 0 0 0 16px
 
 	.checkout-box
 		border: none
@@ -122,7 +125,7 @@
 			width: 100%
 		.list-characteristics
 			margin: 0 0 24px
-			width: calc(50% - 4px)	
+			width: calc(50% - 4px)
 		label
 			width: calc(50% - 4px)
 
@@ -130,10 +133,10 @@
 		margin: 24px 0 0
 
 	.information-box
-		margin: 40px 0	
+		margin: 40px 0
 
 	.btn-toggle-sidebar
-		display: flex			
+		display: flex
 
 @media only screen and (max-width: 992px)
 	header
@@ -253,6 +256,18 @@
 			width: 320px
 			min-width: 320px
 
+	.requisites
+		max-width: 328px
+		margin: 116px 0 0
+
+	.contats-wrapper
+		margin: 40px 0
+		padding: 40px 24px 24px
+		&__content
+			width: calc(100% - 328px)
+		.box-text
+			margin: 8px 0 40px
+
 @media only screen and (max-width: 768px)
 	header
 		position: fixed
@@ -270,8 +285,6 @@
 		border-bottom: 2px solid #7C0DC6
 		&::before
 			display: none
-
-	
 
 	.your-choice
 		.col-30
@@ -346,13 +359,13 @@
 	label
 		margin: 0 0 24px
 
-	.information-box 
-		.box-text	
+	.information-box
+		.box-text
 			width: 100%
 			margin: 0 0 24px
 			padding: 0
 
-	.product-info-box 
+	.product-info-box
 		.btn-group
 			max-width: none
 			width: calc(100% - 132px - 24px)
@@ -372,9 +385,61 @@
 			padding: 0
 
 	.article-card__title
-		font-weight: 600		
-		
-					
+		font-weight: 600
+
+	.page-error
+		&-wrapper__image
+			max-width: 690px
+
+	.table-sales
+		margin: 40px 0
+
+	.about-products
+		margin: 40px 0 28px
+		.box-text
+			margin: 8px 0 24px
+		.col-30
+			width: 50%
+		.chapter-card
+			.link
+				display: flex
+
+	.tabs__caption
+		li
+			margin: 0 6px 10px 0
+			&:last-child
+				margin: 0 0 10px
+
+	.tabs__content
+		margin: 28px 0 0
+
+	.page-news
+		h1
+			margin: 0 0 16px
+		.title-wrapper
+			flex-wrap: wrap
+			&__text
+				width: 100%
+			.box-text
+				display: none
+
+	.list-filter
+		overflow-x: auto
+		flex-wrap: nowrap
+		white-space: nowrap
+		margin: 0 0 20px
+		padding: 0 0 12px			
+
+	.list-filter-link.active
+		background: #F8F3FC
+		color: #7C0DC6
+
+	.news-row
+		.col-30, .col-25
+			width: 50%	
+
+	.btn-load
+		margin: 20px auto 0					
 
 @media only screen and (max-width: 710px)
 	.home-slider .box-image
@@ -387,23 +452,45 @@
 		h2
 			margin: 0 0 24px
 
-	.product-info-box 
+	.product-info-box
 		h1
 			max-width: none
-			width: 100%		
+			width: 100%
 			margin: 0 0 16px
 		&:first-child
 			.product-info-box__footer
 				margin: 0
-		
-	.tabs__caption-product 
+
+	.tabs__caption-product
 		flex-wrap: nowrap
-		overflow-x: auto 
-		li		
+		overflow-x: auto
+		li
 			white-space: nowrap
 
-	
+	.requisites
+		max-width: none
+		width: 100%
+		margin: 8px 0 0
+		padding: 16px 24px
 
+	.contats-wrapper
+		padding: 40px 13px
+		&__content
+			width: 100%
+		.box-text
+			margin: 8px 0 32px
+
+	.article-evaluation
+		width: 100%
+		margin: 16px 0 0
+
+	.page-acticle-line
+		.news-box__report
+			width: 100%
+			order: 1
+			margin: 16px 0 0
+		.list-category-news
+			margin: 0 auto 0 0				
 
 @media only screen and (max-width: 576px)
 	header
@@ -422,7 +509,7 @@
 					color: #767676
 					font-weight: 300
 			a
-				color: #161616	
+				color: #161616
 
 	.logo
 		max-width: 120px
@@ -441,14 +528,14 @@
 		h2
 			margin: 0
 		.link
-			display: none	
+			display: none
 
 	.home
 		.container
 			padding: 0 8px
 		.btn
 			height: 38px
-			font-size: 16px	
+			font-size: 16px
 
 	.home-slider
 		&__item
@@ -525,7 +612,7 @@
 			padding: 0 0 0 16px
 		&__icon
 			width: 32px
-			height: 32px	
+			height: 32px
 		h3
 			font-size: 18px
 
@@ -540,8 +627,6 @@
 				display: none
 			&:nth-child(-n+2)
 				display: block
-
-	
 
 	.row-scroll
 		flex-wrap: nowrap
@@ -568,6 +653,7 @@
 
 	footer
 		padding: 40px 0
+		margin: 88px 0 0
 
 	.footer-box
 		width: 100%
@@ -594,7 +680,7 @@
 				filter: brightness(0) invert(1)
 
 	.footer-box__title-toggle
-		color: #fff			
+		color: #fff
 
 	.page
 		padding: 93px 0 0
@@ -629,13 +715,14 @@
 		h3
 			font-size: 20px
 
-	#thanksModal .modal__wrapper
-		padding: 50px 17px 40px		
+	#thanksModal, #errorModal
+		.modal__wrapper
+			padding: 50px 17px 40px
 
 	.page-product .nav-breadcrumb .link-share
-		display: none	
+		display: none
 
-	.product-info-box 
+	.product-info-box
 		&:first-child
 			.product-info-box__footer
 				order: -2
@@ -647,25 +734,25 @@
 					span
 						margin: 0 0 0 8px
 			&__head
-				margin: 0	
+				margin: 0
 		.btn-group
-			width: 100%		
+			width: 100%
 			.btn
 				height: 44px
-				font-size: 16px		
+				font-size: 16px
 
 	.product-image
 		height: 401px
-		padding: 50px 25px	
+		padding: 50px 25px
 
 	.delivery-instant, .list-payment
-		display: none		
+		display: none
 
 	.difference
 		width: 100%
-		margin: 16px 0 0	
+		margin: 16px 0 0
 
-	.checkout-box 
+	.checkout-box
 		h3
 			display: none
 		.list-characteristics
@@ -681,7 +768,7 @@
 			font-size: 16px
 
 	.promo-link
-		margin: 0 auto	
+		margin: 0 auto
 
 	.list-characteristics li
 		margin: 0 0 8px
@@ -692,7 +779,7 @@
 		margin: 25px 0 50px
 		padding: 24px 16px
 		.box-text
-			margin: 0 0 16px	
+			margin: 0 0 16px
 
 	.attention-box
 		margin: 40px 0 60px
@@ -701,15 +788,15 @@
 		h3
 			font-size: 18px
 
-	.block_title	
+	.block_title
 		padding: 24px 13px
 
 	.block_hover
-		padding: 0 13px 24px		
+		padding: 0 13px 24px
 
 	.articles-product
 		.col-30
-			width: 320px	
+			width: 320px
 			min-width: 320px
 
 	.recommended
@@ -717,14 +804,54 @@
 			display: none
 			&:nth-child(-n+2)
 				display: block
-				
+
 	.form
 		.btn
-			width: 100%														
-	
+			width: 100%
+
 	.seo-section
 		h2
 			max-width: 480px
+
+	.page-error
+		.box-text
+			margin: 48px auto 24px
+		&-wrapper__image
+			max-width: 335px
+
+	.table-sales
+		margin: 40px 0
+		th, td
+			padding: 12px
+			&:first-child
+				width: 50%
+
+	.tabs__caption 
+		font-size: 14px
+		li
+			padding: 11px 15px			
+
+	.tabs__content
+		margin: 10px 0 0
+
+	.about-products .col-30
+		width: 100%
+
+	.news-box-max 
+		.news-box__body		
+			flex-wrap: wrap
+		.list-category-news
+			flex-wrap: wrap
+			margin: 24px 0 0	
+		
+	.news-box__title
+		width: 100%	
+
+	.news-row
+		.mb-40
+			margin-bottom: 32px
+		.col-30, .col-25
+			width: 100%		
 
 @media only screen and (max-width: 480px)
 	.product-card
@@ -754,4 +881,4 @@
 			width: 100%
 
 	.slider-progress
-		width: calc(100% - 24px)		
+		width: calc(100% - 24px)

@@ -1,5 +1,10 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1820px) {
+  .list-filter {
+    margin: 0 0 0 auto;
+  }
+}
 @media only screen and (max-width: 1200px) {
   header .logo {
     margin: 0 30px 0 0;
@@ -308,6 +313,20 @@
     width: 320px;
     min-width: 320px;
   }
+  .requisites {
+    max-width: 328px;
+    margin: 116px 0 0;
+  }
+  .contats-wrapper {
+    margin: 40px 0;
+    padding: 40px 24px 24px;
+  }
+  .contats-wrapper__content {
+    width: calc(100% - 328px);
+  }
+  .contats-wrapper .box-text {
+    margin: 8px 0 40px;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -422,6 +441,66 @@
   .article-card__title {
     font-weight: 600;
   }
+  .page-error-wrapper__image {
+    max-width: 690px;
+  }
+  .table-sales {
+    margin: 40px 0;
+  }
+  .about-products {
+    margin: 40px 0 28px;
+  }
+  .about-products .box-text {
+    margin: 8px 0 24px;
+  }
+  .about-products .col-30 {
+    width: 50%;
+  }
+  .about-products .chapter-card .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabs__caption li {
+    margin: 0 6px 10px 0;
+  }
+  .tabs__caption li:last-child {
+    margin: 0 0 10px;
+  }
+  .tabs__content {
+    margin: 28px 0 0;
+  }
+  .page-news h1 {
+    margin: 0 0 16px;
+  }
+  .page-news .title-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .page-news .title-wrapper__text {
+    width: 100%;
+  }
+  .page-news .title-wrapper .box-text {
+    display: none;
+  }
+  .list-filter {
+    overflow-x: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    white-space: nowrap;
+    margin: 0 0 20px;
+    padding: 0 0 12px;
+  }
+  .list-filter-link.active {
+    background: #F8F3FC;
+    color: #7C0DC6;
+  }
+  .news-row .col-30, .news-row .col-25 {
+    width: 50%;
+  }
+  .btn-load {
+    margin: 20px auto 0;
+  }
 }
 @media only screen and (max-width: 710px) {
   .home-slider .box-image {
@@ -448,6 +527,35 @@
   }
   .tabs__caption-product li {
     white-space: nowrap;
+  }
+  .requisites {
+    max-width: none;
+    width: 100%;
+    margin: 8px 0 0;
+    padding: 16px 24px;
+  }
+  .contats-wrapper {
+    padding: 40px 13px;
+  }
+  .contats-wrapper__content {
+    width: 100%;
+  }
+  .contats-wrapper .box-text {
+    margin: 8px 0 32px;
+  }
+  .article-evaluation {
+    width: 100%;
+    margin: 16px 0 0;
+  }
+  .page-acticle-line .news-box__report {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 16px 0 0;
+  }
+  .page-acticle-line .list-category-news {
+    margin: 0 auto 0 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -634,6 +742,7 @@
   }
   footer {
     padding: 40px 0;
+    margin: 88px 0 0;
   }
   .footer-box {
     width: 100%;
@@ -708,7 +817,7 @@
   .modal__div h3 {
     font-size: 20px;
   }
-  #thanksModal .modal__wrapper {
+  #thanksModal .modal__wrapper, #errorModal .modal__wrapper {
     padding: 50px 17px 40px;
   }
   .page-product .nav-breadcrumb .link-share {
@@ -812,6 +921,51 @@
   }
   .seo-section h2 {
     max-width: 480px;
+  }
+  .page-error .box-text {
+    margin: 48px auto 24px;
+  }
+  .page-error-wrapper__image {
+    max-width: 335px;
+  }
+  .table-sales {
+    margin: 40px 0;
+  }
+  .table-sales th, .table-sales td {
+    padding: 12px;
+  }
+  .table-sales th:first-child, .table-sales td:first-child {
+    width: 50%;
+  }
+  .tabs__caption {
+    font-size: 14px;
+  }
+  .tabs__caption li {
+    padding: 11px 15px;
+  }
+  .tabs__content {
+    margin: 10px 0 0;
+  }
+  .about-products .col-30 {
+    width: 100%;
+  }
+  .news-box-max .news-box__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .news-box-max .list-category-news {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 24px 0 0;
+  }
+  .news-box__title {
+    width: 100%;
+  }
+  .news-row .mb-40 {
+    margin-bottom: 32px;
+  }
+  .news-row .col-30, .news-row .col-25 {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {

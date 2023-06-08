@@ -472,6 +472,9 @@
 		margin: 0 -12px
 	.col-50, .col-100
 		padding: 0 12px
+	.box-text
+		margin: 8px 0 24px
+		font-size: 14px
 
 .input-text
 	position: absolute
@@ -687,7 +690,7 @@
 	padding: 32px
 	line-height: 150%
 	.box-text
-		width: calc(100% - 167px)
+		width: calc(100% - 175px)
 		padding: 0 24px 0 0
 
 .tabs__caption-product
@@ -719,6 +722,8 @@
 .table
 	width: 100%
 	text-align: left
+	border: 1.3px solid #F8F8F8
+	border-radius: 10px
 
 .table-products-title
 	thead
@@ -739,7 +744,7 @@
 		height: 140px
 	&.hide
 		&::before
-			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 82.12%)	
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 82.12%)
 	thead
 		th
 			padding: 12px 24px 8px
@@ -756,7 +761,7 @@
 		.tr-answer
 			td
 				padding: 0 24px 12px
-					
+
 	td.table-products__subtitle
 		font-size: 14px
 		color: #767676
@@ -813,6 +818,12 @@
 	color: #363636
 	line-height: 150%
 	padding: 0 32px 32px
+	.box-text
+		max-width: 878px
+
+.faq
+	.block_hover
+		margin: -16px 0 0
 
 .article-card
 	width: 100%
@@ -883,3 +894,410 @@
 	.nav-breadcrumb
 		.link-share
 			display: none
+
+.page-politics
+	h1
+		margin: 0 0 16px
+
+.page-error
+
+	.box-text
+		max-width: 315px
+		margin: 40px auto
+
+.page-error-wrapper
+	width: 100%
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__img
+		margin: 0 auto
+		@include d-flex
+
+.table-sales
+	margin: 24px 0
+	border-radius: 10px
+	overflow: hidden
+	thead
+		background: #F8F8F8
+
+	th
+		padding: 12px 24px
+		&:first-child
+			width: 45%
+
+	td
+		padding: 12px 24px
+		&:first-child
+			width: 45%
+	tr
+		&:nth-child(even)
+			background: #F8F8F8
+
+.contats-wrapper
+	margin: 48px 0 40px
+	width: 100%
+	padding: 48px 24px
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	background: #F8F8F8
+	border-radius: 8px
+	&__content
+		width: calc(100% - 437px)
+		.box-text
+			margin: 8px 0 48px
+			font-size: 14px
+			max-width: 380px
+
+.requisites
+	border-radius: 6px
+	background: #fff
+	max-width: 437px
+	width: 100%
+	padding: 16px 24px
+	line-height: 150%
+
+.contacts-box
+	font-size: 14px
+	margin: 0 0 24px
+	a
+		color: #000
+		font-weight: 600
+		margin: 4px 0 0
+		&:hover
+			color: $accent
+
+// about-products
+.about-products
+	margin: 48px 0 65px
+	.box-text
+		margin: 8px 0 32px
+		max-width: 650px
+	.chapter-card
+		&__img
+			max-width: 170px
+	.link
+		display: none
+	&__title
+		margin: 0 0 78px
+
+.individual-approach
+	h2
+		margin: 0 0 24px
+
+.difference-about
+	margin: 46px 0 0
+	width: 100%
+	h3
+		margin: 0 0 24px
+
+.tabs__caption
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 16px 16px 0
+		border: 1.3px solid #7C0DC6
+		border-radius: 6px
+		padding: 11px 24px
+		color: #7C0DC6
+		&.active
+			color: #7C0DC6
+			background: #F8F3FC
+			border-color: transparent
+		&:last-child
+			margin: 0 0 16px
+
+.tabs__content
+	margin: 8px 0 0
+
+// news page
+.page-news
+	h1
+		margin: 0 0 16px
+	.box-text
+		max-width: 475px
+	.title-wrapper
+		margin: 0 0 8px
+
+.list-filter
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 0 -145px 0 auto
+	li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0
+	&-link
+		padding: 14px 24px
+		border-radius: 6px
+		color: $accent
+		&.active
+			background: $accent
+			color: #fff
+
+.news-row
+	align-items: stretch
+
+.news-box
+	width: 100%
+	height: 100%
+	border-radius: 8px
+	&__image
+		position: relative
+		z-index: 1
+		width: 100%
+		height: 340px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 8px
+		&-footer
+			width: 100%
+			padding: 16px
+			position: absolute
+			left: 0
+			bottom: 0
+	&__body
+		padding: 24px 0 0 0
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+	&__info
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		background: #fff
+		border-radius: 6px
+		padding: 8px 14px
+		color: #161616
+		font-size: 12px
+		font-weight: 300
+		width: fit-content
+		span
+			display: flex
+			align-items: center
+			&:after
+				content: ''
+				display: inline-block
+				margin: 0 8px
+				background: #767676
+				width: 4px
+				height: 4px
+				border-radius: 50%
+			&:last-child
+				&:after
+					display: none
+	&__title
+		font-size: 20px
+		font-weight: 500
+		color: #161616
+		&:hover
+			color: $accent
+	&__view
+		margin: 24px 0 0
+		color: #161616
+		font-size: 12px
+		font-weight: 300
+	&__footer
+		margin: auto 0 0
+	&__report
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: space-between
+		font-size: 12px
+		font-weight: 300
+
+.news-box-max
+	.list-category-news
+		margin: 0 0 0 auto
+		width: fit-content
+	.news-box__body
+		flex-wrap: nowrap
+	.list-category-news
+		flex-wrap: nowrap
+		white-space: nowrap
+
+.news-box-min
+	padding: 24px 16px
+	border-radius: 10px
+	border: 1px solid #F8F3FC
+	display: flex
+	flex-direction: column
+	height: 340px
+	.news-box__body
+		padding: 0
+	.list-category-news
+		margin: 0 0 24px
+		font-size: 12px
+
+.btn-load
+	margin: 0 auto
+
+.list-category-news
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 14px
+	margin: 0 0 16px
+	width: 100%
+	li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0
+		a
+			text-decoration: underline
+			color: $accent
+			&:hover
+				color: $hover
+
+// page-acticle
+.page-acticle
+	h1
+		width: 100%
+		margin: 0 0 16px
+	&-line
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		border-top: 1.3px solid #F8F3FC
+		border-bottom: 1.3px solid #F8F3FC
+		margin: 0 0 32px
+		padding: 16px 0
+		&:last-child
+			margin: 0
+		.list-category-news
+			margin: 0 16px 0 auto	
+		.list-category-news, .news-box__report
+			width: fit-content	
+		.news-box__report
+			justify-content: flex-start
+			div
+				display: flex
+				align-items: center
+				&:after
+					content: ''
+					display: inline-block
+					border-radius: 50%
+					margin: 0 8px
+					background: #000	
+					width: 4px
+					height: 4px
+				&:last-child
+					&:after
+						display: none	
+		.link-share
+			margin: 0
+	.box-text
+		ol, ul
+			margin: 10px 0		
+
+.article-image
+	width: 100%
+	margin: 32px 0
+	text-align: center
+	img
+		width: 100%
+		border-radius: 10px
+	&__name
+		margin: 16px auto 0				
+
+.comparison
+	margin: 32px 0
+	h3
+		margin: 0 0 16px
+
+.copy-line
+	width: 100%
+	margin: 32px 0
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	background: #F8F8F8
+	border-radius: 8px
+	padding: 16px
+	font-size: 12px
+
+.link-copy
+	@include d-flex
+	width: 24px
+	height: 24px
+	min-width: 24px
+	fill: none
+	stroke: #000
+	margin: 0 0 0 auto
+	&:hover
+		stroke: $accent
+
+.product-line
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	border: 1px solid #F8F3FC
+	border-radius: 8px
+	margin: 20px 0 0
+	padding: 18px 16px
+	&__icon
+		@include d-flex
+		width: 40px
+		height: 40px
+		min-width: 40px
+		margin: 0 16px 0 0
+	&__name
+		color: #363636
+		margin: 0 auto 0 0
+		&:hover
+			color: $accent
+
+.page-acticle-line-footer
+	margin: 40px 0 100px
+	.list-rating
+		a
+			fill: #D9D9D9
+
+.article-evaluation, .schare-box
+	display: flex 
+	align-items: center
+	flex-wrap: wrap
+	font-size: 12px 
+	font-weight: 500
+	p
+		margin: 0 24px 0 0
+
+.schare-box
+	margin: 0 auto 0 0
+	&-links
+		display: flex
+		align-items: center
+	&__link
+		display: flex
+		align-items: center
+		color: #363636
+		font-size: 12px 
+		font-weight: 300
+		&:hover
+			color: $accent
+		&:after
+			content: ''
+			display: inline-block
+			margin: 0 8px
+			background: #363636
+			border-radius: 50%
+			width: 4px
+			height: 4px
+		&:last-child
+			&:after
+				display: none	
+
+
+

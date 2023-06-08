@@ -148,7 +148,7 @@ footer .container {
           justify-content: center;
 }
 
-#thanksModal .modal__wrapper {
+#thanksModal .modal__wrapper, #errorModal .modal__wrapper {
   padding: 70px 28px 44px;
 }
 

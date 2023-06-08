@@ -22,10 +22,8 @@
 </head>
 
 <body>
-
 	<div class="wrapper">
 		<div class="content">
-
 			<div class="overlay-bg"></div>
 			<div class="mobile-menu">
 				<div class="mobile-menu__head">
@@ -402,99 +400,23 @@
 				</div>
 			</header>
 
-			<section class="page page-information">
+			<div class="page page-information page-error">
 				<div class="container">
-					<nav class="nav-breadcrumb">
-						<ul class="breadcrumb my-ul">
-							<li><a href="index.html">Главная</a></li>
-							<li><span>Для юр. лиц</span></li>
-						</ul>
-					</nav>
-					<div class="w-100">
 
-						<div class="row">
-
-							<div class="col-75">
-								<h1>Информация для юридических лиц</h1>
-
-								<div class="box-text">
-									<p>Уже не первый год мы помогаем нашим клиентам по всей стране спокойно заниматься своими делами, не
-										отвлекаясь на
-										технические вопросы, связанные с работой и безопасностью компьютеров. Ведь техника, укомплектованная
-										оригинальной
-										продукцией работает как швейцарские часы.</p>
-									<p>Мы свяжемся с вами в ближайшее время и предоставим информацию по условиям приобретения электронных
-										ключей.</p>
-								</div>
-
-								<div class="banner d-tablet">
-									<h3>Нужна помощь?</h3>
-									<div class="box-text">
-										<p>Обратитесь к нашим специалистами они проконсультируют по любому вопросу</p>
-									</div>
-
-									<a href="#" class="btn btn-accent">Написать</a>
-									<div class="banner-img"><img src="img/banner-img.png" alt=""></div>
-								</div>
-
-								<form method="post" class="form">
-									<div class="row">
-										<div class="col-50">
-											<label>
-												<span class="input-text">Имя</span>
-												<input type="text" name="name">
-											</label>
-										</div>
-										<div class="col-50">
-											<label>
-												<span class="input-text">ИНН организации*</span>
-												<input type="text" name="inn">
-											</label>
-										</div>
-										<div class="col-50">
-											<label>
-												<span class="input-text">E-mail</span>
-												<input type="text" name="mail">
-											</label>
-										</div>
-										<div class="col-50">
-											<label>
-												<span class="input-text">Телефон</span>
-												<input type="text" name="phone" required>
-											</label>
-										</div>
-										<div class="col-100">
-											<label>
-												<span class="input-text">Ваш запрос</span>
-												<textarea name="message"></textarea>
-											</label>
-										</div>
-
-										<div class="col-100">
-											<button type="submit" class="btn btn-light-accent">Отправить</button>
-										</div>
-									</div>
-								</form>
-
-							</div>
-
-							<div class="col-25 d-pc">
-								<div class="banner">
-									<h3>Нужна помощь?</h3>
-									<div class="box-text">
-										<p>Обратитесь к нашим специалистами они проконсультируют по любому вопросу</p>
-									</div>
-
-									<a href="#" class="btn btn-accent">Написать</a>
-									<div class="banner-img"><img src="img/banner-img.png" alt=""></div>
-								</div>
-							</div>
-
+					<div class="page-error-wrapper">
+						<div class="page-error-wrapper__image">
+							<img src="img/404.png" alt="">
 						</div>
+						<div class="box-text">
+							<p>Упсс... Возникла ошибка, вернитесь на главную и попробуйте снова</p>
+						</div>
+
+						<a href="index.html" class="btn btn-accent">Перейти на главную</a>
 					</div>
 				</div>
-			</section>
+			</div>
 		</div>
+
 		<footer>
 			<div class="container">
 				<div class="footer-box">
@@ -546,6 +468,7 @@
 			</div>
 		</footer>
 	</div>
+
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>
