@@ -866,7 +866,7 @@
     display: none;
   }
   .checkout-box label {
-    display: none;
+    width: 100%;
   }
   .checkout-box .btn {
     height: 48px;
