@@ -1429,6 +1429,9 @@
   color: #7C0DC6;
 }
 
+.page-product {
+  overflow-x: hidden;
+}
 .page-product .nav-breadcrumb .link-share {
   display: none;
 }
