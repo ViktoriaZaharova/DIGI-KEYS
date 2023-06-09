@@ -51,6 +51,7 @@ body {
 
 html, body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -357,6 +358,12 @@ strong, b {
 ul, ol {
   padding: 0 0 0 20px;
 }
+ul li, ol li {
+  margin: 0 0 15px;
+}
+ul li:last-child, ol li:last-child {
+  margin: 0;
+}
 
 .my-ul {
   list-style: none;
@@ -603,6 +610,9 @@ a.color-accent:hover {
   font-weight: 300;
   line-height: 17px;
   color: #161616;
+}
+.breadcrumb li {
+  margin: 0;
 }
 .breadcrumb li a {
   color: #767676;

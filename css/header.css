@@ -55,6 +55,9 @@ header.fixed {
 .menu li a:hover {
   color: #5D0896;
 }
+.menu li:last-child {
+  margin: 0 0 0 40px;
+}
 
 .link-tg {
   margin: 0 32px;

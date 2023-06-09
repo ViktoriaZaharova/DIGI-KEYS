@@ -153,6 +153,7 @@ accordeon2();
 $('.overlay-bg').on('click', function () {
 	$('.btn-catalog').removeClass('open').siblings('.dropdown-menu').slideUp();
 	$(this).fadeOut();
+	$('.mobile-menu').css('left', '-100%');
 });
 
 // menu catalog
@@ -279,7 +280,7 @@ $(function () {
 	$('.table-products tbody').each(function () {
 		if ($(this).find('tr').length > 12) {
 			$(this).find('tr').slice(12).hide();
-			$(this).parents('.tabs__content').append('<a href="#" class="text-center load-more-wrap link-accent">Показать ещё</a>');
+			$(this).parents('.tabs__content').append('<a href="#" class="text-center load-more-wrap color-accent">Показать ещё</a>');
 			$(this).parents('.table-products').addClass('hide');
 		}
 

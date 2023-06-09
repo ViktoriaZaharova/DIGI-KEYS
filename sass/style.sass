@@ -51,6 +51,7 @@ body
 
 html, body
 	height: 100%
+	overflow-x: hidden	
 
 .wrapper
 	display: flex
@@ -263,6 +264,10 @@ strong, b
 
 ul, ol
 	padding: 0 0 0 20px
+	li
+		margin: 0 0 15px
+		&:last-child
+			margin: 0
 
 .my-ul
 	list-style: none
@@ -441,6 +446,7 @@ a.color-accent
 	line-height: 17px
 	color: #161616
 	li
+		margin: 0
 		a
 			color: #767676
 			display: flex

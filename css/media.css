@@ -35,7 +35,7 @@
     width: 33.33%;
   }
   .row {
-    margin: 0 -7.5px;
+    margin: 0 -15px;
   }
   .container {
     padding: 0 15px;
@@ -181,6 +181,9 @@
   }
 }
 @media only screen and (max-width: 992px) {
+  .page {
+    padding: 122px 0 0;
+  }
   header {
     padding: 30px 0 24px;
   }
@@ -327,6 +330,9 @@
   .contats-wrapper .box-text {
     margin: 8px 0 40px;
   }
+  .checkout-box .promo-wrapper__label {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -339,9 +345,6 @@
   h2 {
     font-size: 24px;
     margin: 0 0 24px;
-  }
-  .tabs__caption-product {
-    border-bottom: 2px solid #7C0DC6;
   }
   .your-choice .col-30:nth-child(2) .chapter-card__img {
     max-width: 305px;
@@ -405,9 +408,6 @@
     width: 40%;
     margin: -110px 0 0;
   }
-  .page {
-    padding: 122px 0 0;
-  }
   label {
     margin: 0 0 24px;
   }
@@ -418,7 +418,7 @@
   }
   .product-info-box .btn-group {
     max-width: none;
-    width: calc(100% - 132px - 24px);
+    width: calc(100% - 142px - 24px);
   }
   .difference {
     margin: 0 0 0 auto;
@@ -777,7 +777,7 @@
     color: #fff;
   }
   .page {
-    padding: 93px 0 0;
+    padding: 110px 0 0;
   }
   .sorting-wrapper {
     display: none;
@@ -891,8 +891,10 @@
   .attention-box {
     margin: 40px 0 60px;
   }
+  .attention-box__icon {
+    display: none;
+  }
   .attention-box__text {
-    margin: 20px 0 0;
     width: 100%;
     padding: 0;
   }
@@ -965,6 +967,9 @@
   }
   .news-row .col-30, .news-row .col-25 {
     width: 100%;
+  }
+  .product-card__img {
+    padding: 0;
   }
 }
 @media only screen and (max-width: 480px) {
