@@ -605,7 +605,7 @@
   padding: 8px 10px 8px 32px;
   width: 100%;
 }
-.dropdown-menu .dropdown-item:hover {
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item.active {
   background: #F8F3FC;
 }
 
@@ -742,6 +742,8 @@
   padding: 0 16px;
   display: inline-block;
   color: #828282;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .product-image {
@@ -915,6 +917,19 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   z-index: 0;
+}
+
+.payments-method {
+  margin: 24px 0 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .list-payment {

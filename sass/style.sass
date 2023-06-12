@@ -98,7 +98,7 @@ input, textarea, select
 	color: #161616
 	font-size: 14px
 	position: relative
-	z-index: -1
+	z-index: 0
 
 	&::placeholder
 		color: #828282
@@ -107,6 +107,31 @@ input, textarea, select
 		outline: none
 		box-shadow: none
 		border-color: #7C0DC6
+
+[name="bx_popup_form"] input,
+[name="bx_popup_form"] textarea,
+[name="bx_popup_form"] select
+	outline: initial
+	-webkit-box-shadow: initial
+	box-shadow: initial
+	-webkit-appearance: auto
+	-moz-appearance: auto
+	appearance: auto
+	padding: initial
+	-webkit-box-sizing: initial
+	box-sizing: initial
+	font-family: "Montserrat", sans-serif
+	-webkit-box-shadow: initial
+	box-shadow: initial
+	border: initial
+	border-radius: initial
+	width: initial
+	height: initial
+	background: initial
+	color: initial
+	font-size: initial
+	position: initial
+	z-index: initial 
 
 label
 	display: block

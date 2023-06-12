@@ -218,7 +218,6 @@
 	&:last-child
 		margin: 0
 
-
 //hot deals
 .product-card
 	width: 100%
@@ -409,7 +408,7 @@
 	.dropdown-item
 		padding: 8px 10px 8px 32px
 		width: 100%
-		&:hover
+		&:hover, &.active
 			background: #F8F3FC
 
 .dropdown-catalog
@@ -512,6 +511,8 @@
 	padding: 0 16px
 	display: inline-block
 	color: #828282
+	pointer-events: none
+	z-index: 1
 
 // product page
 .product-image
@@ -620,6 +621,10 @@
 		box-shadow: none
 		z-index: 0
 
+.payments-method
+	margin: 24px 0 14px
+	@include d-flex
+
 .list-payment
 	margin: 24px 0 14px
 	display: flex
@@ -679,7 +684,7 @@
 			p
 				padding: 0 5px 0 0
 			span, a
-				padding: 0 0 0 5px		
+				padding: 0 0 0 5px
 			&::before
 				content: ''
 				position: absolute
@@ -687,7 +692,7 @@
 				height: 1px
 				border-bottom: 1px dashed #DADADA
 				bottom: 2px
-				left: 0		
+				left: 0
 
 .rating
 	display: flex
@@ -755,7 +760,7 @@
 	position: relative
 	line-height: 140%
 	font-size: 20px
-	
+
 	li
 		border: none
 		padding: 10px 24px
@@ -842,8 +847,7 @@
 		padding: 8px
 	&__text
 		width: calc(100% - 80px)
-		padding: 0 0 0 28px	
-
+		padding: 0 0 0 28px
 
 .panel_heading
 	width: 100%
@@ -954,7 +958,7 @@
 			color: $accent
 
 .page-product
-	overflow-x: hidden		
+	overflow-x: hidden
 	.nav-breadcrumb
 		.link-share
 			display: none
