@@ -1897,6 +1897,9 @@
 .page-acticle .box-text ol, .page-acticle .box-text ul {
   margin: 10px 0;
 }
+.page-acticle .box-text p {
+  display: initial;
+}
 
 .article-image {
   width: 100%;
