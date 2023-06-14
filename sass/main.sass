@@ -1227,6 +1227,7 @@
 
 // page-acticle
 .page-acticle
+	overflow-x: hidden
 	h1
 		width: 100%
 		margin: 0 0 16px
@@ -1239,6 +1240,7 @@
 		border-bottom: 1.3px solid #F8F3FC
 		margin: 0 0 32px
 		padding: 16px 0
+		
 		&:last-child
 			margin: 0
 		.list-category-news
@@ -1265,10 +1267,17 @@
 			margin: 0
 	.box-text
 		ol, ul
-			margin: 10px 0
+			margin: 0 0 15px
+			padding: 0 0 0 30px
 		p
 			display: initial
-
+			margin: 0 0 15px
+		a
+			display: initial
+			text-decoration: underline
+			color: #7C0DC6
+		.product-line__icon, .btn
+			display: flex	
 
 .article-image
 	width: 100%
