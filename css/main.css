@@ -1458,7 +1458,6 @@
 .page-product .box-text ul, .page-product .box-text ol {
   margin: 0 0 15px;
 }
-
 .page-politics h1 {
   margin: 0 0 16px;
 }
@@ -1910,7 +1909,6 @@
   padding: 0 0 0 30px;
 }
 .page-acticle .box-text p {
-  display: initial;
   margin: 0 0 15px;
 }
 .page-acticle .box-text a {
@@ -2100,4 +2098,8 @@
 }
 .schare-box__link:last-child:after {
   display: none;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }

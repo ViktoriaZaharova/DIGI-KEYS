@@ -12,8 +12,8 @@ $(document).ready(function ($) {
 	var sliderTimer = 4000;
 	var $imageSlider = $(".home-slider-nav");
 	$imageSlider.slick({
-		// autoplay: true,
-		// autoplaySpeed: sliderTimer,
+		autoplay: true,
+		autoplaySpeed: sliderTimer,
 		speed: 1000,
 		arrows: false,
 		dots: false,
@@ -52,17 +52,8 @@ $(window).scroll(function () {
 	}
 });
 
-
-
-$(window).on('load resize', function () {
-	if ($(window).width() < 576) {
-		// footer menu toggle
-		$('.footer-box__title-toggle').on('click', function () {
-			$(this).next('.footer-box__menu').slideToggle();
-		});
-	} else {
-		$('.footer-box__menu').show();
-	}
+$('.footer-box__title-toggle').on('click', function () {
+	$(this).next('.footer-box__menu').slideToggle();
 });
 
 // tabs

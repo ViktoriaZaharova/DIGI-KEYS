@@ -29,6 +29,9 @@ footer .container {
   font-size: 20px;
   font-weight: 500;
 }
+.footer-box__title-toggle {
+  display: none;
+}
 .footer-box__menu {
   font-size: 16px;
   font-weight: 500;
