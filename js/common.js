@@ -10,11 +10,10 @@ $('.home-slider').slick({
 
 $(document).ready(function ($) {
 	var sliderTimer = 4000;
-	// var beforeEnd = 500;
 	var $imageSlider = $(".home-slider-nav");
 	$imageSlider.slick({
-		autoplay: true,
-		autoplaySpeed: sliderTimer,
+		// autoplay: true,
+		// autoplaySpeed: sliderTimer,
 		speed: 1000,
 		arrows: false,
 		dots: false,
@@ -42,60 +41,7 @@ $(document).ready(function ($) {
 });
 
 
-// $(document).ready(function () {
-// 	//ticking machine
-// 	var percentTime;
-// 	var tick;
-// 	var time = .1;
-// 	var progressBarIndex = 0;
 
-// 	$('.progressBarContainer .progressBar').each(function (index) {
-// 		var progress = "<div class='inProgress inProgress" + index + "'></div>";
-// 		$(this).html(progress);
-// 	});
-
-// 	function startProgressbar() {
-// 		resetProgressbar();
-// 		percentTime = 0;
-// 		tick = setInterval(interval, 8);
-// 	}
-
-// 	function interval() {
-// 		if (($('.slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
-// 			progressBarIndex = $('.home-slider .slick-track div[aria-hidden="false"]').data("slickIndex");
-// 			startProgressbar();
-// 		} else {
-// 			percentTime += 1 / (time + 5);
-// 			$('.inProgress' + progressBarIndex).css({
-// 				width: percentTime + "%"
-// 			});
-// 			if (percentTime >= 100) {
-// 				$('.home-slider').slick('slickNext');
-// 				progressBarIndex++;
-// 				if (progressBarIndex > 1) {
-// 					progressBarIndex = 0;
-// 				}
-// 				startProgressbar();
-// 			}
-// 		}
-// 	}
-
-// 	function resetProgressbar() {
-// 		$('.inProgress').css({
-// 			width: 0 + '%'
-// 		});
-// 		clearInterval(tick);
-// 	}
-// 	startProgressbar();
-// 	// End ticking machine
-
-// 	$('.home-slider-nav__item').click(function () {
-// 		clearInterval(tick);
-// 		var goToThisIndex = $(this).find("span").data("slickIndex");
-// 		$('.home-slider').slick('slickGoTo', goToThisIndex, false);
-// 		startProgressbar();
-// 	});
-// });
 
 // header fixed
 $(window).scroll(function () {
@@ -106,9 +52,17 @@ $(window).scroll(function () {
 	}
 });
 
-// footer menu toggle
-$('.footer-box__title-toggle').on('click', function () {
-	$(this).next('.footer-box__menu').slideToggle();
+
+
+$(window).on('load resize', function () {
+	if ($(window).width() < 576) {
+		// footer menu toggle
+		$('.footer-box__title-toggle').on('click', function () {
+			$(this).next('.footer-box__menu').slideToggle();
+		});
+	} else {
+		$('.footer-box__menu').show();
+	}
 });
 
 // tabs
@@ -314,3 +268,98 @@ $(function () {
 	});
 
 });
+
+$(document).ready(function () {
+	$('.formPhone').inputmask({ "mask": "+7 (\\999) 999-9999", "clearIncomplete": true });
+});
+
+
+// price counterUp
+$(function () {
+	$('form.checkout-box').on('blur', 'input', function () {
+
+		var input = $(this);
+		grecaptcha.execute('6LfJiesjAAAAACe0ZrZwCyP4SWVuQfQgvfqDZvKW', { action: 'contact' }).then(function (token) {
+			if (document.getElementById('recaptchaResponse') !== null)
+				document.getElementById('recaptchaResponse').value = token;
+			if (document.getElementById('recaptchaResponseMobile') !== null)
+				document.getElementById('recaptchaResponseMobile').value = token;
+
+
+			let data = input.closest('form.checkout-box').serialize();
+			$.ajax({
+				url: '/api/?controller=Order&method=calculateDiscount',
+				type: 'POST',
+				data: data,
+				async: true,
+				success: function (response) {
+					if (response.status) {
+
+						let options = {
+							separator: '',
+							suffix: ' ₽'
+						};
+
+						let start = parseInt($('#price-desktop').html());
+						new CountUp('price-desktop', start, response.data.price, 0, 0.3, options).start();
+						new CountUp('price-mobile', start, response.data.price, 0, 0.3, options).start();
+
+						if (response.data.discount !== null && response.data.discount > 0) {
+							$('#discount-desktop').html(response.data.discount + '%');
+							$('#discount-mobile').html(response.data.discount + '%');
+							$('.discount').show();
+						} else {
+							$('.discount').hide();
+						}
+					}
+				}
+			});
+		});
+	})
+
+	$('form.checkout-box').on('change', '[name="quantity"]', function () {
+
+		var input = $(this);
+		if (input.val() <= 0) {
+			input.val(1);
+			return false;
+		}
+
+		grecaptcha.execute('6LfJiesjAAAAACe0ZrZwCyP4SWVuQfQgvfqDZvKW', { action: 'contact' }).then(function (token) {
+			if (document.getElementById('recaptchaResponse') !== null)
+				document.getElementById('recaptchaResponse').value = token;
+			if (document.getElementById('recaptchaResponseMobile') !== null)
+				document.getElementById('recaptchaResponseMobile').value = token;
+
+			let data = input.closest('form.checkout-box').serialize();
+			$.ajax({
+				url: '/api/?controller=Order&method=calculateDiscount',
+				type: 'POST',
+				data: data,
+				async: true,
+				success: function (response) {
+					if (response.status) {
+						let options = {
+							separator: '',
+							suffix: ' ₽'
+						};
+
+						let start = parseInt($('#price-desktop').html());
+						new CountUp('price-desktop', start, response.data.price, 0, 0.3, options).start();
+						new CountUp('price-mobile', start, response.data.price, 0, 0.3, options).start();
+
+						if (response.data.discount !== null && response.data.discount > 0) {
+							$('#discount-desktop').html(response.data.discount + '%');
+							$('#discount-mobile').html(response.data.discount + '%');
+							$('.discount').show();
+						} else {
+							$('.discount').hide();
+						}
+
+					}
+				}
+			});
+		});
+	});
+
+})

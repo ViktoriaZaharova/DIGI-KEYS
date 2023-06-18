@@ -662,6 +662,11 @@
 .page-information h1 {
   margin: 0 0 24px;
 }
+.page-information .box-text a {
+  display: initial;
+  text-decoration: underline;
+  color: #7C0DC6;
+}
 
 .banner {
   max-width: 310px;
@@ -1444,11 +1449,14 @@
   color: #7C0DC6;
 }
 
-.page-product {
-  overflow-x: hidden;
-}
 .page-product .nav-breadcrumb .link-share {
   display: none;
+}
+.page-product .box-text h3 {
+  margin: 20px 0;
+}
+.page-product .box-text ul, .page-product .box-text ol {
+  margin: 0 0 15px;
 }
 
 .page-politics h1 {
@@ -1914,6 +1922,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page-acticle .box-text .product-line__icon img {
+  margin: 0;
+}
+.page-acticle .box-text .product-line__name, .page-acticle .box-text .btn {
+  text-decoration: none;
+}
+.page-acticle .box-text .product-line__name {
+  color: #363636;
+}
+.page-acticle .box-text img {
+  margin-bottom: 15px;
 }
 
 .article-image {
@@ -2002,11 +2028,14 @@
   width: 40px;
   height: 40px;
   min-width: 40px;
-  margin: 0 16px 0 0;
 }
 .product-line__name {
   color: #363636;
   margin: 0 auto 0 0;
+  width: calc(100% - 40px - 100px);
+  padding: 0 16px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .product-line__name:hover {
   color: #7C0DC6;

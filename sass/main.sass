@@ -454,6 +454,11 @@
 .page-information
 	h1
 		margin: 0 0 24px
+	.box-text
+		a
+			display: initial
+			text-decoration: underline
+			color: #7C0DC6
 
 .banner
 	max-width: 310px
@@ -958,10 +963,14 @@
 			color: $accent
 
 .page-product
-	overflow-x: hidden
 	.nav-breadcrumb
 		.link-share
 			display: none
+	.box-text
+		h3
+			margin: 20px 0
+		ul, ol
+			margin: 0 0 15px
 
 .page-politics
 	h1
@@ -1240,7 +1249,7 @@
 		border-bottom: 1.3px solid #F8F3FC
 		margin: 0 0 32px
 		padding: 16px 0
-		
+
 		&:last-child
 			margin: 0
 		.list-category-news
@@ -1277,7 +1286,19 @@
 			text-decoration: underline
 			color: #7C0DC6
 		.product-line__icon, .btn
-			display: flex	
+			display: flex
+			align-items: center
+			justify-content: center
+		.product-line__icon
+			img
+				margin: 0
+		.product-line__name, .btn
+			text-decoration: none
+		.product-line__name
+			color: #363636
+
+		img
+			margin-bottom: 15px
 
 .article-image
 	width: 100%
@@ -1330,10 +1351,13 @@
 		width: 40px
 		height: 40px
 		min-width: 40px
-		margin: 0 16px 0 0
 	&__name
 		color: #363636
 		margin: 0 auto 0 0
+		width: calc(100% - 40px - 100px)
+		padding: 0 16px
+		font-size: 20px
+		font-weight: 500
 		&:hover
 			color: $accent
 
