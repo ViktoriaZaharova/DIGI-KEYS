@@ -550,6 +550,9 @@
   .page-acticle-line .list-category-news {
     margin: 0 auto 0 0;
   }
+  .page-acticle h2 {
+    margin: 15px 0 10px;
+  }
 }
 @media only screen and (max-width: 576px) {
   header {
