@@ -5,8 +5,20 @@
   margin: 8px 0;
 }
 
+.home-slider .slick-slide {
+  height: auto;
+}
+.home-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
 .home-slider__item {
   padding: 100px 0 190px;
+  height: 100%;
 }
 .home-slider__item .box-text {
   max-width: 533px;
