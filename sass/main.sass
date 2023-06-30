@@ -936,6 +936,12 @@
 	h3
 		width: fit-content
 		margin: 0 32px 0 0
+	&-link
+		display: flex
+		align-items: center
+		color: #363636
+		&:hover
+			color: $accent
 
 .reviews-services-list
 	display: flex
@@ -956,12 +962,6 @@
 		width: 20px
 		height: 20px
 		margin: 0 8px 0 0
-	a
-		display: flex
-		align-items: center
-		color: #363636
-		&:hover
-			color: $accent
 
 .page-product
 	.nav-breadcrumb
@@ -1093,8 +1093,6 @@
 
 	.tabs__content
 		margin: 8px 0 0
-		
-	
 
 // news page
 .page-news
@@ -1441,7 +1439,7 @@
 	label
 		margin: 0
 	.input-text
-		font-size: 16px	
+		font-size: 16px
 		color: #363636
 
 .distribution-box
@@ -1473,7 +1471,7 @@
 		@include d-flex
 		border-radius: 50%
 		border: 1px solid #FFF
-		background: #F8F3FC	
+		background: #F8F3FC
 		width: 20px
 		height: 20px
 		top: -10px
@@ -1501,7 +1499,7 @@
 				margin: 0 0 16px
 
 	.tabs__content
-		margin: 8px 0 0	
+		margin: 8px 0 0
 
 .distribution-line
 	margin: 0 0 16px
@@ -1509,7 +1507,7 @@
 	&:last-child
 		margin: 0
 	.distribution-box__icon
-		margin: 0		
+		margin: 0
 	.product-line__name
 		width: fit-content
 		padding: 0 0 0 24px
@@ -1531,14 +1529,14 @@
 	li
 		margin: 0 16px 0 0
 		&:last-child
-			margin: 0				
+			margin: 0
 
 .disctribution-content
 	margin: 60px 0 0
 	h3
 		margin: 0 0 24px
 		font-size: 24px
-		font-weight: bold							
+		font-weight: bold
 
 .distribution-page
 	.product-image
@@ -1549,8 +1547,8 @@
 			border-top: 1px solid #EBEBEB
 
 .verifed-box
-	display: flex 
-	align-items: center		
+	display: flex
+	align-items: center
 	justify-content: center
 	background: #E5F4EF
 	padding: 8px
@@ -1570,7 +1568,7 @@
 .checkout-box-verifed
 	h4
 		width: 100%
-		margin: 0 0 8px		
+		margin: 0 0 8px
 		font-size: 16px
 
 .download-distribution
@@ -1584,7 +1582,7 @@
 		color: #000
 		&:hover
 			color: $accent
-			
+
 		&:last-child
 			margin: 0
 		&__name
@@ -1596,9 +1594,130 @@
 			border-radius: 4px
 			padding: 4px 6.5px
 			width: 36px
-			height: 24px		
-
-
-
+			height: 24px
 
 // distributions end	
+
+// reviews	
+.page-reviews
+	.tabs__caption
+		margin: 32px 0 16px
+		li
+			border-radius: 6px
+			padding: 13.5px 24px
+	.reviews-services-link.color-accent
+		color: $accent
+	.tabs__content
+		>.reviews-box
+				display: none
+				&:nth-child(-n+5)
+					display: block
+
+.reviews-box
+	width: 100%
+	border-top: 1px solid #F8F3FC
+	padding: 24px 0 0
+	margin: 24px 0 0
+	&:first-child
+		margin: 0
+
+	&__head, &__body, &__footer
+		width: 100%
+	&__head
+		margin: 0 0 16px
+	&__date
+		color: #767676
+		font-size: 12px
+		margin: 0 0 0 16px
+	&__body
+		.box-text
+			margin: 0 0 10px
+			&:last-child
+				margin: 0
+		h4
+			font-weight: 600
+			margin: 0 0 4px
+			width: 100%
+			color: #363636
+	&__footer
+		display: flex
+		align-items: flex-end
+		flex-wrap: wrap
+	&__navigation
+		display: flex
+		align-items: center
+	&__user
+		margin: 0 0 0 auto
+		display: flex
+		align-items: center
+		text-align: right
+		&-name
+			text-align: right
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+		&-avatar
+			@include d-flex
+			margin: 0 0 0 16px
+			border-radius: 50%
+			width: 48px
+			height: 48px
+			overflow: hidden
+			background: #F8F8F8
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+			.icon-avatar
+				width: 32px
+				height: auto
+				max-height: 100%
+				object-fit: contain
+
+.category-user
+	margin: 2px 0 0
+	border-bottom: 1px solid #767676
+	font-size: 12px
+	color: #767676
+	&:hover
+		color: $accent
+
+.login-user
+	font-size: 14px
+	font-weight: 500
+	color: #363636
+	&:hover
+		color: $accent
+
+.like-box
+	display: flex
+	align-items: center
+	margin: 0 8px 0 0
+	&__icon
+		@include d-flex
+		width: 24px
+		height: 24px
+		fill: #161616
+	&__value
+		margin: 0 0 0 8px
+	&:last-child
+		margin: 0
+	&:hover
+		color: $accent
+		.like-box__icon
+			fill: $accent	
+
+.answer-link
+	margin: 0 0 0 24px
+
+.answer-box
+	margin: 32px 0 0
+	padding: 0 0 0 32px
+	border: none
+	border-left: 1px solid $accent
+	&:first-child
+		margin: 32px 0 0
+
+.btn-load-reviews
+	margin: 60px auto 0
+// reviews end	

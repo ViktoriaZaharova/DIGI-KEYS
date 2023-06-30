@@ -199,3 +199,26 @@ footer .container {
 .btn-close-modal {
   margin: 32px auto 0;
 }
+
+.modal__div-v2 {
+  max-width: 434px;
+}
+.modal__div-v2 .modal__wrapper {
+  padding: 40px 32px;
+}
+.modal__div-v2 h3 {
+  text-align: left;
+  margin: 0;
+}
+.modal__div-v2 .form {
+  margin: 24px 0 0;
+}
+.modal__div-v2 .form label {
+  margin: 0 0 8px;
+}
+.modal__div-v2 .form textarea {
+  height: 140px;
+}
+.modal__div-v2 .form button {
+  margin: 24px auto 0;
+}

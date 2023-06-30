@@ -244,6 +244,14 @@ $(function () {
 		}
 	});
 
+	$('.btn-load-reviews').on('click', function (e) {
+		e.preventDefault();
+		$(this).parents('.tabs__content').find('.reviews-box:hidden').slice(0, 5).slideDown();
+		var onBlock = $(this).parents('.tabs__content').find('.reviews-box:hidden').length;
+		if (onBlock <= 0) {
+			$(this).hide();
+		}
+	});
 	// show list all
 
 
