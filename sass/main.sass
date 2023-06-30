@@ -790,6 +790,7 @@
 			font-size: 20px
 			font-weight: 500
 			padding: 0 24px 16px
+			background: #fff
 
 .table-products
 	position: relative
@@ -973,8 +974,8 @@
 			margin: 0 0 15px
 		a
 			display: initial
-		  text-decoration: underline
-		  color: #7C0DC6
+			text-decoration: underline
+			color: #7C0DC6
 
 .page-politics
 	h1
@@ -1092,6 +1093,8 @@
 
 	.tabs__content
 		margin: 8px 0 0
+		
+	
 
 // news page
 .page-news
@@ -1305,6 +1308,8 @@
 
 		img
 			margin-bottom: 15px
+			border: 1px solid #F6EAFF
+			border-radius: 8px
 
 .article-image
 	width: 100%
@@ -1409,3 +1414,191 @@
 
 .grecaptcha-badge
 	visibility: hidden
+
+// distributions	
+.form-search
+	position: relative
+	button
+		background: transparent
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		right: 16px
+		width: 24px
+		height: 24px
+		fill: none
+		stroke: #161616
+		@include d-flex
+	input
+		background: transparent
+		border: 1px solid #F8F3FC
+		border-radius: 12px
+		padding: 0 40px 0 16px
+		box-shadow: none
+		font-size: 16px
+		&::placeholder
+			color: #363636
+	label
+		margin: 0
+	.input-text
+		font-size: 16px	
+		color: #363636
+
+.distribution-box
+	width: 100%
+	height: 100%
+	text-align: center
+	color: #000
+	font-size: 16px
+	border: 1px solid #F8F3FC
+	border-radius: 20px
+	padding: 47px 20px
+	&:hover
+		color: $accent
+	&__icon
+		@include d-flex
+		position: relative
+		margin: 0 auto 20px
+		background: #F8F3FC
+		border-radius: 10px
+		padding: 10px
+		width: 56px
+		min-width: 56px
+		height: 56px
+	&__val
+		position: absolute
+		color: #363636
+		font-size: 10px
+		padding: 5px
+		@include d-flex
+		border-radius: 50%
+		border: 1px solid #FFF
+		background: #F8F3FC	
+		width: 20px
+		height: 20px
+		top: -10px
+		right: -10px
+	&__title
+		font-size: 20px
+		font-weight: 500
+		margin: 0 auto 8px
+
+.tabs-my
+	.tabs__caption
+		width: 100%
+		font-size: 14px
+		li
+			margin: 0 0 16px 0
+			border: none
+			border-radius: 50px
+			padding: 12px 16px
+			color: #363636
+			&.active
+				color: #7C0DC6
+				background: #F8F3FC
+				border-color: transparent
+			&:last-child
+				margin: 0 0 16px
+
+	.tabs__content
+		margin: 8px 0 0	
+
+.distribution-line
+	margin: 0 0 16px
+	flex-wrap: nowrap
+	&:last-child
+		margin: 0
+	.distribution-box__icon
+		margin: 0		
+	.product-line__name
+		width: fit-content
+		padding: 0 0 0 24px
+		margin: 0
+		&-category
+			display: block
+			font-size: 16px
+			margin: 4px 0 0
+		&-title
+			font-size: 20px
+			font-weight: 500
+			color: #000
+
+.distribution-line-characteristics
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 auto
+	li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0				
+
+.disctribution-content
+	margin: 60px 0 0
+	h3
+		margin: 0 0 24px
+		font-size: 24px
+		font-weight: bold							
+
+.distribution-page
+	.product-image
+		height: 375px
+	.product-info-box
+		&:last-child
+			padding: 24px 0 0
+			border-top: 1px solid #EBEBEB
+
+.verifed-box
+	display: flex 
+	align-items: center		
+	justify-content: center
+	background: #E5F4EF
+	padding: 8px
+	color: #219653
+	width: 100%
+	border-radius: 6px
+	&__icon
+		margin: 0 8px 0 0
+		@include d-flex
+		width: 24px
+
+.key-box
+	margin: 0 0 24px
+	.btn
+		width: 100%
+
+.checkout-box-verifed
+	h4
+		width: 100%
+		margin: 0 0 8px		
+		font-size: 16px
+
+.download-distribution
+	margin: 24px 0 0
+	&-link
+		width: 100%
+		display: flex
+		align-items: center
+		padding: 8px 0
+		margin: 0 0 8px
+		color: #000
+		&:hover
+			color: $accent
+			
+		&:last-child
+			margin: 0
+		&__name
+			margin: 0 auto 0 12px
+		&__lang
+			@include d-flex
+			color: $accent
+			border: 1px solid $accent
+			border-radius: 4px
+			padding: 4px 6.5px
+			width: 36px
+			height: 24px		
+
+
+
+
+// distributions end	

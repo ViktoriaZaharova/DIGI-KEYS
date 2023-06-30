@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DIGI-KEYS</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="overlay-bg"></div>
+			<div class="mobile-menu">
+				<div class="mobile-menu__head">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="mobile-menu__close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></div>
+				</div>
+				<div class="mobile-menu__body">
+
+					<ul class="mobile-menu-list my-ul">
+						<li>
+							<a href="#" class="js-tab-trigger" data-tab="1">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#catalog-icon"></use>
+								</svg>
+								<span>Каталог</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="js-tab-trigger" data-tab="2">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#clients-icon"></use>
+								</svg>
+								<span>Для клиентов</span>
+							</a>
+						</li>
+					</ul>
+
+					<div class="mobile-menu-wrapper mobile-menu-wrapper1 js-tab-content" data-tab="1">
+						<div class="left-sidebar">
+							<ul class="menu-home-mobile my-ul">
+								<li><a href="#" class="js-tab-trigger click" data-tab="1">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#catalog-icon"></use>
+										</svg>
+									</a></li>
+								<li><a href="#" class="js-tab-trigger" data-tab="2">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#clients-icon"></use>
+										</svg>
+									</a></li>
+							</ul>
+
+							<ul class="contacts-mobile my-ul">
+								<li>
+									<a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone-mobile"></use>
+										</svg></a>
+								</li>
+								<li>
+									<a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tg-mobile"></use>
+										</svg></a>
+								</li>
+								<li>
+									<a href="#" class="mail-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail-mobile"></use>
+										</svg></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="right-sidebar">
+							<ul class="sidebar-menu my-ul">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle">
+										<span>Microsoft Windows</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Microsoft Office</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Офисные приложения</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Офисные приложения</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Windows Server</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Windows Server</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Антивирусы</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Антивирусы</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Прочее</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Прочее</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mobile-menu-wrapper mobile-menu-wrapper2 js-tab-content" data-tab="2">
+						<div class="left-sidebar">
+							<ul class="menu-home-mobile my-ul">
+								<li><a href="#" class="js-tab-trigger" data-tab="1">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#catalog-icon"></use>
+										</svg>
+									</a></li>
+								<li><a href="#" class="js-tab-trigger click" data-tab="2">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#clients-icon"></use>
+										</svg>
+									</a></li>
+							</ul>
+
+							<ul class="contacts-mobile my-ul">
+								<li>
+									<a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone-mobile"></use>
+										</svg></a>
+								</li>
+								<li>
+									<a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tg-mobile"></use>
+										</svg></a>
+								</li>
+								<li>
+									<a href="#" class="mail-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail-mobile"></use>
+										</svg></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="right-sidebar">
+							<ul class="sidebar-menu my-ul">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle">
+										<span>Microsoft Windows 2</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Microsoft Office</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Офисные приложения</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Офисные приложения</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Windows Server</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Windows Server</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Антивирусы</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Антивирусы</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Прочее</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Прочее</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mobile-menu__footer">
+						<div class="contacts-line">
+							<a href="#" class="link-tg color-accent">Telegram</a>
+							<a href="tel:+78003019309" class="link-phone">+7 800 301 93 09</a>
+						</div>
+						<a href="#" class="btn btn-sm btn-border-accent">Написать</a>
+					</div>
+				</div>
+
+
+			</div>
+
+			<header>
+				<div class="container">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="dropdown-catalog">
+						<a href="#" class="btn btn-accent btn-catalog">
+							<svg class="svg-icon btn-catalog__icon">
+								<use xlink:href="img/sprite.svg#burger-icon"></use>
+							</svg>
+							<svg class="svg-icon btn-catalog__icon btn-catalog__icon-close">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+							<span class="btn-catalog__text">Каталог</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-catalog">
+							<ul class="sidebar-menu my-ul">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle">
+										<span>Microsoft Windows</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Microsoft Office</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Офисные приложения</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Офисные приложения</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Windows Server</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Windows Server</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Антивирусы</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Антивирусы</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span>Прочее</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Прочее</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<nav class="nav-menu">
+						<ul class="menu my-ul">
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="information.html">Юр.лицам</a></li>
+						</ul>
+					</nav>
+
+					<a href="tel:+78003019309" class="phone">+7 800 301 93 09</a>
+
+					<a href="#" class="link-tg color-accent">Telegram</a>
+
+					<a href="mailto:" class="btn btn-mail btn-border-accent">Написать</a>
+
+					<a href="#" class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+					</a>
+				</div>
+			</header>
+
+			<section class="page page-information page-politics">
+				<div class="container">
+					<nav class="nav-breadcrumb">
+						<ul class="breadcrumb my-ul">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="distributions.html">Дистрибутивы</a></li>
+							<li><span>Microsoft Office</span></li>
+						</ul>
+					</nav>
+					<div class="w-100 mb-32">
+
+						<div class="row">
+
+							<div class="col-100">
+								<h1>Microsoft Office</h1>
+								<div class="box-text"><p>Скачайте официальный дистрибутив Microsoft Office прямо отсюда!в</p></div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="w-100">
+						<div class="row">
+							<div class="col-75">
+								<div class="tabs tabs-my">
+									<ul class="tabs__caption my-ul">
+										<li class="active">Все версии</li>
+										<li>Office 365</li>
+										<li>Office 2021</li>
+										<li>Office 2019</li>
+										<li>Office 2016</li>
+										<li>Office 2013</li>
+										<li>Office 2010</li>
+										<li>MacOs</li>
+									</ul>
+									<div class="tabs__content active">
+										<div class="product-line distribution-line">
+											<a href="distribution-page.html" class="distribution-box__icon">
+												<img src="img/distribution-icon.svg" alt="">
+											</a>
+											<a href="distribution-page.html" class="product-line__name">
+												<span class="product-line__name-title">Офисные приложения</span>
+												<span class="product-line__name-category">Microsoft</span>
+											</a>
+
+											<ul class="distribution-line-characteristics my-ul">
+												<li>Загрузок: 1520</li>
+												<li>x64 - 4.3 гБ</li>
+												<li>x64 - 4.3 гБ</li>
+											</ul>
+										
+											<a href="distribution-page.html" class="btn btn-sm btn-light-accent">Перейти</a>
+										</div>
+										<div class="product-line distribution-line">
+											<a href="distribution-page.html" class="distribution-box__icon">
+												<img src="img/distribution-icon.svg" alt="">
+											</a>
+											<a href="distribution-page.html" class="product-line__name">
+												<span class="product-line__name-title">Офисные приложения</span>
+												<span class="product-line__name-category">Microsoft</span>
+											</a>
+										
+											<ul class="distribution-line-characteristics my-ul">
+												<li>Загрузок: 1520</li>
+												<li>x64 - 4.3 гБ</li>
+												<li>x64 - 4.3 гБ</li>
+											</ul>
+										
+											<a href="distribution-page.html" class="btn btn-sm btn-light-accent">Перейти</a>
+										</div>
+										<div class="product-line distribution-line">
+											<a href="distribution-page.html" class="distribution-box__icon">
+												<img src="img/distribution-icon.svg" alt="">
+											</a>
+											<a href="distribution-page.html" class="product-line__name">
+												<span class="product-line__name-title">Офисные приложения</span>
+												<span class="product-line__name-category">Microsoft</span>
+											</a>
+										
+											<ul class="distribution-line-characteristics my-ul">
+												<li>Загрузок: 1520</li>
+												<li>x64 - 4.3 гБ</li>
+												<li>x64 - 4.3 гБ</li>
+											</ul>
+										
+											<a href="distribution-page.html" class="btn btn-sm btn-light-accent">Перейти</a>
+										</div>
+										<div class="product-line distribution-line">
+											<a href="distribution-page.html" class="distribution-box__icon">
+												<img src="img/distribution-icon.svg" alt="">
+											</a>
+											<a href="distribution-page.html" class="product-line__name">
+												<span class="product-line__name-title">Офисные приложения</span>
+												<span class="product-line__name-category">Microsoft</span>
+											</a>
+										
+											<ul class="distribution-line-characteristics my-ul">
+												<li>Загрузок: 1520</li>
+												<li>x64 - 4.3 гБ</li>
+												<li>x64 - 4.3 гБ</li>
+											</ul>
+										
+											<a href="distribution-page.html" class="btn btn-sm btn-light-accent">Перейти</a>
+										</div>
+										<div class="product-line distribution-line">
+											<a href="distribution-page.html" class="distribution-box__icon">
+												<img src="img/distribution-icon.svg" alt="">
+											</a>
+											<a href="distribution-page.html" class="product-line__name">
+												<span class="product-line__name-title">Офисные приложения</span>
+												<span class="product-line__name-category">Microsoft</span>
+											</a>
+										
+											<ul class="distribution-line-characteristics my-ul">
+												<li>Загрузок: 1520</li>
+												<li>x64 - 4.3 гБ</li>
+												<li>x64 - 4.3 гБ</li>
+											</ul>
+										
+											<a href="distribution-page.html" class="btn btn-sm btn-light-accent">Перейти</a>
+										</div>
+										<div class="product-line distribution-line">
+											<a href="distribution-page.html" class="distribution-box__icon">
+												<img src="img/distribution-icon.svg" alt="">
+											</a>
+											<a href="distribution-page.html" class="product-line__name">
+												<span class="product-line__name-title">Офисные приложения</span>
+												<span class="product-line__name-category">Microsoft</span>
+											</a>
+										
+											<ul class="distribution-line-characteristics my-ul">
+												<li>Загрузок: 1520</li>
+												<li>x64 - 4.3 гБ</li>
+												<li>x64 - 4.3 гБ</li>
+											</ul>
+										
+											<a href="distribution-page.html" class="btn btn-sm btn-light-accent">Перейти</a>
+										</div>
+										<div class="product-line distribution-line">
+											<a href="distribution-page.html" class="distribution-box__icon">
+												<img src="img/distribution-icon.svg" alt="">
+											</a>
+											<a href="distribution-page.html" class="product-line__name">
+												<span class="product-line__name-title">Офисные приложения</span>
+												<span class="product-line__name-category">Microsoft</span>
+											</a>
+										
+											<ul class="distribution-line-characteristics my-ul">
+												<li>Загрузок: 1520</li>
+												<li>x64 - 4.3 гБ</li>
+												<li>x64 - 4.3 гБ</li>
+											</ul>
+										
+											<a href="distribution-page.html" class="btn btn-sm btn-light-accent">Перейти</a>
+										</div>
+										<div class="product-line distribution-line">
+											<a href="distribution-page.html" class="distribution-box__icon">
+												<img src="img/distribution-icon.svg" alt="">
+											</a>
+											<a href="distribution-page.html" class="product-line__name">
+												<span class="product-line__name-title">Офисные приложения</span>
+												<span class="product-line__name-category">Microsoft</span>
+											</a>
+										
+											<ul class="distribution-line-characteristics my-ul">
+												<li>Загрузок: 1520</li>
+												<li>x64 - 4.3 гБ</li>
+												<li>x64 - 4.3 гБ</li>
+											</ul>
+										
+											<a href="distribution-page.html" class="btn btn-sm btn-light-accent">Перейти</a>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<div class="box-text">
+											<p>Тут должен быть текст про обмен и возврат. Тут должен быть текст про обмен и возврат. Тут
+												должен быть текст про обмен и
+												возврат. Тут должен быть текст про обмен и возврат.</p>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<div class="box-text">
+											<p>Тут должен быть текст про обмен и возврат. Тут должен быть текст про обмен и возврат. Тут
+												должен быть текст про
+												обмен и
+												возврат. Тут должен быть текст про обмен и возврат.</p>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<div class="box-text">
+											<p>Тут должен быть текст про обмен и возврат. Тут должен быть текст про обмен и возврат. Тут
+												должен быть текст про
+												обмен и
+												возврат. Тут должен быть текст про обмен и возврат.</p>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<div class="box-text">
+											<p>Тут должен быть текст про обмен и возврат. Тут должен быть текст про обмен и возврат. Тут
+												должен быть текст про
+												обмен и
+												возврат. Тут должен быть текст про обмен и возврат.</p>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<div class="box-text">
+											<p>Тут должен быть текст про обмен и возврат. Тут должен быть текст про обмен и возврат. Тут
+												должен быть текст про
+												обмен и
+												возврат. Тут должен быть текст про обмен и возврат.</p>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<div class="box-text">
+											<p>Тут должен быть текст про обмен и возврат. Тут должен быть текст про обмен и возврат. Тут
+												должен быть текст про
+												обмен и
+												возврат. Тут должен быть текст про обмен и возврат.</p>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<div class="box-text">
+											<p>Тут должен быть текст про обмен и возврат. Тут должен быть текст про обмен и возврат. Тут
+												должен быть текст про
+												обмен и
+												возврат. Тут должен быть текст про обмен и возврат.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-25 d-pc">
+								<div class="banner">
+									<h3>Нужна помощь?</h3>
+									<div class="box-text">
+										<p>Обратитесь к нашим специалистами они проконсультируют по любому вопросу</p>
+									</div>
+							
+									<a href="#" class="btn btn-accent">Написать</a>
+									<div class="banner-img"><img src="img/banner-img.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="footer-box">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="copyright">
+						<p>© DIGI-KEYS.RU, 2021-2023.</p>
+						<p>Все права защищены</p>
+					</div>
+				</div>
+		
+				<div class="footer-box">
+					<h3 class="footer-box__title">Каталог товаров</h3>
+					<h3 class="footer-box__title footer-box__title-toggle">Каталог товаров</h3>
+					<ul class="footer-box__menu my-ul">
+						<li><a href="#">Microsoft Windows</a></li>
+						<li><a href="#">Microsoft Office</a></li>
+						<li><a href="#">Windows Server</a></li>
+						<li><a href="#">Офисное ПО</a></li>
+						<li><a href="#">Антивирусы</a></li>
+						<li><a href="#">Прочее</a></li>
+					</ul>
+				</div>
+				<div class="footer-box">
+					<h3 class="footer-box__title">Информация</h3>
+					<h3 class="footer-box__title footer-box__title-toggle">Информация</h3>
+					<ul class="footer-box__menu my-ul">
+						<li><a href="#">О магазине</a></li>
+						<li><a href="#">Юр. лицам</a></li>
+						<li><a href="#">Статьи</a></li>
+					</ul>
+				</div>
+				<div class="footer-box">
+					<h3 class="footer-box__title">Контакты</h3>
+					<a href="mailto:sale@digi-keys.ru" class="mail-link">
+						<svg class="svg-icon mail-link__icon">
+							<use xlink:href="img/sprite.svg#mail"></use>
+						</svg>
+						<span>sale@digi-keys.ru</span>
+					</a>
+					<a href="tel:+78003019309" class="phone-link">
+						<svg class="svg-icon phone-link__icon">
+							<use xlink:href="img/sprite.svg#phone"></use>
+						</svg>
+						<span>8 800 301 93 09</span>
+					</a>
+					<ul class="my-ul document-list">
+						<li>ОГРН: 1053600591197</li>
+						<li>ИНН: 7743013902</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.inputmask.latest.min.js"></script>
+	<script src="js/imask.min.js"></script>
+	<script src="js/countUp.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

@@ -177,6 +177,12 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .form-search {
+    margin: 20px 0 0;
+  }
+  .payments-method {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .page {
@@ -330,6 +336,15 @@
   }
   .checkout-box .promo-wrapper__label {
     width: 100%;
+  }
+  .distribution-line .product-line__name-title {
+    font-size: 16px;
+  }
+  .distribution-line .product-line__name-category {
+    font-size: 14px;
+  }
+  .distribution-line-characteristics li {
+    margin: 0 10px 0 0;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -977,6 +992,39 @@
   .product-card__img {
     padding: 0;
   }
+  .distribution-box {
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+  .distribution-box__title {
+    font-size: 16px;
+  }
+  .mb-35 {
+    margin-bottom: 20px;
+  }
+  .distribution-line {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .distribution-line .btn {
+    margin: 0 auto;
+  }
+  .distribution-line .product-line__name {
+    width: calc(100% - 56px);
+    padding: 0 0 0 15px;
+  }
+  .distribution-line-characteristics {
+    width: 100%;
+    margin: 10px;
+    font-size: 14px;
+  }
+  .disctribution-content {
+    margin: 40px 0 0;
+  }
+  .disctribution-content h3 {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .product-card__img {
@@ -1019,5 +1067,11 @@
   }
   .table {
     font-size: 10px;
+  }
+  .distribution-box {
+    padding: 20px 15px;
+  }
+  .distribution-box__title {
+    font-size: 14px;
   }
 }
