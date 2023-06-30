@@ -782,11 +782,26 @@
 			background: #F8F3FC
 			color: $accent
 
-.table
+.table, table
 	width: 100%
 	text-align: left
 	border: 1.3px solid #F8F8F8
 	border-radius: 10px
+	margin: 24px 0
+	overflow: hidden
+	thead
+		background: #F8F8F8
+
+	th
+		padding: 12px 24px
+		&:first-child
+			width: 45%
+
+	td
+		padding: 12px 24px
+		&:first-child
+			width: 45%
+	
 
 .table-products-title
 	border: none
@@ -1003,25 +1018,11 @@
 		margin: 0 auto
 		@include d-flex
 
-.table
-	margin: 24px 0
-	border-radius: 10px
-	overflow: hidden
-	thead
-		background: #F8F8F8
-
-	th
-		padding: 12px 24px
-		&:first-child
-			width: 45%
-
-	td
-		padding: 12px 24px
-		&:first-child
-			width: 45%
+.table-sales
 	tr
 		&:nth-child(even)
-			background: #F8F8F8
+			background: #F8F8F8		
+
 
 .contats-wrapper
 	margin: 48px 0 40px

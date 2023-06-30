@@ -455,7 +455,7 @@
   .page-error-wrapper__image {
     max-width: 690px;
   }
-  .table {
+  .table, table {
     margin: 40px 0;
   }
   .about-products {
@@ -953,13 +953,13 @@
   .page-error-wrapper__image {
     max-width: 335px;
   }
-  .table {
+  .table, table {
     margin: 40px 0;
   }
-  .table th, .table td {
+  .table th, .table td, table th, table td {
     padding: 12px;
   }
-  .table th:first-child, .table td:first-child {
+  .table th:first-child, .table td:first-child, table th:first-child, table td:first-child {
     width: 50%;
   }
   .tabs__caption {
@@ -1077,7 +1077,7 @@
   .price {
     font-size: 18px;
   }
-  .table {
+  .table, table {
     font-size: 12px;
     line-height: normal;
   }
@@ -1098,7 +1098,7 @@
   table th, table td {
     padding: 10px;
   }
-  .table {
+  .table, table {
     font-size: 10px;
   }
   .distribution-box {

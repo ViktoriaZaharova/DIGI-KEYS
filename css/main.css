@@ -1180,11 +1180,28 @@
   color: #7C0DC6;
 }
 
-.table {
+.table, table {
   width: 100%;
   text-align: left;
   border: 1.3px solid #F8F8F8;
   border-radius: 10px;
+  margin: 24px 0;
+  overflow: hidden;
+}
+.table thead, table thead {
+  background: #F8F8F8;
+}
+.table th, table th {
+  padding: 12px 24px;
+}
+.table th:first-child, table th:first-child {
+  width: 45%;
+}
+.table td, table td {
+  padding: 12px 24px;
+}
+.table td:first-child, table td:first-child {
+  width: 45%;
 }
 
 .table-products-title {
@@ -1513,27 +1530,7 @@
           justify-content: center;
 }
 
-.table {
-  margin: 24px 0;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.table thead {
-  background: #F8F8F8;
-}
-.table th {
-  padding: 12px 24px;
-}
-.table th:first-child {
-  width: 45%;
-}
-.table td {
-  padding: 12px 24px;
-}
-.table td:first-child {
-  width: 45%;
-}
-.table tr:nth-child(even) {
+.table-sales tr:nth-child(even) {
   background: #F8F8F8;
 }
 
