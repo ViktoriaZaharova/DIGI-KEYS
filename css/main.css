@@ -1948,6 +1948,8 @@
 }
 .page-acticle .box-text .product-line__icon img {
   margin: 0;
+  border: none;
+  border-radius: 0;
 }
 .page-acticle .box-text .product-line__name, .page-acticle .box-text .btn {
   text-decoration: none;
@@ -2047,11 +2049,18 @@
   width: 40px;
   height: 40px;
   min-width: 40px;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+.product-line__icon img {
+  border: none;
+  border-radius: 0;
 }
 .product-line__name {
   color: #363636;
   margin: 0 auto 0 0;
-  width: calc(100% - 40px - 100px);
+  width: calc(100% - 40px - 108px);
   padding: 0 16px;
   font-size: 20px;
   font-weight: 500;
@@ -2372,7 +2381,7 @@
 }
 
 .download-distribution {
-  margin: 24px 0 0;
+  margin: 24px 0;
 }
 .download-distribution-link {
   width: 100%;

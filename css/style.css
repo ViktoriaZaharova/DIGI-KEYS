@@ -376,7 +376,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 
 strong, b {
-  font-weight: bold;
+  font-weight: 600;
   display: inline-block;
 }
 
@@ -397,6 +397,13 @@ ul li:last-child, ol li:last-child {
 
 .list-dots {
   list-style-type: disc;
+}
+
+blockquote {
+  padding: 0 0 0 32px;
+  font-style: italic;
+  border-left: 1px solid #7C0DC6;
+  margin: 32px 0 40px;
 }
 
 .slick-slider {
@@ -421,7 +428,7 @@ ul li:last-child, ol li:last-child {
 
 h1 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 130%;
   color: #161616;
 }
@@ -438,7 +445,7 @@ h2 {
   width: 100%;
   margin: 0 0 40px;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h3 {
@@ -518,6 +525,12 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .col-100 {

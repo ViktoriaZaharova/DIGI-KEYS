@@ -11,7 +11,7 @@
 		height: auto
 	.slick-track
 		display: flex
-		align-items: stretch	
+		align-items: stretch
 	&__item
 		padding: 100px 0 190px
 		height: 100%
@@ -801,7 +801,6 @@
 		padding: 12px 24px
 		&:first-child
 			width: 45%
-	
 
 .table-products-title
 	border: none
@@ -1021,8 +1020,7 @@
 .table-sales
 	tr
 		&:nth-child(even)
-			background: #F8F8F8		
-
+			background: #F8F8F8
 
 .contats-wrapper
 	margin: 48px 0 40px
@@ -1306,6 +1304,8 @@
 		.product-line__icon
 			img
 				margin: 0
+				border: none
+				border-radius: 0
 		.product-line__name, .btn
 			text-decoration: none
 		.product-line__name
@@ -1367,10 +1367,16 @@
 		width: 40px
 		height: 40px
 		min-width: 40px
+		border: none
+		border-radius: 0
+		overflow: visible
+		img
+			border: none
+			border-radius: 0
 	&__name
 		color: #363636
 		margin: 0 auto 0 0
-		width: calc(100% - 40px - 100px)
+		width: calc(100% - 40px - 108px)
 		padding: 0 16px
 		font-size: 20px
 		font-weight: 500
@@ -1579,7 +1585,7 @@
 		font-size: 16px
 
 .download-distribution
-	margin: 24px 0 0
+	margin: 24px 0
 	&-link
 		width: 100%
 		display: flex
@@ -1616,9 +1622,9 @@
 		color: $accent
 	.tabs__content
 		>.reviews-box
-				display: none
-				&:nth-child(-n+5)
-					display: block
+			display: none
+			&:nth-child(-n+5)
+				display: block
 
 .reviews-box
 	width: 100%
@@ -1712,7 +1718,7 @@
 	&:hover
 		color: $accent
 		.like-box__icon
-			fill: $accent	
+			fill: $accent
 
 .answer-link
 	margin: 0 0 0 24px
