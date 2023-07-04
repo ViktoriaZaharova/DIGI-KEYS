@@ -780,9 +780,11 @@
   top: 120px;
   border: 1px solid #F8F3FC;
   border-radius: 8px;
+  padding: 20px;
 }
 .product-image img {
   max-height: 100%;
+  width: 100%;
 }
 .product-image .promo-label-list {
   display: none;
@@ -2293,11 +2295,11 @@
 }
 .distribution-line .product-line__name-category {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 0 0;
 }
 .distribution-line .product-line__name-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: #000;
 }
