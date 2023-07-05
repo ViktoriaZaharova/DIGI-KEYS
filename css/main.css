@@ -1205,6 +1205,12 @@
 .table td:first-child, table td:first-child {
   width: 45%;
 }
+.table tr, table tr {
+  background: #fff;
+}
+.table tr .bg-grey, table tr .bg-grey {
+  background: #F8F8F8;
+}
 
 .table-products-title {
   border: none;
@@ -1930,12 +1936,16 @@
   padding: 0 0 0 30px;
 }
 .page-acticle .box-text p {
+  line-height: 2;
   margin: 0 0 15px;
 }
 .page-acticle .box-text a {
   display: initial;
   text-decoration: underline;
   color: #7C0DC6;
+}
+.page-acticle .box-text h3 {
+  margin: 10px 0 15px;
 }
 .page-acticle .box-text .product-line__icon, .page-acticle .box-text .btn {
   display: -webkit-box;
