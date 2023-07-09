@@ -444,6 +444,7 @@
 }
 .promo-label img {
   margin: 0 4px 0 0;
+  width: 15px;
 }
 
 .promo-label-hit {
@@ -785,9 +786,15 @@
 .product-image img {
   max-height: 100%;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .product-image .promo-label-list {
   display: none;
+}
+
+.product-image .promo-label img {
+  width: 15px;
 }
 
 .checkout-box {
