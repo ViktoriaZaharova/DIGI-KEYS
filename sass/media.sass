@@ -5,6 +5,14 @@
 	.list-filter
 		margin: 0 0 0 auto
 
+@media only screen and (max-width: 1350px)
+	.about-wrapper
+		padding: 40px
+		&__image
+			max-width: 510px
+		&__content
+			max-width: 715px
+
 @media only screen and (max-width: 1200px)
 	header .logo
 		margin: 0 30px 0 0
@@ -140,10 +148,19 @@
 		display: flex
 
 	.form-search
-		margin: 20px 0 0	
+		margin: 20px 0 0
 
 	.payments-method
-		margin: 0	
+		margin: 0
+
+	.about-wrapper
+		&__content
+			max-width: 550px
+		&__image
+			max-width: 480px
+
+	.about-products .chapter-card__img
+		max-width: 170px
 
 @media only screen and (max-width: 992px)
 	.page
@@ -289,7 +306,15 @@
 
 	.distribution-line-characteristics
 		li
-			margin: 0 10px 0 0			
+			margin: 0 10px 0 0
+
+	.about-wrapper
+		&__content
+			font-size: 14px
+			max-width: 340px
+
+	.about-products .chapter-card__img
+		max-width: 120px
 
 @media only screen and (max-width: 768px)
 	header
@@ -406,16 +431,6 @@
 	.table, table
 		margin: 40px 0
 
-	.about-products
-		margin: 40px 0 28px
-		.box-text
-			margin: 8px 0 24px
-		.col-30
-			width: 50%
-		.chapter-card
-			.link
-				display: flex
-
 	.tabs__caption
 		li
 			margin: 0 6px 10px 0
@@ -452,6 +467,24 @@
 
 	.btn-load
 		margin: 20px auto 0
+
+	.about-wrapper
+		padding: 40px 12px 233px
+		&__image
+			right: -50px
+		&__content
+			max-width: none
+		h1
+			max-width: none
+
+	.about-products
+		.box-text
+			margin: 24px 0 20px
+		.chapter-card__img
+			max-width: 170px
+		.banner
+			.box-text
+				margin: 0	
 
 @media only screen and (max-width: 710px)
 	.home-slider .box-image
@@ -502,7 +535,7 @@
 			order: 1
 			margin: 16px 0 0
 		.list-category-news
-			margin: 0 auto 0 0 
+			margin: 0 auto 0 0
 
 	.page-acticle h2
 		margin: 15px 0 10px
@@ -715,7 +748,7 @@
 			max-width: 183px
 			right: -25px
 		.box-text
-			max-width: 170px
+			max-width: 180px
 		.btn
 			margin: 40px 0 0
 			height: 52px
@@ -810,9 +843,14 @@
 
 	.block_title
 		padding: 24px 13px
+		h3
+			font-size: 16px
 
 	.block_hover
 		padding: 0 13px 24px
+
+	.faq .block_hover
+		margin: 0
 
 	.articles-product
 		.col-30
@@ -880,30 +918,30 @@
 		padding: 30px 20px
 		font-size: 14px
 		&__title
-			font-size: 16px	
+			font-size: 16px
 
 	.mb-35
-		margin-bottom: 20px	
+		margin-bottom: 20px
 
 	.distribution-line
-		flex-wrap: wrap		
+		flex-wrap: wrap
 		.btn
 			margin: 0 auto
 			width: 100%
 		.product-line__name
 			width: calc(100% - 56px)
-			padding: 0 0 0 15px	
+			padding: 0 0 0 15px
 
 	.distribution-line-characteristics
 		width: 100%
-		margin: 10px 		
+		margin: 10px
 		font-size: 14px
 
 	.disctribution-content
 		margin: 40px 0 0
 		h3
 			margin: 0 0 20px
-			font-size: 22px	
+			font-size: 22px
 
 	.page-reviews .tabs__caption
 		margin: 20px 0
@@ -922,15 +960,23 @@
 
 	.reviews-box__user-avatar
 		order: -1
-		margin: 0 10px 0 0	
+		margin: 0 10px 0 0
 
 	.answer-box
 		padding-left: 16px
-		margin-top: 24px		
+		margin-top: 24px
 
 	blockquote
 		padding: 0 0 0 20px
-		margin: 20px 0 24px				
+		margin: 20px 0 24px
+
+	.about-products
+		.mb-60
+			margin-bottom: 16px
+		.col-25
+			max-width: none
+			width: 100%
+		.banner
 
 @media only screen and (max-width: 480px)
 	.product-card
@@ -957,13 +1003,11 @@
 		line-height: normal
 
 	.product-info-box .btn-group .btn
-		width: 100%	
+		width: 100%
 		margin-right: 0
 
 	.home-slider-nav__item, .slider-progress
 		width: 300px
-
-
 
 @media only screen and (max-width: 370px)
 	.home-slider-nav__item, .slider-progress

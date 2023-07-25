@@ -361,4 +361,15 @@ $(function () {
 		});
 	});
 
-})
+});
+
+$('.add-reviews').on('click', function (e) {  
+	e.preventDefault();
+	$(this).addClass('disabled');
+	$('.adding-review-about').fadeIn();
+});
+
+$('.answer-link').on('click', function (e) {
+	e.preventDefault();
+	$(this).fadeOut().parents('.reviews-box').find('.adding-review-user').fadeIn();
+});

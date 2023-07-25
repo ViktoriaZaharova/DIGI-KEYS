@@ -5,6 +5,17 @@
     margin: 0 0 0 auto;
   }
 }
+@media only screen and (max-width: 1350px) {
+  .about-wrapper {
+    padding: 40px;
+  }
+  .about-wrapper__image {
+    max-width: 510px;
+  }
+  .about-wrapper__content {
+    max-width: 715px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   header .logo {
     margin: 0 30px 0 0;
@@ -186,6 +197,15 @@
   .payments-method {
     margin: 0;
   }
+  .about-wrapper__content {
+    max-width: 550px;
+  }
+  .about-wrapper__image {
+    max-width: 480px;
+  }
+  .about-products .chapter-card__img {
+    max-width: 170px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .page {
@@ -349,6 +369,13 @@
   .distribution-line-characteristics li {
     margin: 0 10px 0 0;
   }
+  .about-wrapper__content {
+    font-size: 14px;
+    max-width: 340px;
+  }
+  .about-products .chapter-card__img {
+    max-width: 120px;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -458,20 +485,6 @@
   .table, table {
     margin: 40px 0;
   }
-  .about-products {
-    margin: 40px 0 28px;
-  }
-  .about-products .box-text {
-    margin: 8px 0 24px;
-  }
-  .about-products .col-30 {
-    width: 50%;
-  }
-  .about-products .chapter-card .link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .tabs__caption li {
     margin: 0 6px 10px 0;
   }
@@ -511,6 +524,27 @@
   }
   .btn-load {
     margin: 20px auto 0;
+  }
+  .about-wrapper {
+    padding: 40px 12px 233px;
+  }
+  .about-wrapper__image {
+    right: -50px;
+  }
+  .about-wrapper__content {
+    max-width: none;
+  }
+  .about-wrapper h1 {
+    max-width: none;
+  }
+  .about-products .box-text {
+    margin: 24px 0 20px;
+  }
+  .about-products .chapter-card__img {
+    max-width: 170px;
+  }
+  .about-products .banner .box-text {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 710px) {
@@ -817,7 +851,7 @@
     right: -25px;
   }
   .banner .box-text {
-    max-width: 170px;
+    max-width: 180px;
   }
   .banner .btn {
     margin: 40px 0 0;
@@ -928,8 +962,14 @@
   .block_title {
     padding: 24px 13px;
   }
+  .block_title h3 {
+    font-size: 16px;
+  }
   .block_hover {
     padding: 0 13px 24px;
+  }
+  .faq .block_hover {
+    margin: 0;
   }
   .articles-product .col-30 {
     width: 320px;
@@ -1059,6 +1099,13 @@
   blockquote {
     padding: 0 0 0 20px;
     margin: 20px 0 24px;
+  }
+  .about-products .mb-60 {
+    margin-bottom: 16px;
+  }
+  .about-products .col-25 {
+    max-width: none;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
