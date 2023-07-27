@@ -601,10 +601,10 @@
   color: #7C0DC6;
 }
 
-.dropdown.open .dropdown-toggle {
+.dropdown.open > .dropdown-toggle {
   color: #7C0DC6;
 }
-.dropdown.open .dropdown-toggle .dropdown-toggle__icon {
+.dropdown.open > .dropdown-toggle > .dropdown-toggle__icon {
   stroke: #7C0DC6;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2381,7 +2381,7 @@
 }
 
 .distribution-page .product-image {
-  height: 375px;
+  height: 346px;
 }
 .distribution-page .product-info-box {
   border-bottom: none;
@@ -2435,6 +2435,35 @@
   font-size: 16px;
 }
 
+.checkout-box-toggle {
+  width: 100%;
+  padding: 8px 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 32px;
+  font-size: 16px;
+}
+.checkout-box-toggle .svg-icon {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: none;
+  stroke: #363636;
+}
+
 .download-distribution {
   margin: 24px 0;
 }
@@ -2470,11 +2499,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #7C0DC6;
-  border: 1px solid #7C0DC6;
   border-radius: 4px;
-  padding: 4px 6.5px;
   width: 36px;
   height: 24px;
+}
+.download-distribution-link__lang img {
+  border-radius: 4px;
+  width: 100%;
 }
 
 .page-reviews .tabs__caption {
@@ -2677,7 +2708,7 @@
 }
 
 .btn-load-reviews {
-  margin: 60px auto 0;
+  margin: 8px auto 0;
 }
 
 .title-wrapper__content {
@@ -2726,6 +2757,38 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.adding-review-product {
+  display: block;
+  margin: 32px 0 0;
+}
+
+.ordered-product {
+  top: 110px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #F9F2FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: sticky;
+  padding: 80px 32px;
+}
+.ordered-product .promo-label-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+.ordered-product .promo-label {
+  font-weight: normal;
 }
 
 .rating-star {
@@ -2892,4 +2955,91 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.page-thanks .box-text {
+  max-width: 655px;
+}
+.page-thanks .btn {
+  margin: 40px 0 0;
+}
+
+.loader-checked {
+  width: 78px;
+  height: 78px;
+  background: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 32px;
+  padding: 20px;
+  fill: green;
+  position: relative;
+}
+.loader-checked .circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.loader-checked .circle__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.loader-checked .circle__spinner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.loader-checked .circle__spinner .path {
+  stroke: green;
+  stroke-linecap: round;
+  -webkit-animation: dash 10s linear forwards;
+  animation: dash 10s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 130, 150;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 130, 150;
+    stroke-dashoffset: 0;
+  }
 }

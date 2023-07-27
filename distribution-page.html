@@ -34,261 +34,144 @@
 							<use xlink:href="img/sprite.svg#close"></use>
 						</svg></div>
 				</div>
-				<div class="mobile-menu__body">
 
+				<div class="mobile-menu__body">
+					<form method="post" class="form-search">
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+						<label><input type="text" name="search" placeholder="Что вы ищите?"></label>
+					</form>
 					<ul class="mobile-menu-list my-ul">
-						<li>
-							<a href="#" class="js-tab-trigger" data-tab="1">
-								<svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#catalog-icon"></use>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<svg class="svg-icon mobile-menu-list__icon">
+									<use xlink:href="img/sprite.svg#burger-icon"></use>
 								</svg>
 								<span>Каталог</span>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="js-tab-trigger" data-tab="2">
-								<svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#clients-icon"></use>
+								<svg class="svg-icon svg-icon__arrow">
+									<use xlink:href="img/sprite.svg#arrow-menu"></use>
 								</svg>
-								<span>Для клиентов</span>
 							</a>
+
+							<div class="dropdown-menu">
+								<ul class="sidebar-menu my-ul">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Microsoft Windows</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle"">
+																				<span>Microsoft Office</span>
+																				<svg class=" svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Офисные приложения</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Офисные приложения</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Windows Server</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Windows Server</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Антивирусы</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Антивирусы</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Прочее</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Прочее</a>
+										</div>
+									</li>
+								</ul>
+							</div>
 						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<svg class="svg-icon mobile-menu-list__icon stroke-none">
+									<use xlink:href="img/sprite.svg#book-icon"></use>
+								</svg>
+								<span>Информация</span>
+
+								<svg class="svg-icon svg-icon__arrow">
+									<use xlink:href="img/sprite.svg#arrow-menu"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="about.html" class="dropdown-item">О магазине</a>
+								<a href="information.html" class="dropdown-item">Юр. лицам</a>
+								<a href="article.html" class="dropdown-item">Статьи</a>
+							</div>
+						</li>
+						<li><a href="distributions.html">
+								<svg class="svg-icon mobile-menu-list__icon">
+									<use xlink:href="img/sprite.svg#code-icon"></use>
+								</svg>
+								Дистрибутивы</a></li>
+						<li><a href="contacts.html">
+								<svg class="svg-icon mobile-menu-list__icon">
+									<use xlink:href="img/sprite.svg#mail-mobile"></use>
+								</svg>
+								Контакты</a></li>
 					</ul>
 
-					<div class="mobile-menu-wrapper mobile-menu-wrapper1 js-tab-content" data-tab="1">
-						<div class="left-sidebar">
-							<ul class="menu-home-mobile my-ul">
-								<li><a href="#" class="js-tab-trigger click" data-tab="1">
-										<svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#catalog-icon"></use>
-										</svg>
-									</a></li>
-								<li><a href="#" class="js-tab-trigger" data-tab="2">
-										<svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#clients-icon"></use>
-										</svg>
-									</a></li>
-							</ul>
-
-							<ul class="contacts-mobile my-ul">
-								<li>
-									<a href="#"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#phone-mobile"></use>
-										</svg></a>
-								</li>
-								<li>
-									<a href="#"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#tg-mobile"></use>
-										</svg></a>
-								</li>
-								<li>
-									<a href="#" class="mail-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#mail-mobile"></use>
-										</svg></a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="right-sidebar">
-							<ul class="sidebar-menu my-ul">
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle">
-										<span>Microsoft Windows</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
-										<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
-										<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
-										<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Microsoft Office</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Microsoft Office 2021</a>
-										<a href="#" class="dropdown-item">Microsoft Office 2019</a>
-										<a href="#" class="dropdown-item">Microsoft Office 2016</a>
-										<a href="#" class="dropdown-item">Microsoft Office 2013</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Офисные приложения</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Офисные приложения</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Windows Server</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Windows Server</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Антивирусы</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Антивирусы</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Прочее</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Прочее</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="mobile-menu-wrapper mobile-menu-wrapper2 js-tab-content" data-tab="2">
-						<div class="left-sidebar">
-							<ul class="menu-home-mobile my-ul">
-								<li><a href="#" class="js-tab-trigger" data-tab="1">
-										<svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#catalog-icon"></use>
-										</svg>
-									</a></li>
-								<li><a href="#" class="js-tab-trigger click" data-tab="2">
-										<svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#clients-icon"></use>
-										</svg>
-									</a></li>
-							</ul>
-
-							<ul class="contacts-mobile my-ul">
-								<li>
-									<a href="#"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#phone-mobile"></use>
-										</svg></a>
-								</li>
-								<li>
-									<a href="#"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#tg-mobile"></use>
-										</svg></a>
-								</li>
-								<li>
-									<a href="#" class="mail-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#mail-mobile"></use>
-										</svg></a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="right-sidebar">
-							<ul class="sidebar-menu my-ul">
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle">
-										<span>Microsoft Windows 2</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
-										<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
-										<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
-										<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Microsoft Office</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Microsoft Office 2021</a>
-										<a href="#" class="dropdown-item">Microsoft Office 2019</a>
-										<a href="#" class="dropdown-item">Microsoft Office 2016</a>
-										<a href="#" class="dropdown-item">Microsoft Office 2013</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Офисные приложения</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Офисные приложения</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Windows Server</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Windows Server</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Антивирусы</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Антивирусы</a>
-									</div>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Прочее</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a href="#" class="dropdown-item">Прочее</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-
 					<div class="mobile-menu__footer">
-						<div class="contacts-line">
-							<a href="#" class="link-tg color-accent">Telegram</a>
-							<a href="tel:+78003019309" class="link-phone">+7 800 301 93 09</a>
-						</div>
-						<a href="#" class="btn btn-sm btn-border-accent">Написать</a>
+						<a href="tel:+78003019309" class="btn btn-border-accent link-phone">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+						</a>
+						<a href="#" class="btn btn-border-accent link-tg"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#tg-mobile"></use>
+							</svg></a>
+						<a href="#" class="btn btn-sm btn-light-accent">Написать</a>
 					</div>
 				</div>
-
-
 			</div>
 
 			<header>
@@ -321,10 +204,10 @@
 									</div>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-										<span>Microsoft Office</span>
-										<svg class="svg-icon dropdown-toggle__icon">
-											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+									<a href="#" class="dropdown-toggle"">
+													<span>Microsoft Office</span>
+													<svg class=" svg-icon dropdown-toggle__icon">
+										<use xlink:href="img/sprite.svg#arrow-bottom"></use>
 										</svg>
 									</a>
 									<div class="dropdown-menu">
@@ -335,7 +218,7 @@
 									</div>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+									<a href="#" class="dropdown-toggle">
 										<span>Офисные приложения</span>
 										<svg class="svg-icon dropdown-toggle__icon">
 											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
@@ -346,7 +229,7 @@
 									</div>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+									<a href="#" class="dropdown-toggle">
 										<span>Windows Server</span>
 										<svg class="svg-icon dropdown-toggle__icon">
 											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
@@ -357,7 +240,7 @@
 									</div>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+									<a href="#" class="dropdown-toggle">
 										<span>Антивирусы</span>
 										<svg class="svg-icon dropdown-toggle__icon">
 											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
@@ -368,7 +251,7 @@
 									</div>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+									<a href="#" class="dropdown-toggle">
 										<span>Прочее</span>
 										<svg class="svg-icon dropdown-toggle__icon">
 											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
@@ -383,16 +266,61 @@
 					</div>
 					<nav class="nav-menu">
 						<ul class="menu my-ul">
+							<li class="dropdown-my">
+								<a href="#" class="dropdown-my-toggle">
+									<span>Информация</span>
+									<svg class="svg-icon dropdown-toggle__icon">
+										<use xlink:href="img/sprite.svg#arrow-menu"></use>
+									</svg>
+								</a>
+								<div class="dropdown-menu">
+									<a href="about.html" class="dropdown-item">О магазине</a>
+									<a href="information.html" class="dropdown-item">Юр. лицам</a>
+									<a href="article.html" class="dropdown-item">Статьи</a>
+								</div>
+							</li>
+							<li><a href="distributions.html">Дистрибутивы</a></li>
 							<li><a href="contacts.html">Контакты</a></li>
-							<li><a href="information.html">Юр.лицам</a></li>
 						</ul>
 					</nav>
 
+					<div class="search-wrapper">
+						<div class="btn-search"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></div>
+
+						<form method="post" class="form-search">
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+							<label><input type="text" name="search" placeholder="Что вы ищите?"></label>
+						</form>
+
+						<div class="search-result">
+							<div class="search-result__box">
+								<a href="catalog.html" class="search-result__category">Каталог</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="product.html">Microsoft Office 2021</a></li>
+									<li><a href="product.html">Microsoft Office 2019</a></li>
+									<li><a href="product.html">Microsoft Office 2018</a></li>
+								</ul>
+							</div>
+							<div class="search-result__box">
+								<a href="article.html" class="search-result__category">Статьи</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="article.html">Инструкция по установке Microsoft Office</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
 					<a href="tel:+78003019309" class="phone">+7 800 301 93 09</a>
 
-					<a href="#" class="link-tg color-accent">Telegram</a>
+					<a href="#" class="link-tg btn btn-border-accent"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#tg-mobile"></use>
+						</svg></a>
 
-					<a href="mailto:" class="btn btn-mail btn-border-accent">Написать</a>
+					<a href="mailto:" class="btn btn-sm btn-mail btn-light-accent">Написать</a>
 
 					<a href="#" class="btn-burger">
 						<svg class="svg-icon">
@@ -475,24 +403,7 @@
 													</a>
 												</div>
 												<h1>Microsoft Office 365 Pro Plus</h1>
-												<div class="product-info-box__footer">
-													<ul class="list-characteristics my-ul">
-														<li>
-															<p>Процессор</p>
-															<span>1.6 ГГц или выше</span>
-														</li>
-													</ul>
-													<div class="status-availability">
-														<img src="img/check.svg" alt="">
-														<span>В наличии</span>
-													</div>
-													<div class="delivery-instant">
-														<img src="img/rocket.png" alt="">
-														<span>Моментальная доставка</span>
-													</div>
-													<div class="payments-method"><img src="img/paymentsMethod.svg" alt=""></div>
 
-												</div>
 											</div>
 
 											<div class="product-info-box">
@@ -525,10 +436,6 @@
 													<li>
 														<p>Язык интерфейса</p>
 														<span>Русский, Английский и ещё 89 языков</span>
-													</li>
-													<li>
-														<p>Дистрибутив</p>
-														<a href="#" class="color-accent" target="_blank">Перейти к загрузке</a>
 													</li>
 												</ul>
 											</div>
@@ -768,8 +675,15 @@
 
 							</div>
 
-							<div class="col-25 d-pc">
-								<div class="checkout-box checkout-box-verifed">
+							<div class="col-25">
+								<div class="checkout-box checkout-box-fix checkout-box-verifed">
+									<div class="checkout-box-toggle">
+										<span>Скачать дистрибутив</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-menu"></use>
+										</svg>
+									</div>
+
 									<div class="verifed-box">
 										<div class="verifed-box__icon"><img src="img/verifed.svg" alt=""></div>
 										<div class="verifed-box__text">Проверено на вирусы</div>
@@ -799,22 +713,22 @@
 									<div class="download-distribution">
 										<h4>Скачать у нас</h4>
 										<a href="#" download="#" class="download-distribution-link">
-											<span class="download-distribution-link__lang">Ru</span>
+											<span class="download-distribution-link__lang"><img src="img/flag1.svg" alt=""></span>
 											<span class="download-distribution-link__name">Версия x32</span>
 											<span class="download-distribution-link__download color-accent">Скачать</span>
 										</a>
 										<a href="#" download="#" class="download-distribution-link">
-											<span class="download-distribution-link__lang">Ru</span>
+											<span class="download-distribution-link__lang"><img src="img/flag1.svg" alt=""></span>
 											<span class="download-distribution-link__name">Версия x64</span>
 											<span class="download-distribution-link__download color-accent">Скачать</span>
 										</a>
 										<a href="#" download="#" class="download-distribution-link">
-											<span class="download-distribution-link__lang">En</span>
+											<span class="download-distribution-link__lang"><img src="img/flag2.svg" alt=""></span>
 											<span class="download-distribution-link__name">Версия x32</span>
 											<span class="download-distribution-link__download color-accent">Скачать</span>
 										</a>
 										<a href="#" download="#" class="download-distribution-link">
-											<span class="download-distribution-link__lang">En</span>
+											<span class="download-distribution-link__lang"><img src="img/flag2.svg" alt=""></span>
 											<span class="download-distribution-link__name">Версия x32</span>
 											<span class="download-distribution-link__download color-accent">Скачать</span>
 										</a>

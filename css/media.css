@@ -15,13 +15,30 @@
   .about-wrapper__content {
     max-width: 715px;
   }
+  .search-wrapper {
+    max-width: 480px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   header .logo {
     margin: 0 30px 0 0;
   }
+  .nav-menu {
+    display: none;
+  }
+  .menu {
+    margin: 0 0 20px;
+  }
   .menu li {
-    margin: 0 0 0 30px;
+    width: 100%;
+  }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dropdown-catalog {
+    margin: 0 auto 0 0;
   }
   .home-slider .box-image {
     max-width: 600px;
@@ -206,6 +223,70 @@
   .about-products .chapter-card__img {
     max-width: 170px;
   }
+  .search-wrapper {
+    max-width: 270px;
+  }
+  .page-reviews .col-25 {
+    width: 100%;
+  }
+  .checkout-box-fix {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    z-index: 10;
+    background: #fff;
+    padding: 24px 20px;
+    height: 88px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-radius: 24px 24px 0px 0px;
+    -webkit-box-shadow: 0px -4px 40px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px -4px 40px 0px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid #F9F2FF;
+  }
+  .checkout-box-fix .list-characteristics {
+    width: 100%;
+    margin: 12px 0 0;
+  }
+  .checkout-box-fix .key-box {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 0 8px;
+    width: 100%;
+  }
+  .checkout-box-fix .delivery-instant {
+    margin: 0 auto 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .checkout-box-fix .download-distribution {
+    width: 100%;
+    margin: 32px 0;
+  }
+  .checkout-box-fix .download-distribution h4 {
+    display: none;
+  }
+  .checkout-box-fix.active {
+    height: auto;
+  }
+  .checkout-box-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .distribution-page .product-info-box__head {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .page {
@@ -217,23 +298,14 @@
   header .btn-mail, header .link-tg, header .phone {
     display: none;
   }
-  .nav-menu {
+  header.active .nav-menu {
     display: none;
   }
-  .menu {
-    margin: 0 0 20px;
+  .search-wrapper {
+    display: none;
   }
-  .menu li {
-    width: 100%;
-    margin: 0 0 20px;
-  }
-  .btn-burger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .dropdown-catalog {
-    margin: 0 auto 0 0;
+  .btn-burder {
+    margin: 0;
   }
   .home {
     padding: 106px 0 0;
@@ -375,6 +447,12 @@
   }
   .about-products .chapter-card__img {
     max-width: 120px;
+  }
+  .link-phone, .link-tg {
+    padding: 10px;
+  }
+  .ordered-product {
+    padding: 30px 15px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -546,6 +624,26 @@
   .about-products .banner .box-text {
     margin: 0;
   }
+  .title-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rating-company {
+    width: 100%;
+    margin: 20px 0 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .rating-company-values {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .adding-review-user {
+    padding: 0 0 0 24px;
+    margin: 24px 0 0;
+  }
 }
 @media only screen and (max-width: 710px) {
   .home-slider .box-image {
@@ -605,10 +703,19 @@
   .page-acticle h2 {
     margin: 15px 0 10px;
   }
+  .page-review-product .col-70 {
+    width: 100%;
+  }
+  .page-review-product .col-30 {
+    display: none;
+  }
+  .ordered-product {
+    margin: 30px 0 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   header {
-    padding: 35px 0;
+    padding: 24px 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
   }
@@ -1106,6 +1213,24 @@
   .about-products .col-25 {
     max-width: none;
     width: 100%;
+  }
+  .link-phone, .link-tg {
+    padding: 10px;
+  }
+  .adding-review .col-50 {
+    width: 100%;
+  }
+  .rating-star {
+    width: 100%;
+    margin: 8px 0 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .checkout-box-fix .delivery-instant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media only screen and (max-width: 480px) {

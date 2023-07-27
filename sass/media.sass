@@ -13,12 +13,26 @@
 		&__content
 			max-width: 715px
 
+	.search-wrapper
+		max-width: 480px
+
 @media only screen and (max-width: 1200px)
 	header .logo
 		margin: 0 30px 0 0
 
-	.menu li
-		margin: 0 0 0 30px
+	.nav-menu
+		display: none
+
+	.menu
+		margin: 0 0 20px
+		li
+			width: 100%
+
+	.btn-burger
+		display: flex
+
+	.dropdown-catalog
+		margin: 0 auto 0 0
 
 	.home-slider
 		.box-image
@@ -162,6 +176,53 @@
 	.about-products .chapter-card__img
 		max-width: 170px
 
+	.search-wrapper
+		max-width: 270px
+
+	.page-reviews
+		.col-25
+			width: 100%
+
+	.checkout-box-fix
+		position: fixed
+		left: 0
+		bottom: 0
+		top: auto
+		z-index: 10
+		background: #fff
+		padding: 24px 20px
+		height: 88px
+		flex-direction: column
+		flex-wrap: nowrap
+		justify-content: flex-start
+		border-radius: 24px 24px 0px 0px
+		box-shadow: 0px -4px 40px 0px rgba(0, 0, 0, 0.08)
+		border-top: 1px solid #F9F2FF
+		.list-characteristics
+			width: 100%
+			margin: 12px 0 0
+		.key-box
+			order: 1
+			margin: 0 0 8px
+			width: 100%
+		.delivery-instant
+			margin: 0 auto 0
+			order: 1
+		.download-distribution
+			width: 100%
+			margin: 32px 0
+			h4
+				display: none
+		&.active
+			height: auto
+
+	.checkout-box-toggle
+		display: flex
+
+	.distribution-page
+		.product-info-box__head
+			margin: 0
+
 @media only screen and (max-width: 992px)
 	.page
 		padding: 122px 0 0
@@ -170,21 +231,15 @@
 		padding: 30px 0 24px
 		.btn-mail, .link-tg, .phone
 			display: none
+		&.active
+			.nav-menu
+				display: none
 
-	.nav-menu
+	.search-wrapper
 		display: none
 
-	.menu
-		margin: 0 0 20px
-		li
-			width: 100%
-			margin: 0 0 20px
-
-	.btn-burger
-		display: flex
-
-	.dropdown-catalog
-		margin: 0 auto 0 0
+	.btn-burder
+		margin: 0
 
 	.home
 		padding: 106px 0 0
@@ -315,6 +370,12 @@
 
 	.about-products .chapter-card__img
 		max-width: 120px
+
+	.link-phone, .link-tg
+		padding: 10px
+
+	.ordered-product
+		padding: 30px 15px
 
 @media only screen and (max-width: 768px)
 	header
@@ -484,7 +545,22 @@
 			max-width: 170px
 		.banner
 			.box-text
-				margin: 0	
+				margin: 0
+
+	.title-wrapper
+		flex-wrap: wrap
+
+	.rating-company
+		width: 100%
+		margin: 20px 0 0
+		justify-content: flex-start
+
+	.rating-company-values
+		justify-content: start
+
+	.adding-review-user
+		padding: 0 0 0 24px
+		margin: 24px 0 0
 
 @media only screen and (max-width: 710px)
 	.home-slider .box-image
@@ -540,9 +616,18 @@
 	.page-acticle h2
 		margin: 15px 0 10px
 
+	.page-review-product
+		.col-70
+			width: 100%
+		.col-30
+			display: none
+
+	.ordered-product
+		margin: 30px 0 0
+
 @media only screen and (max-width: 576px)
 	header
-		padding: 35px 0
+		padding: 24px 0
 		transition: .3s ease
 		.logo
 			margin: 0 auto 0 0
@@ -976,7 +1061,21 @@
 		.col-25
 			max-width: none
 			width: 100%
-		.banner
+
+	.link-phone, .link-tg
+		padding: 10px
+
+	.adding-review
+		.col-50
+			width: 100%
+
+	.rating-star
+		width: 100%
+		margin: 8px 0 0
+		justify-content: flex-end
+
+	.checkout-box-fix .delivery-instant
+		display: flex
 
 @media only screen and (max-width: 480px)
 	.product-card
