@@ -210,9 +210,9 @@
 			order: 1
 		.download-distribution
 			width: 100%
-			margin: 32px 0
-			h4
-				display: none
+			margin: 16px 0
+			// h4
+			// 	display: none
 		&.active
 			height: auto
 
@@ -278,6 +278,7 @@
 	.btn
 		padding: 14px 20px
 		height: 44px
+		font-size: 14px
 
 	.h1
 		font-size: 32px
@@ -310,9 +311,6 @@
 			padding: 40px 30px
 		&__body
 			height: calc(100% - 255px)
-
-	.btn
-		font-size: 14px
 
 	.promo-label
 		padding: 5.5px 10px
@@ -376,6 +374,10 @@
 
 	.ordered-product
 		padding: 30px 15px
+
+	.form-sale
+		.copy-line
+			padding: 10px 16px
 
 @media only screen and (max-width: 768px)
 	header
@@ -927,7 +929,6 @@
 			font-size: 18px
 
 	.block_title
-		padding: 24px 13px
 		h3
 			font-size: 16px
 
@@ -1076,6 +1077,12 @@
 
 	.checkout-box-fix .delivery-instant
 		display: flex
+
+	.form-sale
+		.copy-line 
+			width: 100%
+			margin: 0 0 16px
+			max-width: none
 
 @media only screen and (max-width: 480px)
 	.product-card

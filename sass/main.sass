@@ -364,6 +364,12 @@
 	width: calc(100% - 310px)
 	padding: 0 0 0 35px
 
+.download-button
+	width: 100%
+	padding: 0
+	height: 40px
+	margin: 20px 0
+
 .sidebar
 	border: 1.3px solid #F8F8F8
 	border-radius: 8px
@@ -377,7 +383,7 @@
 
 .sidebar-menu
 	li
-		margin: 0 0 16px
+		margin: 0
 		&:last-child
 			margin: 0
 		a
@@ -864,27 +870,34 @@
 	z-index: 1
 
 .attention-box
-	margin: 64px 0 0
-	border: 1.3px solid #EB5757
+	padding: 32px
+	margin: 620x 0 0
+	border: none
+	background: #FCF5E3
 	border-radius: 8px
+	color: #161616
 	align-items: flex-start
 	h3
-		color: #EB5757
+		color: #EDA133
 		margin: 0 0 16px
 	.box-text
 		padding: 0
 		width: 100%
+		.link-inline
+			border: none
+		a
+			color: #161616
 	&__icon
 		@include d-flex
-		width: 80px
-		height: 80px
-		min-width: 80px
+		width: 40px
+		height: 40px
+		min-width: 40px
 		border-radius: 8px
-		background: #EB5757
-		padding: 8px
+		background: transparent
+		order: 1
 	&__text
-		width: calc(100% - 80px)
-		padding: 0 0 0 28px
+		width: calc(100% - 40px)
+		
 
 .panel_heading
 	width: 100%
@@ -915,6 +928,7 @@
 	padding: 15px
 	h3
 		margin: 0
+		font-size: 16px
 
 .block_hover
 	display: none
@@ -927,7 +941,7 @@
 
 .faq
 	.block_hover
-		margin: -16px 0 0
+		// margin: -16px 0 0
 		padding: 0 15px 32px
 
 .article-card
@@ -1008,6 +1022,10 @@
 			display: initial
 			text-decoration: underline
 			color: #7C0DC6
+	.attention-box
+		.box-text
+			a
+				color: #161616		
 
 .page-politics
 	h1
@@ -1044,7 +1062,7 @@
 	background: #F8F8F8
 	border-radius: 8px
 	&__content
-		width: calc(100% - 437px)
+		width: calc(100% - 369px)
 		.box-text
 			margin: 8px 0 48px
 			font-size: 14px
@@ -1053,10 +1071,10 @@
 .requisites
 	border-radius: 6px
 	background: #fff
-	max-width: 437px
+	max-width: 369px
 	width: 100%
 	padding: 16px 24px
-	line-height: 150%
+	line-height: 180%
 
 .contacts-box
 	font-size: 14px
@@ -1073,7 +1091,7 @@
 	margin: 80px 0 0
 	.box-text
 		margin: 8px 0 32px
-		max-width: 650px
+		// max-width: 650px
 	.chapter-card
 		&__img
 			max-width: 230px
@@ -1594,7 +1612,6 @@
 		&:last-child
 			padding: 24px 0 0
 			border-top: 1px solid #EBEBEB
-		
 
 .verifed-box
 	display: flex
@@ -1634,7 +1651,7 @@
 		height: 24px
 		@include d-flex
 		fill: none
-		stroke: #363636		
+		stroke: #363636
 
 .download-distribution
 	margin: 24px 0
@@ -1769,7 +1786,7 @@
 		height: 24px
 		fill: #161616
 	&__value
-		margin: 0 0 0 8px
+		margin: 0 8px 0 0
 	&:last-child
 		margin: 0
 	&:hover
@@ -1855,7 +1872,7 @@
 		width: 20px
 		height: 20px
 		@include d-flex
-		margin: 0 4px 0 0
+		margin: 0 0 0 8px
 		position: relative
 		fill: #FCEFCA
 		z-index: 1
@@ -1882,6 +1899,31 @@
 		margin: 0 auto
 	input
 		display: none
+
+.jFiler
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%		
+
+.dropzone
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+
+#upload-queue
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	width: 100%
+
+.fileup-file
+	margin: 0 10px 10px 0
+	&:last-child
+		margin: 0 0 10px
 
 .add-reviews.disabled
 	appearance: none
@@ -2029,3 +2071,23 @@
 	100%
 		stroke-dasharray: 130, 150
 		stroke-dashoffset: 0
+
+// page-sale-key
+.sale-key
+	&__content
+		max-width: 655px
+		.box-text
+			max-width: 500px
+
+.form-sale
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 40px 0 0att
+	.copy-line
+		margin: 0 16px 0 0
+		max-width: 233px
+		width: 100%
+	.btn
+		margin: 0			
+

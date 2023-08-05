@@ -13,6 +13,7 @@
 
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fileup.min.css">
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -160,14 +161,14 @@
 					</ul>
 
 					<div class="mobile-menu__footer">
-							<a href="tel:+78003019309" class="btn btn-border-accent link-phone">
-								<svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#phone"></use>
-								</svg>
-							</a>
-							<a href="#" class="btn btn-border-accent link-tg"><svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#tg-mobile"></use>
-								</svg></a>
+						<a href="tel:+78003019309" class="btn btn-border-accent link-phone">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+						</a>
+						<a href="#" class="btn btn-border-accent link-tg"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#tg-mobile"></use>
+							</svg></a>
 						<a href="#" class="btn btn-sm btn-light-accent">Написать</a>
 					</div>
 				</div>
@@ -417,25 +418,30 @@
 											<div class="row">
 												<div class="col-50">
 													<label>
-														<input type="text" placeholder="E-mail" name="mail" requerid>
+														<span class="input-text">E-mail</span>
+														<input type="text" name="mail" requerid>
 													</label>
 												</div>
 												<div class="col-50">
 													<label>
-														<input type="text" placeholder="Телефон" name="phone" requerid>
+														<span class="input-text">Телефон</span>
+														<input type="text" name="phone" requerid>
 													</label>
 												</div>
 
 												<div class="col-100">
 													<label>
-														<textarea name="message" placeholder="Ваш ответ"></textarea>
+														<span class="input-text">Ваш ответ</span>
+														<textarea name="message"></textarea>
 													</label>
 
 													<label class="label-file">
-														<input type="file" name="file">
+														<input type="file" name="file" id="upload-input" multiple>
 														<span class="label-file__text">Перенесите сюда фотографию <a href="#"
 																class="color-accent text-decoration">или загрузите с компьютера</a></span>
+																<span class="dropzone" id="upload-dropzone"></span>
 													</label>
+													<div id="upload-queue"></div>
 													<button type="submit" class="btn btn-light-accent">Отправить отзыв</button>
 												</div>
 
@@ -492,8 +498,9 @@
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#like"></use>
 													</svg></span>
-												<span class="like-box__value">0</span>
+												
 											</a>
+											<span class="like-box__value">0</span>
 											<a href="#" class="like-box">
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#dislike"></use>
@@ -526,25 +533,30 @@
 												<div class="row">
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="E-mail" name="mail" requerid>
+															<span class="input-text">E-mail</span>
+															<input type="text" name="mail" requerid>
 														</label>
 													</div>
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="Телефон" name="phone" requerid>
+															<span class="input-text">Телефон</span>
+															<input type="text" name="phone" requerid>
 														</label>
 													</div>
 
 													<div class="col-100">
 														<label>
-															<textarea name="message" placeholder="Ваш ответ"></textarea>
+															<span class="input-text">Ваш ответ</span>
+															<textarea name="message"></textarea>
 														</label>
 
 														<label class="label-file">
-															<input type="file" name="file">
-															<span class="label-file__text">Перенесите сюда фотографию <a href="#"
-																	class="color-accent text-decoration">или загрузите с компьютера</a></span>
+															<input type="file" name="file" id="upload-input" multiple>
+															<span class="label-file__text">Перенесите сюда фотографию <a href="#" class="color-accent text-decoration">или
+																	загрузите с компьютера</a></span>
+															<span class="dropzone" id="upload-dropzone"></span>
 														</label>
+														<div id="upload-queue"></div>
 														<button type="submit" class="btn btn-light-accent">Ответить</button>
 													</div>
 
@@ -603,8 +615,9 @@
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#like"></use>
 													</svg></span>
-												<span class="like-box__value">0</span>
+												
 											</a>
+											<span class="like-box__value">0</span>
 											<a href="#" class="like-box">
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#dislike"></use>
@@ -636,28 +649,32 @@
 												<div class="row">
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="E-mail" name="mail" requerid>
+															<span class="input-text">E-mail</span>
+															<input type="text" name="mail" requerid>
 														</label>
 													</div>
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="Телефон" name="phone" requerid>
+															<span class="input-text">Телефон</span>
+															<input type="text" name="phone" requerid>
 														</label>
 													</div>
 
 													<div class="col-100">
 														<label>
-															<textarea name="message" placeholder="Ваш ответ"></textarea>
+															<span class="input-text">Ваш ответ</span>
+															<textarea name="message"></textarea>
 														</label>
 
 														<label class="label-file">
-															<input type="file" name="file">
-															<span class="label-file__text">Перенесите сюда фотографию <a href="#"
-																	class="color-accent text-decoration">или загрузите с компьютера</a></span>
+															<input type="file" name="file" id="upload-input" multiple>
+															<span class="label-file__text">Перенесите сюда фотографию <a href="#" class="color-accent text-decoration">или
+																	загрузите с компьютера</a></span>
+															<span class="dropzone" id="upload-dropzone"></span>
 														</label>
+														<div id="upload-queue"></div>
 														<button type="submit" class="btn btn-light-accent">Ответить</button>
 													</div>
-
 
 												</div>
 											</div>
@@ -712,8 +729,9 @@
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#like"></use>
 													</svg></span>
-												<span class="like-box__value">0</span>
+												
 											</a>
+											<span class="like-box__value">0</span>
 											<a href="#" class="like-box">
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#dislike"></use>
@@ -745,25 +763,30 @@
 												<div class="row">
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="E-mail" name="mail" requerid>
+															<span class="input-text">E-mail</span>
+															<input type="text" name="mail" requerid>
 														</label>
 													</div>
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="Телефон" name="phone" requerid>
+															<span class="input-text">Телефон</span>
+															<input type="text" name="phone" requerid>
 														</label>
 													</div>
 
 													<div class="col-100">
 														<label>
-															<textarea name="message" placeholder="Ваш ответ"></textarea>
+															<span class="input-text">Ваш ответ</span>
+															<textarea name="message"></textarea>
 														</label>
 
 														<label class="label-file">
-															<input type="file" name="file">
-															<span class="label-file__text">Перенесите сюда фотографию <a href="#"
-																	class="color-accent text-decoration">или загрузите с компьютера</a></span>
+															<input type="file" name="file" id="upload-input" multiple>
+															<span class="label-file__text">Перенесите сюда фотографию <a href="#" class="color-accent text-decoration">или
+																	загрузите с компьютера</a></span>
+															<span class="dropzone" id="upload-dropzone"></span>
 														</label>
+														<div id="upload-queue"></div>
 														<button type="submit" class="btn btn-light-accent">Ответить</button>
 													</div>
 
@@ -771,7 +794,6 @@
 												</div>
 											</div>
 										</form>
-
 									</div>
 								</div>
 								<div class="reviews-box">
@@ -821,8 +843,9 @@
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#like"></use>
 													</svg></span>
-												<span class="like-box__value">0</span>
+												
 											</a>
+											<span class="like-box__value">0</span>
 											<a href="#" class="like-box">
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#dislike"></use>
@@ -885,14 +908,15 @@
 													<span class="like-box__icon"><svg class="svg-icon">
 															<use xlink:href="img/sprite.svg#like"></use>
 														</svg></span>
-													<span class="like-box__value">0</span>
+													
 												</a>
+												<span class="like-box__value">0</span>
 												<a href="#" class="like-box">
 													<span class="like-box__icon"><svg class="svg-icon">
 															<use xlink:href="img/sprite.svg#dislike"></use>
 														</svg></span>
 												</a>
-												<a href="#reviewsModal" class="color-accent open_modal answer-link">Ответить</a>
+												<a href="#" class="color-accent answer-link">Ответить</a>
 											</div>
 											<div class="reviews-box__user">
 												<div class="reviews-box__user-name">
@@ -917,25 +941,30 @@
 												<div class="row">
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="E-mail" name="mail" requerid>
+															<span class="input-text">E-mail</span>
+															<input type="text" name="mail" requerid>
 														</label>
 													</div>
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="Телефон" name="phone" requerid>
+															<span class="input-text">Телефон</span>
+															<input type="text" name="phone" requerid>
 														</label>
 													</div>
 
 													<div class="col-100">
 														<label>
-															<textarea name="message" placeholder="Ваш ответ"></textarea>
+															<span class="input-text">Ваш ответ</span>
+															<textarea name="message"></textarea>
 														</label>
 
 														<label class="label-file">
-															<input type="file" name="file">
-															<span class="label-file__text">Перенесите сюда фотографию <a href="#"
-																	class="color-accent text-decoration">или загрузите с компьютера</a></span>
+															<input type="file" name="file" id="upload-input" multiple>
+															<span class="label-file__text">Перенесите сюда фотографию <a href="#" class="color-accent text-decoration">или
+																	загрузите с компьютера</a></span>
+															<span class="dropzone" id="upload-dropzone"></span>
 														</label>
+														<div id="upload-queue"></div>
 														<button type="submit" class="btn btn-light-accent">Ответить</button>
 													</div>
 
@@ -999,14 +1028,15 @@
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#like"></use>
 													</svg></span>
-												<span class="like-box__value">0</span>
+												
 											</a>
+											<span class="like-box__value">0</span>
 											<a href="#" class="like-box">
 												<span class="like-box__icon"><svg class="svg-icon">
 														<use xlink:href="img/sprite.svg#dislike"></use>
 													</svg></span>
 											</a>
-											<a href="#reviewsModal" class="color-accent open_modal answer-link">Ответить</a>
+											<a href="#" class="color-accent answer-link">Ответить</a>
 										</div>
 										<div class="reviews-box__user">
 											<div class="reviews-box__user-name">
@@ -1033,25 +1063,30 @@
 												<div class="row">
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="E-mail" name="mail" requerid>
+															<span class="input-text">E-mail</span>
+															<input type="text" name="mail" requerid>
 														</label>
 													</div>
 													<div class="col-50">
 														<label>
-															<input type="text" placeholder="Телефон" name="phone" requerid>
+															<span class="input-text">Телефон</span>
+															<input type="text" name="phone" requerid>
 														</label>
 													</div>
 
 													<div class="col-100">
 														<label>
-															<textarea name="message" placeholder="Ваш ответ"></textarea>
+															<span class="input-text">Ваш ответ</span>
+															<textarea name="message"></textarea>
 														</label>
 
 														<label class="label-file">
-															<input type="file" name="file">
-															<span class="label-file__text">Перенесите сюда фотографию <a href="#"
-																	class="color-accent text-decoration">или загрузите с компьютера</a></span>
+															<input type="file" name="file" id="upload-input" multiple>
+															<span class="label-file__text">Перенесите сюда фотографию <a href="#" class="color-accent text-decoration">или
+																	загрузите с компьютера</a></span>
+															<span class="dropzone" id="upload-dropzone"></span>
 														</label>
+														<div id="upload-queue"></div>
 														<button type="submit" class="btn btn-light-accent">Ответить</button>
 													</div>
 
@@ -1059,11 +1094,10 @@
 												</div>
 											</div>
 										</form>
-
 									</div>
 								</div>
 								<a href="#" class="btn btn-light-accent btn-load-reviews">Показать больше</a>
-								
+
 							</div>
 
 							<div class="col-25">
@@ -1173,6 +1207,7 @@
 	<script src="js/jquery.inputmask.latest.min.js"></script>
 	<script src="js/imask.min.js"></script>
 	<script src="js/countUp.js"></script>
+	<script src="js/fileup.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>
