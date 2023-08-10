@@ -2642,6 +2642,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 50%;
 }
 .reviews-box__user-avatar .icon-avatar {
   width: 32px;
@@ -2811,16 +2812,9 @@
 }
 
 .rating-star {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: 0 0 0 8px;
   position: relative;
 }
@@ -2842,7 +2836,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 0 8px;
+  margin: 0 8px 0 0;
   position: relative;
   fill: #FCEFCA;
   z-index: 1;
@@ -2850,6 +2844,52 @@
 }
 .rating-star label:last-child {
   margin: 0;
+}
+.rating-star label svg {
+  pointer-events: none;
+}
+
+.radio-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.star-rating {
+  margin: 0 0 0 8px;
+  position: relative;
+}
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px 0 0;
+  position: relative;
+  fill: #FCEFCA;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.star-rating label:last-child {
+  margin: 0;
+}
+.star-rating label svg {
+  fill: #F2994A;
+}
+
+.star-rating input:checked + label ~ label svg {
+  fill: #FCEFCA;
 }
 
 .form-review textarea {

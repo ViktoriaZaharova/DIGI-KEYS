@@ -12,7 +12,7 @@ header
 	background: #fff
 	transition: .3s ease
 	font-size: 14px
-	// border-bottom: 1px solid #F8F3FC
+	border-bottom: 1px solid #f8f3fc
 	.container
 		align-items: center
 	.logo
@@ -22,11 +22,105 @@ header
 		padding: 17.5px 0
 	&.active-search
 		.nav-menu
-			display: none	
+			display: none
+		.search-wrapper
+			
+			margin: 0 24px 0 auto
+			border: none
+		.form-search
+			width: 650px
+			right: 0
+			border-left: 1px solid #F9F2FF
+			border-right: 1px solid #F9F2FF
+			
+
+.search-wrapper
+	position: relative
+	margin: 0 24px 0 0
+	border-left: 1px solid #F9F2FF
+	border-right: 1px solid #F9F2FF
+	max-width: 650px
+	transition: 1s
+	.form-search
+		position: absolute
+		top: 0
+		right: 0
+		width: 0
+		display: flex
+		align-items: center
+		transition: .5s
+		background: #fff
+		z-index: 2
+		margin: 0
+		input
+			border: none
+			padding: 0
+			height: 44px
+			width: 100%
+			font-size: 14px
+			&::placeholder
+				color: #363636
+		button
+			position: relative
+			padding: 0 8px 0 16px
+			fill: none
+			stroke: $accent
+			width: 56px
+			height: 44px
+			top: 0
+			right: 0
+			transform: none
+			@include d-flex
+	
+	&.click
+		overflow: visible
+		.form-search
+			border-color: $accent
+
+.search-result
+	position: absolute
+	z-index: 2
+	width: 100%
+	top: 100%
+	background: #fff
+	border-radius: 0px 0px 6px 6px
+	border-left: 1px solid $accent
+	border-right: 1px solid $accent
+	border-bottom: 1px solid $accent
+	display: none
+	font-size: 16px
+	&__box
+		width: 100%
+	&__list
+		width: 100%
+		li
+			width: 100%
+			margin: 0
+			a
+				padding: 8px 24px
+				color: #363636
+				width: 100%
+				&:hover
+					color: $accent
+	&__category
+		padding: 8px 24px
+		color: #767676
+
+.btn-search
+	fill: none
+	stroke: #363636
+	padding: 0 16px
+	width: 56px
+	height: 44px
+	margin: 0 0 0 auto
+	cursor: pointer
+	position: relative
+	background: #fff
+
 
 .dropdown-catalog
 	position: relative
-	z-index: 2		
+	z-index: 2
 
 .nav-menu
 	margin: 0 auto 0 0
@@ -77,11 +171,11 @@ header
 			padding: 8px 24px
 
 .dropdown-my
-	position: relative			
+	position: relative
 
 .dropdown-my-toggle
 	display: flex
-	align-items: center			
+	align-items: center
 
 .link-tg
 	margin: 0 16px
@@ -106,7 +200,7 @@ header
 		&-close
 			display: none
 	&__text
-		margin: 0 0 0 4px		
+		margin: 0 0 0 4px
 
 .overlay-bg
 	position: fixed
@@ -187,8 +281,8 @@ header
 	&__footer
 		width: 100%
 		margin: auto 0 0
-		padding: 0 20px 
-		display: flex 
+		padding: 0 20px
+		display: flex
 		align-items: start
 		.btn:last-child
 			width: 100%
@@ -202,7 +296,6 @@ header
 	padding: 10px
 	fill: none
 	stroke: $accent
-
 
 .mobile-menu-list
 	font-size: 16px
@@ -227,115 +320,14 @@ header
 			fill: none
 			margin: 0 0 0 auto
 	.stroke-none
-		stroke: none	
-		fill: #363636	
+		stroke: none
+		fill: #363636
 	.sidebar-menu
 		.svg-icon
 			margin: 0 0 0 8px
-
-
 
 .link-phone
 	color: #161616
 	&:hover
 		color: $accent
-
-.search-wrapper
-	position: relative
-	margin: 0 24px 0 0
-	transition: .3s ease
-	border-left: 1px solid #F9F2FF
-	border-right: 1px solid #F9F2FF
-	max-width: 649px
-	overflow: hidden
-	transition: .5s
-	.form-search
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		display: flex
-		align-items: center
-		transition: .5s
-		transform: translateX(200%)
-		background: #fff
-		z-index: 2
-		margin: 0
-		label
-			transition: .5s 
-		input
-			border: none
-			padding: 0
-			height: 44px
-			width: 100%
-			font-size: 14px
-			
-			&::placeholder
-				color: #363636
-		button
-			position: relative
-			padding: 0 8px 0 16px
-			fill: none
-			stroke: $accent
-			width: 56px
-			height: 44px
-			top: 0
-			right: 0
-			transform: none
-			@include d-flex	
-			
-	&.active
-		width: 100%
-		margin: 0 24px 0 auto	
-		border: none
-		
-		.form-search
-			border-left: 1px solid #F9F2FF
-			border-right: 1px solid #F9F2FF
-			transform: translateX(0)
-	&.click
-		overflow: visible
-		.form-search
-			border-color: $accent		
-
-	
-.search-result
-	position: absolute
-	z-index: 2
-	width: 100%
-	top: 100%
-	background: #fff
-	border-radius: 0px 0px 6px 6px
-	border-left: 1px solid $accent
-	border-right: 1px solid $accent
-	border-bottom: 1px solid $accent
-	display: none
-	font-size: 16px
-	&__box
-		width: 100%
-	&__list
-		width: 100%
-		li
-			width: 100%
-			margin: 0
-			a
-				padding: 8px 24px
-				color: #363636	
-				width: 100%
-				&:hover
-					color: $accent
-	&__category
-		padding: 8px 24px
-		color: #767676			
-		
-
-.btn-search
-	fill: none
-	stroke: #363636
-	padding: 0 16px
-	width: 56px
-	height: 44px
-	margin: 0 0 0 auto
-	cursor: pointer
-	background: #fff
 
