@@ -20,11 +20,13 @@ header
 	&.fixed
 		position: fixed
 		padding: 17.5px 0
+	.search-result
+		display: none	
 	&.active-search
 		.nav-menu
 			display: none
 		.search-wrapper
-			
+			width: 100%
 			margin: 0 24px 0 auto
 			border: none
 		.form-search
@@ -32,7 +34,8 @@ header
 			right: 0
 			border-left: 1px solid #F9F2FF
 			border-right: 1px solid #F9F2FF
-			
+		.search-result
+			display: block
 
 .search-wrapper
 	position: relative
@@ -71,7 +74,7 @@ header
 			right: 0
 			transform: none
 			@include d-flex
-	
+
 	&.click
 		overflow: visible
 		.form-search
@@ -116,7 +119,6 @@ header
 	cursor: pointer
 	position: relative
 	background: #fff
-
 
 .dropdown-catalog
 	position: relative
@@ -330,4 +332,3 @@ header
 	color: #161616
 	&:hover
 		color: $accent
-

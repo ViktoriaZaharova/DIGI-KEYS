@@ -24,10 +24,14 @@ header.fixed {
   position: fixed;
   padding: 17.5px 0;
 }
+header .search-result {
+  display: none;
+}
 header.active-search .nav-menu {
   display: none;
 }
 header.active-search .search-wrapper {
+  width: 100%;
   margin: 0 24px 0 auto;
   border: none;
 }
@@ -36,6 +40,9 @@ header.active-search .form-search {
   right: 0;
   border-left: 1px solid #F9F2FF;
   border-right: 1px solid #F9F2FF;
+}
+header.active-search .search-result {
+  display: block;
 }
 
 .search-wrapper {
