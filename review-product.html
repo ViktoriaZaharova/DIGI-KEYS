@@ -13,7 +13,6 @@
 
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/fileup.min.css">
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -358,8 +357,8 @@
 											<label for="recipe-star-1"><svg class="svg-icon">
 													<use xlink:href="img/sprite.svg#star"></use>
 												</svg></label>
-											<input type="radio" name="recipe-rating" id="recipe-star-2" value="2" checked="true"><label for="recipe-star-2"><svg
-													class="svg-icon">
+											<input type="radio" name="recipe-rating" id="recipe-star-2" value="2" checked="true"><label
+												for="recipe-star-2"><svg class="svg-icon">
 													<use xlink:href="img/sprite.svg#star"></use>
 												</svg></label>
 											<input type="radio" name="recipe-rating" id="recipe-star-3" value="3" checked="true">
@@ -384,36 +383,35 @@
 											<div class="row">
 												<div class="col-100">
 													<label>
-														<span class="input-text">Ваш отзыв</span>
-														<textarea name="message" requerid></textarea>
+														<textarea name="review" placeholder="Ваш отзыв" requerid></textarea>
 													</label>
 												</div>
 												<div class="col-100">
 													<label>
-														<span class="input-text">Какие преимущества Вы бы могли отметить?</span>
-														<textarea name="message" 
-															requerid></textarea>
+														<textarea name="pros" placeholder="Какие преимущества Вы бы могли отметить?"></textarea>
 													</label>
 												</div>
 
 												<div class="col-100">
 													<label>
-														<span class="input-text">Какие недостатки Вы бы могли отметить?</span>
-														<textarea name="message" 
-															requerid></textarea>
+														<textarea name="cons" placeholder="Какие недостатки Вы бы могли отметить?"></textarea>
 													</label>
 
-													<label class="label-file">
-														<input type="file" name="file" id="upload-input" multiple>
-														<span class="label-file__text">Перенесите сюда фотографию <a href="#" class="color-accent text-decoration">или
-																загрузите с компьютера</a></span>
-														<span class="dropzone" id="upload-dropzone"></span>
+												</div>
+												<div class="col-100">
+													<label class="label-file" id="drop_zone" ondrop="dropHandler(event);"
+														ondragover="dragOverHandler(event);" ondragend="dragEndHandler(event);"
+														ondragleave="dragLeaveHandler(event);">
+														<input type="file" name="file" id="upload-input" multiple="multiple">
+														<span class="label-file__text">
+															Перенесите сюда фотографию <a href="#" class="color-accent text-decoration">или загрузите
+																с компьютера</a>
+														</span>
 													</label>
+
 													<div id="upload-queue"></div>
 													<button type="submit" class="btn btn-light-accent">Отправить</button>
 												</div>
-
-
 											</div>
 										</div>
 									</form>
@@ -529,7 +527,6 @@
 	<script src="js/jquery.inputmask.latest.min.js"></script>
 	<script src="js/imask.min.js"></script>
 	<script src="js/countUp.js"></script>
-	<script src="js/fileup.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>

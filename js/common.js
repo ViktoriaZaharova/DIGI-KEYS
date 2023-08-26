@@ -117,11 +117,16 @@ function accordeon3() {
 accordeon3();
 
 $('.overlay-bg').on('click', function () {
-	
+
 	$('.btn-catalog').removeClass('open').siblings('.dropdown-menu').slideUp();
 	$(this).fadeOut(300);
 	$('.mobile-menu').css('left', '-100%');
 	$('.menu .dropdown-menu').slideUp();
+
+	$('.search-result').html('');
+	$('.search-wrapper').removeClass('click');
+	$('.search-result').slideUp(100);
+
 	$('header').removeClass('active-search');
 	$('.checkout-box-fix').removeClass('active');
 });
@@ -145,7 +150,6 @@ $(function () {
 
 		if ($('.btn-catalog').hasClass('open')) {
 			$('.overlay-bg').fadeIn();
-			// $('.search-wrapper').removeClass('active');
 			$('header').removeClass('active-search');
 		}
 	});
@@ -222,9 +226,9 @@ $(function () {
 	close.on('click', function () {
 		modal
 			.animate({
-				opacity: 0,
-				top: '45%'
-			}, 200,
+					opacity: 0,
+					top: '45%'
+				}, 200,
 				function () {
 					$(this).css('display', 'none');
 					overlay.fadeOut(400);
@@ -454,35 +458,113 @@ $('.checkout-box-toggle').click(function () {
 	$('.overlay-bg').fadeToggle();
 });
 
-// drop input file
-$.fileup({
-	url: '/file/upload',
-	inputID: 'upload-input',
-	queueID: 'upload-queue',
-	dropzoneID: 'upload-dropzone',
-	lang: 'ru'
-})
-	.success(function (response, file_number, file) {
-		Snarl.addNotification({
-			title: 'Upload success',
-			text: file.name,
-			icon: '<i class="fa fa-check"></i>'
-		});
-	})
-	.error(function (event, file, file_number) {
-		Snarl.addNotification({
-			title: 'Upload error',
-			text: file.name,
-			icon: '<i class="fa fa-times"></i>'
-		});
-	})
-	.dragEnter(function (event) {
-		$(event.target).addClass('over');
-	})
-	.dragLeave(function (event) {
-		$(event.target).removeClass('over');
-	})
-	.dragEnd(function (event) {
-		$(event.target).removeClass('over');
-	});
 
+
+// отображение подгружаемых файлов в отзыве
+function handleFileSelect(evt) {
+
+}
+
+$(document).on('change', '#upload-input', function (evt) {
+	renderPreviews();
+})
+
+function renderPreviews() {
+	document.getElementById('upload-queue').innerHTML = '';
+
+	var files = document.getElementById('upload-input').files; // FileList object
+	// Loop through the FileList and render image files as thumbnails.
+	for (var i = 0, f; f = files[i]; i++) {
+		// Only process image files.
+		if (!f.type.match('image.*')) {
+			alert("Можно загрузить только изображения");
+		}
+
+		let index = i;
+		var reader = new FileReader();
+		// Closure to capture the file information.
+		reader.onload = (function (theFile) {
+			return function (e) {
+				// Render thumbnail.
+				var span = document.createElement('span');
+				span.setAttribute('data-position', index);
+				span.setAttribute('class', 'wrap');
+				span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />' +
+				'					<span class="delete"> <svg class="svg-icon">\n' +
+				'                        <use xlink:href="/local/templates/digikeys/img/sprite.svg#close"></use>\n' +
+				'                    </svg></span>'].join('');
+				document.getElementById('upload-queue').insertBefore(span, null);
+			};
+		})(f);
+		// Read in the image file as a data URL.
+		reader.readAsDataURL(f);
+	}
+}
+
+// удаление подгруженных файлов из отзыва
+
+$(document).on('click', '#upload-queue .wrap .delete', function () {
+	const index = $(this).closest('.wrap').data('position');
+
+	const dt = new DataTransfer()
+	const input = document.getElementById('upload-input')
+	const { files } = input
+
+	for (let i = 0; i < files.length; i++) {
+		const file = files[i]
+		if (index !== i)
+			dt.items.add(file) // here you exclude the file. thus removing it.
+	}
+
+	input.files = dt.files // Assign the updates list
+
+	renderPreviews();
+})
+
+
+function dropHandler(ev) {
+
+	// Prevent default behavior (Prevent file from being opened)
+	ev.preventDefault();
+
+	if (ev.dataTransfer.items) {
+
+
+		const dt = new DataTransfer()
+		const input = document.getElementById('upload-input')
+		const {files} = input
+
+		for (let i = 0; i < files.length; i++) {
+			const file = files[i]
+			dt.items.add(file)
+		}
+		[...ev.dataTransfer.items].forEach((item, i) => {
+			// If dropped items aren't files, reject them
+			if (item.kind === "file") {
+				const file = item.getAsFile();
+				dt.items.add(file)
+			}
+		});
+
+		input.files = dt.files // Assign the updates list
+		renderPreviews();
+	}
+	document.getElementById('drop_zone').classList.remove("drop-zone--over");
+	ev.preventDefault();
+
+}
+
+function dragOverHandler(ev) {
+	document.getElementById('drop_zone').classList.add("drop-zone--over");
+	ev.preventDefault();
+}
+
+function dragLeaveHandler(ev) {
+	document.getElementById('drop_zone').classList.remove("drop-zone--over");
+	ev.preventDefault();
+}
+
+function dragEndHandler(ev) {
+	document.getElementById('drop_zone').classList.remove("drop-zone--over");
+	ev.preventDefault();
+}

@@ -2913,6 +2913,9 @@
 .label-file input {
   display: none;
 }
+.label-file.drop-zone--over {
+  border: 1px dashed #7429b4;
+}
 
 .jFiler {
   position: absolute;
@@ -2934,12 +2937,56 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
+}
+#upload-queue .wrap {
+  height: 100px;
+  margin: 0 20px 20px 0;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  min-width: 100px;
+  position: relative;
+}
+#upload-queue .wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+#upload-queue .wrap .delete {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8117647059);
+  border-radius: 20px;
+  top: 5px;
+  right: 5px;
+}
+#upload-queue .wrap .delete .svg-icon {
+  stroke: #000;
+  cursor: pointer;
 }
 
 .fileup-file {
@@ -2993,7 +3040,7 @@
   min-width: 190px;
   color: #fff;
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 12px;
   background: #363636;
   border-radius: 12px;
   text-align: left;
