@@ -2645,7 +2645,6 @@
   border-radius: 50%;
 }
 .reviews-box__user-avatar .icon-avatar {
-  width: 32px;
   height: auto;
   max-height: 100%;
   -o-object-fit: contain;
@@ -2654,8 +2653,8 @@
 
 .category-user {
   margin: 2px 0 0;
-  border-bottom: 1px solid #767676;
   font-size: 12px;
+  text-decoration: underline;
   color: #767676;
 }
 .category-user:hover {
@@ -2799,7 +2798,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: sticky;
-  padding: 80px 32px;
 }
 .ordered-product .promo-label-list {
   position: absolute;
