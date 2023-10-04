@@ -161,6 +161,65 @@
   margin: 0 0 2px;
 }
 
+.slogans-products {
+  margin: 120px 0;
+}
+.slogans-products-item {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  border-radius: 24px;
+  padding: 46.5px 40px;
+  margin: 0 0 24px;
+  border: 1px solid #F9F2FF;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(245, 223, 255, 0.2)), to(rgba(157, 207, 252, 0.2))), #EFF7FE;
+  background: linear-gradient(to right, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%), #EFF7FE;
+}
+.slogans-products-item:last-child {
+  margin: 0;
+}
+.slogans-products-item h3 {
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: -0.14px;
+}
+.slogans-products-item__content {
+  max-width: 350px;
+}
+.slogans-products-item .box-text {
+  font-weight: 300;
+  line-height: 150%;
+  margin: 16px 0 0;
+  max-width: 270px;
+}
+
+.slogans-products-item2 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(245, 223, 255, 0.2)), to(rgba(157, 207, 252, 0.2)));
+  background: linear-gradient(to right, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%);
+}
+
+.slogans-products-item2, .slogans-products-item3 {
+  height: auto;
+}
+
+.slogans-products-item__image {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  max-width: 580px;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .your-choice .chapter-card {
   border: 1px solid #F8F3FC;
   background: transparent;
@@ -812,6 +871,29 @@
 }
 .checkout-box .list-characteristics {
   margin: 24px 0;
+}
+.checkout-box .btn-group {
+  width: 100%;
+}
+.checkout-box .btn-group .btn {
+  width: 100%;
+  margin: 0 0 8px;
+}
+.checkout-box .btn-group .btn:last-child {
+  margin: 0;
+}
+
+.banner-key {
+  width: 100%;
+  color: #fff;
+  margin: 24px 0 0;
+  padding: 40px 24px;
+  border-radius: 8px;
+  background: radial-gradient(90.18% 83.81% at 100% 100%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 94.27%), #7C0DC6;
+}
+.banner-key .btn {
+  width: 100%;
+  margin: 32px 0 0;
 }
 
 .list-characteristics {
