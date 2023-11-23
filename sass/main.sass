@@ -116,7 +116,7 @@
 
 // slogans-products
 .slogans-products
-	margin: 120px 0 
+	margin: 120px 0
 	&-item
 		position: relative
 		overflow: hidden
@@ -145,7 +145,7 @@
 			line-height: 150%
 			margin: 16px 0 0
 			max-width: 270px
-			display: block	
+			display: block
 
 // .slogans-products1
 // 	min-height: 360px
@@ -153,7 +153,7 @@
 .slogans-products-item2
 	background: linear-gradient(to right, rgba(245,223,255,.2) 0%,rgba(157,207,252,.2) 100%)
 
-.slogans-products-item2, .slogans-products-item3	
+.slogans-products-item2, .slogans-products-item3
 	height: auto
 
 .slogans-products-item__image
@@ -165,7 +165,7 @@
 	display: flex
 	align-items: center
 	justify-content: center
-	
+
 //your-choice
 .your-choice
 	.chapter-card
@@ -335,6 +335,16 @@
 	font-size: 20px
 	font-weight: 500
 	color: #161616
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+.old-price
+	text-decoration-line: line-through
+	font-size: 14px
+	font-weight: 300
+	color: #767676
+	margin: 0 4px 0 0
 
 .promo-label
 	display: flex
@@ -592,15 +602,38 @@
 	width: 100%
 	position: sticky
 	top: 120px
-	border: 1px solid #F8F3FC
-	border-radius: 8px
+	border: 2px solid #EFF7FE
+	border-radius: 16px
 	padding: 20px
 	img
 		max-height: 100%
 		width: 100%
 		object-fit: contain
 	.promo-label-list
-		display: none
+		position: absolute
+		right: 0
+		top: 0
+		padding: 10px
+		flex-direction: column
+		align-items: flex-end
+		justify-content: flex-end
+		li
+			margin: 0 0 10px
+	.promo-label
+		color: #363636
+		border-radius: 10px
+		border-radius: 20px
+		background: linear-gradient(0deg, #EDF7F3, #EDF7F3), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%)
+
+.sale-value
+	font-size: 14px
+	color: #fff
+	line-height: 150%
+	font-weight: 600
+	padding: 6px 10px
+	margin: 0 0 0 8px
+	border-radius: 49px
+	background: #EB5757
 
 .product-image .promo-label img
 	width: 15px
@@ -629,7 +662,7 @@
 	background: radial-gradient(90.18% 83.81% at 100% 100%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 94.27%), #7C0DC6
 	.btn
 		width: 100%
-		margin: 32px 0 0					
+		margin: 32px 0 0
 
 .list-characteristics
 	width: 100%
@@ -838,6 +871,7 @@
 	width: 100%
 	margin: 64px 0 56px
 	border-radius: 8px
+	background: linear-gradient(0deg, #EDF7F3, #EDF7F3), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%)
 	display: flex
 	align-items: center
 	flex-wrap: wrap

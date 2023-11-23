@@ -492,6 +492,22 @@
   font-size: 20px;
   font-weight: 500;
   color: #161616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.old-price {
+  text-decoration-line: line-through;
+  font-size: 14px;
+  font-weight: 300;
+  color: #767676;
+  margin: 0 4px 0 0;
 }
 
 .promo-label {
@@ -851,8 +867,8 @@
   width: 100%;
   position: sticky;
   top: 120px;
-  border: 1px solid #F8F3FC;
-  border-radius: 8px;
+  border: 2px solid #EFF7FE;
+  border-radius: 16px;
   padding: 20px;
 }
 .product-image img {
@@ -862,7 +878,41 @@
      object-fit: contain;
 }
 .product-image .promo-label-list {
-  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.product-image .promo-label-list li {
+  margin: 0 0 10px;
+}
+.product-image .promo-label {
+  color: #363636;
+  border-radius: 10px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#EDF7F3), to(#EDF7F3)), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%);
+  background: linear-gradient(0deg, #EDF7F3, #EDF7F3), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%);
+}
+
+.sale-value {
+  font-size: 14px;
+  color: #fff;
+  line-height: 150%;
+  font-weight: 600;
+  padding: 6px 10px;
+  margin: 0 0 0 8px;
+  border-radius: 49px;
+  background: #EB5757;
 }
 
 .product-image .promo-label img {
@@ -1247,6 +1297,8 @@
   width: 100%;
   margin: 64px 0 56px;
   border-radius: 8px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#EDF7F3), to(#EDF7F3)), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%);
+  background: linear-gradient(0deg, #EDF7F3, #EDF7F3), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
