@@ -428,8 +428,14 @@ header.active-search .search-result {
   height: 44px;
   min-width: 44px;
   padding: 10px;
+  border-radius: 20px;
   fill: none;
   stroke: #7C0DC6;
+  border: 1px solid #F9F2FF;
+}
+
+.btn-mail {
+  border-radius: 20px;
 }
 
 .mobile-menu-list {

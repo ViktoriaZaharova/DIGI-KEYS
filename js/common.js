@@ -40,8 +40,60 @@ $(document).ready(function ($) {
 	});
 });
 
+$('.product-image__slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false,
+});
 
+$('.product-image__preview').slick({
+	slidesToShow: 4,
+	arrows: true,
+	asNavFor: '.product-image__slider',
+	focusOnSelect: true,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+			}
+		}
+	]
+});
 
+$('.product-card__img-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false,
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				arrows: true,
+				prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+				nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+			}
+		}
+	]
+});
+
+function paginationImageMouseEnter(element, notSlickGoTo = false) {
+	if (!element || !$) return
+	//console.log(element)
+	const index = $(element).attr('data-index');
+	const parent = $(element).closest('.product-slider')
+	if (!notSlickGoTo) parent.find('.product-card__img-slider').slick('slickGoTo', index, true);
+	parent.find('.product-pagination-image a').removeClass('active');
+	$(element).addClass('active');
+}
 
 // header fixed
 $(window).scroll(function () {
@@ -226,9 +278,9 @@ $(function () {
 	close.on('click', function () {
 		modal
 			.animate({
-					opacity: 0,
-					top: '45%'
-				}, 200,
+				opacity: 0,
+				top: '45%'
+			}, 200,
 				function () {
 					$(this).css('display', 'none');
 					overlay.fadeOut(400);
@@ -490,9 +542,9 @@ function renderPreviews() {
 				span.setAttribute('data-position', index);
 				span.setAttribute('class', 'wrap');
 				span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />' +
-				'					<span class="delete"> <svg class="svg-icon">\n' +
-				'                        <use xlink:href="/local/templates/digikeys/img/sprite.svg#close"></use>\n' +
-				'                    </svg></span>'].join('');
+					'					<span class="delete"> <svg class="svg-icon">\n' +
+					'                        <use xlink:href="/local/templates/digikeys/img/sprite.svg#close"></use>\n' +
+					'                    </svg></span>'].join('');
 				document.getElementById('upload-queue').insertBefore(span, null);
 			};
 		})(f);
@@ -532,7 +584,7 @@ function dropHandler(ev) {
 
 		const dt = new DataTransfer()
 		const input = document.getElementById('upload-input')
-		const {files} = input
+		const { files } = input
 
 		for (let i = 0; i < files.length; i++) {
 			const file = files[i]

@@ -82,15 +82,15 @@ input, textarea, select
 	outline: none
 	box-shadow: none
 	appearance: none
-	padding: 0 16px
+	padding: 0 22px
 	box-sizing: border-box
 	font-family: $default-font
 	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05)
-	border: 1.3px solid transparent
-	border-radius: 6px
+	border: 1px solid #E6E6E6
+	border-radius: 12px
 	width: 100%
 	height: 52px
-	background: #F7F7F7
+	background: #F8F8F8
 	color: #161616
 	font-size: 14px
 	position: relative
@@ -141,7 +141,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
 label
 	display: block
 	width: 100%
-	margin: 0 0 32px
+	margin: 0 0 8px
 	position: relative
 	&.focus
 		input, textarea
@@ -181,7 +181,7 @@ button, .btn
 	height: 54px
 	line-height: 100%
 	font-size: 16px
-	border-radius: 6px
+	border-radius: 12px
 	transition: 0.3s ease
 	position: relative
 	z-index: 1
@@ -335,6 +335,30 @@ blockquote
 
 .slick-slide
 	outline: none
+
+.slick-arrow
+	position: absolute
+	z-index: 1
+	opacity: 1
+	top: 50%
+	transform: translate(0,-50%)
+	width: 20px
+	height: 50px
+	background: transparent
+	padding: 0
+	@include d-flex
+	svg
+		width: 100%
+		height: 100%
+		transform: rotate(90deg)
+
+.slick-prev
+	left: 0
+
+.slick-next
+	right: 0
+	svg
+		transform: rotate(-90deg)
 
 .container
 	display: flex

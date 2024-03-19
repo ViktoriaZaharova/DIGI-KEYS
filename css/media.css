@@ -114,6 +114,11 @@
     top: 0;
     padding: 10px;
   }
+  .product-image__preview {
+    top: 0;
+    position: relative;
+    margin: 20px 0;
+  }
   .page-product .nav-breadcrumb .link-share {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -292,6 +297,9 @@
   }
   .slogans-products-item__image {
     max-width: 400px;
+  }
+  .product-pagination-image {
+    display: none;
   }
 }
 @media only screen and (max-width: 992px) {
