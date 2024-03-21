@@ -44,15 +44,18 @@ $('.product-image__slider').slick({
 	slidesToShow: 1,
 	fade: true,
 	arrows: false,
+	infinite: false,
 });
 
 $('.product-image__preview').slick({
 	slidesToShow: 4,
-	arrows: true,
+	arrows: false,
+	swipeToSlide: true,
+	infinite: false,
 	asNavFor: '.product-image__slider',
 	focusOnSelect: true,
-	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+	// prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+	// nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 576,
@@ -94,6 +97,14 @@ function paginationImageMouseEnter(element, notSlickGoTo = false) {
 	parent.find('.product-pagination-image a').removeClass('active');
 	$(element).addClass('active');
 }
+
+$(function () {
+	$('.product-slider').mouseleave(function () {
+		$('.product-card__img-slider').slick('slickGoTo', 0);
+		$(this).find('.product-pagination-image a').removeClass('active');
+		$(this).find('.product-pagination-image a:first-child').addClass('active');
+	});
+});
 
 // header fixed
 $(window).scroll(function () {

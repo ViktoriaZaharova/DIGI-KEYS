@@ -895,8 +895,6 @@
   height: 530px;
   max-width: 425px;
   width: 100%;
-  position: sticky;
-  top: 120px;
   border: 2px solid #EFF7FE;
   border-radius: 16px;
   padding: 20px;
@@ -938,11 +936,11 @@
 
 .product-image__preview {
   width: 100%;
-  position: sticky;
-  left: 0;
-  top: 190px;
   margin: 20px 0 0;
-  padding: 0 20px;
+  padding: 0;
+}
+.product-image__preview .slick-list {
+  margin: 0 -10px;
 }
 .product-image__preview .slide {
   border: 2px solid #EFF7FE;
