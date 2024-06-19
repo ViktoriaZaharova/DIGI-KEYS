@@ -10,7 +10,7 @@ header {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   font-size: 14px;
-  border-bottom: 1px solid #f8f3fc;
+  border-bottom: 1.5px solid rgb(248, 248, 248);
 }
 header .container {
   -webkit-box-align: center;
@@ -148,6 +148,13 @@ header.active-search .search-result {
 }
 .search-result__box:last-child {
   margin: 0;
+}
+.search-result__box-error {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(118, 118, 118);
+  padding: 16px 0;
 }
 .search-result__list {
   width: 100%;
@@ -358,6 +365,8 @@ header.active-search .search-result {
 }
 .btn-catalog__icon-close {
   display: none;
+  stroke: #fff;
+  fill: none;
 }
 .btn-catalog__text {
   margin: 0 0 0 4px;

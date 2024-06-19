@@ -5,7 +5,7 @@
     margin: 0 0 0 auto;
   }
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1380px) {
   .about-wrapper {
     padding: 40px;
   }
@@ -15,16 +15,12 @@
   .about-wrapper__content {
     max-width: 715px;
   }
-  .search-wrapper {
-    max-width: 480px;
-  }
-  .slogans-products-item {
-    padding: 30px;
-  }
-}
-@media only screen and (max-width: 1200px) {
   header .logo {
-    margin: 0 30px 0 0;
+    margin: 0 16px 0 0;
+  }
+  .search-wrapper {
+    max-width: 374px;
+    margin: 0 16px 0 auto;
   }
   .nav-menu {
     display: none;
@@ -39,6 +35,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .slogans-products-item {
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header .list-social {
+    display: none;
   }
   .dropdown-catalog {
     margin: 0 auto 0 0;
@@ -216,9 +220,6 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .form-search {
-    margin: 20px 0 0;
-  }
   .payments-method {
     margin: 0;
   }
@@ -230,9 +231,6 @@
   }
   .about-products .chapter-card__img {
     max-width: 170px;
-  }
-  .search-wrapper {
-    max-width: 270px;
   }
   .page-reviews .col-25 {
     width: 100%;
@@ -307,9 +305,9 @@
     padding: 122px 0 0;
   }
   header {
-    padding: 30px 0 24px;
+    padding: 24px 0;
   }
-  header .btn-mail, header .link-tg, header .phone {
+  header .phone {
     display: none;
   }
   header.active .nav-menu {
@@ -754,15 +752,13 @@
 }
 @media only screen and (max-width: 576px) {
   header {
-    padding: 24px 0;
+    padding: 12px 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
   }
   header .logo {
+    max-width: 100px;
     margin: 0 auto 0 0;
-  }
-  header.fixed {
-    padding: 22px 0;
   }
   .breadcrumb {
     font-weight: 400;
@@ -981,7 +977,7 @@
     color: #fff;
   }
   .page {
-    padding: 110px 0 0;
+    padding: 84px 0 0;
   }
   .sorting-wrapper {
     display: none;

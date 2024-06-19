@@ -46,7 +46,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle">
 								<svg class="svg-icon mobile-menu-list__icon">
-									<use xlink:href="img/sprite.svg#burger-icon"></use>
+									<use xlink:href="img/sprite.svg#burger"></use>
 								</svg>
 								<span>Каталог</span>
 								<svg class="svg-icon svg-icon__arrow">
@@ -298,6 +298,11 @@
 						</form>
 
 						<div class="search-result">
+							<div class="search-result__box search-result__box-error">
+								<div class="box-text">
+									<p>К сожалению, по вашему запросу ничего не было найдено</p>
+								</div>
+							</div>
 							<div class="search-result__box">
 								<a href="catalog.html" class="search-result__category">Каталог</a>
 								<ul class="search-result__list my-ul">
@@ -343,8 +348,10 @@
 					<nav class="nav-breadcrumb">
 						<ul class="breadcrumb my-ul">
 							<li><a href="index.html">Главная</a></li>
-							<li><a href="catalog.html">Windows</a></li>
-							<li><span>Microsoft Windows 10</span></li>
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="catalog.html">Microsoft Windows</a></li>
+							<li><a href="catalog.html">Microsoft Windows 11</a></li>
+							<li><span>Microsoft Windows 11 Professional</span></li>
 						</ul>
 						<a href="#" class="link-share">
 							<svg class="svg-icon">
@@ -360,91 +367,83 @@
 							<div class="col-75">
 								<div class="w-100">
 									<div class="row">
-										<div class="col-45">
-											<div class="product-image">
-												<ul class="promo-label-list my-ul">
-													<li>
-														<div class="promo-label promo-label-hit">
-															<img src="img/fire-icon.png" alt="">
-															<span>Хит продаж</span>
-														</div>
-													</li>
-												</ul>
-												<div class="product-image__slider">
+										<div class="col-55">
+											<div class="product-image-wrapper">
+												<div class="product-image__preview">
 													<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
+														<div class="product-image__preview-item"><img src="img/product-slide1.jpg" alt=""></div>
+													</div>
+													<div class="slide">
+														<div class="product-image__preview-item"><img src="img/product-slide2.jpg" alt=""></div>
+													</div>
+													<div class="slide">
+														<div class="product-image__preview-item"><img src="img/product-slide3.jpg" alt=""></div>
+													</div>
+													<div class="slide">
+														<div class="product-image__preview-item"><img src="img/product-slide4.jpg" alt=""></div>
+													</div>
+													<div class="slide">
+														<div class="product-image__preview-item"><img src="img/product-slide5.jpg" alt=""></div>
+													</div>
+													<div class="slide">
+														<div class="product-image__preview-item"><img src="img/product-slide1.jpg" alt=""></div>
+													</div>
 												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
+												<div class="product-image">
+													<ul class="promo-label-list my-ul">
+														<li>
+															<div class="promo-label promo-label-hit">
+																<img src="img/fire-icon.png" alt="">
+																<span>Хит продаж</span>
+															</div>
+														</li>
+													</ul>
+													<div class="product-image__slider">
+														<div class="slide">
+															<div class="product-image__preview-item"><img src="img/product-slide1.jpg" alt=""></div>
+														</div>
+														<div class="slide">
+															<div class="product-image__preview-item"><img src="img/product-slide2.jpg" alt=""></div>
+														</div>
+														<div class="slide">
+															<div class="product-image__preview-item"><img src="img/product-slide3.jpg" alt=""></div>
+														</div>
+														<div class="slide">
+															<div class="product-image__preview-item"><img src="img/product-slide4.jpg" alt=""></div>
+														</div>
+														<div class="slide">
+															<div class="product-image__preview-item"><img src="img/product-slide5.jpg" alt=""></div>
+														</div>
+														<div class="slide">
+															<div class="product-image__preview-item"><img src="img/product-slide1.jpg" alt=""></div>
+														</div>
+													</div>
 												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												</div>
-											</div>
-											<div class="product-image__preview">
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
-												<div class="slide">
-													<div class="product-image__preview-item"><img src="img/product1.png" alt=""></div>
-												</div>
+
 											</div>
 										</div>
-										<div class="col-55">
+										<div class="col-45">
 											<div class="product-info-box">
 												<div class="product-info-box__head">
 													<div class="rating">
 														<ul class="list-rating my-ul">
 															<li><svg class="svg-icon">
 																	<use xlink:href="img/sprite.svg#star"></use>
-																</svg></li>
-															<li><svg class="svg-icon">
-																	<use xlink:href="img/sprite.svg#star"></use>
-																</svg></li>
-															<li><svg class="svg-icon">
-																	<use xlink:href="img/sprite.svg#star"></use>
-																</svg></li>
-															<li class="star0"><svg class="svg-icon">
-																	<use xlink:href="img/sprite.svg#star"></use>
-																</svg></li>
-															<li class="star0"><svg class="svg-icon">
-																	<use xlink:href="img/sprite.svg#star"></use>
-																</svg></li>
+																</svg>
+																<span>4,9</span>
+															</li>
 														</ul>
-														<a href="#" class="rating-value">600+ отзывов</a>
+														<a href="#" class="rating-value">116 отзывов</a>
 													</div>
-
+													<span class="sale-value">-15%</span>
 													<!-- <a href="#" class="link-share">
 														<svg class="svg-icon">
 															<use xlink:href="img/sprite.svg#share-icon"></use>
 														</svg>
 													</a> -->
 												</div>
-												<h1>Microsoft Windows 11 Professional
-													<!-- <span class="sale-value">-15%</span> -->
-												</h1>
+												<h1>Microsoft Office 2019 Professional Plus</h1>
+												<div class="subtitle-product">— бессрочный ключ с привязкой</div>
 												<div class="product-info-box__footer">
 													<ul class="list-characteristics my-ul">
 														<li>
@@ -474,24 +473,20 @@
 											</div>
 
 											<div class="product-info-box">
-												<div class="btn-group">
-													<a href="#" class="btn btn-sm btn-light-accent">Proffesional</a>
-													<a href="#" class="btn btn-sm btn-border-light-accent">Home</a>
+												<div class="product-info-box__tabs">
+													<div class="btn-group">
+														<a href="#" class="btn btn-sm btn-light-accent">Proffesional</a>
+														<a href="#" class="btn btn-sm btn-border-light-accent">Home</a>
+													</div>
+
+													<a href="#" class="difference">
+														<!-- <img src="img/question.svg" alt=""> -->
+														<span>В чём разница?</span>
+													</a>
 												</div>
-
-												<!-- <a href="#" class="difference">
-													<img src="img/question.svg" alt="">
-													<span>В чём разница?</span>
-												</a> -->
-
 												<div class="product-info-box__footer">
-													<form method="post" class="checkout-box">
-														<h3>Оформление заказа</h3>
+													<div class="checkout-box">
 														<ul class="list-characteristics my-ul">
-															<li>
-																<p>Артикул:</p>
-																<span>DK-MW-10P</span>
-															</li>
 															<li>
 																<p>Стоимость</p>
 																<span>
@@ -502,32 +497,8 @@
 																</span>
 															</li>
 														</ul>
-
-														<label>
-															<span class="input-text">E-mail</span>
-															<input type="text" name="mail">
-														</label>
-														<div class="buy-wrapper">
-															<div class="amount">
-																<span class="down"><img src="img/minus.svg" alt=""></span>
-																<input type="text" value="1" />
-																<span class="up"><img src="img/plus.svg" alt=""></span>
-															</div>
-															<a href="#thanksModal" class="btn btn-sm btn-accent open_modal">Купить</a>
-														</div>
-
-														<div class="promo-wrapper">
-															<a href="#" class="promo-link">
-																<img src="img/star-promo.svg" alt="">
-																<span>У меня есть промокод</span>
-															</a>
-
-															<label class="promo-wrapper__label">
-																<span class="input-text">Введите промокод</span>
-																<input type="text" name="code">
-															</label>
-														</div>
-													</form>
+														<a href="#orderModal" class="btn btn-sm btn-green open_modal">Оформить заказ</a>
+													</div>
 												</div>
 											</div>
 
@@ -876,7 +847,7 @@
 											<div class="block_title">
 												<h3>Что такое лицензионное ПО?</h3>
 												<svg class="svg-icon panel_heading-icon">
-<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
 												</svg>
 											</div>
 											<div class="block_hover">
@@ -1163,10 +1134,10 @@
 								<form method="post" class="checkout-box">
 									<h3>Оформление заказа</h3>
 									<ul class="list-characteristics my-ul">
-										<li>
+										<!-- <li>
 											<p>Артикул:</p>
 											<span>DK-MW-10P</span>
-										</li>
+										</li> -->
 										<li>
 											<p>Стоимость</p>
 											<span>
@@ -1178,7 +1149,7 @@
 										</li>
 									</ul>
 
-									<label>
+									<!-- <label>
 										<span class="input-text">E-mail</span>
 										<input type="text" name="mail">
 									</label>
@@ -1186,9 +1157,9 @@
 									<div class="status-availability">
 										<img src="img/check.svg" alt="">
 										<span>В наличии</span>
-									</div>
+									</div> -->
 
-									<div class="promo-wrapper">
+									<!-- <div class="promo-wrapper">
 										<a href="#" class="promo-link">
 											<img src="img/star-promo.svg" alt="">
 											<span>У меня есть промокод</span>
@@ -1198,20 +1169,22 @@
 											<span class="input-text">Введите промокод</span>
 											<input type="text" name="code">
 										</label>
-									</div>
+									</div> -->
 
-									<div class="buy-wrapper">
+									<a href="#orderModal" class="btn btn-sm btn-buy  btn-green open_modal">Оформить заказ</a>
+
+									<!-- <div class="buy-wrapper">
 										<div class="amount">
 											<span class="down"><img src="img/minus.svg" alt=""></span>
 											<input type="text" value="1" />
 											<span class="up"><img src="img/plus.svg" alt=""></span>
 										</div>
-										<!-- <a href="#thanksModal" class="btn btn-sm btn-buy btn-accent open_modal">Купить</a> -->
+										
 										<a href="#thanksModal" class="btn btn-sm btn-buy btn-green open_modal"><svg class="svg-icon">
 												<use xlink:href="img/sprite.svg#check"></use>
 											</svg><span>Купить</span></a>
-									</div>
-									<div class="payments-method"><img src="img/paymentsMethod.svg" alt=""></div>
+									</div> -->
+									<!-- <div class="payments-method"><img src="img/paymentsMethod.svg" alt=""></div> -->
 									<!-- <ul class="list-payment my-ul">
 										<li><img src="img/pay1.svg" alt=""></li>
 										<li><img src="img/pay2.svg" alt=""></li>
@@ -1224,7 +1197,7 @@
 
 									<div class="delivery-instant">
 										<img src="img/rocket.png" alt="">
-										<span>Моментальная доставка</span>
+										<span>Доставка в течении минуты</span>
 									</div>
 								</form>
 							</div>

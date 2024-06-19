@@ -12,7 +12,7 @@ header
 	background: #fff
 	transition: .3s ease
 	font-size: 14px
-	border-bottom: 1px solid #f8f3fc
+	border-bottom: 1.5px solid rgba(248, 248, 248, 1)
 	.container
 		align-items: center
 	.logo
@@ -102,6 +102,12 @@ header
 		margin: 0 0 24px
 		&:last-child
 			margin: 0
+		&-error
+			margin: 0
+			font-size: 12px
+			text-align: center
+			color: rgba(118, 118, 118, 1)
+			padding: 16px 0	
 	&__list
 		width: 100%
 		li
@@ -243,6 +249,8 @@ header
 		padding: 4px
 		&-close
 			display: none
+			stroke: #fff
+			fill: none
 	&__text
 		margin: 0 0 0 4px
 

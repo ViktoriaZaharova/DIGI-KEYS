@@ -363,7 +363,7 @@
 	margin: 0 8px 0 0
 
 .new-price
-	color: $accent
+	color: #161616
 
 .promo-label
 	display: flex
@@ -374,12 +374,12 @@
 	font-size: 14px
 	font-weight: 500
 	img
-		margin: 0 2px 0 0
-		width: 18px
+		margin: 0 4px 0 0
+		width: 14px
 
 .promo-label-hit
-	background: #F8F3FC
-	color: $accent
+	background: #fff
+	color: #363636
 
 .promo-label-list
 	width: 100%
@@ -430,7 +430,7 @@
 
 // catalog page
 .page
-	padding: 144px 0 0
+	padding: 136px 0 0
 
 .page-catalog-wrapper
 	width: 100%
@@ -615,16 +615,23 @@
 	z-index: 1
 
 // product page
+.product-image-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+
 .product-image
 	@include d-flex
-	height: 530px
-	max-width: 425px
-	width: 100%
+	height: 555px
+	width: calc(100% - 80px - 16px)
+	margin: 0 0 0 auto
 	// position: sticky
 	// top: 120px
-	border: 2px solid #EFF7FE
+	border: none
 	border-radius: 16px
-	padding: 20px
+	padding: 0
+	position: relative
 	img
 		max-height: 100%
 		width: 100%
@@ -635,6 +642,7 @@
 		top: 0
 		padding: 10px
 		align-items: center
+		z-index: 1
 		// li
 		// 	margin: 0 0 10px
 		.promo-label-list-article
@@ -642,8 +650,7 @@
 	.promo-label
 		color: #363636
 		// border-radius: 10px
-		border-radius: 12px
-		background: radial-gradient(614.11% 141.42% at 0% 0%, rgba(245, 223, 255, 0.20) 0%, rgba(157, 207, 252, 0.20) 100%), #EDF7F3
+		border-radius: 8px
 	// &__wrapper
 	// 	border: 2px solid #EFF7FE
 	// 	border-radius: 16px
@@ -657,31 +664,34 @@
 	height: 100%
 	.product-image__preview-item
 		height: 100%
+		img
+			border-radius: 16px
 	.slick-track, .slick-list
 		height: 100%
 
 .product-image__preview
 	width: 100%
-	margin: 20px 0 0
+	max-width: 80px
+	height: 100%
 	padding: 0
-	.slick-list
-		margin: 0 -10px
 	.slide
-		border: 2px solid #EFF7FE
-		border-radius: 2px
-		padding: 10px
-		margin: 0 10px
+		border: 1.5px solid transparent
+		border-radius: 8px
+		margin: 0 0 8px
 		cursor: pointer
 		background: #fff
-
+		width: 100%
 		&.slick-current
 			border-color: $accent
 	&-item
 		@include d-flex
-		height: 70px
+		height: 100px
 		width: 100%
 		img
-			max-height: 100%
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 8px
 
 .sale-value
 	font-size: 14px
@@ -692,17 +702,29 @@
 	margin: 0 0 0 8px
 	display: inline-block
 	// border-radius: 49px
-	border-radius: 12px
-	background: linear-gradient(250deg, #EB5757 0%, #E98F8F 100%)
+	border-radius: 49px
+	background: #EB5757
+	margin: 0 0 0 auto
+
+.subtitle-product
+	margin: 8px 0 0 
+	font-size: 18px	
 
 .product-image .promo-label img
 	width: 15px
 
 .checkout-box
 	// border-left: 1px solid #EBEBEB
-	padding: 0 0 115px 32px
+	// padding: 0 0 115px 32px
 	position: sticky
 	top: 120px
+	max-width: 310px
+	width: 100%
+	margin: 0 0 0 auto
+	box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.1)
+	border: 1px solid #f8f8f8
+	border-radius: 16px
+	padding: 24px 24px 32px
 	.list-characteristics
 		margin: 24px 0
 	.btn-group
@@ -762,6 +784,7 @@
 .delivery-instant
 	justify-content: start
 	font-weight: 300
+	font-size: 14px
 
 .promo-wrapper
 	width: 100%
@@ -832,6 +855,8 @@
 
 .btn-buy
 	font-weight: 500
+	width: 100%
+	margin: 24px auto
 
 .payments-method
 	margin: 24px 0 14px
@@ -917,23 +942,27 @@
 	display: flex
 	align-items: center
 	li
-		width: 20px
-		height: 20px
-		min-width: 20px
 		margin: 0 4px 0 0
 		fill: #F2994A
 		@include d-flex
+		svg
+			width: 16px
+			height: 16px
+			min-width: 16px
+		span
+			margin: 0 0 0 4px	
 		&:last-child
 			margin: 0
 		&.star0
 			fill: #FCEFCA
 
 .rating-value
-	color: $accent
-	line-height: 100%
-	padding: 0 0 4px
-	border-bottom: 1.3px dashed #7C0DC6
-	margin: 0 0 0 8px
+	color: #363636
+	line-height: normal
+	border-bottom: 1px solid #363636
+	margin: 0 0 0 16px
+	&:hover
+		color: $accent
 
 .link-share
 	@include d-flex
@@ -945,10 +974,13 @@
 	min-width: 24px
 
 .difference
-	margin: 0 0 0 24px
-	color: $accent
-	span
-		border-bottom: 1.3px solid #7C0DC6
+	margin: 0 0 0 auto
+	color: #3D3D3D
+	font-size: 14px
+	&:hover
+		color: $accent
+	// span
+	// 	border-bottom: 1.3px solid #7C0DC6
 
 .logo-partner
 	margin: 0 0 8px
@@ -1215,6 +1247,10 @@
 		.box-text
 			a
 				color: #161616
+	h1
+		font-size: 32px
+		font-weight: 700
+		color: #161616			
 
 .page-politics
 	h1
