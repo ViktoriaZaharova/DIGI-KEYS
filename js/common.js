@@ -61,6 +61,12 @@ $('.product-image__preview').slick({
 	// nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
 	responsive: [
 		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 6,
+			}
+		},
+		{
 			breakpoint: 576,
 			settings: {
 				slidesToShow: 3,
@@ -107,6 +113,61 @@ $(function () {
 		$(this).find('.product-pagination-image a').removeClass('active');
 		$(this).find('.product-pagination-image a:first-child').addClass('active');
 	});
+});
+
+
+$('.reviews-product-slider').slick({
+	slidesToShow: 3,
+	infinite: false,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false,
+				dots: true,
+				autoplay: true,
+				slidesToShow: 2,
+				prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+				nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
+			}
+		}
+	]
+});
+
+// slick active
+$(window).on('load resize', function () {
+	if ($(window).width() < 768) {
+		$('.article-slider:not(.slick-initialized)').slick({
+			slidesToShow: 1,
+			// infinite: false,
+			arrows: false,
+			dots: true,
+			variableWidth: true,
+		});
+	} else {
+		$(".article-slider.slick-initialized").slick("unslick");
+	}
+});
+// slick active
+
+
+$(".reviews-product-slider .reviews-product-box").each(function () {
+	let th = $(this).find('.box-text');
+	// let more = th.parent(".reviews-product-box").find(".show-all-text");
+	
+	if (th.height() > 130) {
+		th.parent(".reviews-product-box__body").append('<a href="#" class="show-all-text">Еще</a>');
+		// th.addClass("show-text");
+		$(this).find(".show-all-text").click(function (e) {
+			e.preventDefault();
+			th.toggleClass("show-text");
+			$(this).hide();
+		});
+	}
+
+	
 });
 
 // header fixed

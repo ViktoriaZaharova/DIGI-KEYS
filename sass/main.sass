@@ -287,9 +287,11 @@
 	&__img
 		padding: 28px
 		@include d-flex
-		height: 300px
+		height: 310px
 		width: 100%
-		border: 1px solid #F8F3FC
+		// border: 1px solid #F8F3FC
+		border: 1.5px solid transparent
+		background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgba(245,223,255,.2), rgba(157,207,252,.2)) border-box
 		border-radius: 8px
 		padding: 10px
 		img
@@ -297,18 +299,44 @@
 	&__body
 		padding: 16px 0 0
 		width: 100%
-		height: calc(100% - 300px)
+		height: calc(100% - 310px)
 		display: flex
 		flex-direction: column
 	&__head
 		width: 100%
 		display: flex
-		align-items: flex-start
-		justify-content: space-between
-		margin: 0 0 16px
+		align-items: center
+		flex-wrap: wrap
+		margin: 0 0 8px
+	&__avialability
+		display: flex
+		align-items: center
+		color: #CB3D35
+		svg
+			margin: 0 4px 0 0
+			width: 16px
+			height: 16px
+			min-width: 16px
+			@include d-flex
+			fill: #CB3D35
+	.rating
+		margin: 0 8px 0 auto
+	.price-wrapper
+		display: flex
+		align-items: end
+	.new-price
+		font-size: 22px
+		font-weight: 600
+		span
+			font-size: 14px
+			font-weight: normal
+	.old-price
+		margin: 0 0 0 8px
+		font-size: 14px
+
 	&__title
-		padding: 0 16px 0 0
 		color: #161616
+		font-size: 18px
 		&:hover
 			color: $accent
 	&__footer
@@ -327,6 +355,67 @@
 		padding: 8px
 		top: 0
 		left: 0
+	&-not
+		.product-card__img
+			opacity: 0.5
+
+.chats-link
+	display: flex
+	align-items: center
+	color: #363636
+	svg
+		width: 16px
+		height: 16px
+		min-width: 16px
+		fill: #767676
+		margin: 0 3px 0 0
+
+	&:hover
+		color: $accent
+
+.reviews
+	.box-text
+		font-size: 18px
+		max-width: 633px
+		.link-reviews-page
+			text-decoration: none
+		.color-blue
+			color: #1874CF
+			&:hover
+				color: $accent
+			
+
+.reviews-section__nav
+	height: 100%
+	width: 100%
+	display: flex
+	flex-direction: column
+	.rating
+		justify-content: flex-end
+	.btn
+		margin: auto 0 0 auto
+
+.reviews-gallery
+	width: 100%
+	margin: 40px 0 32px	
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	&__photo
+		@include d-flex
+		width: 96px
+		height: 96px
+		border-radius: 10px
+		overflow: hidden
+		margin: 0 8px 8px 0
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover		
+
+.btn-all-photo
+	height: 96px
+	background: transparent		
 
 .product-slider
 	position: relative
@@ -368,17 +457,18 @@
 .promo-label
 	display: flex
 	align-items: center
-	border-radius: 12px
-	padding: 8px 10px
+	border-radius: 8px
+	padding: 8.5px 10px
 	line-height: normal
-	font-size: 14px
+	font-size: 12px
 	font-weight: 500
 	img
 		margin: 0 4px 0 0
 		width: 14px
 
 .promo-label-hit
-	background: #fff
+	// background: #fff
+	background: linear-gradient(to right, rgba(245,223,255,.2) 0%,rgba(157,207,252,.2) 100%)
 	color: #363636
 
 .promo-label-list
@@ -651,6 +741,7 @@
 		color: #363636
 		// border-radius: 10px
 		border-radius: 8px
+		background: #fff
 	// &__wrapper
 	// 	border: 2px solid #EFF7FE
 	// 	border-radius: 16px
@@ -693,6 +784,9 @@
 			object-fit: cover
 			border-radius: 8px
 
+.product-content-wrapper
+	width: 100%			
+
 .sale-value
 	font-size: 14px
 	font-weight: 500
@@ -707,8 +801,8 @@
 	margin: 0 0 0 auto
 
 .subtitle-product
-	margin: 8px 0 0 
-	font-size: 18px	
+	margin: 8px 0 0
+	font-size: 18px
 
 .product-image .promo-label img
 	width: 15px
@@ -880,8 +974,6 @@
 .product-info-box
 	width: 100%
 	margin: 0 0 24px
-	// padding: 0 0 24px
-	// border-bottom: 1px solid #EBEBEB
 	display: flex
 	align-items: center
 	flex-wrap: wrap
@@ -893,7 +985,6 @@
 		width: 100%
 		display: flex
 		align-items: center
-		// flex-wrap: wrap
 		margin: 0 0 24px
 	.promo-label-list
 		width: fit-content
@@ -919,9 +1010,9 @@
 				z-index: 1
 				background: #fff
 			p
-				padding: 0 5px 0 0
+				padding: 0 8px 0 0
 			span, a
-				padding: 0 0 0 5px
+				padding: 0 0 0 8px
 			&::before
 				content: ''
 				position: absolute
@@ -929,8 +1020,92 @@
 				height: 1px
 				background: url('../img/line-characteristics.svg') no-repeat left center
 				background-size: cover
-				bottom: 2px
+				bottom: 3px
 				left: 0
+			.link
+				font-size: 16px
+				text-decoration: underline
+				&:hover
+					color: $accent
+	&__tabs
+		width: 100%
+		border: 1.5px solid #EFF7FE
+		border-radius: 100px
+		display: flex
+		align-items: stretch
+		.difference
+			margin: 0 24px 0 auto
+		.tabs__caption
+			background: #EFF7FE
+			border-radius: 100px
+			padding: 4px
+			flex-wrap: nowrap
+			.btn
+				color: #3D3D3D
+				border: none
+				border-radius: 100px
+				margin: 0
+				width: 134px
+				padding: 10px
+				&.active
+					background: #fff
+					box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.13)
+
+.link-copy-acticle
+	display: flex
+	align-items: center
+	color: #3D3D3D
+	font-size: 16px
+	&:hover
+		color: $accent
+		svg
+			stroke: $accent
+	svg
+		fill: none
+		width: 24px
+		height: 21px
+		margin: 0 0 0 4px
+		stroke: #3D3D3D
+
+.warranty-box-product
+	width: 100%
+	color: #fff
+	margin: 24px 0
+	padding: 24px
+	border-radius: 16px
+	background: linear-gradient(90deg,#18181b 0,#342a41 100%)
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		right: 0
+		top: 0
+		height: 100%
+		width: 122px
+		background: url('../img/decor-bg1.svg') no-repeat right center
+		background-size: 100%
+	h3
+		color: #fff
+		font-size: 22px
+	.link
+		color: #DCDCDC
+		text-align: left
+		margin: 8px 0 0
+		&:hover
+			color: $accent
+			svg
+				stroke: $accent
+		svg
+			stroke: #DCDCDC
+			width: 24px
+			height: 24px
+			fill: none
+			margin: 0 0 0 4px
+
+.reviews-product-slider
+	width: 100%
+	margin: 80px 0
 
 .rating
 	display: flex
@@ -950,7 +1125,7 @@
 			height: 16px
 			min-width: 16px
 		span
-			margin: 0 0 0 4px	
+			margin: 0 0 0 4px
 		&:last-child
 			margin: 0
 		&.star0
@@ -1002,20 +1177,195 @@
 
 .tabs__caption-product
 	width: 100%
-	margin: 0 0 24px
+	margin: 0 0 32px
 	position: relative
 	line-height: 140%
 	font-size: 20px
-
+	background: #EFF7FE
+	border-radius: 100px
+	padding: 4px
+	display: flex
+	align-items: stretch
+	font-size: 14px
+	color: #363636
 	li
 		border: none
-		padding: 10px 24px
+		padding: 10px
 		cursor: pointer
 		transition: .3s ease
-		border-radius: 6px
+		border-radius: 100px
+		margin: 0
+		flex: 1
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		color: #363636
 		&.active
-			background: #F8F3FC
+			background: #fff
+			color: #3D3D3D
+			box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.13)
+		&:hover
+			background: #fff
+
+.faq
+	.tabs__content			
+		.block_hover
+			.box-text
+				width: calc(100% - 30px)
+				padding: 0 32px 0 0		
+
+.help-product-box
+	width: 100%
+	position: sticky
+	top: 100px
+	z-index: 2
+	max-width: 310px
+	width: 100%
+	margin: 0 0 0 auto
+	padding: 24px
+	border-radius: 16px
+	color: #fff
+	background: linear-gradient(90deg, #18181b 0, #342a41 100%)
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		z-index: -1
+		width: 204px
+		height: 127px
+		background: url('../img/decor-bg2.svg') no-repeat center
+		background-size: 100%
+	.btn
+		margin: 48px 0 0
+		height: 40px
+	.btn-white
+		color: #161616
+		&:hover
+			color: #fff
+	h3
+		margin: 0 0 8px
+		font-size: 22px
+		font-weight: 500
+		max-width: 250px
+		color: #fff
+
+.reviews-product-box
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	border-radius: 16px
+	padding: 24px
+	background: #F8F8F8
+	position: relative
+	z-index: 1
+	margin: 0 0 8px
+	&:last-child
+		margin: 0
+	&__head
+		width: 100%
+		display: flex
+		align-items: start
+		justify-content: flex-start
+		margin: 0 0 24px
+		h3
+			font-size: 28px
+			font-weight: 600
+			max-width: 250px
+		.date
+			font-size: 12px
+			margin: 4px 0 0
+	&__body
+		width: 100%
+		margin: 0 0 26px
+		position: relative
+		z-index: 1
+		.box-text
+			max-height: 144px
+			overflow: hidden
+			max-width: none
+			&.show-text
+				max-height: none
+				overflow: visible
+	.reviews-box__user-name
+		text-align: left
+	.reviews-box__user
+		margin: 0	auto 0 0
+	.reviews-box__user-avatar
+		margin: 0 16px 0 0
+	&__footer
+		margin: auto 0 0
+		width: 100%
+	.rate-review
+		p
+			color: #767676
+			font-weight: 500
+			margin: 0 0 4px
+		&__yes
 			color: $accent
+			&:hover
+				color: $hover
+	.reviews-gallery
+		margin: 0 0 16px
+		&__item
+			margin: 0 8px 8px 0
+			&:last-child
+				margin: 0 0 8px
+		
+
+.reviews-product-box-call
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		bottom: 0
+		height: 183px
+		width: 100%
+		z-index: -1
+		background: url('../img/decor-bg3.svg') no-repeat center
+		background-size: 100%
+
+.show-all-text
+	font-size: 16px
+	color: #363636
+	position: absolute
+	bottom: 0
+	right: 0
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(248,248,248,1) 68%)
+	padding: 0 0 0 92px
+	text-align: right
+	&:hover
+		color: $accent
+
+.reviews-product-slider
+	.slick-slide
+		height: auto
+		padding: 0 8px
+	.slick-track
+		display: flex
+		align-items: stretch
+	.slick-list
+		margin: 0 -8px
+	.slick-arrow
+		width: 40px
+		height: 40px
+		border-radius: 12px
+		border: 1px solid #363636
+		padding: 8px
+		stroke: #363636
+		fill: none
+		svg
+			transform: none
+		&:hover, &:focus
+			background: $accent
+			border-color: $accent
+			stroke: #fff
+	.slick-prev
+		left: -64px
+	.slick-next
+		right: -64px
 
 .table, table
 	width: 100%
@@ -1092,23 +1442,25 @@
 	z-index: 1
 
 .attention-box
-	padding: 32px
-	margin: 620x 0 0
+	padding: 24px
+	margin: 32px 0 0
 	border: none
-	background: #FCF5E3
+	background: #FEE5DF
 	border-radius: 8px
 	color: #161616
 	align-items: flex-start
 	h3
-		color: #EDA133
-		margin: 0 0 16px
+		color: #ED5433
+		margin: 0 0 8px
 	.box-text
 		padding: 0
 		width: 100%
+		font-size: 18px
+		line-height: 28px
 		.link-inline
 			border: none
 		a
-			color: #161616
+			color: #1874CF
 	&__icon
 		@include d-flex
 		width: 40px
@@ -1246,11 +1598,12 @@
 	.attention-box
 		.box-text
 			a
-				color: #161616
+				color: #1874CF
+				text-decoration: none
 	h1
 		font-size: 32px
 		font-weight: 700
-		color: #161616			
+		color: #161616
 
 .page-politics
 	h1

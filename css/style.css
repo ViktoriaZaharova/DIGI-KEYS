@@ -263,7 +263,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 
 .btn-sm {
-  height: 40px;
+  height: 44px;
 }
 
 .btn-accent {
@@ -326,6 +326,17 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-border-light-accent:hover {
   color: #363636;
   background: #F8F3FC;
+}
+
+.btn-border-dark {
+  border: 1px solid #161616;
+  background: #F8F8F8;
+  color: #161616;
+}
+.btn-border-dark:hover, .btn-border-dark:focus, .btn-border-dark.active, .btn-border-dark:active {
+  background: #7C0DC6;
+  color: #fff;
+  border-color: #7C0DC6;
 }
 
 .btn-white {
@@ -456,6 +467,47 @@ blockquote {
           transform: rotate(-90deg);
 }
 
+.slick-dots {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  bottom: 0;
+  margin: 16px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.slick-dots li {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin: 0 4px 0 0;
+  border-radius: 4px;
+  background: rgba(54, 54, 54, 0.25);
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+}
+.slick-dots li:last-child {
+  margin: 0;
+}
+.slick-dots li.slick-active {
+  width: 24px;
+  border-radius: 4px;
+  background: #363636;
+}
+.slick-dots li button {
+  display: none;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,9 +537,9 @@ h1 {
 
 h2 {
   width: 100%;
-  margin: 0 0 40px;
-  font-size: 24px;
-  font-weight: 500;
+  margin: 0 0 32px;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 h3 {
@@ -628,6 +680,13 @@ a.color-accent {
 }
 a.color-accent:hover {
   color: #5D0896;
+}
+
+a.color-blue {
+  color: #1874CF;
+}
+a.color-blue:hover {
+  color: #7C0DC6;
 }
 
 .link-inline {
