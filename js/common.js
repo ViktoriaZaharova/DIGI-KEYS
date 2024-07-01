@@ -45,6 +45,16 @@ $('.product-image__slider').slick({
 	fade: true,
 	arrows: false,
 	infinite: true,
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				dots: true,
+				autoplay: true
+			}
+		}
+	]
 });
 
 $('.product-image__preview').slick({
@@ -56,9 +66,6 @@ $('.product-image__preview').slick({
 	focusOnSelect: true,
 	vertical: true,
 	verticalSwiping: true,
-	// variableWidth: true,
-	// prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
-	// nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 1200,
@@ -132,6 +139,15 @@ $('.reviews-product-slider').slick({
 				prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
 				nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon panel_heading-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></button>',
 			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				arrows: false,
+				dots: true,
+				autoplay: true,
+				slidesToShow: 1,
+			}
 		}
 	]
 });
@@ -180,7 +196,7 @@ $(window).scroll(function () {
 });
 
 $('.footer-box__title-toggle').on('click', function () {
-	$(this).next('.footer-box__menu').slideToggle();
+	$(this).toggleClass('click').next('.footer-menu-wrapper').toggleClass('open');
 });
 
 // tabs
@@ -247,7 +263,7 @@ $('.overlay-bg').on('click', function () {
 
 	$('.btn-catalog').removeClass('open').siblings('.dropdown-menu').slideUp();
 	$(this).fadeOut(300);
-	$('.mobile-menu').css('left', '-100%');
+	$('.mobile-menu').css('right', '-100%');
 	$('.menu .dropdown-menu').slideUp();
 
 	$('.search-result').html('');
@@ -368,11 +384,11 @@ $(function () {
 $('.btn-burger').on('click', function (e) {
 	e.preventDefault();
 	$('.overlay-bg').fadeIn();
-	$('.mobile-menu').css('left', 0);
+	$('.mobile-menu').css('right', 0);
 });
 
 $('.mobile-menu__close').click(function () {
-	$('.mobile-menu').css('left', '-100%');
+	$('.mobile-menu').css('right', '-100%');
 	$('.overlay-bg').fadeOut();
 });
 

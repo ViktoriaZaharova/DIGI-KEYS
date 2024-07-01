@@ -1,68 +1,135 @@
 @import "vars"
 
 footer
-	color: #fff
-	margin: 120px 0 0
-	background: #030418
-	padding: 40px 0 104px
+	color: #161616
+	margin: 80px 0 0
 	line-height: 150%
-	.logo
-		filter: brightness(0) invert(1)
 	.container
 		justify-content: space-between
+	.logo
+		margin: 0 0 24px	
+
+.footer-top
+	width: 100%
+	padding: 40px 0
+	display: flex
+	align-items: flex-start
+
+.footer-bottom
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	color: #767676
+	padding: 24px 0
+	position: relative
+	z-index: 1
+	border-top: 1.5px solid transparent
+	background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgba(245,223,255,.2), rgba(157,207,252,.2)) border-box
+	&::before
+		content: ''
+		position: absolute
 
 .copyright
 	font-size: 14px
-	font-weight: 300
-	margin: 24px 0 0
-	line-height: 150%
+	margin: 0 auto 0 0
+
+.link-documents
+	color: #767676
+	&:hover
+		color: $accent
 
 .footer-box
+	margin: 0 160px 0 0
+	&:last-child
+		margin: 0
 	&__title
 		width: 100%
-		margin: 0 0 16px
-		color: rgba(255, 255, 255, 0.75)
+		margin: 0 0 18px
+		color: #161616
 		font-size: 20px
 		font-weight: 500
 		&-toggle
 			display: none
+			svg
+				margin: 0 0 0 auto
+				fill: none
+				stroke: #161616
+				width: 24px
+				height: 24px
+				min-width: 24px
+			&.click
+				svg
+					transform: rotate(180deg)	
 	&__menu
 		font-size: 16px
-		font-weight: 500
+		width: 100%
 		li
-			margin: 0 0 12px
+			margin: 0 0 8px
 			&:last-child
 				margin: 0
 			a
-				color: #fff
+				color: #363636
 				&:hover
-					color: rgba(255, 255, 255, 0.75)
+					color: $accent
+
+.footer-wrapper
+	margin: 0 0 0 auto
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap					
+
+.footer-menu-wrapper
+	display: flex
+	align-items: flex-start
+	&.open
+		display: flex
+	.footer-box__menu
+		margin: 0 48px 0 0
+		width: 155px
+		&:last-child
+			margin: 0
+			width: fit-content
+
+.requisites-list
+	margin: 16px 0 0
+	font-weight: 300
+	font-size: 14px
+	li
+		margin: 0 0 8px
+		&:last-child
+			margin: 0
+
 
 .document-list
 	font-size: 14px
 	font-weight: 300
-	margin: 24px 0 0
-	line-height: 130%
+	display: flex
+	align-items: flex-start
+
 	li
-		margin: 0 0 12px
+		margin: 0 40px 0 0
 		&:last-child
 			margin: 0
 
 .mail-link
-	margin: 0 0 12px
+	margin: 0 0 8px
 
 .phone-link, .mail-link
 	display: flex
 	align-items: center
-	color: #fff
-	font-weight: 500
+	color: #161616
+	font-size: 14px
+	font-weight: 300
+	// font-weight: 500
 	&:hover
 		color: $accent
 	&__icon
-		stroke: #fff
-		width: 24px
-		height: 24px
-		min-width: 24px
+		stroke: #363636
+		fill: none
+		width: 20px
+		height: 20px
+		min-width: 20px
 		margin: 0 8px 0 0
 
 // modal
@@ -149,12 +216,12 @@ footer
 	.modal__wrapper
 		padding: 40px 32px
 	h3
-		text-align: left	
+		text-align: left
 		margin: 0
 	.form
 		margin: 24px 0 0
 		label
-			margin: 0 0 8px	
+			margin: 0 0 8px
 		textarea
 			height: 140px
 		button

@@ -994,10 +994,6 @@
   margin: 140px 0 0;
 }
 
-.d-tablet {
-  display: none;
-}
-
 .form {
   margin: 40px 0 0;
   width: 100%;
@@ -1856,7 +1852,7 @@
 }
 .reviews-product-box__body {
   width: 100%;
-  margin: 0 0 26px;
+  margin: 0 0 24px;
   position: relative;
   z-index: 1;
 }
@@ -1901,6 +1897,13 @@
 }
 .reviews-product-box .reviews-gallery__item:last-child {
   margin: 0 0 8px;
+}
+.reviews-product-box .btn-border-dark {
+  background: #F8F8F8;
+}
+
+.btn-toggle-reviews {
+  margin: 24px auto 0;
 }
 
 .reviews-product-box-call::before {
