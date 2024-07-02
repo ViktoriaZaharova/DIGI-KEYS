@@ -1001,6 +1001,14 @@
   margin: 140px 0 0;
 }
 
+.d-tablet {
+  display: none;
+}
+
+.d-mobile {
+  display: none;
+}
+
 .form {
   margin: 40px 0 0;
   width: 100%;
@@ -1263,6 +1271,34 @@
 .promo-wrapper__label {
   margin: 10px 0 0;
   display: none;
+  position: relative;
+}
+.promo-wrapper__label::after {
+  content: "";
+  margin: 0 0 0 auto;
+  width: 40px;
+  height: 40px;
+  background: url("../img/check-promo.svg") no-repeat center;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.promo-wrapper__label.focus:after {
+  display: none;
+}
+.promo-wrapper__label.focus input {
+  border-color: #538A1B;
+  color: #538A1B;
 }
 
 .promo-link {
@@ -1273,13 +1309,14 @@
       -ms-flex-align: center;
           align-items: center;
   line-height: 100%;
-  color: #7C0DC6;
+  color: #767676;
+  font-size: 16px;
 }
 .promo-link:hover {
-  color: #5D0896;
+  color: #7C0DC6;
 }
 .promo-link span {
-  border-bottom: 1.3px dashed #7C0DC6;
+  border-bottom: 1px dashed #767676;
 }
 
 .buy-wrapper {
@@ -1567,7 +1604,7 @@
   top: 0;
   height: 100%;
   width: 122px;
-  background: url("../img/decor-bg1.svg") no-repeat right center;
+  background: url("../img/decor-bg1.svg") no-repeat right bottom;
   background-size: 100%;
 }
 .warranty-box-product h3 {
@@ -1912,7 +1949,7 @@
   height: 183px;
   width: 100%;
   z-index: -1;
-  background: url("../img/decor-bg3.svg") no-repeat center;
+  background: url("../img/decor-bg3.svg") no-repeat center top;
   background-size: 100%;
 }
 

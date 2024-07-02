@@ -273,10 +273,6 @@
 					</nav>
 
 					<div class="search-wrapper">
-						<!-- <div class="btn-search"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#search"></use>
-							</svg></div> -->
-
 						<form method="post" class="form-search">
 							<button type="submit"><svg class="svg-icon">
 									<use xlink:href="img/sprite.svg#search"></use>
@@ -453,26 +449,10 @@
 														</ul>
 
 														<a href="#" class="difference">
-															<!-- <img src="img/question.svg" alt=""> -->
 															<span>В чём разница?</span>
 														</a>
 													</div>
-													<!-- <div class="product-info-box__footer">
-													<div class="checkout-box">
-														<ul class="list-characteristics my-ul">
-															<li>
-																<p>Стоимость</p>
-																<span>
-																	<div class="price">
-																		<div class="old-price">1990 ₽</div>
-																		<div class="new-price">1750 ₽</div>
-																	</div>
-																</span>
-															</li>
-														</ul>
-														<a href="#orderModal" class="btn btn-sm btn-green open_modal">Оформить заказ</a>
-													</div>
-												</div> -->
+
 												</div>
 
 												<div class="warranty-box-product">
@@ -536,51 +516,8 @@
 										</li>
 									</ul>
 
-									<!-- <label>
-										<span class="input-text">E-mail</span>
-										<input type="text" name="mail">
-									</label>
-
-									<div class="status-availability">
-										<img src="img/check.svg" alt="">
-										<span>В наличии</span>
-									</div> -->
-
-									<!-- <div class="promo-wrapper">
-										<a href="#" class="promo-link">
-											<img src="img/star-promo.svg" alt="">
-											<span>У меня есть промокод</span>
-										</a>
-
-										<label class="promo-wrapper__label">
-											<span class="input-text">Введите промокод</span>
-											<input type="text" name="code">
-										</label>
-									</div> -->
 
 									<a href="#orderModal" class="btn btn-sm btn-buy  btn-green open_modal">Оформить заказ</a>
-
-									<!-- <div class="buy-wrapper">
-										<div class="amount">
-											<span class="down"><img src="img/minus.svg" alt=""></span>
-											<input type="text" value="1" />
-											<span class="up"><img src="img/plus.svg" alt=""></span>
-										</div>
-										
-										<a href="#thanksModal" class="btn btn-sm btn-buy btn-green open_modal"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#check"></use>
-											</svg><span>Купить</span></a>
-									</div> -->
-									<!-- <div class="payments-method"><img src="img/paymentsMethod.svg" alt=""></div> -->
-									<!-- <ul class="list-payment my-ul">
-										<li><img src="img/pay1.svg" alt=""></li>
-										<li><img src="img/pay2.svg" alt=""></li>
-										<li><img src="img/pay3.svg" alt=""></li>
-										<li><img src="img/pay4.svg" alt=""></li>
-										<li><img src="img/pay5.svg" alt=""></li>
-										<li><img src="img/pay6.svg" alt=""></li>
-										<li><img src="img/pay7.svg" alt=""></li>
-									</ul> -->
 
 									<div class="delivery-instant">
 										<img src="img/rocket.png" alt="">
@@ -1879,6 +1816,108 @@
 			</div>
 		</footer>
 	</div>
+
+
+	<!-- modals -->
+
+	<div class="modal__div modal-order" id="orderModal">
+		<div class="modal__wrapper">
+
+			<div class="modal__head">
+				<h3 class="modal-title">Оформление заказа</h3>
+
+				<span class="modal__close"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg></span>
+			</div>
+
+			<div class="modal__body">
+				<div class="product-row">
+					<a href="product.html" class="product-row__img"><img src="img/product-slide1.jpg" alt=""></a>
+					<div class="product-row__body">
+						<a href="product.html" class="product-row__title">Microsoft Office 2019 Professional Plus</a>
+						<div class="product-row__subtitle">— бессрочный ключ с привязкой</div>
+					</div>
+					<div class="amount">
+						<span class="down"><img src="img/minus.svg" alt=""></span>
+						<input type="text" value="1" />
+						<span class="up"><img src="img/plus.svg" alt=""></span>
+					</div>
+				</div>
+
+
+				<form method="post" class="form-order">
+					<div class="tabs tabs-order">
+						<ul class="tabs__caption tabs__caption-product my-ul">
+							<li class="active">
+								Физ. лицо
+							</li>
+							<li>
+								Юр. лицо
+							</li>
+						</ul>
+
+						<div class="tabs__content active">
+							<label>
+								<!-- <span class="input-text">E-mail</span> -->
+								<input type="text" name="mail" placeholder="E-mail" required>
+							</label>
+							<span class="label-description">Отправим ключ на введённый email в течении 2-х минут</span>
+
+							<div class="promo-wrapper">
+								<label class="promo-wrapper__label">
+									<!-- <span class="input-text">Промокод</span> -->
+									<input type="text" name="code" placeholder="Промокод" required>
+								</label>
+
+								<a href="#" class="promo-link">
+									<span>Использовать промокод</span>
+								</a>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<label>
+								<input type="text" name="mail" placeholder="ИНН" required>
+							</label>
+							<label>
+								<input type="text" name="phone" placeholder="+7 (800) 301-93-09" required>
+							</label>
+							<label>
+								<textarea name="comment" placeholder="Комментарии"></textarea>
+							</label>
+						</div>
+					</div>
+
+
+
+					<div class="paymnets-information">
+						<ul class="list-order-product my-ul">
+							<li>
+								<p>Стоимость</p>
+								<span>1590 ₽</span>
+							</li>
+							<li>
+								<p>Скидка</p>
+								<span>-300 ₽</span>
+							</li>
+						</ul>
+						<div class="total-sum">
+							<p>Итого</p>
+							<span>1290 ₽</span>
+						</div>
+						<button type="submit" class="btn btn-green btn-paymnent">Оплатить и оформить заказ</button>
+						<div class="consent">
+							<p>Отправляя данные вы соглашаетесь с <a href="#" class="d-inline color-accent text-decoration"
+									target="_blank">политикой конфиденциальности</a> и <a href="#" class="d-inline color-accent text-decoration" target="_blank">офертой</a>.
+							</p>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
 	<div class="modal__div" id="thanksModal">
 		<div class="modal__wrapper">
 			<span class="modal__close"><svg class="svg-icon">

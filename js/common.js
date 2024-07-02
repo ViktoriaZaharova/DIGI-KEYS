@@ -337,6 +337,7 @@ $('form input, form textarea').each(function () {
 $('.promo-link').click(function (e) {
 	e.preventDefault();
 	$('.promo-wrapper__label').fadeIn();
+	$(this).hide();
 });
 
 // модальные окна (несколько)
