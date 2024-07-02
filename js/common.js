@@ -51,7 +51,7 @@ $('.product-image__slider').slick({
 			settings: {
 				slidesToShow: 1,
 				dots: true,
-				autoplay: true
+				// autoplay: true
 			}
 		}
 	]

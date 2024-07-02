@@ -635,7 +635,7 @@
 			margin: 0 0 4px
 		&:first-child
 			.product-info-box__footer
-				margin: 0		
+				margin: 0
 
 	.difference
 		margin: 0 0 0 auto
@@ -746,21 +746,21 @@
 		margin: 32px 0
 
 	.article-slider
+		margin: 0 -8px
 		width: calc(100% + 30px)
 		.slick-slide
 			width: 341px
 			margin-bottom: 0
+			padding: 0 8px
 
 	.recommended
+		margin: 32px 0
 		.product-col
 			min-width: 371px
 
 	.row-scroll
 		flex-wrap: nowrap
 		overflow-y: auto
-
-	.recommended
-		margin: 32px 0
 
 	.warranty-box-product
 		display: flex
@@ -781,6 +781,27 @@
 		.link
 			display: none
 
+	.help-product-box
+		margin: 0
+		position: relative
+		top: 0
+		max-width: none
+		flex-wrap: wrap
+		align-items: flex-end
+		&::before
+			background: url('../img/decor-bg2-tablet.svg') no-repeat center
+			background-size: 100%
+			width: 366px
+			height: 128px
+		&__content
+			max-width: 384px
+		h3
+			max-width: none
+			br
+				display: none
+		.btn
+			margin: 0 0 0 auto
+
 @media only screen and (max-width: 710px)
 	.search-wrapper
 		max-width: 300px
@@ -797,8 +818,6 @@
 	.seo-section
 		h2
 			margin: 0 0 24px
-
-	
 
 	.tabs__caption-product
 		flex-wrap: nowrap
@@ -888,10 +907,10 @@
 		.form-search
 			margin: 0 0 24px
 		&__body
-			height: calc(100% - 24px - 24px)	
+			height: calc(100% - 24px - 24px)
 		&__footer
 			.btn
-				height: 48px		
+				height: 48px
 
 	.dropdown-catalog
 		display: none
@@ -956,8 +975,9 @@
 		width: 335px
 
 	h2
-		font-size: 20px
+		font-size: 24px
 		padding: 0
+		margin: 0 0 24px
 
 	h3
 		font-size: 16px
@@ -1081,19 +1101,51 @@
 			.btn
 				height: 44px
 				font-size: 16px
+		h1
+			font-size: 28px
 
 	.product-image
-		height: 419px
+		height: auto
 		width: 100%
 		&__preview
 			display: none
 
+	.product-image-wrapper
+		align-items: flex-start
+
+	.product-image__preview-item
+		height: 419px
+
+	.tabs__caption-product
+		margin: 0 0 24px
+
 	.delivery-instant, .list-payment, .payments-method
 		display: none
 
+	.product-info-box .difference
+		margin: 0 24px 0 auto
+
 	.difference
-		width: 100%
-		margin: 16px 0 0
+		background: url('../img/question-icon.svg') no-repeat center
+		background-size: 100%
+		width: 24px
+		min-width: 24px
+		span
+			display: none
+
+	.tabs-characteristics
+		.tabs__caption li
+			min-width: 148px
+
+	.warranty-box-product
+		flex-direction: column
+		align-items: flex-start
+		&:after
+			display: none
+		&::before
+			top: 0
+		.link
+			display: flex
 
 	.promo-link
 		margin: 0 auto
@@ -1110,12 +1162,32 @@
 			margin: 0 0 16px
 
 	.attention-box
-		margin: 40px 0 60px
+		margin: 24px 0 32px
+		padding: 24px
+		h3
+			font-size: 22px
+			display: flex
+			align-items: center
+			margin: 0 0 16px
+			&:after
+				content: ''
+				display: flex
+				align-items: center
+				justify-content: center
+				margin: 0 0 0 auto
+				width: 40px
+				height: 40px
+				min-width: 40px
+				background: url('../img/attention-icon.svg') no-repeat center
+				background-size: 100%
 		&__icon
 			display: none
 		&__text
 			width: 100%
 			padding: 0
+
+	.tabs__caption-product li
+		min-width: 148px
 
 	.panel_heading
 		h3
@@ -1131,10 +1203,11 @@
 	.faq .block_hover
 		margin: 0
 
-	.articles-product
-		.col-30
-			width: 320px
-			min-width: 320px
+	.article-slider
+		margin: 0 -4px
+		.slick-slide
+			width: 365px
+			padding: 0 4px
 
 	.form
 		.btn
@@ -1183,9 +1256,6 @@
 			margin-bottom: 32px
 		.col-30, .col-25
 			width: 100%
-
-	.recommended .product-col
-		min-width: 225px
 
 	.product-card
 		&__avialability
@@ -1264,8 +1334,6 @@
 			max-width: none
 			width: 100%
 
-	
-
 	.adding-review
 		.col-50
 			width: 100%
@@ -1301,7 +1369,7 @@
 	.reviews-gallery
 		flex-wrap: nowrap
 		overflow-x: auto
-		width: calc(100% + 15px)
+		width: calc(100% + 23px)
 		margin: 32px 0 26px
 		&__photo
 			width: 80px
@@ -1358,19 +1426,33 @@
 	.d-mobile
 		display: block
 
-@media only screen and (max-width: 480px)
+	.help-product-box
+		padding: 24px
+		&__content
+			max-width: none
+		.btn
+			margin: 24px 0 0
+		&:before
+			width: 149px
+			height: 56px
+
+	.recommended
+		.product-col
+			padding: 0 8px
+			min-width: 233px
+		.row-scroll
+			margin: 0 -8px
+
 	.product-card
 		&__img
-			padding: 40px 0
-			border: none
-			background: #F8F8F8
+			height: 256px
+			padding: 20px 0
 		.promo-label-list
-			padding: 8px 1px
-		&__footer
-			.btn
-				display: none
-		.link-add-card
-			margin: 0
+			padding: 8px 10px	
+
+		
+
+@media only screen and (max-width: 480px)
 
 	.promo-label
 		font-size: 10px
@@ -1406,3 +1488,6 @@
 		padding: 20px 15px
 		&__title
 			font-size: 14px
+
+	.article-slider .slick-slide
+		width: 300px

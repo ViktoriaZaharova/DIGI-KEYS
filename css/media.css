@@ -855,11 +855,16 @@
     margin: 32px 0;
   }
   .article-slider {
+    margin: 0 -8px;
     width: calc(100% + 30px);
   }
   .article-slider .slick-slide {
     width: 341px;
     margin-bottom: 0;
+    padding: 0 8px;
+  }
+  .recommended {
+    margin: 32px 0;
   }
   .recommended .product-col {
     min-width: 371px;
@@ -868,9 +873,6 @@
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     overflow-y: auto;
-  }
-  .recommended {
-    margin: 32px 0;
   }
   .warranty-box-product {
     display: -webkit-box;
@@ -903,6 +905,35 @@
   }
   .warranty-box-product .link {
     display: none;
+  }
+  .help-product-box {
+    margin: 0;
+    position: relative;
+    top: 0;
+    max-width: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .help-product-box::before {
+    background: url("../img/decor-bg2-tablet.svg") no-repeat center;
+    background-size: 100%;
+    width: 366px;
+    height: 128px;
+  }
+  .help-product-box__content {
+    max-width: 384px;
+  }
+  .help-product-box h3 {
+    max-width: none;
+  }
+  .help-product-box h3 br {
+    display: none;
+  }
+  .help-product-box .btn {
+    margin: 0 0 0 auto;
   }
 }
 @media only screen and (max-width: 710px) {
@@ -1101,8 +1132,9 @@
     width: 335px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 24px;
     padding: 0;
+    margin: 0 0 24px;
   }
   h3 {
     font-size: 16px;
@@ -1247,19 +1279,64 @@
     height: 44px;
     font-size: 16px;
   }
+  .product-info-box h1 {
+    font-size: 28px;
+  }
   .product-image {
-    height: 419px;
+    height: auto;
     width: 100%;
   }
   .product-image__preview {
     display: none;
   }
+  .product-image-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .product-image__preview-item {
+    height: 419px;
+  }
+  .tabs__caption-product {
+    margin: 0 0 24px;
+  }
   .delivery-instant, .list-payment, .payments-method {
     display: none;
   }
+  .product-info-box .difference {
+    margin: 0 24px 0 auto;
+  }
   .difference {
-    width: 100%;
-    margin: 16px 0 0;
+    background: url("../img/question-icon.svg") no-repeat center;
+    background-size: 100%;
+    width: 24px;
+    min-width: 24px;
+  }
+  .difference span {
+    display: none;
+  }
+  .tabs-characteristics .tabs__caption li {
+    min-width: 148px;
+  }
+  .warranty-box-product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .warranty-box-product:after {
+    display: none;
+  }
+  .warranty-box-product::before {
+    top: 0;
+  }
+  .warranty-box-product .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .promo-link {
     margin: 0 auto;
@@ -1278,7 +1355,36 @@
     margin: 0 0 16px;
   }
   .attention-box {
-    margin: 40px 0 60px;
+    margin: 24px 0 32px;
+    padding: 24px;
+  }
+  .attention-box h3 {
+    font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 16px;
+  }
+  .attention-box h3:after {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 0 auto;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: url("../img/attention-icon.svg") no-repeat center;
+    background-size: 100%;
   }
   .attention-box__icon {
     display: none;
@@ -1286,6 +1392,9 @@
   .attention-box__text {
     width: 100%;
     padding: 0;
+  }
+  .tabs__caption-product li {
+    min-width: 148px;
   }
   .panel_heading h3 {
     font-size: 18px;
@@ -1299,9 +1408,12 @@
   .faq .block_hover {
     margin: 0;
   }
-  .articles-product .col-30 {
-    width: 320px;
-    min-width: 320px;
+  .article-slider {
+    margin: 0 -4px;
+  }
+  .article-slider .slick-slide {
+    width: 365px;
+    padding: 0 4px;
   }
   .form .btn {
     width: 100%;
@@ -1353,9 +1465,6 @@
   }
   .news-row .col-30, .news-row .col-25 {
     width: 100%;
-  }
-  .recommended .product-col {
-    min-width: 225px;
   }
   .product-card__avialability {
     width: 100%;
@@ -1490,7 +1599,7 @@
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     overflow-x: auto;
-    width: calc(100% + 15px);
+    width: calc(100% + 23px);
     margin: 32px 0 26px;
   }
   .reviews-gallery__photo {
@@ -1556,22 +1665,35 @@
   .d-mobile {
     display: block;
   }
-}
-@media only screen and (max-width: 480px) {
+  .help-product-box {
+    padding: 24px;
+  }
+  .help-product-box__content {
+    max-width: none;
+  }
+  .help-product-box .btn {
+    margin: 24px 0 0;
+  }
+  .help-product-box:before {
+    width: 149px;
+    height: 56px;
+  }
+  .recommended .product-col {
+    padding: 0 8px;
+    min-width: 233px;
+  }
+  .recommended .row-scroll {
+    margin: 0 -8px;
+  }
   .product-card__img {
-    padding: 40px 0;
-    border: none;
-    background: #F8F8F8;
+    height: 256px;
+    padding: 20px 0;
   }
   .product-card .promo-label-list {
-    padding: 8px 1px;
+    padding: 8px 10px;
   }
-  .product-card__footer .btn {
-    display: none;
-  }
-  .product-card .link-add-card {
-    margin: 0;
-  }
+}
+@media only screen and (max-width: 480px) {
   .promo-label {
     font-size: 10px;
   }
@@ -1608,5 +1730,8 @@
   }
   .distribution-box__title {
     font-size: 14px;
+  }
+  .article-slider .slick-slide {
+    width: 300px;
   }
 }
