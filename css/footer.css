@@ -350,6 +350,9 @@ footer .logo {
   width: fit-content;
   text-align: left;
 }
+.modal-order .modal-title span {
+  font-weight: normal;
+}
 .modal-order .tabs__caption-product {
   margin: 0 0 24px;
 }
@@ -373,8 +376,6 @@ footer .logo {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0 0 24px;
 }
 
@@ -500,4 +501,13 @@ footer .logo {
   font-weight: 600;
   font-size: 20px;
   color: #161616;
+}
+
+.modal-reviews {
+  max-width: none;
+}
+.modal-reviews .modal__wrapper {
+  border-radius: 0;
+  margin: 0 auto;
+  padding: 32px 0;
 }

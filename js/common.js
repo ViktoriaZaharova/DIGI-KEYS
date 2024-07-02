@@ -152,6 +152,42 @@ $('.reviews-product-slider').slick({
 	]
 });
 
+$('.reviews-modal-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	asNavFor: '.gallery-photo-modal',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false,
+				dots: true,
+				autoplay: true,
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+$('.gallery-photo-modal').slick({
+	slidesToShow: 1,
+	asNavFor: '.reviews-modal-slider',
+	arrows: false,
+	focusOnSelect: true,
+	variableWidth: true,
+	infinite: false,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				infinite: true,
+			}
+		}
+	]
+});
+
 // slick active
 $(window).on('load resize', function () {
 	if ($(window).width() < 768) {
@@ -172,7 +208,7 @@ $(window).on('load resize', function () {
 $(".reviews-product-slider .reviews-product-box").each(function () {
 	let th = $(this).find('.box-text');
 	// let more = th.parent(".reviews-product-box").find(".show-all-text");
-	
+
 	if (th.height() > 130) {
 		th.parent(".reviews-product-box__body").append('<a href="#" class="show-all-text">Еще</a>');
 		// th.addClass("show-text");
@@ -183,7 +219,7 @@ $(".reviews-product-slider .reviews-product-box").each(function () {
 		});
 	}
 
-	
+
 });
 
 // header fixed
@@ -347,6 +383,7 @@ $(function () {
 		close = $('.modal__close, .overlay, .btn-close-modal'),
 		modal = $('.modal__div');
 
+
 	open_modal.on('click', function (event) {
 		event.preventDefault();
 
@@ -364,8 +401,13 @@ $(function () {
 						opacity: 1,
 						top: '50%'
 					}, 200);
+				$('.modal__div .slick-slider').slick('setPosition');
 			});
+
+
 	});
+
+
 
 	close.on('click', function () {
 		modal
