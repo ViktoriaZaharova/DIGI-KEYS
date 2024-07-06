@@ -525,7 +525,9 @@
 
 // catalog page
 .page
-	padding: 136px 0 0
+	padding: 188px 0 0
+	&.close-special
+		padding: 136px 0 0
 
 .page-catalog-wrapper
 	width: 100%
@@ -1738,27 +1740,92 @@
 	.tabs__content
 		margin: 8px 0 0
 
+.page-about
+	.nav-breadcrumb
+		margin: 0 0 60px
+
 .about-wrapper
 	width: 100%
 	position: relative
-	border-radius: 24px
-	background: #F9F2FF
-	padding: 60px
-	overflow: hidden
-	z-index: 1
-	&__image
-		position: absolute
-		bottom: 0
-		right: 0
-		max-width: 660px
-		z-index: -1
-		@include d-flex
-	&__content
-		max-width: 750px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__images
 		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+	&__img
+		width: calc(50% - 4px)
+		margin: 0 auto 8px 0
+		height: 124px
+		@include d-flex
+		border-radius: 24px
+		background: #F8F8F8
+		&:nth-child(even)
+			margin-right: 0
+		&:last-child
+			width: 100%
+			margin: 0
+	&__content
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
 	h1
 		margin: 0 0 16px
-		max-width: 500px
+		max-width: 660px
+	.box-text
+		font-size: 18px
+
+.about-in-numbers-box
+	width: 100%
+	height: 100%
+	padding: 32px 20px
+	border-radius: 24px
+	font-size: 18px
+	&__head
+		width: 100%
+		padding: 0 0 8px
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 1.5px
+			background: url('../img/in-numbers-line.svg') no-repeat center
+			background-size: 100%
+		h3
+			font-size: 80px
+			font-weight: 500
+			span
+				font-weight: normal
+				font-size: 18px
+	&__body
+		padding: 24px 0 0
+		width: 100%
+		white-space: nowrap
+
+.about-in-numbers-box1
+	background-color: #edf7f3
+	background-image: radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%)
+
+.about-in-numbers-box2
+	background-color: #eff7fe
+	background-image: radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%)
+
+.about-in-numbers-box3
+	background-color: #fdf1ef
+	background-image: radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%)
+
+.about-in-numbers-box4
+	background-color: #edf7f3
+	background-image: radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%)
 
 // news page
 .page-news
@@ -2764,25 +2831,25 @@
 	.btn
 		margin: 0
 
-.reviews-modal-slider 
+.reviews-modal-slider
 	.slick-arrow
 		width: 40px
 		height: 40px
 		border-radius: 12px
-		border: 1px solid #363636 
+		border: 1px solid #363636
 		padding: 8px
 		stroke: #363636
 		fill: none
 		svg
-			transform: none 
+			transform: none
 		&:hover
 			background: #7C0DC6
 			border-color: #7C0DC6
-			stroke: #fff	
-	.slick-prev	
+			stroke: #fff
+	.slick-prev
 		left: -65px
 	.slick-next
-		right: -65px	
+		right: -65px
 
 .reviews-modal-slide
 	width: 100%
@@ -2827,3 +2894,114 @@
 			width: 100%
 			height: 100%
 			object-fit: cover
+
+.official-business
+	h2
+		margin: 0 0 8px
+	.box-text
+		margin: 0 0 24px
+		max-width: 411px
+	.btn-group
+		.btn
+			margin: 0 auto 0 0
+			width: calc(50% - 5px)
+			&:last-child
+				margin: 0
+
+.official-requisites-box
+	width: 100%
+	background: #F8F8F8
+	border-radius: 16px
+	padding: 32px
+	font-size: 16px
+	margin: 0 0 16px
+	p
+		font-size: 18px
+	h4
+		font-size: 20px
+		width: 100%
+	.list-requisites
+		margin: 24px 0 0
+		li
+			width: 100%
+			display: flex
+			align-items: flex-start
+			margin: 0 0 16px
+			&:last-child
+				margin: 0
+			span
+				min-width: 208px
+				display: block
+				color: #363636
+	&__position
+		margin: 8px 0 0
+		display: block
+		width: 100%
+	.list-requisites-documents
+		margin: 75px 0 0
+
+.list-requisites-documents
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	justify-content: space-between
+	li
+		span
+			color: #363636
+			display: block
+			margin: 0 0 8px
+		p
+			font-size: 20px
+			color: #161616
+
+.legislative-wrapper
+	width: 100%
+	padding: 32px
+	border-radius: 24px
+	background-color: #eff7fe
+	background-image: radial-gradient(-109deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-109deg,#f5dfff 0%,#9dcffc 100%)
+
+.legislative-image
+	@include d-flex
+	height: 412px
+	width: 100%
+	border-radius: 16px
+	img
+		border-radius: 16px
+		@include d-flex
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.legislative-content
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	font-size: 18px
+	padding: 32px
+	.btn
+		margin: 24px 0 0
+		color: #161616
+		&:hover
+			color: #fff
+
+.time-tested
+	.box-text
+		margin: 0 0 40px
+	.about-in-numbers-box
+		&__body
+			padding: 28px 0 0
+		.box-text
+			margin: 0
+
+.feedback-wrapper
+	background-color: #eff7fe
+	background-image: radial-gradient(-107deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-107deg,#f5dfff 0%,#9dcffc 100%)
+
+.feedbacks-image
+	height: 359px
+	box-shadow: 0 14px 31px 0 rgba(0,0,0,.04),0 57px 57px 0 rgba(0,0,0,.03),0 128px 77px 0 rgba(0,0,0,.02)
+

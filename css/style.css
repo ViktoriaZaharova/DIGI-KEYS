@@ -242,6 +242,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   height: 48px;
   line-height: 100%;
   font-size: 16px;
+  font-weight: 500;
   border-radius: 12px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -264,6 +265,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 .btn-group .btn:last-child {
   margin: 0;
+}
+
+.btn-lg {
+  height: 56px;
 }
 
 .btn-sm {
@@ -518,14 +523,14 @@ blockquote {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  max-width: 1380px;
+  max-width: 1328px;
   margin: 0 auto;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 h1 {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 600;
   line-height: 130%;
   color: #161616;
 }
@@ -540,8 +545,8 @@ h1 {
 
 h2 {
   width: 100%;
-  margin: 0 0 32px;
-  font-size: 32px;
+  margin: 0 0 8px;
+  font-size: 36px;
   font-weight: 600;
 }
 
@@ -609,8 +614,20 @@ h3 {
   margin-bottom: 20px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.p-120 {
+  padding: 120px 0;
+}
+
 .row {
-  margin: 0 -17.5px;
+  margin: 0 -8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,42 +649,42 @@ h3 {
 
 .col-100 {
   width: 100%;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 .col-75 {
   width: 75%;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 .col-70 {
   width: 66.66%;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 .col-55 {
   width: 55%;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 .col-50 {
   width: 50%;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 .col-45 {
   width: 45%;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 .col-30 {
   width: 33.33%;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 .col-25 {
   width: 25%;
-  padding: 0 17.5px;
+  padding: 0 8px;
 }
 
 .w-100 {

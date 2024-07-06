@@ -2,7 +2,7 @@
 @import "vars"
 
 header
-	padding: 20px 0
+	
 	margin: 0 0 30px
 	position: fixed
 	left: 0
@@ -21,9 +21,10 @@ header
 		margin: 0 24px 0 0
 	&.fixed
 		position: fixed
-		padding: 17.5px 0
+		.header-top
+			padding: 17.5px 0
 	.search-result
-		display: none	
+		display: none
 	&.active-search
 		.nav-menu
 			display: none
@@ -39,14 +40,19 @@ header
 		.search-result
 			display: block
 
+.header-top
+	padding: 20px 0
+	width: 100%	
+	transition: .3s ease		
+
 .search-wrapper
 	position: relative
-	margin: 0 24px 0 0
+	// margin: 0 24px 0 0
 	padding: 0 16px
 	border: 1.5px solid #E6E6E6
 	border-radius: 12px
 	background: #f8f8f8
-	max-width: 352px
+	max-width: 370px
 	width: 100%
 	.form-search
 		display: flex
@@ -80,7 +86,6 @@ header
 		box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.1)
 		.search-result
 			display: block
-		
 
 .search-result
 	position: absolute
@@ -92,7 +97,7 @@ header
 	background: #f8f8f8
 	border-radius: 0px 0px 12px 12px
 	border: 1.5px solid #161616
-	border-top: none 
+	border-top: none
 	display: none
 	font-size: 14px
 	padding: 14px 16px
@@ -107,7 +112,7 @@ header
 			font-size: 12px
 			text-align: center
 			color: rgba(118, 118, 118, 1)
-			padding: 16px 0	
+			padding: 16px 0
 	&__list
 		width: 100%
 		li
@@ -215,12 +220,12 @@ header
 .list-social
 	display: flex
 	align-items: flex-start
-	margin: 0 0 0 16px
+	margin: 0 0 0 32px
 	li
-		@include d-flex	
+		@include d-flex
 		margin: 0 8px 0 0
 		&:last-child
-			margin: 0	
+			margin: 0
 
 .link-social
 	@include d-flex
@@ -231,7 +236,7 @@ header
 	padding: 12px
 	border: 1.5px solid #161616
 	border-radius: 12px
-	
+
 .btn-clear-search
 	width: 24px
 	height: 24px
@@ -343,7 +348,7 @@ header
 	margin: 0 auto 0 0
 
 .btn-mail
-	border-radius: 20px	
+	border-radius: 20px
 
 .mobile-menu-list
 	font-size: 16px
@@ -387,9 +392,48 @@ header
 		.svg-icon
 			margin: 0 0 0 8px
 	.dropdown.open > .btn-catalog-mobile.dropdown-toggle
-		color: #363636		
+		color: #363636
 
 .link-phone
 	color: #161616
 	&:hover
 		color: $accent
+
+.special-position
+	position: relative
+	z-index: 1
+	background-image: linear-gradient(90deg,#18181b 0,#342a41 100%)
+	color: #fff
+	padding: 14px 0
+	font-size: 14px
+	overflow: hidden
+	&::before, &::after
+		content: ''
+		position: absolute
+		z-index: -1
+	&::before
+		background: url('../img/spec-bg1.svg') no-repeat center
+		background-size: 100%
+		width: 248px
+		height: 46px
+		left: 0
+		bottom: 6px
+	&::after
+		background: url('../img/spec-bg2.svg') no-repeat center
+		background-size: 100%
+		right: 0
+		top: 6px
+		width: 247px
+		height: 46px
+	&__link
+		margin: 0 auto
+		color: #fff
+		border-bottom: 1px solid #fff
+		&:hover
+			color: $accent
+	&__close
+		width: 24px
+		height: 24px
+		@include d-flex
+		stroke: #fff
+		cursor: pointer

@@ -188,6 +188,11 @@ $('.gallery-photo-modal').slick({
 	]
 });
 
+$('.special-position__close').click(function () {
+	$(this).parents('.special-position').fadeOut();
+	$('.page').addClass('close-special');
+});
+
 // slick active
 $(window).on('load resize', function () {
 	if ($(window).width() < 768) {

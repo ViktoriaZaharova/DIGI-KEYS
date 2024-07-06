@@ -361,6 +361,9 @@
 }
 @media only screen and (max-width: 992px) {
   .page {
+    padding: 174px 0 0;
+  }
+  .page.close-special {
     padding: 122px 0 0;
   }
   header {
