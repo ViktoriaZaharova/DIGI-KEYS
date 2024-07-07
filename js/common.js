@@ -193,6 +193,8 @@ $('.special-position__close').click(function () {
 	$('.page').addClass('close-special');
 });
 
+
+
 // slick active
 $(window).on('load resize', function () {
 	if ($(window).width() < 768) {
@@ -774,3 +776,5 @@ function dragEndHandler(ev) {
 	document.getElementById('drop_zone').classList.remove("drop-zone--over");
 	ev.preventDefault();
 }
+
+// new WOW().init();

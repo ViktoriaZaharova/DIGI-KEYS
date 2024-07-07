@@ -548,6 +548,7 @@ h2 {
   margin: 0 0 8px;
   font-size: 36px;
   font-weight: 600;
+  color: #161616;
 }
 
 h3 {
@@ -859,4 +860,8 @@ a.color-accent:hover {
 }
 .tabs__content.active {
   display: block;
+}
+
+.animate__animated {
+  --animate-duration: 2s;
 }

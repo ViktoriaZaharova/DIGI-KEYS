@@ -4257,6 +4257,7 @@
   padding: 32px;
   font-size: 16px;
   margin: 0 0 16px;
+  overflow: hidden;
 }
 .official-requisites-box p {
   font-size: 18px;
@@ -4401,4 +4402,43 @@
   height: 359px;
   -webkit-box-shadow: 0 14px 31px 0 rgba(0, 0, 0, 0.04), 0 57px 57px 0 rgba(0, 0, 0, 0.03), 0 128px 77px 0 rgba(0, 0, 0, 0.02);
           box-shadow: 0 14px 31px 0 rgba(0, 0, 0, 0.04), 0 57px 57px 0 rgba(0, 0, 0, 0.03), 0 128px 77px 0 rgba(0, 0, 0, 0.02);
+}
+
+.we-appreciate {
+  margin: 0 0 40px;
+}
+.we-appreciate-text {
+  color: #161616;
+  font-size: 124px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 0.9;
+  width: 100%;
+}
+.we-appreciate-text span {
+  font-weight: normal;
+}
+
+.we-appreciate-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.we-appreciate-wrapper .we-appreciate-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 0 0;
+}
+.we-appreciate-wrapper .box-text {
+  max-width: 431px;
+  font-size: 18px;
+}
+
+.we-appreciate-text2 {
+  text-align: right;
 }
