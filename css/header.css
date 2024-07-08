@@ -617,7 +617,7 @@ header.active-search .search-result {
 .special-position__link {
   margin: 0 auto;
   color: #fff;
-  border-bottom: 1px solid #fff;
+  text-decoration: underline;
 }
 .special-position__link:hover {
   color: #7C0DC6;

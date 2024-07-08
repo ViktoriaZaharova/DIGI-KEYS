@@ -2513,6 +2513,7 @@
       flex-wrap: wrap;
 }
 .about-wrapper__img {
+  padding: 10px;
   width: calc(50% - 4px);
   margin: 0 auto 8px 0;
   height: 124px;
@@ -4258,6 +4259,8 @@
   font-size: 16px;
   margin: 0 0 16px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 .official-requisites-box p {
   font-size: 18px;
@@ -4294,6 +4297,21 @@
 }
 .official-requisites-box .list-requisites-documents {
   margin: 75px 0 0;
+}
+
+.official-requisites-bg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url("../img/requisites-bg.svg") no-repeat center;
+  background-size: 100%;
+  width: 332px;
+  height: 116px;
+}
+
+.btn-check-time2 {
+  display: none;
 }
 
 .list-requisites-documents {
@@ -4441,4 +4459,9 @@
 
 .we-appreciate-text2 {
   text-align: right;
+}
+
+.help-section {
+  padding: 32px 0;
+  display: none;
 }

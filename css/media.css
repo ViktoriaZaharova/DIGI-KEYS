@@ -665,11 +665,16 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .time-tested__content {
-    margin: 0 0 16px;
-  }
   .official-requisites-box {
     padding: 24px;
+  }
+  .btn-check-time2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .btn-check-time1 {
+    display: none;
   }
   .we-appreciate {
     margin: 32px 0;
@@ -703,6 +708,9 @@
   }
   h2 {
     font-size: 32px;
+  }
+  .btn {
+    border-radius: 12px;
   }
   .your-choice .col-30:nth-child(2) .chapter-card__img {
     max-width: 305px;
@@ -1106,13 +1114,26 @@
 }
 @media only screen and (max-width: 576px) {
   header {
-    padding: 12px 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
   }
   header .logo {
     max-width: 100px;
     margin: 0 auto 0 0;
+  }
+  .header-top {
+    padding: 20px 0;
+  }
+  .special-position {
+    padding: 8px 0;
+  }
+  .special-position::before, .special-position:after {
+    display: none;
+  }
+  .special-position__link {
+    max-width: 230px;
+    font-size: 14px;
+    text-align: center;
   }
   .breadcrumb {
     font-weight: 400;
@@ -1154,6 +1175,7 @@
     height: 44px;
     padding: 10px 16px;
     font-size: 16px;
+    border-radius: 8px;
   }
   .title-wrapper {
     -ms-flex-wrap: wrap;
@@ -1219,8 +1241,11 @@
     left: 12px;
     width: 335px;
   }
+  h1 {
+    font-size: 28px;
+  }
   h2 {
-    font-size: 24px;
+    font-size: 28px;
     padding: 0;
   }
   h3 {
@@ -1297,13 +1322,137 @@
     margin: 0 0 16px;
   }
   .page {
-    padding: 84px 0 0;
+    padding: 152px 0 0;
+  }
+  .page-about .nav-breadcrumb {
+    margin: 0 0 24px;
+  }
+  .about-wrapper__img {
+    height: 96px;
+    border-radius: 8px;
+  }
+  .about-wrapper .box-text {
+    font-size: 16px;
+    margin: 0 0 24px;
+  }
+  .about-in-numbers .row {
+    overflow-x: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .about-in-numbers .col-25 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .about-in-numbers .about-in-numbers-box {
+    width: 290px;
+  }
+  .about-in-numbers-box {
+    border-radius: 8px;
+    padding: 24px 16px;
+    font-size: 16px;
+  }
+  .about-in-numbers-box__head h3 {
+    font-size: 48px;
+  }
+  .about-in-numbers-box__head h3 span {
+    font-size: 16px;
+  }
+  .about-in-numbers-box__body {
+    padding: 16px 0 0;
+  }
+  .official-requisites-bg::before {
+    width: 198px;
+    height: 72px;
+  }
+  .official-business .btn-group .btn {
+    width: 100%;
+    margin: 0 0 8px;
+  }
+  .official-requisites-box .list-requisites li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 24px;
+    width: 100%;
+  }
+  .official-requisites-box .list-requisites li:last-child {
+    margin: 0;
+  }
+  .official-requisites-box .list-requisites li span {
+    margin: 0 0 4px;
+    width: 100%;
+  }
+  .official-requisites-box .list-requisites li p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .official-requisites-box .list-requisites li br {
+    display: none;
+  }
+  .official-requisites-box {
+    padding: 24px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  .official-requisites-box h4 {
+    font-size: 18px;
+  }
+  .official-requisites-box .list-requisites-documents {
+    margin: 24px 0 0;
+  }
+  .official-requisites-box .list-requisites-documents li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 24px;
+  }
+  .official-requisites-box .list-requisites-documents li:last-child {
+    margin: 0;
+  }
+  .official-requisites-box .list-requisites-documents li span {
+    width: 100%;
+    margin: 0 0 4px;
+  }
+  .official-requisites-box .list-requisites-documents li p {
+    font-size: 16px;
+    width: 100%;
+  }
+  .legislative-content {
+    font-size: 16px;
+  }
+  .legislative-content .btn {
+    margin: 8px 0 0;
+  }
+  .legislative-wrapper {
+    border-radius: 8px;
+  }
+  .we-appreciate-text {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .we-appreciate-text2 {
+    text-align: left;
+  }
+  .we-appreciate-wrapper .box-text {
+    margin: 8px 0 0;
+    font-size: 16px;
+  }
+  .help-section {
+    display: block;
+  }
+  .feedbacks-content .col-30 {
+    width: 50%;
+  }
+  .feedbacks-content .col-30:last-child {
+    width: 100%;
+  }
+  .time-tested .col-30 {
+    width: 33.33%;
   }
   .sorting-wrapper {
     display: none;
-  }
-  h1 {
-    font-size: 20px;
   }
   .col-30 {
     width: 50%;
