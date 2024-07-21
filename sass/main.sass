@@ -1243,13 +1243,13 @@
 	.tabs__content
 		.block_hover
 			.box-text
-				width: calc(100% - 30px)
+				width: calc(100% - 32px)
 				padding: 0 32px 0 0
 
 .help-product-box
 	width: 100%
 	position: sticky
-	top: 100px
+	top: 140px
 	z-index: 2
 	max-width: 310px
 	width: 100%
@@ -1509,9 +1509,9 @@
 
 .panel_heading
 	width: 100%
-	margin: 0 0 16px
+	margin: 0 0 8px
 	background: #F8F8F8
-	border-radius: 8px
+	border-radius: 24px
 
 	&-icon
 		@include d-flex
@@ -1523,34 +1523,45 @@
 	&.in
 		.panel_heading-icon
 			transform: rotate(180deg)
+		.block_title	
+			padding: 24px 24px 8px
+			&::after
+				background: url('../img/minus-icon.svg') no-repeat center
+				background-size: 100%	
 	&:last-child
 		margin: 0
 
 .block_title
 	width: 100%
 	display: flex
-	align-items: center
+	align-items: start
 	justify-content: space-between
 	margin: 0
 	cursor: pointer
-	padding: 15px
+	padding: 32px
+	transition: .3s ease
 	h3
-		margin: 0
-		font-size: 16px
+		margin: 0 32px 0 0
+		font-size: 22px
+	&::after
+		content: ''
+		@include d-flex
+		margin: 0 0 0 auto
+		width: 32px
+		height: 32px
+		min-width: 32px
+		background: url('../img/plus-icon.svg') no-repeat center
+		background-size: 100%
+
 
 .block_hover
 	display: none
-	// margin: 16px 0 0
 	color: #363636
 	line-height: 150%
-	padding: 0 32px 32px
+	font-size: 18px
+	padding: 0 24px 24px
 	.box-text
 		max-width: 878px
-
-.faq
-	.block_hover
-		// margin: -16px 0 0
-		padding: 0 15px 32px
 
 .article-card
 	width: 100%
@@ -3051,4 +3062,40 @@
 
 .help-section
 	padding: 32px 0
-	display: none			
+	display: none	
+
+.page-faq
+	h1
+		margin: 0 0 48px
+		width: 100%
+	.tabs__caption-product 
+		width: fit-content
+		li
+			flex: none
+			padding: 10px 24px		
+
+.page-faq-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	&__content
+		width: calc(100% - 310px)
+		padding: 0 32px 0 0		
+	&__sidebar
+		max-width: 310px
+		width: 100%	
+
+.faq-category
+	width: 100%
+	margin: 0 0 40px
+	&:last-child
+		margin: 0
+	&__name
+		margin: 0 0 0 28px
+		width: fit-content
+		padding: 8px 16px
+		color: #3D3D3D
+		background-image: radial-gradient(-101deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-101deg,#f5dfff 0%,#9dcffc 100%)
+		border-radius: 8px 8px 0 0
+		background: linear-gradient(to right, rgba(245, 223, 255, .2) 0%, rgba(157, 207, 252, .2) 100%)

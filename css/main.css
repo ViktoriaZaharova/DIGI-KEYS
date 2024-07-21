@@ -1799,14 +1799,14 @@
 }
 
 .faq .tabs__content .block_hover .box-text {
-  width: calc(100% - 30px);
+  width: calc(100% - 32px);
   padding: 0 32px 0 0;
 }
 
 .help-product-box {
   width: 100%;
   position: sticky;
-  top: 100px;
+  top: 140px;
   z-index: 2;
   max-width: 310px;
   width: 100%;
@@ -2150,9 +2150,9 @@
 
 .panel_heading {
   width: 100%;
-  margin: 0 0 16px;
+  margin: 0 0 8px;
   background: #F8F8F8;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 .panel_heading-icon {
   display: -webkit-box;
@@ -2174,6 +2174,13 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.panel_heading.in .block_title {
+  padding: 24px 24px 8px;
+}
+.panel_heading.in .block_title::after {
+  background: url("../img/minus-icon.svg") no-repeat center;
+  background-size: 100%;
+}
 .panel_heading:last-child {
   margin: 0;
 }
@@ -2183,33 +2190,50 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
   cursor: pointer;
-  padding: 15px;
+  padding: 32px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .block_title h3 {
-  margin: 0;
-  font-size: 16px;
+  margin: 0 32px 0 0;
+  font-size: 22px;
+}
+.block_title::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 auto;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background: url("../img/plus-icon.svg") no-repeat center;
+  background-size: 100%;
 }
 
 .block_hover {
   display: none;
   color: #363636;
   line-height: 150%;
-  padding: 0 32px 32px;
+  font-size: 18px;
+  padding: 0 24px 24px;
 }
 .block_hover .box-text {
   max-width: 878px;
-}
-
-.faq .block_hover {
-  padding: 0 15px 32px;
 }
 
 .article-card {
@@ -4464,4 +4488,60 @@
 .help-section {
   padding: 32px 0;
   display: none;
+}
+
+.page-faq h1 {
+  margin: 0 0 48px;
+  width: 100%;
+}
+.page-faq .tabs__caption-product {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page-faq .tabs__caption-product li {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding: 10px 24px;
+}
+
+.page-faq-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.page-faq-wrapper__content {
+  width: calc(100% - 310px);
+  padding: 0 32px 0 0;
+}
+.page-faq-wrapper__sidebar {
+  max-width: 310px;
+  width: 100%;
+}
+
+.faq-category {
+  width: 100%;
+  margin: 0 0 40px;
+}
+.faq-category:last-child {
+  margin: 0;
+}
+.faq-category__name {
+  margin: 0 0 0 28px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  color: #3D3D3D;
+  background-image: radial-gradient(-101deg, #f5dfff 0%, #9dcffc 100%), radial-gradient(-101deg, #f5dfff 0%, #9dcffc 100%);
+  border-radius: 8px 8px 0 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(245, 223, 255, 0.2)), to(rgba(157, 207, 252, 0.2)));
+  background: linear-gradient(to right, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%);
 }
