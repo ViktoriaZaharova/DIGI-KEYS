@@ -667,6 +667,31 @@ $('.checkout-box-toggle').click(function () {
 });
 
 
+$('.btn-toggle-reviews').on('click', function (e) {
+	e.preventDefault();
+	$(this).prev('.reviews-product-box:hidden').slice(0, 3).fadeIn();
+	var onBlock = $(this).prev('.reviews-product-box:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});
+
+
+$('.link-text-show').on('click', function (e) {
+	e.preventDefault();
+	var $this = $(this);
+	var content = $(this).prev('.box-text');
+	if (!$this.hasClass('click')) {
+		$this.addClass('click');
+		$this.find('span').html('Скрыть');
+		content.addClass('open');
+	} else {
+		$this.removeClass('click');
+		$this.find('span').html('Читать полностью');
+		content.removeClass('open');
+	}
+});
+
 
 // отображение подгружаемых файлов в отзыве
 function handleFileSelect(evt) {
