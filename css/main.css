@@ -78,6 +78,9 @@
           box-shadow: 0 3.2930099964px 24.4506015778px 0 rgba(0, 0, 0, 0.12);
   overflow: hidden;
 }
+.home-wrapper__icon img {
+  max-height: 100%;
+}
 .home-wrapper__icon:nth-last-child(1), .home-wrapper__icon:last-child {
   margin-bottom: 0;
 }
@@ -292,6 +295,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  margin: 0 auto 0 0;
 }
 .product-card .new-price {
   font-size: 22px;
@@ -359,6 +363,37 @@
 }
 .chats-link:hover {
   color: #7C0DC6;
+}
+
+.timer-card {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 26px;
+  border-radius: 24px;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(24, 24, 27)), to(rgb(52, 42, 65)));
+  background: linear-gradient(to right, rgb(24, 24, 27) 0%, rgb(52, 42, 65));
+}
+.timer-card h4 {
+  margin: 20px auto 0;
+  font-size: 18px;
+}
+
+.timer-item {
+  width: 100%;
+  height: 266px;
+  margin: 0 auto auto;
 }
 
 .feedback-section {
@@ -525,8 +560,26 @@
   margin: 0 8px 0 0;
 }
 
+.sale-price {
+  color: #CB3D35;
+  font-size: 22px;
+  font-weight: 600;
+}
+.sale-price span {
+  font-weight: normal;
+  font-size: 14px;
+}
+
 .new-price {
   color: #161616;
+}
+
+.product-status-next {
+  background: #CB3D35;
+  color: #fff;
+  padding: 7px 12px;
+  font-size: 12px;
+  border-radius: 8px;
 }
 
 .promo-label {
@@ -553,6 +606,12 @@
   color: #363636;
 }
 
+.promo-label-sale {
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, rgba(253, 241, 239, 0.6)), to(rgba(157, 207, 252, 0.3)));
+  background: linear-gradient(to right, rgba(253, 241, 239, 0.6) 60%, rgba(157, 207, 252, 0.3) 100%);
+  color: #363636;
+}
+
 .promo-label-list {
   width: 100%;
   display: -webkit-box;
@@ -576,6 +635,31 @@
 
 .hits-section {
   padding: 64px 0 88px;
+}
+
+.discount-section {
+  overflow: hidden;
+}
+.discount-section .row-scroll {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.discount-section .product-card, .discount-section .timer-card {
+  min-width: 230px;
+}
+
+.popular-articles, .for-business {
+  overflow: hidden;
+}
+
+.for-business .row-scroll {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.for-business .product-card {
+  min-width: 230px;
 }
 
 .news-card {

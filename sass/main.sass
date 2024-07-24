@@ -4,10 +4,9 @@
 .home
 	padding: 188px 0 56px
 	h1
-		margin: 0 0 16px	
+		margin: 0 0 16px
 	.box-text
-		font-size: 18px	
-
+		font-size: 18px
 
 // .home-slider
 // 	.slick-slide
@@ -78,14 +77,13 @@
 		padding: 10px
 		box-shadow: 0 3.2930099964141846px 24.45060157775879px 0 rgba(0,0,0,.12)
 		overflow: hidden
+		img
+			max-height: 100%
 		&:nth-last-child(1), &:last-child
 			margin-bottom: 0
 		&-key
-			background: transparent	
+			background: transparent
 			box-shadow: none
-
-	
-		
 
 // .home-slider-nav
 // 	width: 100%
@@ -375,6 +373,7 @@
 	.price-wrapper
 		display: flex
 		align-items: end
+		margin: 0 auto 0 0
 	.new-price
 		font-size: 22px
 		font-weight: 600
@@ -424,13 +423,34 @@
 	&:hover
 		color: $accent
 
+
+.timer-card
+	width: 100%
+	height: 100%			
+	color: #fff
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	padding: 26px
+	border-radius: 24px
+	background: linear-gradient(to right, rgba(24,24,27,1) 0%,rgba(52,42,65,1))
+	h4
+		margin: 20px auto 0
+		font-size: 18px
+
+.timer-item
+	width: 100%
+	height: 266px
+	margin: 0 auto auto		
+
 .feedback-section
 	margin: 0 0 40px
 	.reviews-product-box
 		display: none
 		&:nth-child(-n+3)
 			display: block
-					
+
 .link-text-show
 	display: flex
 	align-items: center
@@ -444,8 +464,7 @@
 		min-width: 24px
 	&.click
 		svg
-			transform: rotate(180deg)	
-
+			transform: rotate(180deg)
 
 .reviews
 	.box-text
@@ -530,8 +549,24 @@
 	color: #767676
 	margin: 0 8px 0 0
 
+.sale-price
+	color: #CB3D35
+	font-size: 22px
+	font-weight: 600
+	span
+		font-weight: normal
+		font-size: 14px	
+
 .new-price
 	color: #161616
+
+.product-status-next
+	background: #CB3D35
+	color: #fff
+	padding: 7px 12px
+	font-size: 12px
+	border-radius: 8px
+
 
 .promo-label
 	display: flex
@@ -550,6 +585,10 @@
 	background: linear-gradient(to right, rgba(245,223,255,.2) 0%,rgba(157,207,252,.2) 100%)
 	color: #363636
 
+.promo-label-sale
+	background: linear-gradient(to right, rgba(253,241,239,.6) 60%,rgba(157,207,252,.3) 100%)
+	color: #363636
+
 .promo-label-list
 	width: 100%
 	display: flex
@@ -563,7 +602,25 @@
 			margin: 0 0 5px
 
 .hits-section
-	padding: 64px 0 88px			
+	padding: 64px 0 88px
+
+.discount-section
+	overflow: hidden
+	.row-scroll
+		flex-wrap: nowrap
+		overflow-x: auto
+	.product-card, .timer-card
+		min-width: 230px		
+
+.popular-articles, .for-business
+	overflow: hidden	
+
+.for-business
+	.row-scroll
+		flex-wrap: nowrap
+		overflow-x: auto
+	.product-card
+		min-width: 230px	
 
 //news section
 .news-card
@@ -1611,11 +1668,11 @@
 	&.in
 		.panel_heading-icon
 			transform: rotate(180deg)
-		.block_title	
+		.block_title
 			padding: 24px 24px 8px
 			&::after
 				background: url('../img/minus-icon.svg') no-repeat center
-				background-size: 100%	
+				background-size: 100%
 	&:last-child
 		margin: 0
 
@@ -1640,7 +1697,6 @@
 		min-width: 32px
 		background: url('../img/plus-icon.svg') no-repeat center
 		background-size: 100%
-
 
 .block_hover
 	display: none
@@ -1669,7 +1725,7 @@
 		z-index: -1
 	h3
 		margin: 0 0 24px
-		font-size: 22px	
+		font-size: 22px
 	form
 		position: relative
 		input
@@ -1679,7 +1735,7 @@
 			font-size: 16px
 			padding: 0 46px 0 24px
 			&::placeholder
-				color: #161616	
+				color: #161616
 		[type='submit']
 			position: absolute
 			top: 6px
@@ -1688,11 +1744,9 @@
 			height: 40px
 			min-width: 40px
 			stroke: #fff
-			padding: 8px		
+			padding: 8px
 			svg
 				transform: rotate(-90deg)
-
-
 
 .help-remotely-wrapper
 	width: 100%
@@ -1711,7 +1765,7 @@
 		font-size: 18px
 		max-width: 600px
 	.btn-group
-		margin: 24px 0 0		
+		margin: 24px 0 0
 	&__img
 		position: absolute
 		right: 0
@@ -1720,11 +1774,9 @@
 		max-width: 496px
 		width: 100%
 		@include d-flex
-	&__content	
+	&__content
 		max-width: 647px
 		width: 100%
-
-
 
 .article-card
 	width: 100%
@@ -1755,7 +1807,6 @@
 	&__date
 		margin: 16px 0 0
 		color: #767676
-
 
 .recommended
 	margin: 40px 0
@@ -3145,7 +3196,7 @@
 		background: url('../img/requisites-bg.svg') no-repeat center
 		background-size: 100%
 		width: 332px
-		height: 116px		
+		height: 116px
 
 .btn-check-time2
 	display: none
@@ -3239,21 +3290,21 @@
 		font-size: 18px
 
 .we-appreciate-text2
-	text-align: right				
+	text-align: right
 
 .help-section
 	padding: 32px 0
-	display: none	
+	display: none
 
 .page-faq
 	h1
 		margin: 0 0 48px
 		width: 100%
-	.tabs__caption-product 
+	.tabs__caption-product
 		width: fit-content
 		li
 			flex: none
-			padding: 10px 24px		
+			padding: 10px 24px
 
 .page-faq-wrapper
 	width: 100%
@@ -3262,10 +3313,10 @@
 	flex-wrap: wrap
 	&__content
 		width: calc(100% - 310px)
-		padding: 0 32px 0 0		
+		padding: 0 32px 0 0
 	&__sidebar
 		max-width: 310px
-		width: 100%	
+		width: 100%
 
 .faq-category
 	width: 100%

@@ -304,8 +304,58 @@
 			margin: 40px 0 0
 		.help-product-box
 			max-width: none
-			width: 100%	
-				
+			width: 100%
+
+	.mb-120
+		margin-bottom: 60px
+
+	.m-120
+		margin: 60px 0	
+
+	.article-subscibe
+		height: auto
+		border-radius: 12px
+		max-width: none
+		&__img
+			display: none
+		h3
+			margin: 0 0 16px
+
+	.timer-card
+		border-radius: 12px	
+
+	.distribution-section
+		.col-25
+			width: 100%
+
+	.help-remotely-wrapper
+		&__content
+			max-width: 535px
+		&__img
+			max-width: 340px
+		.btn-group
+			flex-direction: row-reverse
+			&:last-child
+				margin: 0 0 0 8px	
+
+	.article-card
+		font-size: 16px	
+		
+	.feedback-section
+		.help-product-box
+			position: relative
+			top: 0
+			display: flex
+			flex-direction: column
+			max-width: none
+			margin: 8px 0
+		.reviews-product-box
+			display: none
+			&:nth-child(-n+4)
+				display: block
+
+	.seo-section
+		margin: 0 0 64px			
 
 @media only screen and (max-width: 992px)
 	.col-50
@@ -313,6 +363,12 @@
 
 	.p-120
 		padding: 32px 0
+
+	.mb-120
+		margin-bottom: 32px
+
+	.m-120
+		margin: 32px 0	
 
 	.page
 		padding: 164px 0 0
@@ -369,6 +425,37 @@
 	// 	&:last-child
 	// 		margin: 0
 
+	.home
+		padding: 164px 0 32px
+
+	.home-wrapper
+		padding: 24px
+		border-radius: 12px
+		&::before
+			width: 218px
+			height: 78px
+		&__icons
+			order: -1
+			justify-content: flex-end
+			max-width: none
+			width: 100%
+			margin: 0 0 40px
+		&__icon
+			width: 64px
+			height: 64px
+			min-width: 64px
+			padding: 5px
+			margin: 0 16px 0 0
+			border-radius: 8px
+			&:last-child
+				margin: 0
+		&__content
+			max-width: none
+			width: 100%
+
+	.hits-section
+		padding: 32px 0 0
+
 	.btn
 		padding: 14px 20px
 		height: 44px
@@ -399,17 +486,29 @@
 		&__title
 			padding: 0
 			width: 100%
+			font-size: 16px
 			// margin: 0 0 8px
 		&__img
 			height: 310px
 			padding: 20px
 		&__body
 			height: calc(100% - 310px)
+		.new-price
+			font-size: 20px
+			span
+				font-size: 12px
 
 	.promo-label
 		padding: 5.5px 10px
 		font-size: 10px
 		font-weight: 300
+
+	.discount-section
+		.product-card
+			max-width: 230px
+		.row-scroll
+			width: calc( 100% + 30px )	
+		
 
 	.advantages-list
 		width: 100%
@@ -619,10 +718,48 @@
 		padding: 32px 24px
 
 	.block_title
-		padding: 24px	
+		padding: 24px
 
 	.panel_heading.in .block_title
 		padding: 24px 24px 16px
+
+
+	.distribution-section
+		.tabs__content
+			.col-100, .col-30
+				width: 50%
+			.col-100
+				margin-bottom: 16px
+
+
+	.help-remotely-wrapper
+		padding: 24px
+		border-radius: 12px
+		&__img
+			display: none
+		&__content
+			max-width: none
+			display: flex
+			align-items: flex-end
+			justify-content: space-between
+		&__text
+			width: calc(100% - 252px)
+		.box-text
+			font-size: 16px	
+
+	.for-business
+		padding: 32px 0	8px
+
+	.feedback-section
+		padding: 32px 0
+		margin: 0		
+
+	.seo-section h2
+		margin: 0 0 16px
+
+	.seo-section
+		margin: 0 0 32px			
+
 
 @media only screen and (max-width: 768px)
 	header
@@ -661,30 +798,30 @@
 	// 		right: -20px
 	// 		max-width: 200px
 
-	.advantages
-		background: radial-gradient(162.96% 71.34% at 100% 100%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
-		h2
-			font-size: 24px
+	// .advantages
+	// 	background: radial-gradient(162.96% 71.34% at 100% 100%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
+	// 	h2
+	// 		font-size: 24px
 
-	.advantages-box
-		margin: 0 0 16px
-		&:last-child
-			margin: 0
+	// .advantages-box
+	// 	margin: 0 0 16px
+	// 	&:last-child
+	// 		margin: 0
 
-	.hot-prices
-		.col-25
-			display: none
-			&:nth-child(-n+3)
-				display: block
+	// .hot-prices
+	// 	.col-25
+	// 		display: none
+	// 		&:nth-child(-n+3)
+	// 			display: block
 
-	.news-card
-		&__title
-			margin: 12px 0 5px
+	// .news-card
+	// 	&__title
+	// 		margin: 12px 0 5px
 
-	.seo-section
-		h2
-			margin: 0 0 24px
-			padding: 0
+	// .seo-section
+	// 	h2
+	// 		margin: 0 0 24px
+	// 		padding: 0
 
 	.reviews
 		h2
@@ -921,7 +1058,7 @@
 		border-radius: 16px
 
 	.block_title
-		align-items: center				
+		align-items: center
 
 @media only screen and (max-width: 710px)
 	.search-wrapper
@@ -936,9 +1073,9 @@
 	.checkout-column
 		width: 100%
 
-	.seo-section
-		h2
-			margin: 0 0 24px
+	// .seo-section
+	// 	h2
+	// 		margin: 0 0 24px
 
 	.tabs__caption-product
 		flex-wrap: nowrap
@@ -997,6 +1134,9 @@
 		margin: 0 0 0 20px
 
 @media only screen and (max-width: 576px)
+	.mb-16
+		margin-bottom: 8px
+
 	header
 		transition: .3s ease
 		.logo
@@ -1171,7 +1311,7 @@
 
 	.seo-section
 		.box-text
-			font-size: 14px
+			font-size: 16px
 
 	.reviews-services
 		h3
@@ -1445,9 +1585,9 @@
 		.btn
 			width: 100%
 
-	.seo-section
-		h2
-			max-width: 480px
+	// .seo-section
+	// 	h2
+	// 		max-width: 480px
 
 	.page-error
 		.box-text
@@ -1726,7 +1866,21 @@
 		padding: 24px 16px
 
 	.popular-articles
-		display: none	
+		display: none
+
+	.timer-card
+		margin-top: 24px
+		height: auto
+		border-radius: 12px
+		padding: 40px 20px 27px
+		h4
+			margin: 0 auto 0
+			font-size: 16px
+			max-width: 200px
+
+	.timer-item
+		height: auto
+		margin: 0 auto 16px
 
 @media only screen and (max-width: 480px)
 
