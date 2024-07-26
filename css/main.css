@@ -3699,6 +3699,10 @@
   color: #7C0DC6;
 }
 
+.help-product-box .box-text {
+  max-width: none;
+}
+
 .login-user {
   font-size: 14px;
   font-weight: 500;

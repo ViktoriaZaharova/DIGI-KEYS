@@ -310,7 +310,7 @@
 		margin-bottom: 60px
 
 	.m-120
-		margin: 60px 0	
+		margin: 60px 0
 
 	.article-subscibe
 		height: auto
@@ -322,7 +322,7 @@
 			margin: 0 0 16px
 
 	.timer-card
-		border-radius: 12px	
+		border-radius: 12px
 
 	.distribution-section
 		.col-25
@@ -335,27 +335,37 @@
 			max-width: 340px
 		.btn-group
 			flex-direction: row-reverse
-			&:last-child
-				margin: 0 0 0 8px	
+			.btn
+				&:last-child
+					margin: 0 0 0 8px
 
 	.article-card
-		font-size: 16px	
-		
+		font-size: 16px
+
 	.feedback-section
 		.help-product-box
 			position: relative
 			top: 0
 			display: flex
-			flex-direction: column
+			align-items: flex-end
 			max-width: none
 			margin: 8px 0
+			.box-text
+				font-size: 16px
+			h3
+				max-width: 100%
+				br
+					display: none
 		.reviews-product-box
 			display: none
 			&:nth-child(-n+4)
 				display: block
+		.help-product-box__content
+			max-width: 385px
+			margin: 0 auto 0 0
 
 	.seo-section
-		margin: 0 0 64px			
+		margin: 0 0 64px
 
 @media only screen and (max-width: 992px)
 	.col-50
@@ -368,7 +378,7 @@
 		margin-bottom: 32px
 
 	.m-120
-		margin: 32px 0	
+		margin: 32px 0
 
 	.page
 		padding: 164px 0 0
@@ -507,8 +517,7 @@
 		.product-card
 			max-width: 230px
 		.row-scroll
-			width: calc( 100% + 30px )	
-		
+			width: calc( 100% + 30px )
 
 	.advantages-list
 		width: 100%
@@ -723,14 +732,12 @@
 	.panel_heading.in .block_title
 		padding: 24px 24px 16px
 
-
 	.distribution-section
 		.tabs__content
 			.col-100, .col-30
 				width: 50%
 			.col-100
 				margin-bottom: 16px
-
 
 	.help-remotely-wrapper
 		padding: 24px
@@ -745,21 +752,20 @@
 		&__text
 			width: calc(100% - 252px)
 		.box-text
-			font-size: 16px	
+			font-size: 16px
 
 	.for-business
 		padding: 32px 0	8px
 
 	.feedback-section
 		padding: 32px 0
-		margin: 0		
+		margin: 0
 
 	.seo-section h2
 		margin: 0 0 16px
 
 	.seo-section
-		margin: 0 0 32px			
-
+		margin: 0 0 32px
 
 @media only screen and (max-width: 768px)
 	header
@@ -1137,6 +1143,9 @@
 	.mb-16
 		margin-bottom: 8px
 
+	.mb-32
+		margin-bottom: 24px
+
 	header
 		transition: .3s ease
 		.logo
@@ -1201,6 +1210,24 @@
 		.link
 			display: none
 
+	.home-wrapper
+		&::before
+			display: none
+		&__icons
+			justify-content: flex-start
+			margin: 0 0 8px
+		&__icon
+			margin: 0 16px 16px 0
+			&:last-child
+				margin: 0
+
+	.home
+		padding: 152px 0 32px
+		h1
+			margin: 0 0 8px
+		.box-text
+			font-size: 16px
+
 	// .home
 	// 	.container
 	// 		padding: 0 8px
@@ -1248,11 +1275,12 @@
 	// 	width: 335px
 
 	h1
-		font-size: 28px
+		font-size: 24px
 
 	h2
-		font-size: 28px
+		font-size: 24px
 		padding: 0
+		margin: 0 0 24px
 
 	h3
 		font-size: 16px
@@ -1291,13 +1319,13 @@
 		width: calc(100% + 15px)
 		margin: 0 -7.5px
 
-	.hot-prices
-		.col-25
-			display: none
-			&:nth-child(-n+3)
-				display: none
-			&:nth-child(-n+2)
-				display: block
+	// .hot-prices
+	// 	.col-25
+	// 		display: none
+	// 		&:nth-child(-n+3)
+	// 			display: none
+	// 		&:nth-child(-n+2)
+	// 			display: block
 
 	.news-card
 		font-size: 14px
@@ -1635,13 +1663,42 @@
 			order: 1
 			margin: 8px 0 0
 		.rating
-			margin: 0 8px 0 0
+			margin: 0 16px 0 0
+			font-size: 12px
 		.price-wrapper
 			width: 100%
-			order: 1
-			margin: 8px 0 0
+			margin: 0 0 8px
 		&__title
-			font-size: 16px
+			font-size: 14px
+		&__img
+			height: 168px
+			padding: 8px
+		&__body
+			height: calc(100% - 168px)
+			padding: 16px 0 0
+		.promo-label-list
+			padding: 8px
+			top: 132px
+
+		.new-price
+			font-size: 18px
+			span
+				font-size: 12px
+		.old-price
+			font-size: 12px
+
+	.chats-link
+		font-size: 12px
+
+	.promo-label-list
+		justify-content: flex-start
+
+	.hits-section
+		.row
+			.col-25
+				display: none
+				&:nth-child(-n+6)
+					display: block
 
 	.distribution-box
 		padding: 30px 20px
@@ -1671,6 +1728,9 @@
 		h3
 			margin: 0 0 20px
 			font-size: 22px
+
+	.distribution-section .tabs__content .col-100, .distribution-section .tabs__content .col-30
+		width: 100%
 
 	.page-reviews .tabs__caption
 		margin: 20px 0
@@ -1805,8 +1865,8 @@
 		.btn
 			margin: 24px 0 0
 		&:before
-			width: 149px
-			height: 56px
+			width: 198px
+			height: 80px
 
 	.recommended
 		.product-col
@@ -1814,13 +1874,6 @@
 			min-width: 233px
 		.row-scroll
 			margin: 0 -8px
-
-	.product-card
-		&__img
-			height: 256px
-			padding: 20px 0
-		.promo-label-list
-			padding: 8px 10px
 
 	.modal-order
 		max-width: 375px
@@ -1882,6 +1935,47 @@
 		height: auto
 		margin: 0 auto 16px
 
+	.timer-col
+		display: none
+
+	.help-remotely-wrapper
+		.btn-group
+			width: 100%
+			justify-content: flex-start
+			.btn
+				flex: 1
+				margin: 0 8px 0 0
+				&:last-child
+					margin: 0
+				&:first-child
+					margin: 0 0 0 8px	
+
+	.help-remotely-wrapper__content
+		flex-direction: column
+		align-items: flex-start
+
+	.help-remotely-wrapper__text
+		width: 100%
+		.box-text
+			font-size: 16px
+			max-width: 320px
+
+	.feedback-section
+		.help-product-box
+			flex-direction: column
+			align-items: flex-start
+
+	.for-business
+		.row-scroll
+			flex-wrap: wrap
+			overflow: visible
+		.product-card
+			min-width: auto		
+
+	.seo-section
+		h2
+			font-size: 24px		
+
 @media only screen and (max-width: 480px)
 
 	.promo-label
@@ -1904,6 +1998,11 @@
 @media only screen and (max-width: 370px)
 	// .home-slider-nav__item, .slider-progress
 	// 	width: 270px
+
+	.home-wrapper__icon
+		width: 52px
+		height: 52px
+		min-width: 52px
 
 	.page-acticle .box-text .product-line__name
 		font-size: 18px
