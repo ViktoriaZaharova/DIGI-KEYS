@@ -2021,6 +2021,19 @@
     border-radius: 12px;
     padding: 40px 20px 27px;
   }
+  .timer-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 8px;
+    border-radius: 0 8px 8px 0;
+    background: -webkit-gradient(linear, left top, right top, from(#976efc), to(#6a38f6));
+    background: linear-gradient(to right, #976efc 0%, #6a38f6 100%);
+    -webkit-animation: width 15s linear infinite;
+            animation: width 15s linear infinite;
+  }
   .timer-card h4 {
     margin: 0 auto 0;
     font-size: 16px;
@@ -2032,6 +2045,13 @@
   }
   .timer-col {
     display: none;
+  }
+  .countdown-time {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
   }
   .help-remotely-wrapper .btn-group {
     width: 100%;

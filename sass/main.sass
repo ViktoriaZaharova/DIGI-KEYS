@@ -423,10 +423,9 @@
 	&:hover
 		color: $accent
 
-
 .timer-card
 	width: 100%
-	height: 100%			
+	height: 100%
 	color: #fff
 	display: flex
 	flex-direction: column
@@ -435,14 +434,130 @@
 	padding: 26px
 	border-radius: 24px
 	background: linear-gradient(to right, rgba(24,24,27,1) 0%,rgba(52,42,65,1))
+	position: relative
+	z-index: 1
+	overflow: hidden
 	h4
 		margin: 20px auto 0
 		font-size: 18px
 
-.timer-item
+.progress-timer
 	width: 100%
 	height: 266px
-	margin: 0 auto auto		
+	margin: 0 auto auto
+	position: relative
+	z-index: 1
+	border: 1.5px solid rgba(#fff, .2)
+	background: linear-gradient(160deg, rgba(100,14,198,1) 0%,rgba(151,110,252,1) 25%,rgba(151,110,252,1) 100%)
+	border-radius: 50%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		width: calc( 100% - 16px )
+		height: calc( 100% - 16px )
+		transform: translate(-50%,-50%)
+		z-index: -1
+		background: linear-gradient(to bottom, rgba(52,42,65,1) 0%,rgba(24,24,27,1) 100%)
+		border-radius: 50%
+
+.countdown-time
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%,-50%)
+	z-index: 2
+	border: none
+	border-radius: 0
+	padding: 0
+	background: transparent
+	font-family: $default-font
+	font-weight: normal
+	font-size: 22px
+	display: flex
+	align-items: center
+	justify-content: center
+
+.labelformat
+	width: 100%
+
+.timerDisplay
+	padding: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	.displaySection
+		width: fit-content
+		min-width: 65px
+		position: relative
+		&::after
+			content: ':'
+			position: absolute
+			top: -1px
+			right: 0
+			color: #fff
+			display: flex
+			align-items: center
+			justify-content: center
+		&:last-child
+			&::after
+				display: none
+
+.displaySection
+	font-size: 22px
+	border: none
+	font-family: $default-font
+
+.periodDisplay
+	margin: 8px auto 0
+	color: #767676
+	font-size: 14px
+	text-transform: lowercase
+
+.numberDisplay
+	font-size: 22px
+	font-weight: 500
+
+.circle
+	width: calc(100% - 80px)
+	height: calc(100% - 80px)
+	margin: auto
+	border-radius: 50%
+	position: relative
+	z-index: 1
+	box-sizing: border-box
+	animation: rotation 10s linear infinite
+	&::after
+		content: ''
+		box-sizing: border-box
+		position: absolute
+		left: 0
+		top: 0
+		background: #976EFC
+		width: 23px
+		height: 23px
+		transform: translate(-50%, -50%)
+		border-radius: 50%
+		border: 1.5px solid #18181B
+
+@keyframes rotation
+	0%
+		transform: rotate(0deg)
+
+	100%
+		transform: rotate(-360deg)
+
+@keyframes width
+	0%
+		width: 0
+
+	100%
+		width: 100%
 
 .feedback-section
 	margin: 0 0 40px
@@ -555,7 +670,7 @@
 	font-weight: 600
 	span
 		font-weight: normal
-		font-size: 14px	
+		font-size: 14px
 
 .new-price
 	color: #161616
@@ -566,7 +681,6 @@
 	padding: 7px 12px
 	font-size: 12px
 	border-radius: 8px
-
 
 .promo-label
 	display: flex
@@ -610,17 +724,17 @@
 		flex-wrap: nowrap
 		overflow-x: auto
 	.product-card, .timer-card
-		min-width: 230px		
+		min-width: 230px
 
 .popular-articles, .for-business
-	overflow: hidden	
+	overflow: hidden
 
 .for-business
 	.row-scroll
 		flex-wrap: nowrap
 		overflow-x: auto
 	.product-card
-		min-width: 230px	
+		min-width: 230px
 
 //news section
 .news-card
@@ -2702,7 +2816,7 @@
 
 .help-product-box
 	.box-text
-		max-width: none	
+		max-width: none
 
 .login-user
 	font-size: 14px

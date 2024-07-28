@@ -1926,6 +1926,16 @@
 		height: auto
 		border-radius: 12px
 		padding: 40px 20px 27px
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 0
+			height: 8px
+			border-radius: 0 8px 8px 0
+			background: linear-gradient(to right, rgba(#976EFC,1) 0%,rgba(#6A38F6,1) 100%)
+			animation: width 15s linear infinite
 		h4
 			margin: 0 auto 0
 			font-size: 16px
@@ -1938,6 +1948,12 @@
 	.timer-col
 		display: none
 
+	.countdown-time
+		position: relative
+		top: 0
+		left: 0
+		transform: none
+
 	.help-remotely-wrapper
 		.btn-group
 			width: 100%
@@ -1948,7 +1964,7 @@
 				&:last-child
 					margin: 0
 				&:first-child
-					margin: 0 0 0 8px	
+					margin: 0 0 0 8px
 
 	.help-remotely-wrapper__content
 		flex-direction: column
@@ -1970,11 +1986,11 @@
 			flex-wrap: wrap
 			overflow: visible
 		.product-card
-			min-width: auto		
+			min-width: auto
 
 	.seo-section
 		h2
-			font-size: 24px		
+			font-size: 24px
 
 @media only screen and (max-width: 480px)
 

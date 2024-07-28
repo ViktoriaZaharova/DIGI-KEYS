@@ -492,6 +492,14 @@ $(function () {
 
 });
 
+// timer
+$(".countdown-time1").countdowntimer({
+	dateAndTime: "2024/08/04 00:00:00",
+	displayFormat: "DHM",
+	labelsFormat: true,
+	// currentTime: true,
+});
+
 // tabs
 $(function () {
 
