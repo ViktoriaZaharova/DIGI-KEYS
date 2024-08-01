@@ -553,6 +553,9 @@
   .discount-section .row-scroll {
     width: calc(100% + 30px);
   }
+  .discount-section .row-scroll .col-25 {
+    width: 246px;
+  }
   .advantages-list {
     width: 100%;
     max-width: none;

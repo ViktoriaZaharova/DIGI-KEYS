@@ -2,7 +2,7 @@
 @import "vars"
 
 header
-	
+
 	margin: 0 0 30px
 	position: fixed
 	left: 0
@@ -42,8 +42,8 @@ header
 
 .header-top
 	padding: 20px 0
-	width: 100%	
-	transition: .3s ease		
+	width: 100%
+	transition: .3s ease
 
 .search-wrapper
 	position: relative
@@ -391,8 +391,13 @@ header
 	.sidebar-menu
 		.svg-icon
 			margin: 0 0 0 8px
-	.dropdown.open > .btn-catalog-mobile.dropdown-toggle
-		color: #363636
+	.dropdown.open
+		> .btn-catalog-mobile.dropdown-toggle
+			color: #fff
+			&:hover
+				background: linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%)
+				.svg-icon
+					fill: #fff
 
 .link-phone
 	color: #161616

@@ -44,7 +44,7 @@ $('.product-image__slider').slick({
 	slidesToShow: 1,
 	fade: true,
 	arrows: false,
-	infinite: true,
+	infinite: false,
 	responsive: [
 		{
 			breakpoint: 576,
@@ -61,7 +61,7 @@ $('.product-image__preview').slick({
 	slidesToShow: 5,
 	arrows: false,
 	swipeToSlide: true,
-	infinite: true,
+	infinite: false,
 	asNavFor: '.product-image__slider',
 	focusOnSelect: true,
 	vertical: true,
@@ -628,33 +628,33 @@ $('.search-wrapper .form-search input').on('keyup change', function () {
 
 	let searchQuery = $(this).val();
 	if (searchQuery.length > 2) {
-		// $.ajax({
-		// 	url: '/api/?controller=Search&method=getData',
-		// 	type: 'POST',
-		// 	data: 'search=' + searchQuery,
-		// 	async: true,
-		// 	success: function (response) {
-		// 		if (response.data.status) {
-		// 			console.log(response.data.data)
-		// 			$('.search-wrapper').addClass('click');
-		// 			$('.search-result').html(response.data.data);
-		// 			$('.search-result').slideDown(100);
-		// 			$('.btn-clear-search').fadeIn(100);
-		// 		} else {
-		// 			$('.search-result').slideUp(100);
-		// 			$('.search-result').html('');
-		// 			$('.search-wrapper').removeClass('click');
-		// 			$('.btn-clear-search').fadeOut(100);
-		// 		}
-		// 	}
-		// });
+		$.ajax({
+			url: '/api/?controller=Search&method=getData',
+			type: 'POST',
+			data: 'search=' + searchQuery,
+			async: true,
+			success: function (response) {
+				if (response.data.status) {
+					console.log(response.data.data)
+					$('.search-wrapper').addClass('click');
+					$('.search-result').html(response.data.data);
+					$('.search-result').slideDown(100);
+					$('.btn-clear-search').fadeIn(100);
+				} else {
+					$('.search-result').slideUp(100);
+					$('.search-result').html('');
+					$('.search-wrapper').removeClass('click');
+					$('.btn-clear-search').fadeOut(100);
+				}
+			}
+		});
 		$('.search-wrapper').addClass('click');
-		// $('.search-result').html(response.data.data);
-		// $('.search-result').slideDown(100);
+		$('.search-result').html(response.data.data);
+		$('.search-result').slideDown(100);
 		$('.btn-clear-search').fadeIn(100);
 	} else {
 		$('.search-result').slideUp(100, function () {
-			// $('.search-result').html('');
+			$('.search-result').html('');
 			$('.search-wrapper').removeClass('click');
 			$('.btn-clear-search').fadeOut(100);
 		});

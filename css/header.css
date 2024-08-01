@@ -573,7 +573,14 @@ header.active-search .search-result {
   margin: 0 0 0 8px;
 }
 .mobile-menu-list .dropdown.open > .btn-catalog-mobile.dropdown-toggle {
-  color: #363636;
+  color: #fff;
+}
+.mobile-menu-list .dropdown.open > .btn-catalog-mobile.dropdown-toggle:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(151, 110, 252)), to(rgb(100, 13, 198)));
+  background: linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%);
+}
+.mobile-menu-list .dropdown.open > .btn-catalog-mobile.dropdown-toggle:hover .svg-icon {
+  fill: #fff;
 }
 
 .link-phone {
