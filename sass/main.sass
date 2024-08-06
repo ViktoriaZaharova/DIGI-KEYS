@@ -1334,19 +1334,22 @@
 		display: flex
 		align-items: stretch
 		.difference
-			margin: 0 24px 0 auto
+			margin: 0 24px 0 10px
 		.tabs__caption
 			background: #EFF7FE
 			border-radius: 100px
 			padding: 4px
 			flex-wrap: nowrap
+			overflow-x: auto
+			width: 100%
 			.btn
 				color: #3D3D3D
 				border: none
 				border-radius: 100px
 				margin: 0
-				width: 134px
+				// width: 134px
 				padding: 10px
+				flex: 1
 				&.active
 					background: #fff
 					box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.13)
@@ -1515,6 +1518,9 @@
 				width: calc(100% - 32px)
 				padding: 0 32px 0 0
 
+// .articles-product
+// 	overflow: hidden				
+
 .help-product-box
 	width: 100%
 	position: sticky
@@ -1591,6 +1597,7 @@
 				overflow: visible
 	.reviews-box__user-name
 		text-align: left
+		align-items: start
 	.reviews-box__user
 		margin: 0	auto 0 0
 	.reviews-box__user-avatar
@@ -2810,6 +2817,7 @@
 			border-radius: 50%
 			width: 48px
 			height: 48px
+			min-width: 48px
 			overflow: hidden
 			background: #F8F8F8
 			img

@@ -367,6 +367,15 @@
 	.seo-section
 		margin: 0 0 64px
 
+	.help-product-box
+		position: relative
+		max-width: none
+		top: 0
+		left: 0
+		margin: 0 0 24px
+		.btn 
+			margin: 0 0 0 auto
+
 @media only screen and (max-width: 992px)
 	.col-50
 		width: 100%
@@ -1001,10 +1010,13 @@
 
 	.faq, .articles-product
 		margin: 32px 0
+	
+	.articles-product
+		width: 100%
 
 	.article-slider
 		margin: 0 -8px
-		width: calc(100% + 30px)
+		width: calc(100% + 16px)
 		.slick-slide
 			width: 341px
 			margin-bottom: 0
@@ -1040,8 +1052,6 @@
 
 	.help-product-box
 		margin: 0
-		position: relative
-		top: 0
 		max-width: none
 		flex-wrap: wrap
 		align-items: flex-end
@@ -1056,8 +1066,6 @@
 			max-width: none
 			br
 				display: none
-		.btn
-			margin: 0 0 0 auto
 
 	.page-faq .tabs__caption-product
 		width: calc(100% + 15px)
@@ -1606,7 +1614,7 @@
 			font-size: 16px
 
 	.article-slider
-		margin: 0 -4px
+		// margin: 0 -4px
 		.slick-slide
 			width: 365px
 			padding: 0 4px
@@ -1803,7 +1811,7 @@
 	.reviews-gallery
 		flex-wrap: nowrap
 		overflow-x: auto
-		width: calc(100% + 23px)
+		width: calc(100% + 4px)
 		margin: 32px 0 26px
 		&__photo
 			width: 80px
