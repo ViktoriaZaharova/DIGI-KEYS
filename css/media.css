@@ -1135,9 +1135,6 @@
     height: 24px;
     min-width: 24px;
   }
-  .mobile-menu .form-search {
-    margin: 0 0 24px;
-  }
   .mobile-menu__body {
     height: calc(100% - 24px - 24px);
   }

@@ -73,6 +73,8 @@ header
 			fill: none
 			stroke: #767676
 			width: 24px
+			min-width: 24px
+			max-width: 24px
 			height: 24px
 			top: 0
 			right: 0
@@ -306,27 +308,32 @@ header
 		justify-content: space-between
 		padding: 0
 		margin: 0 0 32px
-	.form-search
+	.search-wrapper
+		display: block
+		max-width: none
+		width: 100%	
 		margin: 0 0 32px
-		border: 1.5px solid #E6E6E6
-		border-radius: 12px
-		display: flex
-		align-items: center
-		background: #F8F8F8
-		input
-			border: none
-			border-radius: 0
-			height: 44px
-			padding: 0
-			font-size: 14px
-		button
-			position: relative
-			top: 0
-			right: 0
-			left: 0
-			transform: none
-			margin: 0 8px 0 16px
-			min-width: 24px
+	.form-search
+		
+		// border: 1.5px solid #E6E6E6
+		// border-radius: 12px
+		// display: flex
+		// align-items: center
+		// background: #F8F8F8
+		// input
+		// 	border: none
+		// 	border-radius: 0
+		// 	height: 44px
+		// 	padding: 0
+		// 	font-size: 14px
+		// button
+		// 	position: relative
+		// 	top: 0
+		// 	right: 0
+		// 	left: 0
+		// 	transform: none
+		// 	margin: 0 8px 0 16px
+		// 	min-width: 24px
 
 	&__body
 		height: calc(100% - 24px - 32px)

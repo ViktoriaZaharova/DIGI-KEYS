@@ -38,12 +38,42 @@
 				</div>
 
 				<div class="mobile-menu__body">
-					<form method="post" class="form-search">
-						<button type="submit"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#search"></use>
-							</svg></button>
-						<label><input type="text" name="search" placeholder="Поиск ПО, дистрибутивов и т.д"></label>
-					</form>
+					<div class="search-wrapper">
+						<form method="post" class="form-search">
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+							<label><input type="text" name="search" placeholder="Поиск ПО, дистрибутивов и т.д"></label>
+
+						</form>
+						<div class="search-result">
+							<div class="search-result__box search-result__box-error">
+								<div class="box-text">
+									<p>К сожалению, по вашему запросу ничего не было найдено</p>
+								</div>
+							</div>
+							<div class="search-result__box">
+								<a href="catalog.html" class="search-result__category">Каталог</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="product.html">Microsoft Windows 11 Professioanl</a></li>
+									<li><a href="product.html">Microsoft Windows 11 Home (Домашняя)</a></li>
+									<li><a href="product.html">Microsoft Windows 10 Professioanl</a></li>
+									<li><a href="product.html">Microsoft Windows 10 Home (Домашняя)</a></li>
+									<li><a href="product.html">Autodesk AutoCAD 2025 для Windows</a></li>
+								</ul>
+							</div>
+							<div class="search-result__box">
+								<a href="article.html" class="search-result__category">Статьи</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="article.html">Как активировать Windows через командную строку</a></li>
+									<li><a href="article.html">Microsoft Office для Windows 10/11</a></li>
+									<li><a href="article.html">Как создать загрузочную флешку Windows 11</a></li>
+									<li><a href="article.html">Как создать загрузочную флешку Windows 10</a></li>
+									<li><a href="article.html">Установка и активация Microsoft Office 2021</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 					<ul class="mobile-menu-list my-ul">
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle btn btn-accent btn-catalog-mobile">
@@ -71,8 +101,8 @@
 									</li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle"">
-																									<span>Microsoft Office</span>
-																									<svg class=" svg-icon dropdown-toggle__icon">
+																								<span>Microsoft Office</span>
+																								<svg class=" svg-icon dropdown-toggle__icon">
 											<use xlink:href="img/sprite.svg#arrow-menu"></use>
 											</svg>
 										</a>
@@ -167,7 +197,8 @@
 			<header>
 				<div class="special-position">
 					<div class="container">
-						<a href="#" class="special-position__link" target="_blank">Специально для тебя скидка на Microsoft Windows
+						<a href="#" class="special-position__link" target="_blank">Специально для тебя скидка на Microsoft
+							Windows
 							10
 							Pro!</a>
 						<div class="special-position__close"><svg class="svg-icon">
@@ -207,8 +238,8 @@
 									</li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle"">
-																							<span>Microsoft Office</span>
-																							<svg class=" svg-icon dropdown-toggle__icon">
+																													<span>Microsoft Office</span>
+																													<svg class=" svg-icon dropdown-toggle__icon">
 											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
 											</svg>
 										</a>

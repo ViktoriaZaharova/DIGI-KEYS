@@ -689,19 +689,8 @@
 .seo-section .box-text {
   font-size: 18px;
   line-height: 28px;
-  height: 245px;
-  overflow: hidden;
   position: relative;
   z-index: 1;
-}
-.seo-section .box-text::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
 }
 .seo-section .box-text.open {
   height: auto;
@@ -1643,8 +1632,6 @@
   z-index: 1;
 }
 .reviews-product-box__body .box-text {
-  max-height: 144px;
-  overflow: hidden;
   max-width: none;
 }
 .reviews-product-box__body .box-text.show-text {
@@ -2083,6 +2070,9 @@
 
 .recommended {
   margin: 40px 0;
+}
+.recommended .reviews-gallery {
+  flex-wrap: nowrap;
 }
 
 .reviews h2 {
@@ -3507,8 +3497,6 @@
 
 .reviews-gallery {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 .reviews-gallery__item {
   display: flex;
