@@ -163,7 +163,7 @@ textarea
 
 button, .btn
 	outline: none
-	transition: .3s ease
+	transition: .15s 
 	cursor: pointer
 	box-shadow: none
 	font-family: $default-font
@@ -213,12 +213,12 @@ button, .btn
 		fill: #fff
 	&:hover
 		color: #fff
-		background: $hover
+		background: linear-gradient(to right, rgb(151, 110, 252) 0%,rgba(60,1,127,1) 100%)
 		.svg-icon
 			fill: #fff
 	&:focus
 		color: #fff
-		background: $accent
+		background: linear-gradient(to right, rgba(151,110,252,1) 0%,rgba(100,13,198,1) 100%)
 		.svg-icon
 			fill: #fff
 
@@ -280,9 +280,9 @@ button, .btn
 .btn-border-light-accent
 	border: 1.3px solid #F8F3FC
 	color: #363636
-	&:hover
+	&:hover, &:focus
 		color: #363636
-		background: #F8F3FC
+		background: #fff
 
 .btn-border-dark
 	border: 1px solid #161616
@@ -303,15 +303,15 @@ button, .btn
 .btn-white
 	background: #fff
 	color: #161616
-	&:hover
-		background: $accent
+	&:hover, &:focus
+		background: #640dc6
 		color: #fff
 
 .btn-green
 	background: #1E9B18
 	color: #fff
-	&:hover
-		background: $hover
+	&:hover, &:focus
+		background: #187f13
 		color: #fff
 
 .btn-buy

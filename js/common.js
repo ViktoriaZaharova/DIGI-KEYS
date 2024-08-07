@@ -1,5 +1,6 @@
 $('.home-slider').slick({
 	slidesToShow: 1,
+	swipeToSlide: true,
 	fade: true,
 	arrows: false,
 	autoplay: false,
@@ -14,6 +15,7 @@ $(document).ready(function ($) {
 	$imageSlider.slick({
 		autoplay: true,
 		autoplaySpeed: sliderTimer,
+		swipeToSlide: true,
 		speed: 1000,
 		arrows: false,
 		dots: false,
@@ -42,6 +44,7 @@ $(document).ready(function ($) {
 
 $('.product-image__slider').slick({
 	slidesToShow: 1,
+	swipeToSlide: true,
 	fade: true,
 	arrows: false,
 	infinite: false,
@@ -59,6 +62,7 @@ $('.product-image__slider').slick({
 
 $('.product-image__preview').slick({
 	slidesToShow: 5,
+	swipeToSlide: true,
 	arrows: false,
 	swipeToSlide: true,
 	infinite: false,
@@ -90,6 +94,7 @@ $('.product-image__preview').slick({
 
 $('.product-card__img-slider').slick({
 	slidesToShow: 1,
+	swipeToSlide: true,
 	fade: true,
 	arrows: false,
 	responsive: [
@@ -125,6 +130,8 @@ $(function () {
 
 $('.reviews-product-slider').slick({
 	slidesToShow: 3,
+	slidesToScroll: 1,
+	swipeToSlide: true,
 	infinite: false,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
@@ -154,6 +161,7 @@ $('.reviews-product-slider').slick({
 
 $('.reviews-modal-slider').slick({
 	slidesToShow: 1,
+	swipeToSlide: true,
 	fade: true,
 	asNavFor: '.gallery-photo-modal',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
@@ -173,6 +181,7 @@ $('.reviews-modal-slider').slick({
 
 $('.gallery-photo-modal').slick({
 	slidesToShow: 1,
+	swipeToSlide: true,
 	asNavFor: '.reviews-modal-slider',
 	arrows: false,
 	focusOnSelect: true,
@@ -201,6 +210,7 @@ $(window).on('load resize', function () {
 		$('.article-slider:not(.slick-initialized)').slick({
 			slidesToShow: 1,
 			// infinite: false,
+			swipeToSlide: true,
 			arrows: false,
 			dots: true,
 			variableWidth: true,

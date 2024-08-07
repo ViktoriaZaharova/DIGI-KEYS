@@ -91,6 +91,10 @@
   .product-content-wrapper {
     padding: 32px 0;
     background: #fff;
+    margin: 0 0 32px;
+  }
+  .product-image-wrapper {
+    margin: 0;
   }
   .product-image {
     height: 721px;
@@ -525,7 +529,7 @@
   }
   .reviews-product-slider {
     padding: 0;
-    margin: 32px 0;
+    margin: 0 0 32px;
   }
   .tabs-characteristics {
     margin: 32px 0;
@@ -946,6 +950,7 @@
   }
   .article-slider .slick-slide {
     width: 341px;
+    min-width: 341px;
     margin-bottom: 0;
     padding: 0 8px;
   }
@@ -1524,6 +1529,7 @@
   }
   .article-slider .slick-slide {
     width: 365px;
+    min-width: 365px;
     padding: 0 4px;
   }
   .form .btn {
@@ -1962,5 +1968,6 @@
   }
   .article-slider .slick-slide {
     width: 300px;
+    min-width: 300px;
   }
 }

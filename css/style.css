@@ -181,7 +181,7 @@ textarea {
 
 button, .btn {
   outline: none;
-  transition: 0.3s ease;
+  transition: 0.15s;
   cursor: pointer;
   box-shadow: none;
   font-family: "Montserrat", sans-serif;
@@ -240,14 +240,14 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 .btn-accent:hover {
   color: #fff;
-  background: #5D0896;
+  background: linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(60, 1, 127) 100%);
 }
 .btn-accent:hover .svg-icon {
   fill: #fff;
 }
 .btn-accent:focus {
   color: #fff;
-  background: #7C0DC6;
+  background: linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%);
 }
 .btn-accent:focus .svg-icon {
   fill: #fff;
@@ -285,9 +285,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border: 1.3px solid #F8F3FC;
   color: #363636;
 }
-.btn-border-light-accent:hover {
+.btn-border-light-accent:hover, .btn-border-light-accent:focus {
   color: #363636;
-  background: #F8F3FC;
+  background: #fff;
 }
 
 .btn-border-dark {
@@ -313,8 +313,8 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   background: #fff;
   color: #161616;
 }
-.btn-white:hover {
-  background: #7C0DC6;
+.btn-white:hover, .btn-white:focus {
+  background: #640dc6;
   color: #fff;
 }
 
@@ -322,8 +322,8 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   background: #1E9B18;
   color: #fff;
 }
-.btn-green:hover {
-  background: #5D0896;
+.btn-green:hover, .btn-green:focus {
+  background: #187f13;
   color: #fff;
 }
 
