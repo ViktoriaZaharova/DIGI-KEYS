@@ -3629,7 +3629,7 @@
 }
 .reviews-modal-slide__photo {
   max-width: 610px;
-  height: 610px;
+  height: auto;
   width: 100%;
   border-radius: 16px;
   display: flex;

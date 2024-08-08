@@ -23,6 +23,8 @@
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/slick.css">
 	<link href="css/jQuery.countdownTimer.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -1556,8 +1558,10 @@
 
 									<div class="w-100">
 										<div class="reviews-gallery">
-											<a href="#reviewsModal1" class="reviews-gallery__photo open_modal"><img
+											<a data-fancybox="topgallery" href="#hidden1" class="reviews-gallery__photo"><img
 													src="img/reviews-gallery1.jpg" alt=""></a>
+													<a data-fancybox="topgallery" href="#hidden2" class="reviews-gallery__photo"><img
+														src="img/reviews-gallery1.jpg" alt=""></a>
 											<a href="#reviewsModal1" class="reviews-gallery__photo open_modal"><img
 													src="img/reviews-gallery2.jpg" alt=""></a>
 											<a href="#reviewsModal1" class="reviews-gallery__photo open_modal"><img
@@ -1938,6 +1942,128 @@
 					</div>
 				</form>
 
+			</div>
+		</div>
+	</div>
+
+	<div id="hidden1">
+		<div class="modal__wrapper">
+			<div class="container">
+
+				<div class="modal__head">
+					<h3 class="modal-title">Microsoft Office 2019 Professional Plus <span>— бессрочный ключ с привязкой</span>
+					</h3>
+
+				</div>
+
+				<div class="modal__body">
+					<div class="reviews-modal-slider">
+						<div class="slide">
+							<div class="reviews-modal-slide">
+								<div class="reviews-modal-slide__photo"><img src="img/reviews-modal1.jpg" alt=""></div>
+								<div class="reviews-product-box reviews-modal-slide__content">
+									<div class="reviews-product-box__head">
+										<div class="reviews-box__user">
+											<div class="reviews-box__user-avatar"><img src="img/avatar.jpg" alt="" class="icon-avatar">
+											</div>
+											<div class="reviews-box__user-name">
+												<a href="#" class="login-user">mashu***@mail.ru</a>
+												<div class="date">15 апреля, 17:42</div>
+											</div>
+
+										</div>
+										<div class="rating">
+											<ul class="list-rating my-ul">
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg>
+													<span>4,9</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="reviews-product-box__body">
+										<div class="box-text">
+											<p>Очень рекомендую. Служба поддержки молодцы! Огромное им спасибо. Не могла активировать
+												Windows, были проблемы с моим
+												компьютером. Ребята потратили время, подключились все сделали. Спасибо службе поддержки!</p>
+										</div>
+									</div>
+									<div class="reviews-product-box__footer">
+										<div class="rate-review">
+											<p>Отзыв был полезен?</p>
+											<a href="#" class="rate-review__yes">
+												<span>Да</span>
+												<span>0</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="hidden2">
+		<div class="modal__wrapper">
+			<div class="container">
+
+				<div class="modal__head">
+					<h3 class="modal-title">Microsoft Office 2019 Professional Plus <span>— бессрочный ключ с привязкой</span>
+					</h3>
+
+				</div>
+
+				<div class="modal__body">
+					<div class="reviews-modal-slider">
+						<div class="slide">
+							<div class="reviews-modal-slide">
+								<div class="reviews-modal-slide__photo"><img src="img/reviews-modal1.jpg" alt=""></div>
+								<div class="reviews-product-box reviews-modal-slide__content">
+									<div class="reviews-product-box__head">
+										<div class="reviews-box__user">
+											<div class="reviews-box__user-avatar"><img src="img/avatar.jpg" alt="" class="icon-avatar">
+											</div>
+											<div class="reviews-box__user-name">
+												<a href="#" class="login-user">mashu***@mail.ru</a>
+												<div class="date">15 апреля, 17:42</div>
+											</div>
+
+										</div>
+										<div class="rating">
+											<ul class="list-rating my-ul">
+												<li><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#star"></use>
+													</svg>
+													<span>4,9</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="reviews-product-box__body">
+										<div class="box-text">
+											<p>Очень рекомендую. Служба поддержки молодцы! Огромное им спасибо. Не могла активировать
+												Windows, были проблемы с моим
+												компьютером. Ребята потратили время, подключились все сделали. Спасибо службе поддержки!</p>
+										</div>
+									</div>
+									<div class="reviews-product-box__footer">
+										<div class="rate-review">
+											<p>Отзыв был полезен?</p>
+											<a href="#" class="rate-review__yes">
+												<span>Да</span>
+												<span>0</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -2382,6 +2508,7 @@
 	<script src="js/countUp.js"></script>
 	<script src="js/jQuery.countdownTimer.js"></script>
 	<script src="js/jQuery.countdownTimer-ru.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>

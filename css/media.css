@@ -639,9 +639,12 @@
   .reviews-modal-slider {
     padding: 0;
   }
+  .reviews-modal-slide {
+    align-items: start;
+    flex-direction: column;
+  }
   .reviews-modal-slide__photo {
     max-width: none;
-    height: auto;
   }
   .reviews-modal-slide__content {
     width: 100%;
@@ -649,9 +652,6 @@
   }
   .reviews-modal-slide__content:last-child {
     margin: 16px 0 0;
-  }
-  .reviews-modal-slide {
-    flex-direction: column;
   }
   .special-position::before, .special-position:after {
     width: 208px;

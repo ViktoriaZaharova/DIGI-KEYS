@@ -768,3 +768,7 @@ a.color-accent:hover {
 .animate__animated {
   --animate-duration: 2s;
 }
+
+.fancybox-loading {
+  display: none !important;
+}
