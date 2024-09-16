@@ -1,0 +1,467 @@
+// @import "fonts"
+@import "vars"
+
+header
+
+	margin: 0 0 30px
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 7
+	width: 100%
+	background: #fff 
+	transition: .3s ease
+	font-size: 14px
+	border-bottom: 1.5px solid rgba(248, 248, 248, 1)
+	.container
+		align-items: center
+	.logo
+		width: 100%
+		max-width: 125px
+		margin: 0 24px 0 0
+	&.fixed
+		position: fixed
+		.header-top
+			padding: 17.5px 0
+	.search-result
+		display: none
+	&.active-search
+		.nav-menu
+			display: none
+		.search-wrapper
+			width: 100%
+			margin: 0 24px 0 auto
+			border: none
+		.form-search
+			width: 650px
+			right: 0
+			border-left: 1px solid #F9F2FF
+			border-right: 1px solid #F9F2FF
+		.search-result
+			display: block
+
+.header-top
+	padding: 20px 0
+	width: 100%
+	transition: .3s ease
+
+.search-wrapper
+	position: relative
+	// margin: 0 24px 0 0
+	padding: 0 16px
+	// border: 1.5px solid #E6E6E6
+	border-radius: 12px
+	background: #f8f8f8
+	max-width: 370px
+	width: 100%
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		border-radius: 12px
+		border: 1.5px solid #E6E6E6
+		background: transparent
+
+	.form-search
+		display: flex
+		align-items: center
+		transition: .5s
+		width: 100%
+		input
+			border: none
+			padding: 0 0 0 8px
+			height: 45px
+			width: 100%
+			font-size: 14px
+			&::placeholder
+				color: #363636
+		button
+			position: relative
+			padding: 0
+			fill: none
+			stroke: #767676
+			width: 24px
+			min-width: 24px
+			max-width: 24px
+			height: 24px
+			top: 0
+			right: 0
+			transform: none
+			@include d-flex
+	&:hover
+		border-color: #161616
+	&.click
+		border-radius: 12px 12px 0 0
+		// border: 1.5px solid #161616
+		box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.1)
+		&::before
+			border-color: #161616
+			border-bottom-color: transparent
+			border-radius: 12px 12px 0 0
+		.search-result
+			display: block
+
+.search-result
+	position: absolute
+	z-index: 2
+	width: 100%
+	top: 100%
+	left: 50%
+	transform: translate(-50%,0)
+	background: #f8f8f8
+	border-radius: 0px 0px 12px 12px
+	border: 1.5px solid #161616
+	border-top: none
+	display: none
+	font-size: 14px
+	padding: 14px 16px
+	box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.1)
+	&__box
+		width: 100%
+		margin: 0 0 24px
+		&:last-child
+			margin: 0
+		&-error
+			margin: 0
+			font-size: 12px
+			text-align: center
+			color: rgba(118, 118, 118, 1)
+			padding: 16px 0
+	&__list
+		width: 100%
+		li
+			width: 100%
+			margin: 0 0 8px
+			&:last-child
+				margin: 0
+			a
+				padding: 0
+				color: #161616
+				width: 100%
+				&:hover
+					color: $accent
+	&__category
+		padding: 0
+		width: 100%
+		margin: 0 0 8px
+		color: #767676
+		font-size: 12px
+
+.btn-search
+	fill: none
+	stroke: #363636
+	padding: 0 16px
+	width: 56px
+	height: 44px
+	margin: 0 0 0 auto
+	cursor: pointer
+	position: relative
+	background: #fff
+
+.dropdown-catalog
+	position: relative
+	z-index: 2
+
+.nav-menu
+	margin: 0 auto 0 0
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+.menu
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	font-size: 14px
+	li
+		margin: 0 0 0 16px
+		a
+			color: #363636
+			&:hover
+				color: #5D0896
+		&:last-child
+			margin: 0 0 0 16px
+	.dropdown
+		position: relative
+		&.open
+			.dropdown-toggle
+				color: #161616
+				.dropdown-toggle__icon
+					stroke: #161616
+					transform: none
+	.dropdown-toggle
+		padding: 0
+		&:hover
+			background: transparent
+		&__icon
+			width: 24px
+			height: 24px
+			margin: 0
+			stroke: #161616
+	.dropdown-menu
+		min-width: 270px
+		padding: 8px 0
+		position: absolute
+		left: -24px
+		top: 100%
+		z-index: 1
+		background: #fff
+		border-radius: 10px
+		.dropdown-item
+			padding: 8px 24px
+
+.dropdown-my
+	position: relative
+
+.dropdown-my-toggle
+	display: flex
+	align-items: center
+
+.link-tg
+	margin: 0 16px
+	width: 44px
+	height: 44px
+	min-width: 44px
+	fill: none
+	stroke: $accent
+	padding: 5px
+
+.phone
+	color: #161616
+	&:hover
+		color: $accent
+
+.list-social
+	display: flex
+	align-items: flex-start
+	margin: 0 0 0 32px
+	li
+		@include d-flex
+		margin: 0 8px 0 0
+		&:last-child
+			margin: 0
+
+.link-social
+	@include d-flex
+	width: 48px
+	height: 48px
+	min-width: 48px
+	stroke: #161616
+	padding: 12px
+	border: 1.5px solid #161616
+	border-radius: 12px
+
+.btn-clear-search
+	width: 24px
+	height: 24px
+	min-width: 24px
+	fill: #767676
+	display: none
+
+.btn-catalog
+	padding: 10px 24px 10px 16px
+	&__icon
+		width: 24px
+		min-width: 24px
+		height: 24px
+		fill: #fff
+		padding: 4px
+		&-close
+			display: none
+			stroke: #fff
+			fill: none
+	&__text
+		margin: 0 0 0 4px
+
+.overlay-bg
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 7
+	width: 100%
+	height: 100%
+	background: #030418
+	mix-blend-mode: multiply
+	opacity: 0.5
+	display: none
+
+.btn-burger
+	width: 24px
+	height: 24px
+	display: none
+	align-items: center
+	justify-content: center
+	stroke: #161616
+	margin: 0 0 0 16px
+
+.mobile-menu
+	position: fixed
+	z-index: 11000
+	background: #fff
+	right: -100%
+	top: 0
+	width: 100%
+	max-width: 500px
+	height: 100%
+	overflow-y: auto
+	display: block
+	transition: .5s ease
+	padding: 28px 32px
+	&__close
+		@include d-flex
+		width: 24px
+		height: 24px
+		cursor: pointer
+		stroke: #161616
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0
+		margin: 0 0 32px
+	.search-wrapper
+		display: block
+		max-width: none
+		width: 100%	
+		margin: 0 0 32px
+	.form-search
+		
+		// border: 1.5px solid #E6E6E6
+		// border-radius: 12px
+		// display: flex
+		// align-items: center
+		// background: #F8F8F8
+		// input
+		// 	border: none
+		// 	border-radius: 0
+		// 	height: 44px
+		// 	padding: 0
+		// 	font-size: 14px
+		// button
+		// 	position: relative
+		// 	top: 0
+		// 	right: 0
+		// 	left: 0
+		// 	transform: none
+		// 	margin: 0 8px 0 16px
+		// 	min-width: 24px
+
+	&__body
+		height: calc(100% - 24px - 32px)
+		position: relative
+		width: 100%
+		display: flex
+		flex-direction: column
+	&__footer
+		width: 100%
+		margin: auto 0 0
+		display: flex
+		align-items: center
+	.list-social
+		margin: 0 8px 0 0
+	.logo
+		max-width: 123px
+
+.link-phone
+	margin: 0 auto 0 0
+
+.btn-mail
+	border-radius: 20px
+
+.mobile-menu-list
+	font-size: 16px
+	font-weight: 500
+	margin: 0 0 20px
+	li
+		margin: 0 0 8px
+		&:last-child
+			margin: 0
+		a
+			width: 100%
+			color: #363636
+			display: flex
+			align-items: center
+			padding: 14px 20px
+			height: auto
+			line-height: 1
+			&:hover
+				color: $accent
+		.btn-catalog-mobile
+			color: #fff
+			&:hover
+				color: #363636
+				svg
+					fill: #363636
+	.svg-icon
+		margin: 0 8px 0 0
+		width: 24px
+		min-width: 24px
+		height: 24px
+		stroke: #363636
+		fill: none
+		&__arrow
+			fill: #fff
+			stroke: none
+			margin: 0 0 0 auto
+	.stroke-none
+		stroke: none
+		fill: #363636
+	.sidebar-menu
+		.svg-icon
+			margin: 0 0 0 8px
+	.dropdown.open
+		> .btn-catalog-mobile.dropdown-toggle
+			color: #fff
+			&:hover
+				background: linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%)
+				.svg-icon
+					fill: #fff
+
+.link-phone
+	color: #161616
+	&:hover
+		color: $accent
+
+.special-position
+	display: none
+	position: relative
+	z-index: 1
+	background-image: linear-gradient(90deg,#18181b 0,#342a41 100%)
+	color: #fff
+	padding: 14px 0
+	font-size: 14px
+	overflow: hidden
+	&::before, &::after
+		content: ''
+		position: absolute
+		z-index: -1
+	&::before
+		background: url('../img/spec-bg1.svg') no-repeat center
+		background-size: 100%
+		width: 248px
+		height: 46px
+		left: 0
+		top: -6px
+	&::after
+		background: url('../img/spec-bg2.svg') no-repeat center
+		background-size: 100%
+		right: 0
+		bottom: -6px
+		width: 247px
+		height: 46px
+	&__link
+		margin: 0 auto
+		color: #fff
+		text-decoration: underline
+		&:hover
+			color: $accent
+	&__close
+		width: 24px
+		height: 24px
+		@include d-flex
+		stroke: #fff
+		cursor: pointer

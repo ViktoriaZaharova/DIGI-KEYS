@@ -1,0 +1,3549 @@
+@import "vars"
+
+//home
+.home
+	padding: 118px 0 56px
+	h1
+		margin: 0 0 16px
+	.box-text
+		font-size: 18px
+
+// .home-slider
+// 	.slick-slide
+// 		height: auto
+// 	.slick-track
+// 		display: flex
+// 		align-items: stretch
+// 	&__item
+// 		padding: 100px 0 190px
+// 		height: 100%
+// 		.box-text
+// 			max-width: 533px
+// 			position: relative
+// 			z-index: 1
+// 			.btn
+// 				margin: 40px 0 0
+// 		.description
+// 			max-width: 430px
+// 	.box-image
+// 		position: absolute
+// 		right: 0
+// 		top: 0
+// 		max-width: 752px
+// 		width: 100%
+// 		mix-blend-mode: darken
+// 		@include d-flex
+
+.home-wrapper
+	position: relative
+	width: 100%
+	z-index: 1
+	display: flex
+	align-items: flex-end
+	flex-wrap: wrap
+	padding: 30px 32px 24px
+	border-radius: 24px
+	overflow: hidden
+	background: linear-gradient(0deg, #EFF7FE, #EFF7FE), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%)
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		left: 0
+		top: 0
+		width: 248px
+		height: 84px
+		background: url('../img/home-decor.svg') no-repeat center
+		background-size: 100%
+		z-index: -1
+	&__content
+		width: calc(100% - 256px)
+	&__icons
+		max-width: 256px
+		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		justify-content: space-between
+		margin: 0 0 -16px
+	&__icon
+		margin: 0 0 16px 0
+		width: 120px
+		height: 120px
+		min-width: 120px
+		@include d-flex
+		background: #fff
+		border-radius: 24px
+		padding: 10px
+		box-shadow: 0 3.2930099964141846px 24.45060157775879px 0 rgba(0,0,0,.12)
+		overflow: hidden
+		img
+			max-height: 100%
+		&:nth-last-child(1), &:last-child
+			margin-bottom: 0
+		&-key
+			background: transparent
+			box-shadow: none
+
+// .home-slider-nav
+// 	width: 100%
+// 	h3
+// 		margin: 0 0 2px
+// 	&__item
+// 		width: 360px
+// 		border-radius: 12px
+// 		padding: 24px 13px 24px 24px
+// 		position: relative
+// 		cursor: pointer
+// 		transition: .5s ease
+// 		border: 1.3px solid #F8F3FC
+// 		margin: 0 8px 0 0
+// 		background: #fff
+// 		&:last-child
+// 			margin: 0
+// 	.slick-current
+// 		.home-slider-nav__item
+// 			border: 1.3px solid #F8F3FC
+// 			&::before
+// 				width: 237px
+// 	&__wrapper
+// 		position: absolute
+// 		left: 0
+// 		bottom: 10px
+// 		width: 100%
+
+// .slider-progress
+// 	border-radius: 0px 8px 0px 8px
+// 	position: absolute
+// 	left: 0
+// 	bottom: 0
+// 	transition: .5s ease
+// 	height: 6px
+// 	width: 360px
+// 	span
+// 		border-radius: 0px 0 8px 8px
+// 		background: $accent
+// 		position: absolute
+// 		left: 0
+// 		top: 0
+// 		height: 100%
+// 		width: 0
+// 		transition: all 0s linear
+// 		&.active
+// 			width: 100%
+
+// .tabs__caption
+// 	display: flex
+// 	align-items: flex-start
+// 	flex-wrap: wrap
+// 	li
+// 		color: #7C0DC6
+// 		cursor: pointer
+
+// .tabs__caption-home
+// 	display: flex
+// 	align-items: stretch
+// 	flex-wrap: wrap
+
+// 	li
+// 		border-radius: 12px
+// 		padding: 24px 60px 24px 24px
+// 		position: relative
+// 		cursor: pointer
+// 		transition: .5s ease
+// 		margin: 0 8px 0 0
+// 		border: 1.3px solid transparent
+// 		&:last-child
+// 			margin: 0
+
+// 		&.active
+// 			border: 1.3px solid #F8F3FC
+// 			&::before
+// 				width: 237px
+// 	h3
+// 		margin: 0 0 2px
+
+// slogans-products
+// .slogans-products
+// 	margin: 120px 0
+// 	&-item
+// 		position: relative
+// 		overflow: hidden
+// 		z-index: 1
+// 		width: 100%
+// 		height: 100%
+// 		border-radius: 24px
+// 		padding: 46.5px 40px
+// 		margin: 0 0 24px
+// 		border: 1px solid #F9F2FF
+// 		background: linear-gradient(to right, rgba(245,223,255,.2) 0%,rgba(157,207,252,.2) 100%), #EFF7FE
+// 		color: #161616
+// 		display: block
+// 		&:last-child
+// 			margin: 0
+// 		.h3
+// 			font-size: 28px
+// 			font-weight: 500
+// 			line-height: 130%
+// 			letter-spacing: -0.14px
+// 		&__content
+// 			max-width: 350px
+// 			display: block
+// 		.box-text
+// 			font-weight: 300
+// 			line-height: 150%
+// 			margin: 16px 0 0
+// 			max-width: 270px
+// 			display: block
+
+// .slogans-products1
+// 	min-height: 360px
+
+.slogans-products-item2
+	background: linear-gradient(to right, rgba(245,223,255,.2) 0%,rgba(157,207,252,.2) 100%)
+
+.slogans-products-item2, .slogans-products-item3
+	height: auto
+
+.slogans-products-item__image
+	position: absolute
+	right: 40px
+	bottom: 0
+	max-width: 580px
+	z-index: -1
+	display: flex
+	align-items: center
+	justify-content: center
+
+//your-choice
+// .your-choice
+// 	.chapter-card
+// 		border: 1px solid #F8F3FC
+// 		background: transparent
+
+// .chapter-card
+// 	width: 100%
+// 	height: 100%
+// 	position: relative
+// 	// overflow: hidden
+// 	background: #F8F8F8
+// 	border-radius: 8px
+// 	padding: 45px 70px 49px 28px
+// 	display: flex
+// 	flex-direction: column
+// 	z-index: 1
+// 	border: 1.3px solid transparent
+// 	&::before
+// 		content: ''
+// 		position: absolute
+// 		left: 50%
+// 		top: 50%
+// 		transform: translate(-50%,-50%)
+// 		width: calc(100% + 1.3px + 1.3px)
+// 		height: calc(100% + 1.3px + 1.3px)
+// 		background: linear-gradient(#fff, #fff) padding-box, linear-gradient(277.29deg, rgba(124, 13, 198, 0) 0%, #7C0DC6 51.91%, rgba(124, 13, 198, 0) 100%) border-box
+// 		z-index: -1
+// 		border-radius: 6px
+// 		border: 1.3px solid transparent
+// 		opacity: 0
+// 		transition: .3s ease
+
+// 	.link
+// 		margin: auto 0 0
+// 	&__img
+// 		position: absolute
+// 		right: 0
+// 		bottom: 0
+// 		z-index: -1
+// 		transition: .5s ease
+// 		@include d-flex
+// 	&__title
+// 		font-size: 20px
+// 		font-weight: 500
+// 		line-height: 140%
+// 		color: #161616
+// 		margin: 0 0 106px
+// 	&:hover
+// 		background: #fff
+// 		&::before
+// 			opacity: 1
+// 		.chapter-card__title
+// 			color: $accent
+// 		.link
+// 			color: $hover
+// 		.link-icon
+// 			stroke: $hover
+
+.link
+	text-align: right
+	display: flex
+	align-items: center
+	color: #363636
+	&-icon
+		@include d-flex
+		width: 16px
+		height: 16px
+		margin: 0 0 0 4px
+		stroke: #363636
+
+// advantages
+.advantages
+	margin: 40px 0 0
+	padding: 88px 0 89px
+	backdrop-filter: blur(10px)
+	background: radial-gradient(31.3% 49.2% at 61.09% 50.05%, rgba(124, 13, 198, 0.28) 0%, rgba(255, 255, 255, 0) 100%)
+	h2
+		top: 120px
+		position: sticky
+		max-width: 460px
+
+.advantages-list
+	margin: 0 0 0 auto
+	max-width: 769px
+	width: calc(100% - 500px)
+
+.advantages-box
+	width: 100%
+	background: #fff
+	margin: 0 0 35px
+	padding: 40px
+	border-radius: 12px
+	display: flex
+	align-items: flex-start
+	&__icon
+		width: 40px
+		height: 40px
+		@include d-flex
+		border-radius: 8px
+		background: #F8F3FC
+		padding: 5px
+	&__text
+		width: calc(100% - 40px)
+		padding: 0 0 0 32px
+	h3
+		margin: 0 0 6px
+	&:last-child
+		margin: 0
+
+//hot deals
+.product-card
+	width: 100%
+	height: 100%
+	position: relative
+	line-height: 150%
+	display: flex
+	flex-direction: column
+	&__img
+		padding: 28px
+		@include d-flex
+		height: 310px
+		width: 100%
+		// border: 1px solid #F8F3FC
+		border: 1.5px solid transparent
+		background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgba(245,223,255,.2), rgba(157,207,252,.2)) border-box
+		border-radius: 8px
+		padding: 10px
+		img
+			max-height: 100%
+	&__body
+		padding: 16px 0 0
+		width: 100%
+		height: calc(100% - 310px)
+		display: flex
+		flex-direction: column
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		margin: 0 0 8px
+	&__avialability
+		display: flex
+		align-items: center
+		color: #CB3D35
+		svg
+			margin: 0 4px 0 0
+			width: 16px
+			height: 16px
+			min-width: 16px
+			@include d-flex
+			fill: #CB3D35
+	.rating
+		margin: 0 8px 0 auto
+	.price-wrapper
+		display: flex
+		align-items: end
+		margin: 0 auto 0 0
+	.new-price
+		font-size: 22px
+		font-weight: 600
+		span
+			font-size: 14px
+			font-weight: normal
+	.old-price
+		margin: 0 0 0 8px
+		font-size: 14px
+
+	&__title
+		color: #161616
+		font-size: 18px
+		&:hover
+			color: $accent
+	&__footer
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		line-height: 100%
+		margin: auto 0 0
+	.btn
+		padding: 14px 24px
+		width: 100%
+	.link-add-card
+		margin: 0 0 0 24px
+	.promo-label-list
+		position: absolute
+		padding: 8px
+		top: 0
+		left: 0
+	&-not
+		.product-card__img
+			opacity: 0.5
+
+.chats-link
+	display: flex
+	align-items: center
+	color: #363636
+	svg
+		width: 16px
+		height: 16px
+		min-width: 16px
+		fill: #767676
+		margin: 0 3px 0 0
+
+	&:hover
+		color: $accent
+
+.timer-card
+	width: 100%
+	height: 100%
+	color: #fff
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	padding: 26px
+	border-radius: 24px
+	background: linear-gradient(to right, rgba(24,24,27,1) 0%,rgba(52,42,65,1))
+	position: relative
+	z-index: 1
+	overflow: hidden
+	h4
+		margin: 20px auto 0
+		font-size: 18px
+
+.progress-timer
+	width: 100%
+	height: 266px
+	margin: 0 auto auto
+	position: relative
+	z-index: 1
+	border: 1.5px solid rgba(#fff, .2)
+	background: linear-gradient(160deg, rgba(100,14,198,1) 0%,rgba(151,110,252,1) 25%,rgba(151,110,252,1) 100%)
+	border-radius: 50%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		width: calc( 100% - 16px )
+		height: calc( 100% - 16px )
+		transform: translate(-50%,-50%)
+		z-index: -1
+		background: linear-gradient(to bottom, rgba(52,42,65,1) 0%,rgba(24,24,27,1) 100%)
+		border-radius: 50%
+
+.countdown-time
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%,-50%)
+	z-index: 2
+	border: none
+	border-radius: 0
+	padding: 0
+	background: transparent
+	font-family: $default-font
+	font-weight: normal
+	font-size: 22px
+	display: flex
+	align-items: center
+	justify-content: center
+
+.labelformat
+	width: 100%
+
+.timerDisplay
+	padding: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	.displaySection
+		width: fit-content
+		min-width: 65px
+		position: relative
+		&::after
+			content: ':'
+			position: absolute
+			top: -1px
+			right: 0
+			color: #fff
+			display: flex
+			align-items: center
+			justify-content: center
+		&:last-child
+			&::after
+				display: none
+
+.displaySection
+	font-size: 22px
+	border: none
+	font-family: $default-font
+
+.periodDisplay
+	margin: 8px auto 0
+	color: #767676
+	font-size: 14px
+	text-transform: lowercase
+
+.numberDisplay
+	font-size: 22px
+	font-weight: 500
+
+.progress-timer__circle
+	width: calc(100% - 80px)
+	height: calc(100% - 80px)
+	margin: auto
+	border-radius: 50%
+	position: relative
+	z-index: 1
+	box-sizing: border-box
+	// animation: rotation 10s linear infinite
+	&::after
+		content: ''
+		box-sizing: border-box
+		position: absolute
+		left: 0
+		top: 0
+		background: #976EFC
+		width: 23px
+		height: 23px
+		transform: translate(-50%, -50%)
+		border-radius: 50%
+		border: 1.5px solid #18181B
+
+@keyframes rotation
+	0%
+		transform: rotate(0deg)
+
+	100%
+		transform: rotate(-360deg)
+
+@keyframes width
+	0%
+		width: 0
+
+	100%
+		width: 100%
+
+.feedback-section
+	margin: 0 0 40px
+	// .reviews-product-box
+	// 	display: none
+	// 	&:nth-child(-n+3)
+	// 		display: block
+
+.link-text-show
+	display: flex
+	align-items: center
+	margin: 8px 0 0
+	svg
+		fill: none
+		stroke: $accent
+		margin: 0 0 0 8px
+		width: 24px
+		height: 24px
+		min-width: 24px
+	&.click
+		svg
+			transform: rotate(180deg)
+
+.reviews
+	.box-text
+		font-size: 18px
+		max-width: 633px
+		.link-reviews-page
+			text-decoration: none
+		.color-blue
+			color: #1874CF
+			&:hover
+				color: $accent
+
+.reviews-section__nav
+	height: 100%
+	width: 100%
+	display: flex
+	flex-direction: column
+	.rating
+		font-weight: 500
+		font-size: 20px
+		justify-content: flex-end
+		svg
+			width: 20px
+			height: 20px
+			min-width: 20px
+	.btn
+		margin: auto 0 0 auto
+
+.reviews-gallery
+	width: 100%
+	margin: 40px 0 32px
+	display: flex
+	align-items: flex-start
+	// flex-wrap: wrap
+	&__photo
+		@include d-flex
+		width: 96px
+		height: 96px
+		border-radius: 10px
+		overflow: hidden
+		margin: 0 8px 8px 0
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+.btn-all-photo
+	height: 96px
+	background: transparent
+	padding: 10px 16px
+
+.product-slider
+	position: relative
+	overflow: hidden
+
+.product-pagination-image
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: flex-start
+	position: absolute
+	left: 0
+	bottom: 0
+	a
+		flex: 1
+		height: 100%
+
+.price-wrapper
+	white-space: nowrap
+
+.price
+	font-size: 20px
+	font-weight: 500
+	color: #161616
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+.old-price
+	text-decoration-line: line-through
+	font-size: 14px
+	font-weight: 300
+	color: #767676
+	margin: 0 8px 0 0
+
+.sale-price
+	color: #CB3D35
+	font-size: 22px
+	font-weight: 600
+	span
+		font-weight: normal
+		font-size: 14px
+
+.new-price
+	color: #161616
+
+.product-status-next
+	background: #CB3D35
+	color: #fff
+	padding: 7px 12px
+	font-size: 12px
+	border-radius: 8px
+
+.promo-label
+	display: flex
+	align-items: center
+	border-radius: 8px
+	padding: 8.5px 10px
+	line-height: normal
+	font-size: 12px
+	font-weight: 500
+	img
+		margin: 0 4px 0 0
+		width: 14px
+
+.promo-label-hit
+	// background: #fff
+	background: linear-gradient(to right, rgba(245,223,255,.2) 0%,rgba(157,207,252,.2) 100%)
+	color: #363636
+
+.promo-label-sale
+	background: linear-gradient(to right, rgba(253,241,239,.6) 60%,rgba(157,207,252,.3) 100%)
+	color: #363636
+
+.promo-label-list
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	justify-content: flex-end
+
+	li
+		margin: 0 8px 5px 0
+		&:last-child
+			margin: 0 0 5px
+
+.hits-section
+	padding: 64px 0 88px
+
+.discount-section
+	overflow: hidden
+	.row-scroll
+		flex-wrap: nowrap
+		overflow-x: auto
+	.product-card, .timer-card
+		min-width: 230px
+
+.popular-articles, .for-business
+	overflow: hidden
+
+.for-business
+	.row-scroll
+		flex-wrap: nowrap
+		overflow-x: auto
+	.product-card
+		min-width: 230px
+
+//news section
+.news-card
+	width: 100%
+	line-height: 150%
+	&__img
+		@include d-flex
+		width: 100%
+		height: 240px
+		border-radius: 8px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 8px
+	&__body
+		width: 100%
+		padding: 16px 0 0
+	&__title
+		color: #161616
+		font-size: 20px
+		font-weight: 500
+		margin: 16px 0 8px
+	&:hover
+		.news-card__title
+			color: $accent
+
+.date
+	color: #767676
+	width: 100%
+
+// seo-section
+.seo-section
+	margin: 0 0 120px
+	h2
+		font-size: 28px
+	.box-text
+		font-size: 18px
+		line-height: 28px
+		// height: 245px
+		// overflow: hidden
+		position: relative
+		z-index: 1
+		// &::before
+		// 	content: ''
+		// 	position: absolute
+		// 	left: 0
+		// 	bottom: 0
+		// 	width: 100%
+		// 	height: 30px
+		// 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+		&.open
+			height: auto
+			overflow: visible
+			&::before
+				opacity: 0
+
+// catalog page
+.page
+	padding: 118px 0 0
+	&.close-special
+		padding: 136px 0 0
+
+.page-catalog-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	h1
+		display: flex
+		align-items: center
+
+.page-catalog-content
+	width: calc(100% - 310px)
+	padding: 0 0 0 35px
+
+.download-button
+	width: 100%
+	padding: 0
+	height: 40px
+	margin: 20px 0
+
+.sidebar
+	border: 1.3px solid #F8F8F8
+	border-radius: 8px
+	max-width: 310px
+	width: 100%
+	padding: 24px 0
+	line-height: 150%
+	&__head
+		padding: 0 24px
+		margin: 0 0 16px
+
+.sidebar-menu
+	li
+		margin: 0
+		&:last-child
+			margin: 0
+		a
+			color: #363636
+			&:hover
+				color: $accent
+				.dropdown-toggle__icon
+					stroke: $accent
+
+.dropdown-toggle
+	display: flex
+	align-items: center
+	padding: 8px 24px
+	width: 100%
+	&__icon
+		stroke: #363636
+		fill: none
+		width: 16px
+		height: 16px
+		margin: 0 0 0 8px
+	&:hover
+		background: #F8F3FC
+		color: $accent
+
+.dropdown.open
+	>.dropdown-toggle
+		color: $accent
+		>.dropdown-toggle__icon
+			stroke: $accent
+			transform: rotate(180deg)
+
+.dropdown-menu
+	margin: 8px 0 0
+	display: none
+	.dropdown-item
+		padding: 8px 10px 8px 32px
+		width: 100%
+		&:hover, &.active
+			background: #F8F3FC
+
+.dropdown-catalog
+	.btn-catalog
+		&.open
+			.btn-catalog__icon
+				display: none
+				&-close
+					display: flex
+
+	.dropdown-menu
+		margin: 5px 0 0
+		overflow: hidden
+	.sidebar-menu li
+		margin: 0 0 8px
+		&:last-child
+			margin: 0
+		.dropdown-item
+			padding-left: 32px
+		.dropdown-menu
+			margin: 0
+
+.dropdown-menu-catalog
+	position: absolute
+	border: 1px solid #F8F3FC
+	border-radius: 10px
+	background: #FFFFFF
+	z-index: 10
+	min-width: 270px
+	padding: 20px 0
+
+.btn-toggle-sidebar
+	margin: 0 0 0 8px
+	display: none
+	align-items: center
+	justify-content: center
+	width: 24px
+	height: 24px
+	fill: none
+	stroke: #161616
+
+// information page
+.page-information
+	h1
+		margin: 0 0 24px
+	.box-text
+		a
+			display: initial
+			text-decoration: underline
+			color: #7C0DC6
+
+.banner
+	max-width: 310px
+	width: 100%
+	position: relative
+	color: #363636
+	padding: 40px 24px 36px
+	display: flex
+	flex-direction: column
+	line-height: 150%
+	border-radius: 8px
+	position: relative
+	z-index: 1
+	margin: 0 0 0 auto
+	border: 1px solid #F8F3FC
+	border-radius: 8px
+	overflow: hidden
+	h3
+		color: #161616
+		margin: 0 0 8px
+	&-img
+		@include d-flex
+		position: absolute
+		right: 0
+		bottom: 0
+		max-width: 152px
+		z-index: -1
+	.box-text
+		max-width: 240px
+
+	.btn
+		margin: 140px 0 0
+
+.d-tablet
+	display: none
+
+.d-mobile
+	display: none
+
+.form
+	margin: 40px 0 0
+	width: 100%
+	.row
+		margin: 0 -12px
+	.col-50, .col-100
+		padding: 0 12px
+	.box-text
+		margin: 8px 0 24px
+		font-size: 14px
+
+.input-text
+	position: absolute
+	left: 0
+	top: 15.5px
+	transition: .3s ease
+	line-height: 150%
+	width: 100%
+	padding: 0 22px
+	display: inline-block
+	color: #767676
+	font-size: 14px
+	pointer-events: none
+	z-index: 1
+
+// product page
+.product-image-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	margin-bottom: 40px
+
+.product-image
+	height: 555px
+	width: calc(100% - 80px - 16px)
+	margin: 0 0 0 auto
+	border: none
+	border-radius: 16px
+	padding: 0
+	position: relative
+	img
+		max-height: 100%
+		width: 100%
+		// object-fit: contain
+	.promo-label-list
+		position: absolute
+		left: 0
+		top: 0
+		padding: 10px
+		align-items: center
+		z-index: 1
+		// li
+		// 	margin: 0 0 10px
+		.promo-label-list-article
+			margin-left: auto
+	.promo-label
+		color: #363636
+		// border-radius: 10px
+		border-radius: 8px
+		background: #fff
+	// &__wrapper
+	// 	border: 2px solid #EFF7FE
+	// 	border-radius: 16px
+	// 	padding: 20px
+	// 	width: 100%
+	// 	height: 100%
+	// 	@include d-flex
+
+.product-image__slider
+	width: 100%
+	height: 100%
+	.product-image__preview-item
+		height: 100%
+		img
+			border-radius: 16px
+		  // background: linear-gradient(144deg, #eaecff 0%, #dfefff 100%)
+	.slick-track, .slick-list
+		height: 100%
+
+.product-image__preview
+	width: 100%
+	max-width: 80px
+	height: 100%
+	padding: 0
+	display: none
+	.slide
+		border: 1.5px solid transparent
+		border-radius: 8px
+		margin: 0 0 8px
+		cursor: pointer
+		background: #fff
+		width: 100%
+		&.slick-current
+			border-color: $accent
+	&-item
+		@include d-flex
+		height: 100px
+		width: 100%
+		img
+			width: 100%
+			// height: 100%
+			// object-fit: cover
+			border-radius: 8px
+
+.product-content-wrapper
+	width: 100%
+	margin-bottom: 40px
+
+.sale-value
+	font-size: 14px
+	font-weight: 500
+	color: #fff
+	line-height: 150%
+	padding: 6px 10px
+	margin: 0 0 0 8px
+	display: inline-block
+	// border-radius: 49px
+	border-radius: 49px
+	background: #EB5757
+	margin: 0 0 0 auto
+
+.subtitle-product
+	margin: 8px 0 0
+	font-size: 18px
+
+.product-image .promo-label img
+	width: 15px
+
+.checkout-box
+	// border-left: 1px solid #EBEBEB
+	// padding: 0 0 115px 32px
+	position: sticky
+	top: 120px
+	max-width: 310px
+	width: 100%
+	margin: 0 0 0 auto
+	box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.1)
+	border: 1px solid #f8f8f8
+	border-radius: 16px
+	padding: 24px 24px 32px
+	.list-characteristics
+		margin: 24px 0
+	.btn-group
+		width: 100%
+		.btn
+			width: 100%
+			margin: 0 0 8px
+			&:last-child
+				margin: 0
+
+.banner-key
+	width: 100%
+	color: #fff
+	margin: 24px 0 0
+	padding: 40px 24px
+	border-radius: 8px
+	background: radial-gradient(90.18% 83.81% at 100% 100%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 94.27%), #7C0DC6
+	.btn
+		width: 100%
+		margin: 32px 0 0
+
+.list-characteristics
+	width: 100%
+	line-height: 17px
+	font-size: 14px
+	li
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 0 0 16px
+		&:last-child
+			margin: 0
+	span
+		text-align: right
+	p
+		font-weight: 300
+
+.btn-download-file
+	width: 100%
+	margin: 12px 0 0
+	color: #7C0DC6
+	border-width: 2px
+
+.status-availability, .promo-link, .delivery-instant, .difference
+	display: flex
+	align-items: center
+	img
+		margin: 0 6px 0 0
+		width: 16px
+
+.difference
+	img
+		width: 24px
+		margin: 0
+
+.delivery-instant
+	justify-content: start
+	font-weight: 300
+	font-size: 14px
+
+.promo-wrapper
+	width: 100%
+	margin: 16px 0 28px
+	&__label
+		margin: 10px 0 0
+		display: none
+		position: relative
+		&.focus
+			.promo-wrapper__btn
+				display: none
+			input
+				border-color: #538A1B
+				color: #538A1B
+	&__btn
+		margin: 0 0 0 auto
+		width: 40px
+		height: 40px
+		background: url('../img/check-promo.svg') no-repeat center
+		background-size: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		top: 6px
+		right: 6px
+
+.promo-link
+	display: flex
+	align-items: center
+	line-height: 100%
+	color: #767676
+	font-size: 16px
+	&:hover
+		color: $accent
+	span
+		border-bottom: 1px dashed #767676
+
+.buy-wrapper
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 24px 0 0
+	.btn
+		width: calc(50% - 4px)
+
+.consent
+	margin: 24px 0
+	font-size: 14px
+	font-weight: 300
+	max-width: 265px
+
+.d-inline
+	display: inline
+
+.amount
+	margin: 0 auto 0 0
+	display: flex
+	align-items: center
+	justify-content: center
+	border: 1px solid #767676
+	border-radius: 12px
+	height: 44px
+	width: calc(50% - 4px)
+	padding: 0 20px
+	span
+		cursor: pointer
+		transition: .3s ease
+		@include d-flex
+		width: 24px
+		height: 24px
+		min-width: 24px
+		// pointer-events: none
+		z-index: 1
+	input
+		border: none
+		border-radius: 0
+		padding: 0
+		text-align: center
+		background: transparent
+		color: #161616
+		font-size: 20px
+		font-weight: 500
+		height: 100%
+		box-shadow: none
+		z-index: 0
+
+.btn-buy
+	font-weight: 500
+	width: 100%
+	margin: 24px auto
+
+.payments-method
+	margin: 24px 0 14px
+	@include d-flex
+
+.list-payment
+	margin: 24px 0 14px
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	flex-wrap: wrap
+	li
+		margin: 0 6px 10px 0
+		width: 24px
+		height: 24px
+		min-width: 24px
+		@include d-flex
+		&:last-child
+			margin: 0 0 10px
+
+.product-info-box
+	width: 100%
+	margin: 0 0 24px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&:last-child
+		border: none
+		margin: 0
+		padding: 0
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		margin: 0 0 24px
+	.promo-label-list
+		width: fit-content
+	&__footer
+		margin: 24px 0 0
+		width: 100%
+		display: none
+		.list-payment
+			margin: 0
+			li
+				margin-bottom: 0
+	&:first-child
+		.product-info-box__footer
+			.list-characteristics
+				display: none
+	.list-characteristics
+		li
+			position: relative
+			background: #fff
+			z-index: 1
+			p, span, a
+				position: relative
+				z-index: 1
+				background: #fff
+			p
+				padding: 0 8px 0 0
+			span, a
+				padding: 0 0 0 8px
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				background: url('../img/line-characteristics.svg') no-repeat left center
+				background-size: cover
+				bottom: 3px
+				left: 0
+			.link
+				font-size: 16px
+				text-decoration: underline
+				&:hover
+					color: $accent
+	&__tabs
+		width: 100%
+		border: 1.5px solid #EFF7FE
+		border-radius: 100px
+		display: flex
+		align-items: stretch
+		.difference
+			margin: 0 24px 0 10px
+		.tabs__caption
+			background: #EFF7FE
+			border-radius: 100px
+			padding: 4px
+			flex-wrap: nowrap
+			overflow-x: auto
+			width: 100%
+			.btn
+				color: #3D3D3D
+				border: none
+				border-radius: 100px
+				margin: 0
+				font-size: 14px
+				// width: 134px
+				padding: 10px
+				flex: 1
+				&.active
+					background: #fff
+					box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.13)
+
+.link-copy-acticle
+	display: flex
+	align-items: center
+	color: #3D3D3D
+	font-size: 16px
+	&:hover
+		color: $accent
+		svg
+			stroke: $accent
+	svg
+		fill: none
+		width: 24px
+		height: 21px
+		margin: 0 0 0 4px
+		stroke: #3D3D3D
+
+.warranty-box-product
+	width: 100%
+	color: #fff
+	margin: 24px 0
+	padding: 24px
+	border-radius: 16px
+	background: linear-gradient(90deg,#18181b 0,#342a41 100%)
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		right: 0
+		top: 0
+		height: 100%
+		width: 122px
+		background: url('../img/decor-bg1.svg') no-repeat right bottom
+		background-size: 100%
+	h3
+		color: #fff
+		font-size: 22px
+	.link
+		color: #DCDCDC
+		text-align: left
+		margin: 8px 0 0
+		&:hover
+			color: $accent
+			svg
+				stroke: $accent
+		svg
+			stroke: #DCDCDC
+			width: 24px
+			height: 24px
+			fill: none
+			margin: 0 0 0 4px
+
+.reviews-product-slider
+	width: 100%
+	margin: 40px 0 80px
+
+.rating
+	display: flex
+	align-items: center
+	// flex-wrap: wrap
+	// margin: 0 auto 0 0
+
+.list-rating
+	display: flex
+	align-items: center
+	li
+		margin: 0 4px 0 0
+		fill: #F2994A
+		@include d-flex
+		svg
+			width: 16px
+			height: 16px
+			min-width: 16px
+		span
+			margin: 0 0 0 4px
+		&:last-child
+			margin: 0
+		&.star0
+			fill: #FCEFCA
+
+.rating-value
+	color: #363636
+	line-height: normal
+	border-bottom: 1px solid #363636
+	margin: 0 0 0 16px
+	&:hover
+		color: $accent
+
+.link-share
+	@include d-flex
+	margin: 0 0 0 auto
+	stroke: #5B5B5B
+	fill: none
+	width: 24px
+	height: 24px
+	min-width: 24px
+
+.difference
+	margin: 0 0 0 auto
+	color: #3D3D3D
+	font-size: 14px
+	&:hover
+		color: $accent
+	// span
+	// 	border-bottom: 1.3px solid #7C0DC6
+
+.logo-partner
+	margin: 0 0 8px
+
+.information-box
+	width: 100%
+	margin: 64px 0 56px
+	border-radius: 8px
+	background: linear-gradient(0deg, #EDF7F3, #EDF7F3), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%)
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	padding: 32px
+	line-height: 150%
+	.box-text
+		width: calc(100% - 235px)
+		padding: 0 24px 0 0
+		margin: 0 auto 0 0
+
+.tabs__caption-product
+	width: 100%
+	margin: 0 0 32px
+	position: relative
+	line-height: 140%
+	font-size: 20px
+	background: #EFF7FE
+	border-radius: 100px
+	padding: 4px
+	display: flex
+	align-items: stretch
+	font-size: 14px
+	color: #363636
+	li
+		border: none
+		padding: 10px
+		cursor: pointer
+		transition: .3s ease
+		border-radius: 100px
+		margin: 0
+		flex: 1
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		color: #363636
+		&.active
+			background: #fff
+			color: #3D3D3D
+			box-shadow: 0 10px 12.100000381469727px -6px rgba(0,0,0,.13)
+		&:hover
+			background: #fff
+
+.faq
+	.tabs__content
+		.block_hover
+			.box-text
+				width: calc(100% - 32px)
+				padding: 0 32px 0 0
+
+// .articles-product
+// 	overflow: hidden				
+
+.help-product-box
+	width: 100%
+	position: sticky
+	top: 140px
+	z-index: 2
+	max-width: 310px
+	width: 100%
+	margin: 0 0 0 auto
+	padding: 24px
+	border-radius: 16px
+	color: #fff
+	background: linear-gradient(90deg, #18181b 0, #342a41 100%)
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		z-index: -1
+		width: 204px
+		height: 127px
+		background: url('../img/decor-bg2.svg') no-repeat center
+		background-size: 100%
+	.btn
+		margin: 48px 0 0
+		height: 40px
+	.btn-white
+		color: #161616
+		&:hover
+			color: #fff
+	h3
+		margin: 0 0 8px
+		font-size: 22px
+		font-weight: 500
+		max-width: 250px
+		color: #fff
+
+.reviews-product-box
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	border-radius: 16px
+	padding: 24px
+	background: #F8F8F8
+	position: relative
+	z-index: 1
+	margin: 0 0 8px
+	text-align: left
+	&:last-child
+		margin: 0
+	&__head
+		width: 100%
+		display: flex
+		align-items: start
+		justify-content: flex-start
+		margin: 0 0 24px
+		h3
+			font-size: 28px
+			font-weight: 600
+			max-width: 250px
+		.date
+			font-size: 12px
+			margin: 4px 0 0
+	&__body
+		width: 100%
+		margin: 0 0 24px
+		position: relative
+		z-index: 1
+
+		.box-text
+			// max-height: 144px
+			// overflow: hidden
+			font-size: 16px
+			line-height: 1.5
+			max-width: none
+			&.show-text
+				max-height: none
+				overflow: visible
+	.reviews-box__user-name
+		text-align: left
+		align-items: start
+	.reviews-box__user
+		margin: 0	auto 0 0
+	.reviews-box__user-avatar
+		margin: 0 16px 0 0
+	&__footer
+		margin: auto 0 0
+		width: 100%
+	.rate-review
+		p
+			color: #767676
+			font-weight: 500
+			margin: 0 0 4px
+			font-size: 14px
+		&__yes
+			color: $accent
+			&:hover
+				color: $hover
+	.reviews-gallery
+		margin: 0 0 16px
+		&__item
+			margin: 0 8px 8px 0
+			&:last-child
+				margin: 0 0 8px
+	.btn-border-dark
+		background: #F8F8F8
+		&:hover
+			border: 1px solid transparent
+			background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%) border-box
+
+.btn-toggle-reviews
+	margin: 24px auto 0
+
+.reviews-product-box-call
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		bottom: 0
+		height: 183px
+		width: 100%
+		z-index: -1
+		background: url('../img/decor-bg3.svg') no-repeat center top
+		background-size: 100%
+
+// .show-all-text
+// 	font-size: 16px
+// 	color: #363636
+// 	position: absolute
+// 	bottom: 0
+// 	right: 0
+// 	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(248,248,248,1) 68%)
+// 	padding: 0 0 0 92px
+// 	text-align: right
+// 	&:hover
+// 		color: $accent
+
+.reviews-product-slider
+	.slick-slide
+		height: auto
+		padding: 0 8px
+	.slick-track
+		display: flex
+		align-items: stretch
+	.slick-list
+		margin: 0 -8px
+	.slick-arrow
+		width: 40px
+		height: 40px
+		border-radius: 12px
+		border: 1px solid #363636
+		padding: 8px
+		stroke: #363636
+		fill: none
+		svg
+			transform: none
+		&:hover, &:focus
+			border: 1px solid transparent
+			background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%) border-box
+			stroke: $accent
+	.slick-prev
+		left: -64px
+	.slick-next
+		right: -64px
+
+.table, table
+	width: 100%
+	text-align: left
+	border: 1.3px solid #F8F8F8
+	border-radius: 10px
+	margin: 24px 0
+	overflow: hidden
+	thead
+		background: #F8F8F8
+
+	th
+		padding: 12px 24px
+		&:first-child
+			width: 45%
+
+	td
+		padding: 12px 24px
+		&:first-child
+			width: 45%
+	tr
+		background: #fff
+		.bg-grey
+			background: #F8F8F8
+
+.table-products-title
+	border: none
+	thead
+		th
+			width: 50%
+			font-size: 20px
+			font-weight: 500
+			padding: 0 24px 16px
+			background: #fff
+
+.table-products
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 140px
+	&.hide
+		&::before
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 82.12%)
+	thead
+		th
+			padding: 12px 24px 8px
+			font-size: 16px
+			font-weight: normal
+	td
+		width: 50%
+		padding: 12px 24px 12px
+	tbody
+		tr
+			background: #fff
+		.bg-grey
+			background: #F8F8F8
+		.tr-answer
+			td
+				padding: 0 24px 12px
+
+	td.table-products__subtitle
+		font-size: 14px
+		color: #767676
+		padding: 12px 24px 4px
+
+.load-more-wrap
+	font-size: 16px
+	margin: -48px auto 0
+	position: relative
+	z-index: 1
+
+.attention-box
+	padding: 24px
+	margin: 32px 0 0
+	border: none
+	background: #FEE5DF
+	border-radius: 8px
+	color: #161616
+	align-items: flex-start
+	h3
+		color: #ED5433
+		margin: 0 0 8px
+	.box-text
+		padding: 0
+		width: 100%
+		font-size: 18px
+		line-height: 28px
+		.link-inline
+			border: none
+		a
+			color: #1874CF
+	&__icon
+		@include d-flex
+		width: 40px
+		height: 40px
+		min-width: 40px
+		border-radius: 8px
+		background: transparent
+		order: 1
+	&__text
+		width: calc(100% - 40px)
+
+.panel_heading
+	width: 100%
+	margin: 0 0 8px
+	background: #F8F8F8
+	border-radius: 24px
+	.block_title
+		padding: 24px
+	&-icon
+		@include d-flex
+		width: 24px
+		height: 24px
+		min-width: 24px
+		stroke: #5B5B5B
+		fill: none
+	&.in
+		.panel_heading-icon
+			transform: rotate(180deg)
+		.block_title
+			padding: 24px 24px 8px
+			&::after
+				background: url('../img/minus-icon.svg') no-repeat center
+				background-size: 100%
+	&:last-child
+		margin: 0
+
+.block_title
+	width: 100%
+	display: flex
+	align-items: start
+	justify-content: space-between
+	margin: 0
+	cursor: pointer
+	padding: 15px
+	transition: .3s ease
+	h3
+		margin: 0 32px 0 0
+		font-size: 18px
+		line-height: 32px
+	&::after
+		content: ''
+		@include d-flex
+		margin: 0 0 0 auto
+		width: 32px
+		height: 32px
+		min-width: 32px
+		background: url('../img/plus-icon.svg') no-repeat center
+		background-size: 100%
+
+.block_hover
+	display: none
+	color: #363636
+	line-height: 150%
+	font-size: 18px
+	padding: 0 24px 24px
+	.box-text
+		max-width: 878px
+
+// .article-slider
+// 	.slick-track
+// 		display: flex
+// 		align-items: stretch
+// 	.slick-slide
+// 		height: auto
+// 	.article-subscibe
+// 		height: 100%		
+
+.article-subscibe
+	width: 100%
+	height: 100%
+	position: relative
+	z-index: 1
+	padding: 24px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	background: linear-gradient(0deg, #EFF7FE, #EFF7F3), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%)
+	border-radius: 24px
+	&__img
+		position: absolute
+		right: 0
+		top: 0
+		z-index: -1
+	h3
+		margin: 0 0 24px
+		font-size: 22px
+	form
+		position: relative
+		input
+			border: none
+			color: #161616
+			background: #fff
+			font-size: 16px
+			padding: 0 46px 0 24px
+			&::placeholder
+				color: #161616
+		[type='submit']
+			position: absolute
+			top: 6px
+			right: 6px
+			width: 40px
+			height: 40px
+			min-width: 40px
+			stroke: #fff
+			padding: 8px
+			svg
+				transform: rotate(-90deg)
+	&__link
+		color: #161616
+		background: #fff
+		font-size: 16px
+		padding: 0 6px 0 24px
+		font-weight: normal
+		width: 100%
+		svg
+			width: 40px
+			height: 40px
+			min-width: 40px
+			margin: 0 0 0 auto
+			border-radius: 12px
+			transition: .3s
+			transform: rotate(-90deg)
+			stroke: #fff
+			padding: 3px 6px
+			background: linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%)
+
+.help-remotely-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-end
+	flex-wrap: wrap
+	padding: 61px 32px
+	position: relative
+	z-index: 1
+	background: linear-gradient(0deg, #EFF7FE, #EFF7FE), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%)
+	border-radius: 24px
+	overflow: hidden
+	h2
+		margin: 0 0 16px
+	.box-text
+		font-size: 18px
+		max-width: 600px
+	.btn-group
+		margin: 24px 0 0
+	&__img
+		position: absolute
+		right: 0
+		bottom: 0
+		z-index: -1
+		max-width: 496px
+		width: 100%
+		@include d-flex
+	&__content
+		max-width: 647px
+		width: 100%
+
+.article-card
+	width: 100%
+	height: 100%
+	line-height: 140%
+	font-size: 20px
+	&__img
+		width: 100%
+		@include d-flex
+		border-radius: 16px
+		height: 200px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 16px
+	&__body
+		width: 100%
+		padding: 20px 0 0
+		display: flex
+		flex-direction: column
+		height: calc( 100% - 200px )
+	&__title
+		color: #161616
+		margin: 0 0 auto
+		&:hover
+			color: $accent
+	&__date
+		margin: 16px 0 0
+		color: #767676
+
+.recommended
+	margin: 40px 0
+	.reviews-gallery
+		flex-wrap: nowrap
+
+.reviews
+	h2
+		margin: 0 0 24px
+
+.reviews-services
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 32px
+	h3
+		width: fit-content
+		margin: 0 32px 0 0
+	&-link
+		display: flex
+		align-items: center
+		color: #363636
+		&:hover
+			color: $accent
+
+.reviews-services-list
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	li
+		display: flex
+		align-items: center
+		padding: 0 8px 0 0
+		margin: 0 8px 0 0
+		border-right: 1px solid #EBEBEB
+		&:last-child
+			padding: 0
+			margin: 0
+			border: none
+	&__icon
+		@include d-flex
+		width: 20px
+		height: 20px
+		margin: 0 8px 0 0
+
+.page-product
+	.nav-breadcrumb
+		.link-share
+			display: none
+	.box-text
+		h3
+			margin: 20px 0
+		ul, ol
+			margin: 0 0 15px
+			font-size: 16px
+			li
+				margin: 0 0 5px
+		a
+			display: initial
+			text-decoration: underline
+			color: #7C0DC6
+	.attention-box
+		.box-text
+			a
+				color: #1874CF
+				text-decoration: none
+	h1
+		font-size: 32px
+		font-weight: 700
+		color: #161616
+
+.page-politics
+	h1
+		margin: 0 0 16px
+
+.page-error
+
+	.box-text
+		max-width: 315px
+		margin: 40px auto
+
+.page-error-wrapper
+	width: 100%
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__img
+		margin: 0 auto
+		@include d-flex
+
+.table-sales, table
+	tr
+		&:nth-child(even)
+			background: #F8F8F8
+
+.contats-wrapper
+	margin: 48px 0 40px
+	width: 100%
+	padding: 48px 24px
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	background: #F8F8F8
+	border-radius: 8px
+	&__content
+		width: calc(100% - 369px)
+		.box-text
+			margin: 8px 0 48px
+			font-size: 14px
+			max-width: 380px
+
+.requisites
+	border-radius: 6px
+	background: #fff
+	max-width: 369px
+	width: 100%
+	padding: 16px 24px
+	line-height: 180%
+
+.contacts-box
+	font-size: 14px
+	margin: 0 0 24px
+	a
+		color: #000
+		font-weight: 600
+		margin: 4px 0 0
+		&:hover
+			color: $accent
+
+// about-products
+.about-products
+	margin: 80px 0 0
+	.box-text
+		margin: 8px 0 32px
+		// max-width: 650px
+	.chapter-card
+		&__img
+			max-width: 230px
+	&__title
+		margin: 0 0 78px
+
+.individual-approach
+	h2
+		margin: 0 0 24px
+
+.difference-about
+	margin: 46px 0 0
+	width: 100%
+	h3
+		margin: 0 0 24px
+
+	.tabs__caption
+		width: 100%
+
+		li
+			margin: 0 16px 16px 0
+			border: 1.3px solid #7C0DC6
+			border-radius: 6px
+			padding: 11px 24px
+			color: #7C0DC6
+			&.active
+				color: #7C0DC6
+				background: #F8F3FC
+				border-color: transparent
+			&:last-child
+				margin: 0 0 16px
+
+	.tabs__content
+		margin: 8px 0 0
+
+.page-about
+	.nav-breadcrumb
+		margin: 0 0 60px
+
+.about-wrapper
+	width: 100%
+	position: relative
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__images
+		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+	&__img
+		padding: 10px
+		width: calc(50% - 4px)
+		margin: 0 auto 8px 0
+		height: 124px
+		@include d-flex
+		border-radius: 24px
+		background: #F8F8F8
+		&:nth-child(even)
+			margin-right: 0
+		&:last-child
+			width: 100%
+			margin: 0
+	&__content
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+	h1
+		margin: 0 0 16px
+		max-width: 660px
+	.box-text
+		font-size: 18px
+
+.about-in-numbers-box
+	width: 100%
+	height: 100%
+	padding: 32px 20px
+	border-radius: 24px
+	font-size: 18px
+	&__head
+		width: 100%
+		padding: 0 0 8px
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 1.5px
+			background: url('../img/in-numbers-line.svg') no-repeat center
+			background-size: 100%
+		h3
+			font-size: 80px
+			font-weight: 500
+			span
+				font-weight: normal
+				font-size: 18px
+	&__body
+		padding: 24px 0 0
+		width: 100%
+		white-space: nowrap
+
+.about-in-numbers-box1
+	background-color: #edf7f3
+	background-image: radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%)
+
+.about-in-numbers-box2
+	background-color: #eff7fe
+	background-image: radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%)
+
+.about-in-numbers-box3
+	background-color: #fdf1ef
+	background-image: radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%)
+
+.about-in-numbers-box4
+	background-color: #edf7f3
+	background-image: radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-122deg,#f5dfff 0%,#9dcffc 100%)
+
+// news page
+.page-news
+	h1
+		margin: 0 0 16px
+	.box-text
+		max-width: 475px
+	.title-wrapper
+		margin: 0 0 8px
+
+.list-filter
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 0 -145px 0 auto
+	li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0
+	&-link
+		padding: 14px 24px
+		border-radius: 6px
+		color: $accent
+		&.active
+			background: $accent
+			color: #fff
+
+.news-row
+	align-items: stretch
+
+.news-box
+	width: 100%
+	height: 100%
+	border-radius: 8px
+	&__image
+		position: relative
+		z-index: 1
+		width: 100%
+		height: 240px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 8px
+		&-footer
+			width: 100%
+			padding: 16px
+			position: absolute
+			left: 0
+			bottom: 0
+	&__body
+		padding: 24px 0 0 0
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+	&__info
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		background: #fff
+		border-radius: 6px
+		padding: 8px 14px
+		color: #161616
+		font-size: 12px
+		font-weight: 300
+		width: fit-content
+		span
+			display: flex
+			align-items: center
+			&:after
+				content: ''
+				display: inline-block
+				margin: 0 8px
+				background: #767676
+				width: 4px
+				height: 4px
+				border-radius: 50%
+			&:last-child
+				&:after
+					display: none
+	&__title
+		font-size: 20px
+		font-weight: 500
+		color: #161616
+		&:hover
+			color: $accent
+	&__view
+		margin: 24px 0 0
+		color: #161616
+		font-size: 12px
+		font-weight: 300
+	&__footer
+		margin: auto 0 0
+	&__report
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: space-between
+		font-size: 12px
+		font-weight: 300
+
+.news-box-max
+	.list-category-news
+		margin: 0 0 0 auto
+		width: fit-content
+	.news-box__body
+		flex-wrap: nowrap
+	.list-category-news
+		flex-wrap: nowrap
+		white-space: nowrap
+
+.news-box-min
+	padding: 24px 16px
+	border-radius: 10px
+	border: 1px solid #F8F3FC
+	display: flex
+	flex-direction: column
+	height: 340px
+	.news-box__body
+		padding: 0
+	.list-category-news
+		margin: 0 0 24px
+		font-size: 12px
+
+.btn-load
+	margin: 0 auto
+
+.list-category-news
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 14px
+	margin: 0 0 16px
+	width: 100%
+	li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0
+		a
+			text-decoration: underline
+			color: $accent
+			&:hover
+				color: $hover
+
+// page-acticle
+.page-acticle
+	overflow-x: hidden
+	h1
+		width: 100%
+		margin: 0 0 16px
+		font-family: "Montserrat", sans-serif
+		font-size: 28px
+		font-weight: 600
+		line-height: 36px
+		letter-spacing: -0.005em
+		text-align: left
+	h2
+		margin: 20px 0 10px
+		font-family: "Montserrat", sans-serif
+		font-size: 22px
+		font-weight: 500
+		line-height: 30px
+		letter-spacing: -0.005em
+		text-align: left
+	h3
+		font-family: "Montserrat", sans-serif
+		font-weight: 500
+		font-size: 20px
+		line-height: 26px
+		letter-spacing: -0.005em
+		text-align: left
+	&-line
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		border-top: 1.3px solid #F8F3FC
+		border-bottom: 1.3px solid #F8F3FC
+		margin: 0 0 32px
+		padding: 16px 0
+
+		&:last-child
+			margin: 0
+		.list-category-news
+			margin: 0 16px 0 auto
+		.list-category-news, .news-box__report
+			width: fit-content
+		.news-box__report
+			justify-content: flex-start
+			div
+				display: flex
+				align-items: center
+				&:after
+					content: ''
+					display: inline-block
+					border-radius: 50%
+					margin: 0 8px
+					background: #000
+					width: 4px
+					height: 4px
+				&:last-child
+					&:after
+						display: none
+		.link-share
+			margin: 0
+	.box-text
+		ol, ul
+			margin: 0 0 15px
+			padding: 0 0 0 30px
+		p
+			line-height: 2
+			// margin: 0 0 15px
+			margin: 0 0 32px
+			font-family: "Montserrat", sans-serif
+			font-size: 18px
+			font-weight: 400
+			line-height: 28px
+			letter-spacing: -0.005em
+			text-align: left
+		a
+			display: initial
+			text-decoration: underline
+			color: #7C0DC6
+		h3
+			margin: 10px 0 15px
+
+		.product-line__icon, .btn
+			display: flex
+			align-items: center
+			justify-content: center
+		.product-line__icon
+			img
+				margin: 0
+				border: none
+				border-radius: 0
+		.product-line__name, .btn
+			text-decoration: none
+		.product-line__name
+			color: #363636
+
+		img
+			margin-bottom: 15px
+			border: 1px solid #F6EAFF
+			border-radius: 8px
+
+.article-image
+	width: 100%
+	margin: 32px 0
+	text-align: center
+	img
+		width: 100%
+		border-radius: 10px
+	&__name
+		margin: 16px auto 0
+
+.comparison
+	margin: 32px 0
+	h3
+		margin: 0 0 16px
+
+.copy-line
+	width: 100%
+	margin: 32px 0
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	background: #F8F8F8
+	border-radius: 8px
+	padding: 16px
+	font-size: 12px
+
+.link-copy
+	@include d-flex
+	width: 24px
+	height: 24px
+	min-width: 24px
+	fill: none
+	stroke: #000
+	margin: 0 0 0 auto
+	&:hover
+		stroke: $accent
+
+.product-line
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	border: 1px solid #F8F3FC
+	border-radius: 8px
+	margin: 20px 0 0
+	padding: 18px 16px
+	&__icon
+		@include d-flex
+		width: 40px
+		height: 40px
+		min-width: 40px
+		border: none
+		border-radius: 0
+		overflow: visible
+		img
+			border: none
+			border-radius: 0
+	&__name
+		color: #363636
+		margin: 0 auto 0 0
+		width: calc(100% - 40px - 108px)
+		padding: 0 16px
+		font-size: 20px
+		font-weight: 500
+		&:hover
+			color: $accent
+
+.page-acticle-line-footer
+	margin: 40px 0 100px
+	.list-rating
+		a
+			fill: #D9D9D9
+
+.article-evaluation, .schare-box
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	font-size: 12px
+	font-weight: 500
+	p
+		margin: 0 24px 0 0
+
+.schare-box
+	margin: 0 auto 0 0
+	&-links
+		display: flex
+		align-items: center
+	&__link
+		display: flex
+		align-items: center
+		color: #363636
+		font-size: 12px
+		font-weight: 300
+		&:hover
+			color: $accent
+		&:after
+			content: ''
+			display: inline-block
+			margin: 0 8px
+			background: #363636
+			border-radius: 50%
+			width: 4px
+			height: 4px
+		&:last-child
+			&:after
+				display: none
+
+.grecaptcha-badge
+	visibility: hidden
+
+// distributions	
+
+.form-search
+	position: relative
+	button
+		background: transparent
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		right: 16px
+		width: 24px
+		height: 24px
+		fill: none
+		stroke: #161616
+		@include d-flex
+	input
+		background: transparent
+		border: 1px solid #F8F3FC
+		border-radius: 12px
+		padding: 0 40px 0 16px
+		box-shadow: none
+		font-size: 16px
+		&::placeholder
+			color: #363636
+	label
+		margin: 0
+	.input-text
+		font-size: 16px
+		color: #363636
+
+.distribution-box
+	width: 100%
+	height: 100%
+	text-align: center
+	color: #363636
+	font-size: 16px
+	border: 1.5px solid transparent
+	background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgba(245, 223, 255, 0.2), rgba(157, 207, 252, 0.2)) border-box
+	border-radius: 16px
+	padding: 32px
+	position: relative
+	z-index: 1
+	display: flex
+	flex-direction: column
+	align-items: center
+
+	&:hover
+		color: $accent
+		.distribution-box
+			&__title
+				color: $accent
+	&__icon
+		@include d-flex
+		margin: 0 auto 20px
+		background: #F8F3FC
+		border-radius: 10px
+		padding: 10px
+		width: 56px
+		min-width: 56px
+		height: 56px
+	&__val
+		position: absolute
+		color: #161616
+		font-size: 12px
+		font-weight: 500
+		padding: 5px
+		@include d-flex
+		border-radius: 8px
+		width: 31px
+		height: 31px
+		top: 8px
+		right: 8px
+		background: linear-gradient(0deg, #EFF7FE, #EFF7FE), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%)
+	&__title
+		font-size: 20px
+		margin: 0 auto 4px
+		color: #161616
+
+.tabs-my
+	.tabs__caption
+		width: 100%
+		font-size: 14px
+		display: flex
+		align-items: flex-start
+		overflow-x: auto
+		li
+			margin: 0 0 16px 0
+			border: none
+			border-radius: 50px
+			padding: 12px 16px
+			color: #363636
+			cursor: pointer
+			&.active
+				color: #7C0DC6
+				background: #F8F3FC
+				border-color: transparent
+			&:last-child
+				margin: 0 0 16px
+
+	.tabs__content
+		margin: 8px 0 0
+
+.distribution-line
+	margin: 0 0 16px
+	flex-wrap: nowrap
+	&:last-child
+		margin: 0
+	.distribution-box__icon
+		margin: 0
+	.product-line__name
+		width: fit-content
+		padding: 0 0 0 24px
+		margin: 0
+		&-category
+			display: block
+			font-size: 14px
+			margin: 4px 0 0
+		&-title
+			font-size: 16px
+			font-weight: 500
+			color: #000
+
+.distribution-line-characteristics
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 auto
+	li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0
+
+.disctribution-content
+	margin: 60px 0 0
+	h3
+		margin: 0 0 24px
+		font-size: 24px
+		font-weight: bold
+
+.distribution-page
+	.product-image
+		height: 346px
+		width: 100%
+	.product-info-box
+		border-bottom: none
+		margin: 0
+		&:last-child
+			padding: 24px 0 0
+			border-top: 1px solid #EBEBEB
+
+.verifed-box
+	display: flex
+	align-items: center
+	justify-content: center
+	background: #E5F4EF
+	padding: 8px
+	color: #219653
+	width: 100%
+	border-radius: 6px
+	&__icon
+		margin: 0 8px 0 0
+		@include d-flex
+		width: 24px
+
+.key-box
+	margin: 0 0 24px
+	.btn
+		width: 100%
+
+.checkout-box-verifed
+	h4
+		width: 100%
+		margin: 0 0 8px
+		font-size: 16px
+
+.checkout-box-toggle
+	width: 100%
+	padding: 8px 0
+	display: none
+	align-items: center
+	justify-content: space-between
+	margin: 0 0 32px
+	font-size: 16px
+	.svg-icon
+		width: 24px
+		height: 24px
+		@include d-flex
+		fill: none
+		stroke: #363636
+
+.download-distribution
+	margin: 24px 0
+	&-link
+		width: 100%
+		display: flex
+		align-items: center
+		padding: 8px 0
+		margin: 0 0 8px
+		color: #000
+		&:hover
+			color: $accent
+
+		&:last-child
+			margin: 0
+		&__name
+			margin: 0 auto 0 12px
+		&__lang
+			@include d-flex
+			color: $accent
+			border-radius: 4px
+			width: 36px
+			height: 24px
+			img
+				border-radius: 4px
+				width: 100%
+
+// distributions end	
+
+// reviews	
+.page-reviews
+	.tabs__caption
+		margin: 32px 0 16px
+		li
+			border-radius: 6px
+			padding: 13.5px 24px
+	.reviews-services-link.color-accent
+		color: $accent
+	.tabs__content
+		>.reviews-box
+			display: none
+			&:nth-child(-n+5)
+				display: block
+	.title-wrapper
+		margin: 0 0 32px
+
+.reviews-box
+	width: 100%
+	border-top: 1px solid #F8F3FC
+	padding: 24px 0 0
+	margin: 24px 0 0
+	&:first-child
+		margin: 0
+
+	&__head, &__body, &__footer
+		width: 100%
+	&__head
+		margin: 0 0 16px
+	&__date
+		color: #767676
+		font-size: 12px
+		margin: 0 0 0 16px
+	&__body
+		.box-text
+			margin: 0 0 10px
+			&:last-child
+				margin: 0
+		h4
+			font-weight: 600
+			margin: 0 0 4px
+			width: 100%
+			color: #363636
+	&__footer
+		display: flex
+		align-items: flex-end
+		flex-wrap: wrap
+	&__navigation
+		display: flex
+		align-items: center
+	&__user
+		margin: 0 0 0 auto
+		display: flex
+		align-items: center
+		text-align: right
+		&-name
+			text-align: right
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+		&-avatar
+			@include d-flex
+			margin: 0 0 0 16px
+			border-radius: 50%
+			width: 48px
+			height: 48px
+			min-width: 48px
+			overflow: hidden
+			background: #F8F8F8
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 50%
+			.icon-avatar
+				// width: 32px
+				height: auto
+				max-height: 100%
+				object-fit: contain
+
+.category-user
+	margin: 2px 0 0
+	// border-bottom: 1px solid #767676
+	font-size: 12px
+	text-decoration: underline
+	color: #767676
+	&:hover
+		color: $accent
+
+.help-product-box
+	.box-text
+		max-width: none
+
+.login-user
+	font-size: 14px
+	font-weight: 500
+	color: #363636
+	display: flex
+	align-items: center
+	&:hover
+		color: $accent
+
+.like-box
+	display: flex
+	align-items: center
+	margin: 0 8px 0 0
+	&__icon
+		@include d-flex
+		width: 24px
+		height: 24px
+		fill: #161616
+	&__value
+		margin: 0 8px 0 0
+	&:last-child
+		margin: 0
+	&:hover
+		color: $accent
+		.like-box__icon
+			fill: $accent
+
+.answer-link
+	margin: 0 0 0 24px
+
+.answer-box
+	margin: 32px 0 0
+	padding: 0 0 0 32px
+	border: none
+	border-left: 1px solid $accent
+	&:first-child
+		margin: 32px 0 0
+
+.btn-load-reviews
+	margin: 8px auto 0
+
+.title-wrapper
+	&__content
+		max-width: 507px
+
+.rating-company
+	margin: 0 0 0 auto
+	&-values
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		margin: 0 0 15px
+
+.rating-val
+	font-size: 24px
+	font-weight: bold
+	line-height: 130%
+	margin: 0 8px 0 0
+	color: #161616
+
+.adding-review
+	display: none
+	&__head
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		margin: 0 0 24px
+		h3
+			width: fit-content
+
+.adding-review-product
+	display: block
+	margin: 32px 0 0
+
+.ordered-product
+	top: 110px
+	width: 100%
+	border-radius: 8px
+	border: 1px solid #F9F2FF
+	@include d-flex
+	position: sticky
+	// padding: 80px 32px
+	.promo-label-list
+		position: absolute
+		top: 0
+		right: 0
+		padding: 10px
+	.promo-label
+		font-weight: normal
+
+.rating-star
+	display: inline-flex
+	// align-items: center
+	margin: 0 0 0 8px
+	position: relative
+	input
+		display: none
+		&:checked
+			~ label svg
+				fill: #F2994A
+	label
+		width: 20px
+		height: 20px
+		@include d-flex
+		margin: 0 8px 0 0
+		position: relative
+		fill: #FCEFCA
+		z-index: 1
+		cursor: pointer
+		&:last-child
+			margin: 0
+		svg
+			pointer-events: none
+
+.radio-group
+	display: flex
+
+.star-rating
+	margin: 0 0 0 8px
+	position: relative
+	input
+		display: none
+
+.star-rating label
+	width: 20px
+	height: 20px
+	margin: 0 8px 0 0
+	position: relative
+	fill: #FCEFCA
+	z-index: 1
+	@include d-flex
+	cursor: pointer
+	&:last-child
+		margin: 0
+	svg
+		fill: #F2994A
+
+.star-rating input:checked + label ~ label svg
+	fill: #FCEFCA
+
+// #recipe-star-0 + label
+// 	display: none
+
+.form-review
+	textarea
+		height: 104px
+
+.label-file
+	width: 100%
+	position: relative
+	z-index: 1
+	padding: 28px 16px
+	text-align: center
+	border: 1px dashed #F9F2FF
+	border-radius: 6px
+	color: #767676
+	cursor: pointer
+	a
+		margin: 0 auto
+	input
+		display: none
+	&.drop-zone--over
+		border: 1px dashed #7429b4
+
+.jFiler
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+
+.dropzone
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+
+#upload-queue
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	align-content: flex-start
+	justify-content: flex-start
+	width: 100%
+	.wrap
+		height: 100px
+		margin: 0 20px 20px 0
+		border: 1px solid #eeeeee
+		border-radius: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		overflow: hidden
+		min-width: 100px
+		position: relative
+		img
+			max-height: 100%
+			max-width: 100%
+			flex-shrink: 0
+		.delete
+			display: block
+			width: 20px
+			height: 20px
+			position: absolute
+			background-color: #ffffffcf
+			border-radius: 20px
+			top: 5px
+			right: 5px
+			.svg-icon
+				stroke: #000
+				cursor: pointer
+
+.fileup-file
+	margin: 0 10px 10px 0
+	&:last-child
+		margin: 0 0 10px
+
+.add-reviews.disabled
+	appearance: none
+	background: #F8F8F8
+	color: #B1B1B1
+	cursor: initial
+	&::before
+		display: none
+
+.tooltip-wrapper
+	position: relative
+	z-index: 2
+	margin: 0 2px 0 0
+	&:hover
+		.tooltip-body
+			display: block
+
+.tooltip-btn
+	width: 24px
+	height: 24px
+	@include d-flex
+
+.tooltip-body
+	position: absolute
+	left: -20px
+	bottom: 100%
+	margin: 0 0 14px
+	max-width: 190px
+	min-width: 190px
+	color: #fff
+	padding: 12px 24px
+	font-size: 12px
+	background: #363636
+	border-radius: 12px
+	text-align: left
+	z-index: 2
+	display: none
+	&::before
+		content: ''
+		position: absolute
+		bottom: -14px
+		left: 18px
+		border-top: 14px solid #363636
+		border-left: 14px solid transparent
+		border-right: 14px solid transparent
+
+.name-user-answer
+	font-weight: 500
+	margin: 0 0 0 8px
+
+.adding-review-user
+	padding: 0 0 0 32px
+	border-left: 1px solid $accent
+	margin: 32px 0 0
+
+.reviews-gallery
+	width: 100%
+	&__item
+		@include d-flex
+		width: 64px
+		height: 64px
+		margin: 14px 24px 0 0
+		img
+			border-radius: 8px
+			width: 100%
+			height: 100%
+			object-fit: cover
+// reviews end	
+
+// page-thanks
+.page-thanks
+	.box-text
+		max-width: 655px
+	.btn
+		margin: 40px 0 0
+
+.loader-checked
+	width: 78px
+	height: 78px
+	background: #fff
+	border-radius: 50%
+	@include d-flex
+	margin: 0 0 32px
+	padding: 20px
+	fill: green
+	position: relative
+	.circle
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		-webkit-transform: rotate(-90deg)
+		transform: rotate(-90deg)
+
+		&__item
+			width: 100%
+			height: 100%
+			position: relative
+
+			// &:before
+			// 	content: ""
+			// 	position: absolute
+			// 	left: 50%
+			// 	top: 50%
+			// 	width: 100%
+			// 	height: 100%
+			// 	-webkit-transform: translate(-50%, -50%)
+			// 	transform: translate(-50%, -50%)
+			// 	border: 20px solid #fff
+			// 	border-radius: 50%
+			// 	z-index: -1
+
+		&__spinner
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 50%
+			top: 50%
+			-webkit-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
+
+			.path
+				stroke: green
+				stroke-linecap: round
+				-webkit-animation: dash 10s linear forwards
+				animation: dash 10s linear forwards
+
+@keyframes dash
+	0%
+		stroke-dasharray: 1, 150
+		stroke-dashoffset: 0
+
+	100%
+		stroke-dasharray: 130, 150
+		stroke-dashoffset: 0
+
+// page-sale-key
+.sale-key
+	&__content
+		max-width: 655px
+		.box-text
+			max-width: 500px
+
+.form-sale
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 40px 0 0att
+	.copy-line
+		margin: 0 16px 0 0
+		max-width: 233px
+		width: 100%
+	.btn
+		margin: 0
+
+.reviews-modal-slider
+	.slick-arrow
+		width: 40px
+		height: 40px
+		border-radius: 12px
+		border: 1px solid #363636
+		padding: 8px
+		stroke: #363636
+		fill: none
+		svg
+			transform: none
+		&:hover
+			background: #7C0DC6
+			border-color: #7C0DC6
+			stroke: #fff
+	.slick-prev
+		left: -65px
+	.slick-next
+		right: -65px
+
+.reviews-modal-slide
+	width: 100%
+	display: flex
+	align-items: start
+	&__photo
+		max-width: 610px
+		height: 610px
+		width: 100%
+		border-radius: 16px
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		overflow: hidden
+		img
+			max-width: 100%
+			width: 100%
+			max-height: 100%
+			// height: 100%
+			object-fit: contain
+			border-radius: 16px
+	&__content
+		width: calc(100% - 610px - 16px)
+		margin: 0 0 0 auto
+		height: auto
+		&:last-child
+			margin: 0 0 0 auto
+	.reviews-product-box__footer
+		margin: 0
+
+.gallery-photo-modal
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 16px 0 0
+	&__item
+		width: 96px
+		height: 96px
+		min-width: 96px
+		@include d-flex
+		margin: 0 8px 8px 0
+		border-radius: 10px
+		cursor: pointer
+		img
+			border-radius: 10px
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+.official-business
+	h2
+		margin: 0 0 8px
+	.box-text
+		margin: 0 0 24px
+		max-width: 411px
+	.btn-group
+		.btn
+			margin: 0 auto 0 0
+			width: calc(50% - 5px)
+			&:last-child
+				margin: 0
+
+.official-requisites-box
+	width: 100%
+	background: #F8F8F8
+	border-radius: 16px
+	padding: 32px
+	font-size: 16px
+	margin: 0 0 16px
+	overflow: hidden
+	position: relative
+	z-index: 1
+	p
+		font-size: 18px
+	h4
+		font-size: 20px
+		width: 100%
+	.list-requisites
+		margin: 24px 0 0
+		li
+			width: 100%
+			display: flex
+			align-items: flex-start
+			margin: 0 0 16px
+			&:last-child
+				margin: 0
+			span
+				min-width: 208px
+				display: block
+				color: #363636
+	&__position
+		margin: 8px 0 0
+		display: block
+		width: 100%
+	.list-requisites-documents
+		margin: 75px 0 0
+
+.official-requisites-bg
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		background: url('../img/requisites-bg.svg') no-repeat center
+		background-size: 100%
+		width: 332px
+		height: 116px
+
+.btn-check-time2
+	display: none
+
+.list-requisites-documents
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	justify-content: space-between
+	li
+		span
+			color: #363636
+			display: block
+			margin: 0 0 8px
+		p
+			font-size: 20px
+			color: #161616
+
+.legislative-wrapper
+	width: 100%
+	padding: 32px
+	border-radius: 24px
+	background-color: #eff7fe
+	background-image: radial-gradient(-109deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-109deg,#f5dfff 0%,#9dcffc 100%)
+
+.legislative-image
+	@include d-flex
+	height: 412px
+	width: 100%
+	border-radius: 16px
+	img
+		border-radius: 16px
+		@include d-flex
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.legislative-content
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	font-size: 18px
+	padding: 32px
+	.btn
+		margin: 24px 0 0
+		color: #161616
+		&:hover
+			color: #fff
+
+.time-tested
+	.box-text
+		margin: 0 0 40px
+	.about-in-numbers-box
+		&__body
+			padding: 28px 0 0
+		.box-text
+			margin: 0
+
+.feedback-wrapper
+	background-color: #eff7fe
+	background-image: radial-gradient(-107deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-107deg,#f5dfff 0%,#9dcffc 100%)
+
+.feedbacks-image
+	height: 359px
+	box-shadow: 0 14px 31px 0 rgba(0,0,0,.04),0 57px 57px 0 rgba(0,0,0,.03),0 128px 77px 0 rgba(0,0,0,.02)
+
+.we-appreciate
+	margin: 0 0 40px
+	&-text
+		color: #161616
+		font-size: 124px
+		font-weight: 300
+		letter-spacing: -1px
+		line-height: .9
+		width: 100%
+		span
+			font-weight: normal
+
+.we-appreciate-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-end
+	.we-appreciate-text
+		width: fit-content
+		margin: 0 auto 0 0
+	.box-text
+		max-width: 431px
+		font-size: 18px
+
+.we-appreciate-text2
+	text-align: right
+
+.help-section
+	padding: 32px 0
+	display: none
+
+.page-faq
+	h1
+		margin: 0 0 48px
+		width: 100%
+	.tabs__caption-product
+		width: fit-content
+		li
+			flex: none
+			padding: 10px 24px
+
+.page-faq-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	&__content
+		width: calc(100% - 310px)
+		padding: 0 32px 0 0
+	&__sidebar
+		max-width: 310px
+		width: 100%
+
+.faq-category
+	width: 100%
+	margin: 0 0 40px
+	&:last-child
+		margin: 0
+	&__name
+		margin: 0 0 0 28px
+		width: fit-content
+		padding: 8px 16px
+		color: #3D3D3D
+		background-image: radial-gradient(-101deg,#f5dfff 0%,#9dcffc 100%),radial-gradient(-101deg,#f5dfff 0%,#9dcffc 100%)
+		border-radius: 8px 8px 0 0
+		background: linear-gradient(to right, rgba(245, 223, 255, .2) 0%, rgba(157, 207, 252, .2) 100%)

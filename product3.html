@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DIGI-KEYS</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+			<div class="overlay-bg"></div>
+			<div class="mobile-menu">
+				<div class="mobile-menu__head">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="mobile-menu__close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></div>
+				</div>
+
+				<div class="mobile-menu__body">
+					<form method="post" class="form-search">
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+						<label><input type="text" name="search" placeholder="Что вы ищите?"></label>
+					</form>
+					<ul class="mobile-menu-list my-ul">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<svg class="svg-icon mobile-menu-list__icon">
+									<use xlink:href="img/sprite.svg#burger-icon"></use>
+								</svg>
+								<span>Каталог</span>
+								<svg class="svg-icon svg-icon__arrow">
+									<use xlink:href="img/sprite.svg#arrow-menu"></use>
+								</svg>
+							</a>
+
+							<div class="dropdown-menu">
+								<ul class="sidebar-menu my-ul">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Microsoft Windows</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle"">
+																					<span>Microsoft Office</span>
+																					<svg class=" svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Офисные приложения</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Офисные приложения</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Windows Server</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Windows Server</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Антивирусы</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Антивирусы</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Прочее</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Прочее</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<svg class="svg-icon mobile-menu-list__icon stroke-none">
+									<use xlink:href="img/sprite.svg#book-icon"></use>
+								</svg>
+								<span>Информация</span>
+
+								<svg class="svg-icon svg-icon__arrow">
+									<use xlink:href="img/sprite.svg#arrow-menu"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="about.html" class="dropdown-item">О магазине</a>
+								<a href="information.html" class="dropdown-item">Юр. лицам</a>
+								<a href="article.html" class="dropdown-item">Статьи</a>
+							</div>
+						</li>
+						<li><a href="distributions.html">
+								<svg class="svg-icon mobile-menu-list__icon">
+									<use xlink:href="img/sprite.svg#code-icon"></use>
+								</svg>
+								Дистрибутивы</a></li>
+						<li><a href="contacts.html">
+								<svg class="svg-icon mobile-menu-list__icon">
+									<use xlink:href="img/sprite.svg#mail-mobile"></use>
+								</svg>
+								Контакты</a></li>
+					</ul>
+
+					<div class="mobile-menu__footer">
+						<a href="tel:+78003019309" class="btn btn-border-accent link-phone">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+						</a>
+						<a href="#" class="btn btn-border-accent link-tg"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#tg-mobile"></use>
+							</svg></a>
+						<a href="#" class="btn btn-sm btn-light-accent">Написать</a>
+					</div>
+				</div>
+			</div>
+
+			<header>
+				<div class="container">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="dropdown-catalog">
+						<a href="#" class="btn btn-accent btn-catalog">
+							<svg class="svg-icon btn-catalog__icon">
+								<use xlink:href="img/sprite.svg#burger-icon"></use>
+							</svg>
+							<svg class="svg-icon btn-catalog__icon btn-catalog__icon-close">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+							<span class="btn-catalog__text">Каталог</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-catalog">
+							<ul class="sidebar-menu my-ul">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle">
+										<span>Microsoft Windows</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+										<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle"">
+														<span>Microsoft Office</span>
+														<svg class=" svg-icon dropdown-toggle__icon">
+										<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+										<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle">
+										<span>Офисные приложения</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Офисные приложения</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle">
+										<span>Windows Server</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Windows Server</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle">
+										<span>Антивирусы</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Антивирусы</a>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle">
+										<span>Прочее</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Прочее</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<nav class="nav-menu">
+						<ul class="menu my-ul">
+							<li class="dropdown-my">
+								<a href="#" class="dropdown-my-toggle">
+									<span>Информация</span>
+									<svg class="svg-icon dropdown-toggle__icon">
+										<use xlink:href="img/sprite.svg#arrow-menu"></use>
+									</svg>
+								</a>
+								<div class="dropdown-menu">
+									<a href="about.html" class="dropdown-item">О магазине</a>
+									<a href="information.html" class="dropdown-item">Юр. лицам</a>
+									<a href="article.html" class="dropdown-item">Статьи</a>
+								</div>
+							</li>
+							<li><a href="distributions.html">Дистрибутивы</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<div class="search-wrapper">
+						<div class="btn-search"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></div>
+
+						<form method="post" class="form-search">
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+							<label><input type="text" name="search" placeholder="Что вы ищите?"></label>
+						</form>
+
+						<div class="search-result">
+							<div class="search-result__box">
+								<a href="catalog.html" class="search-result__category">Каталог</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="product.html">Microsoft Office 2021</a></li>
+									<li><a href="product.html">Microsoft Office 2019</a></li>
+									<li><a href="product.html">Microsoft Office 2018</a></li>
+								</ul>
+							</div>
+							<div class="search-result__box">
+								<a href="article.html" class="search-result__category">Статьи</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="article.html">Инструкция по установке Microsoft Office</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<a href="tel:+78003019309" class="phone">+7 800 301 93 09</a>
+
+					<a href="#" class="link-tg btn btn-border-accent"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#tg-mobile"></use>
+						</svg></a>
+
+					<a href="mailto:" class="btn btn-sm btn-mail btn-light-accent">Написать</a>
+
+					<a href="#" class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+					</a>
+				</div>
+			</header>
+
+			<section class="page page-product">
+				<div class="container">
+
+					<nav class="nav-breadcrumb">
+						<ul class="breadcrumb my-ul">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="catalog.html">Windows</a></li>
+							<li><span>Microsoft Windows 10</span></li>
+						</ul>
+						<a href="#" class="link-share">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#share-icon"></use>
+							</svg>
+						</a>
+					</nav>
+
+					<div class="w-100">
+
+						<div class="row">
+
+							<div class="col-75">
+								<div class="w-100">
+									<div class="row">
+										<div class="col-45">
+											<div class="product-image">
+												<ul class="promo-label-list my-ul">
+													<li><span class="sale-value">-15%</span></li>
+													<li>
+														<div class="promo-label promo-label-hit">
+															<img src="img/fire-icon.png" alt="">
+															<span>Хит продаж</span>
+														</div>
+													</li>
+													<li class="promo-label-list-article">
+														<span>DK-MW-10P</span>
+													</li>
+												</ul>
+												<img src="img/product1.png" alt="">
+											</div>
+										</div>
+										<div class="col-55">
+											<div class="product-info-box">
+												<div class="product-info-box__head">
+													<h1>Microsoft Windows 11 Professional
+														<!-- <span class="sale-value">-15%</span> -->
+													</h1>
+													<div class="rating">
+														<ul class="list-rating my-ul">
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li class="star0"><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li class="star0"><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+														</ul>
+														<a href="#" class="rating-value">4.5</a>
+													</div>
+
+
+													<!-- <a href="#" class="link-share">
+														<svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#share-icon"></use>
+														</svg>
+													</a> -->
+												</div>
+												
+												<div class="product-info-box__footer">
+													<ul class="list-characteristics my-ul">
+														<li>
+															<p>Артикул:</p>
+															<span>DK-MW-10P</span>
+														</li>
+													</ul>
+													<div class="status-availability">
+														<img src="img/check.svg" alt="">
+														<span>В наличии</span>
+													</div>
+													<div class="delivery-instant">
+														<img src="img/rocket.png" alt="">
+														<span>Моментальная доставка</span>
+													</div>
+													<div class="payments-method"><img src="img/paymentsMethod.svg" alt=""></div>
+													<!-- <ul class="list-payment my-ul">
+														<li><img src="img/pay1.svg" alt=""></li>
+														<li><img src="img/pay2.svg" alt=""></li>
+														<li><img src="img/pay3.svg" alt=""></li>
+														<li><img src="img/pay4.svg" alt=""></li>
+														<li><img src="img/pay5.svg" alt=""></li>
+														<li><img src="img/pay6.svg" alt=""></li>
+														<li><img src="img/pay7.svg" alt=""></li>
+													</ul> -->
+												</div>
+											</div>
+
+											<div class="product-info-box">
+												<div class="btn-group">
+													<a href="#" class="btn btn-sm btn-light-accent">Proffesional</a>
+													<a href="#" class="btn btn-sm btn-border-light-accent">Home</a>
+												</div>
+
+												<a href="#" class="difference">
+													<img src="img/question.svg" alt="">
+													<!-- <span>В чём разница?</span> -->
+												</a>
+
+												<div class="product-info-box__footer">
+													<form method="post" class="checkout-box">
+														<h3>Оформление заказа</h3>
+														<ul class="list-characteristics my-ul">
+															<li>
+																<p>Артикул:</p>
+																<span>DK-MW-10P</span>
+															</li>
+															<li>
+																<p>Стоимость</p>
+																<span>
+																	<div class="price">
+																		<div class="old-price">1990 ₽</div>
+																		<div class="new-price">1750 ₽</div>
+																	</div>
+																</span>
+															</li>
+														</ul>
+
+														<label>
+															<span class="input-text">E-mail</span>
+															<input type="text" name="mail">
+														</label>
+														<div class="buy-wrapper">
+															<div class="amount">
+																<span class="down"><img src="img/minus.svg" alt=""></span>
+																<input type="text" value="1" />
+																<span class="up"><img src="img/plus.svg" alt=""></span>
+															</div>
+															<a href="#thanksModal" class="btn btn-sm btn-accent open_modal">Купить</a>
+														</div>
+
+														<div class="promo-wrapper">
+															<a href="#" class="promo-link">
+																<img src="img/star-promo.svg" alt="">
+																<span>У меня есть промокод</span>
+															</a>
+
+															<label class="promo-wrapper__label">
+																<span class="input-text">Введите промокод</span>
+																<input type="text" name="code">
+															</label>
+														</div>
+													</form>
+												</div>
+											</div>
+
+											<div class="product-info-box d-pc">
+												<div class="logo-partner"><img src="img/microsoft.svg" alt=""></div>
+												<div class="box-text">
+													<p>Партнёр официального дистрибьютора Microsoft</p>
+												</div>
+											</div>
+
+											<div class="product-info-box">
+												<ul class="list-characteristics my-ul">
+													<li>
+														<p>Тип поставки</p>
+														<span>ESD (электронный ключ)</span>
+													</li>
+													<li>
+														<p>Срок действия</p>
+														<span>Бессрочно</span>
+													</li>
+													<li>
+														<p>Производитель</p>
+														<span>Microsoft</span>
+													</li>
+													<li>
+														<p>Срок действия</p>
+														<span>Бессрочно</span>
+													</li>
+													<li>
+														<p>Производитель</p>
+														<span>Microsoft</span>
+													</li>
+													<li>
+														<p>Версия</p>
+														<span>Windows 10</span>
+													</li>
+													<li>
+														<p>Разрядность</p>
+														<span>x32/x64</span>
+													</li>
+													<li>
+														<p>Тип ключа</p>
+														<span>Retail (розничная продажа)</span>
+													</li>
+													<li>
+														<p>Разработчик</p>
+														<span>Microsoft</span>
+													</li>
+													<li>
+														<p>Язык интерфейса</p>
+														<span>Русский, Английский и ещё 89 языков</span>
+													</li>
+
+												</ul>
+
+												<a href="#" class="btn btn-sm btn-border-light-accent btn-download-file">Скачать дистрибутив</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="w-100">
+									<div class="information-box bg-light-green">
+										<div class="box-text">
+											<p>Не можете определиться с выбором продукта или услуги? Напишите нам в чат, и мы с удовольствием
+												поможем вам выбрать
+												подходящий вариант.</p>
+										</div>
+
+										<a href="#errorModal" class="btn btn-white btn-sm open_modal">Написать в чат</a>
+									</div>
+
+									<div class="tabs">
+										<ul class="tabs__caption tabs__caption-product my-ul">
+											<li class="active">
+												Описание
+											</li>
+											<li>
+												Сравнение Pro и Home
+											</li>
+											<li>Оплата и доставка</li>
+											<li>Гарантии</li>
+										</ul>
+
+										<div class="tabs__content active">
+											<div class="box-text">
+												<p>Microsoft Windows 10 — операционная система для широкого набора устройств: ПК, серверов,
+													телевизоров, планшетов и
+													смартфонов.</p>
+												<p>Привычный интерфейс Windows в новой версии имеет ещё больше функциональных возможностей:</p>
+												<ul>
+													<li>Меню «Пуск» вернулось на своё законное место и теперь содержит не только список последних
+														запущенных программ, но и
+														иконки-плитки универсальных приложений, а также обновлённую функцию поиска.</li>
+													<li>Windows 10 поддерживает 2 вида интерфейсов — обычный и сенсорный, используя функцию
+														Continuum
+														пользователь может удобно
+														и быстро переключатся между ними.</li>
+													<li>Новая ОС от Microsoft поддерживает 4K и 8K — экраны.</li>
+													<li>Теперь все приложения на ПК запускаются в окнах. Как и в Windows 7, окна можно
+														сворачивать,
+														изменять их размеры и
+														закрывать.</li>
+													<li>Функция Task View позволяет пользователю просматривать на экране окна всех запущенных
+														приложений с возможностью быстрой
+														смены активного окна.</li>
+													<li>С помощью голосового помощника Cortana в Windows 10 легко искать информацию в сети
+														Интернет,
+														открывать файлы и
+														приложения, отправлять сообщения и т.д.</li>
+													<li>В версиях для планшетов и смартфонов улучшена функция Snap — теперь на экране одновременно
+														может быть открыто до 4
+														приложений.</li>
+													<li>В Windows 10 окна приложений или группы приложений для разных рабочих процессов можно
+														размещать на виртуальных рабочих
+														столах. Для более эффективной работы на экран можно вывести все рабочие столы или
+														переключаться
+														между ними.</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="tabs__content">
+											<table class="table-products-title">
+												<thead>
+													<tr>
+														<th>Windows 10 Home</th>
+														<th>Windows 10 Pro</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colspan="2">
+															<table class="table table-products">
+																<thead>
+																	<tr>
+																		<th colspan="2">
+																			<p>Производительность и взаимодействие с пользователем</p>
+																		</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr rowspan="2" class="bg-grey">
+																		<td colspan="2" class="table-products__subtitle">
+																			<p>Меню «Пуск» и живые плитки</p>
+																		</td>
+																	</tr>
+																	<tr class="tr-answer bg-grey">
+																		<td>Да</td>
+																		<td>Да</td>
+																	</tr>
+																	<tr rowspan="2">
+																		<td colspan="2" class="table-products__subtitle">
+																			<p>Режим планшета</p>
+																		</td>
+																	</tr>
+																	<tr class="tr-answer">
+																		<td>Да</td>
+																		<td>Да</td>
+																	</tr>
+
+																	<tr rowspan="2" class="bg-grey">
+																		<td colspan="2" class="table-products__subtitle">
+																			<p>Microsoft Edge</p>
+																		</td>
+																	</tr>
+																	<tr class="tr-answer bg-grey">
+																		<td>Да</td>
+																		<td>Да</td>
+																	</tr>
+
+																	<tr rowspan="2">
+																		<td colspan="2" class="table-products__subtitle">
+																			<p>Windows Ink</p>
+																		</td>
+																	</tr>
+																	<tr class="tr-answer">
+																		<td>Да</td>
+																		<td>Да</td>
+																	</tr>
+
+																	<tr rowspan="2" class="bg-grey">
+																		<td colspan="2" class="table-products__subtitle">
+																			<p>Continuum для телефона</p>
+																		</td>
+																	</tr>
+																	<tr class="tr-answer bg-grey">
+																		<td>Да</td>
+																		<td>Да</td>
+																	</tr>
+
+																	<tr rowspan="2">
+																		<td colspan="2" class="table-products__subtitle">
+																			<p>Кортана</p>
+																		</td>
+																	</tr>
+																	<tr class="tr-answer">
+																		<td>Да</td>
+																		<td>Да</td>
+																	</tr>
+
+																	<tr rowspan="2" class="bg-grey">
+																		<td colspan="2" class="table-products__subtitle">
+																			<p>Microsoft Edge</p>
+																		</td>
+																	</tr>
+																	<tr class="tr-answer bg-grey">
+																		<td>Да</td>
+																		<td>Да</td>
+																	</tr>
+
+																	<tr rowspan="2">
+																		<td colspan="2" class="table-products__subtitle">
+																			<p>Windows Ink</p>
+																		</td>
+																	</tr>
+																	<tr class="tr-answer">
+																		<td>Да</td>
+																		<td>Да</td>
+																	</tr>
+
+																</tbody>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+
+										<div class="tabs__content">
+											<div class="box-text">
+												<p>Microsoft Windows 10 — операционная система для широкого набора устройств: ПК, серверов,
+													телевизоров, планшетов и
+													смартфонов.</p>
+												<p>Привычный интерфейс Windows в новой версии имеет ещё больше функциональных возможностей:</p>
+												<ul>
+													<li>Меню «Пуск» вернулось на своё законное место и теперь содержит не только список последних
+														запущенных программ,
+														но и
+														иконки-плитки универсальных приложений, а также обновлённую функцию поиска.</li>
+													<li>Windows 10 поддерживает 2 вида интерфейсов — обычный и сенсорный, используя функцию
+														Continuum
+														пользователь
+														может
+														удобно
+														и быстро переключатся между ними.</li>
+													<li>Новая ОС от Microsoft поддерживает 4K и 8K — экраны.</li>
+													<li>Теперь все приложения на ПК запускаются в окнах. Как и в Windows 7, окна можно
+														сворачивать,
+														изменять их
+														размеры
+														и
+														закрывать.</li>
+													<li>Функция Task View позволяет пользователю просматривать на экране окна всех запущенных
+														приложений с
+														возможностью
+														быстрой
+														смены активного окна.</li>
+													<li>С помощью голосового помощника Cortana в Windows 10 легко искать информацию в сети
+														Интернет,
+														открывать файлы и
+														приложения, отправлять сообщения и т.д.</li>
+													<li>В версиях для планшетов и смартфонов улучшена функция Snap — теперь на экране одновременно
+														может быть открыто
+														до
+														4
+														приложений.</li>
+													<li>В Windows 10 окна приложений или группы приложений для разных рабочих процессов можно
+														размещать на виртуальных
+														рабочих
+														столах. Для более эффективной работы на экран можно вывести все рабочие столы или
+														переключаться
+														между ними.</li>
+												</ul>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="box-text">
+												<p>Microsoft Windows 10 — операционная система для широкого набора устройств: ПК, серверов,
+													телевизоров, планшетов и
+													смартфонов.</p>
+												<p>Привычный интерфейс Windows в новой версии имеет ещё больше функциональных возможностей:</p>
+												<ul>
+													<li>Меню «Пуск» вернулось на своё законное место и теперь содержит не только список последних
+														запущенных программ,
+														но и
+														иконки-плитки универсальных приложений, а также обновлённую функцию поиска.</li>
+													<li>Windows 10 поддерживает 2 вида интерфейсов — обычный и сенсорный, используя функцию
+														Continuum
+														пользователь
+														может
+														удобно
+														и быстро переключатся между ними.</li>
+													<li>Новая ОС от Microsoft поддерживает 4K и 8K — экраны.</li>
+													<li>Теперь все приложения на ПК запускаются в окнах. Как и в Windows 7, окна можно
+														сворачивать,
+														изменять их
+														размеры
+														и
+														закрывать.</li>
+													<li>Функция Task View позволяет пользователю просматривать на экране окна всех запущенных
+														приложений с
+														возможностью
+														быстрой
+														смены активного окна.</li>
+													<li>С помощью голосового помощника Cortana в Windows 10 легко искать информацию в сети
+														Интернет,
+														открывать файлы и
+														приложения, отправлять сообщения и т.д.</li>
+													<li>В версиях для планшетов и смартфонов улучшена функция Snap — теперь на экране одновременно
+														может быть открыто
+														до
+														4
+														приложений.</li>
+													<li>В Windows 10 окна приложений или группы приложений для разных рабочих процессов можно
+														размещать на виртуальных
+														рабочих
+														столах. Для более эффективной работы на экран можно вывести все рабочие столы или
+														переключаться
+														между ними.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="information-box attention-box">
+										<div class="attention-box__icon"><img src="img/attention-icon.svg" alt=""></div>
+										<div class="attention-box__text">
+											<h3>Внимание</h3>
+											<div class="box-text">
+												<p>Привязка ключа к учётной записи происходит на сайте <a href="#" class="link-inline"
+														target="_blank">setup.office.com</a>. Инструкцию по установке вы получите вместе с
+													приобретенным товаром. Office 2021 Pro Plus
+													работает только на операционной
+													системе Windows 10 и Windows 11! Цифровые товары обмену и возврату не подлежат.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="faq m-80">
+										<h2>FAQ</h2>
+
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Что такое лицензионное ПО?</h3>
+												<svg class="svg-icon panel_heading-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют
+														юридические
+														права на
+														использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту
+														прав
+														интеллектуальной
+														собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+														использование и распространение.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Какой вид лицензии подходит для моих потребностей?</h3>
+												<svg class="svg-icon panel_heading-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют
+														юридические
+														права на
+														использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту
+														прав
+														интеллектуальной
+														собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+														использование и распространение.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Что включает в себя стоимость продукта?</h3>
+												<svg class="svg-icon panel_heading-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют
+														юридические
+														права на
+														использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту
+														прав
+														интеллектуальной
+														собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+														использование и распространение.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Могу ли я вернуть продукт, если он не работает?</h3>
+												<svg class="svg-icon panel_heading-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют
+														юридические
+														права на
+														использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту
+														прав
+														интеллектуальной
+														собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+														использование и распространение.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Могу ли я получить помощь в установке и настройке программного обеспечения?</h3>
+												<svg class="svg-icon panel_heading-icon">
+													<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+												</svg>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>Лицензионное ПО (программное обеспечение) - это компьютерные программы, которые имеют
+														юридические
+														права на
+														использование, распространение и изменение. Лицензионное ПО обеспечивает правовую защиту
+														прав
+														интеллектуальной
+														собственности разработчиков программного обеспечения и обычно имеет ограничения на его
+														использование и распространение.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="articles-product">
+										<h2>Статьи о товаре</h2>
+
+										<div class="w-100">
+											<div class="row row-scroll">
+												<div class="col-30 mb-40">
+													<div class="article-card">
+														<a href="#" class="article-card__img"><img src="img/article.jpg" alt=""></a>
+														<div class="article-card__body">
+															<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже
+																лицензии на Microsoft 365 и Microsoft Office</a>
+														</div>
+													</div>
+												</div>
+												<div class="col-30 mb-40">
+													<div class="article-card">
+														<a href="#" class="article-card__img"><img src="img/article.jpg" alt=""></a>
+														<div class="article-card__body">
+															<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже
+																лицензии на Microsoft
+																365 и Microsoft Office</a>
+														</div>
+													</div>
+												</div>
+												<div class="col-30 mb-40">
+													<div class="article-card">
+														<a href="#" class="article-card__img"><img src="img/article.jpg" alt=""></a>
+														<div class="article-card__body">
+															<a href="#" class="article-card__title">У российских ретейлеров снова появились в продаже
+																лицензии на Microsoft
+																365 и Microsoft Office</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="recommended">
+										<h2>Рекомендуем к покупке</h2>
+
+										<div class="w-100">
+											<div class="row">
+												<div class="col-30 mb-40">
+													<div class="product-card">
+														<ul class="promo-label-list my-ul">
+															<li>
+																<div class="promo-label promo-label-hit">
+																	<img src="img/fire-icon.png" alt="">
+																	<span>Хит продаж</span>
+																</div>
+															</li>
+														</ul>
+														<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+														<div class="product-card__body">
+															<div class="product-card__head">
+																<a href="product.html" class="product-card__title">Microsoft Windows 10 Professional
+																	x32/x64</a>
+																<div class="price-wrapper">
+																	<div class="price">1780 ₽</div>
+																</div>
+															</div>
+
+															<div class="product-card__footer">
+																<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-30 mb-40">
+													<div class="product-card">
+														<ul class="promo-label-list my-ul">
+															<li>
+																<div class="promo-label promo-label-hit">
+																	<img src="img/fire-icon.png" alt="">
+																	<span>Хит продаж</span>
+																</div>
+															</li>
+														</ul>
+														<a href="product.html" class="product-card__img"><img src="img/product2.png" alt=""></a>
+														<div class="product-card__body">
+															<div class="product-card__head">
+																<a href="product.html" class="product-card__title">Microsoft Windows 10 Home x32/x64</a>
+																<div class="price-wrapper">
+																	<div class="price">1580 ₽</div>
+																</div>
+															</div>
+
+															<div class="product-card__footer">
+																<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-30 mb-40">
+													<div class="product-card">
+														<ul class="promo-label-list my-ul">
+															<li>
+																<div class="promo-label promo-label-hit">
+																	<img src="img/fire-icon.png" alt="">
+																	<span>Хит продаж</span>
+																</div>
+															</li>
+														</ul>
+														<a href="product.html" class="product-card__img"><img src="img/product3.png" alt=""></a>
+														<div class="product-card__body">
+															<div class="product-card__head">
+																<a href="product.html" class="product-card__title">Microsoft Office 2021 Professional
+																	Plus</a>
+																<div class="price-wrapper">
+																	<div class="price">1980 ₽</div>
+																</div>
+															</div>
+
+															<div class="product-card__footer">
+																<a href="product.html" class="btn btn-sm btn-light-accent">Подробнее</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="reviews mb-60">
+										<h2>Отзывы наших покупателей</h2>
+										<div class="w-100">
+											<div class="row">
+												<div class="col-75">
+													<div class="reviews-services">
+														<h3>С других сервисов:</h3>
+														<ul class="reviews-services-list my-ul">
+															<li>
+																<a href="#" class="reviews-services-link">
+																	<span class="reviews-services-list__icon"><img src="img/services-reviews1.svg"
+																			alt=""></span>
+																	<span>Tustpilot</span>
+																</a>
+															</li>
+															<li>
+																<a href="#" class="reviews-services-link">
+																	<span class="reviews-services-list__icon"><img src="img/services-reviews2.svg"
+																			alt=""></span>
+																	<span>Яндекс</span>
+																</a>
+															</li>
+															<li>
+																<a href="#" class="reviews-services-link">
+																	<span class="reviews-services-list__icon"><img src="img/services-reviews3.svg"
+																			alt=""></span>
+																	<span>Отзывы.Ру</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="seo-section">
+										<h2>Только оригинальный софт по лучшим ценам!</h2>
+										<div class="box-text">
+											<p>Купить софт в нашем интернет-магазине — значит выбрать надежность и качество. Мы работаем на
+												рынке
+												более 3 лет, за это
+												время мы завоевали доверие своих клиентов. Мы гарантируем, что все продукты, которые мы продаем,
+												являются качественными
+												и соответствуют всем требованиям. В нашем интернет-магазине вы найдете только лучшее программное
+												обеспечение. Мы также
+												предоставляем гарантию активации на все наши продукты, что дает вам дополнительную уверенность в
+												качестве и надежности
+												нашего товара. Не ищите дальше, выбирайте наш интернет-магазин и получайте только лучшее
+												программное
+												обеспечение.</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-25 d-pc">
+								<form method="post" class="checkout-box">
+									<h3>Оформление заказа</h3>
+									<ul class="list-characteristics my-ul">
+										<!-- <li>
+											<p>Артикул:</p>
+											<span>DK-MW-10P</span>
+										</li>-->
+										<li>
+											<p>Стоимость</p>
+											<span>
+												<div class="price">
+													<div class="old-price">1990 ₽</div>
+													<div class="new-price">1750 ₽</div>
+												</div>
+											</span>
+										</li>
+									</ul>
+
+									<label>
+										<span class="input-text">E-mail</span>
+										<input type="text" name="mail">
+									</label>
+
+									<label>
+										<span class="input-text">Промокод</span>
+										<input type="text" name="promocode">
+									</label>
+
+
+									<!-- <div class="status-availability">
+										<img src="img/check.svg" alt="">
+										<span>В наличии</span>
+									</div>
+
+									<div class="promo-wrapper">
+										<a href="#" class="promo-link">
+											<img src="img/star-promo.svg" alt="">
+											<span>У меня есть промокод</span>
+										</a>
+
+										<label class="promo-wrapper__label">
+											<span class="input-text">Введите промокод</span>
+											<input type="text" name="code">
+										</label>
+									</div> -->
+
+									<div class="buy-wrapper">
+										<div class="amount">
+											<span class="down"><img src="img/minus.svg" alt=""></span>
+											<input type="text" value="1" />
+											<span class="up"><img src="img/plus.svg" alt=""></span>
+										</div>
+										<!-- <a href="#thanksModal" class="btn btn-sm btn-buy btn-accent open_modal">Купить</a> -->
+										<a href="#thanksModal" class="btn btn-sm btn-buy btn-green open_modal">
+											<!-- <svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#check"></use>
+											</svg> -->
+											<span>Купить</span></a>
+									</div>
+									<!-- <div class="payments-method"><img src="img/paymentsMethod.svg" alt=""></div> -->
+									<!-- <ul class="list-payment my-ul">
+										<li><img src="img/pay1.svg" alt=""></li>
+										<li><img src="img/pay2.svg" alt=""></li>
+										<li><img src="img/pay3.svg" alt=""></li>
+										<li><img src="img/pay4.svg" alt=""></li>
+										<li><img src="img/pay5.svg" alt=""></li>
+										<li><img src="img/pay6.svg" alt=""></li>
+										<li><img src="img/pay7.svg" alt=""></li>
+									</ul> -->
+									<div class="consent">
+										<p>Отправляя данные вы соглашаетесь с <a href="#" class="d-inline color-accent text-decoration"
+												target="_blank">политикой конфиденциальности</a>
+											и <a href="#" class="d-inline color-accent text-decoration" target="_blank">договором оферты</a>.
+										</p>
+									</div>
+									<div class="delivery-instant">
+										<img src="img/rocket.png" alt="">
+										<span>Моментальная доставка</span>
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="footer-box">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="copyright">
+						<p>© DIGI-KEYS.RU, 2021-2023.</p>
+						<p>Все права защищены</p>
+					</div>
+				</div>
+
+				<div class="footer-box">
+					<h3 class="footer-box__title">Каталог товаров</h3>
+					<h3 class="footer-box__title footer-box__title-toggle">Каталог товаров</h3>
+					<ul class="footer-box__menu my-ul">
+						<li><a href="#">Microsoft Windows</a></li>
+						<li><a href="#">Microsoft Office</a></li>
+						<li><a href="#">Windows Server</a></li>
+						<li><a href="#">Офисное ПО</a></li>
+						<li><a href="#">Антивирусы</a></li>
+						<li><a href="#">Прочее</a></li>
+					</ul>
+				</div>
+				<div class="footer-box">
+					<h3 class="footer-box__title">Информация</h3>
+					<h3 class="footer-box__title footer-box__title-toggle">Информация</h3>
+					<ul class="footer-box__menu my-ul">
+						<li><a href="#">О магазине</a></li>
+						<li><a href="#">Юр. лицам</a></li>
+						<li><a href="#">Статьи</a></li>
+					</ul>
+				</div>
+				<div class="footer-box">
+					<h3 class="footer-box__title">Контакты</h3>
+					<a href="mailto:sale@digi-keys.ru" class="mail-link">
+						<svg class="svg-icon mail-link__icon">
+							<use xlink:href="img/sprite.svg#mail"></use>
+						</svg>
+						<span>sale@digi-keys.ru</span>
+					</a>
+					<a href="tel:+78003019309" class="phone-link">
+						<svg class="svg-icon phone-link__icon">
+							<use xlink:href="img/sprite.svg#phone"></use>
+						</svg>
+						<span>8 800 301 93 09</span>
+					</a>
+					<ul class="my-ul document-list">
+						<li>ОГРН: 1053600591197</li>
+						<li>ИНН: 7743013902</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="modal__div" id="thanksModal">
+		<div class="modal__wrapper">
+			<span class="modal__close"><svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#close"></use>
+				</svg></span>
+
+			<div class="check-image"><img src="img/check.svg" alt=""></div>
+
+			<h3>Заказ принят</h3>
+
+			<div class="box-text text-center">
+				<p>Как только мы получим подтверждение оплаты, письмо автоматически отправиться на ваш e-mail</p>
+			</div>
+
+			<a href="#" class="btn btn-light-accent btn-close-modal">Отлично</a>
+		</div>
+	</div>
+
+	<div class="modal__div" id="errorModal">
+		<div class="modal__wrapper">
+			<span class="modal__close"><svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#close"></use>
+				</svg></span>
+
+			<div class="check-image"><img src="img/nocheck.svg" alt=""></div>
+
+			<h3>Возникла ошибка</h3>
+
+			<div class="box-text text-center">
+				<p>Извините, произошла ошибка при оплате заказа. Пожалуйста, проверьте правильность введенных данных и повторите
+					попытку.</p>
+			</div>
+
+			<a href="#" class="btn btn-light-accent btn-close-modal">Повторить</a>
+		</div>
+	</div>
+	<!-- Пoдлoжкa -->
+	<div class="overlay"></div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.inputmask.latest.min.js"></script>
+	<script src="js/imask.min.js"></script>
+	<script src="js/countUp.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

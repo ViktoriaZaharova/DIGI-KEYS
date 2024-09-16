@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DIGI-KEYS</title>
+
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<div class="overlay-bg"></div>
+			<div class="mobile-menu">
+				<div class="mobile-menu__head">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="mobile-menu__close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></div>
+				</div>
+
+				<div class="mobile-menu__body">
+					<div class="search-wrapper">
+						<form method="post" class="form-search">
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+							<label><input type="text" name="search" placeholder="Поиск ПО, дистрибутивов и т.д"></label>
+
+						</form>
+						<div class="search-result">
+							<div class="search-result__box search-result__box-error">
+								<div class="box-text">
+									<p>К сожалению, по вашему запросу ничего не было найдено</p>
+								</div>
+							</div>
+							<div class="search-result__box">
+								<a href="catalog.html" class="search-result__category">Каталог</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="product.html">Microsoft Windows 11 Professioanl</a></li>
+									<li><a href="product.html">Microsoft Windows 11 Home (Домашняя)</a></li>
+									<li><a href="product.html">Microsoft Windows 10 Professioanl</a></li>
+									<li><a href="product.html">Microsoft Windows 10 Home (Домашняя)</a></li>
+									<li><a href="product.html">Autodesk AutoCAD 2025 для Windows</a></li>
+								</ul>
+							</div>
+							<div class="search-result__box">
+								<a href="article.html" class="search-result__category">Статьи</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="article.html">Как активировать Windows через командную строку</a></li>
+									<li><a href="article.html">Microsoft Office для Windows 10/11</a></li>
+									<li><a href="article.html">Как создать загрузочную флешку Windows 11</a></li>
+									<li><a href="article.html">Как создать загрузочную флешку Windows 10</a></li>
+									<li><a href="article.html">Установка и активация Microsoft Office 2021</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="mobile-menu-list my-ul">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle btn btn-accent btn-catalog-mobile">
+								<span>Каталог</span>
+								<svg class="svg-icon svg-icon__arrow">
+									<use xlink:href="img/sprite.svg#arrow-menu-catalog"></use>
+								</svg>
+							</a>
+
+							<div class="dropdown-menu">
+								<ul class="sidebar-menu my-ul">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Microsoft Windows</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle"">
+																								<span>Microsoft Office</span>
+																								<svg class=" svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Офисные приложения</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Офисные приложения</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Windows Server</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Windows Server</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Антивирусы</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Антивирусы</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Прочее</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Прочее</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<span>Информация</span>
+
+								<svg class="svg-icon svg-icon__arrow">
+									<use xlink:href="img/sprite.svg#arrow-menu"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="about.html" class="dropdown-item">О магазине</a>
+								<a href="information.html" class="dropdown-item">Юр. лицам</a>
+								<a href="article.html" class="dropdown-item">Статьи</a>
+							</div>
+						</li>
+						<li><a href="reviews.html">
+								Отзывы</a></li>
+						<li><a href="#">Юр.лицам</a></li>
+						<li><a href="contacts.html">
+								Контакты</a></li>
+					</ul>
+
+					<div class="mobile-menu__footer">
+						<a href="tel:+78003019309" class="color-accent link-phone">
+							+7 800 301 93 09
+						</a>
+
+						<ul class="list-social my-ul">
+							<li><a href="#" class="link-social"><img src="img/tg.svg" alt=""></a></li>
+						</ul>
+						<a href="#" class="btn btn-border-dark">Написать</a>
+					</div>
+				</div>
+			</div>
+
+			<header>
+				<div class="special-position">
+					<div class="container">
+						<a href="#" class="special-position__link" target="_blank">Специально для тебя скидка на Microsoft
+							Windows
+							10
+							Pro!</a>
+						<div class="special-position__close"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="header-top">
+					<div class="container">
+						<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+						<div class="dropdown-catalog">
+							<a href="#" class="btn btn-accent btn-catalog">
+								<svg class="svg-icon btn-catalog__icon">
+									<use xlink:href="img/sprite.svg#burger-icon"></use>
+								</svg>
+								<svg class="svg-icon btn-catalog__icon btn-catalog__icon-close">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+								<span class="btn-catalog__text">Каталог</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-catalog">
+								<ul class="sidebar-menu my-ul">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Microsoft Windows</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle"">
+																													<span>Microsoft Office</span>
+																													<svg class=" svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Офисные приложения</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Офисные приложения</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Windows Server</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Windows Server</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Антивирусы</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Антивирусы</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Прочее</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Прочее</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<nav class="nav-menu">
+							<ul class="menu my-ul">
+								<li class="dropdown-my">
+									<a href="#" class="dropdown-my-toggle">
+										<span>Покупателям</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-menu"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="about.html" class="dropdown-item">О магазине</a>
+										<a href="article.html" class="dropdown-item">Статьи</a>
+									</div>
+								</li>
+								<li><a href="distributions.html">Дистрибутивы</a></li>
+								<li><a href="information.html">Юридическим лицам</a></li>
+								<li><a href="reviews.html">Отзывы</a></li>
+							</ul>
+						</nav>
+
+						<div class="search-wrapper">
+							<form method="post" class="form-search">
+								<button type="submit"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></button>
+								<label><input type="text" name="search" placeholder="Поиск ПО, дистрибутивов и т.д"></label>
+								<a href="#" class="btn-clear-search"><img src="img/clear-search.svg" alt=""></a>
+							</form>
+
+							<div class="search-result">
+								<div class="search-result__box search-result__box-error">
+									<div class="box-text">
+										<p>К сожалению, по вашему запросу ничего не было найдено</p>
+									</div>
+								</div>
+								<div class="search-result__box">
+									<a href="catalog.html" class="search-result__category">Каталог</a>
+									<ul class="search-result__list my-ul">
+										<li><a href="product.html">Microsoft Windows 11 Professioanl</a></li>
+										<li><a href="product.html">Microsoft Windows 11 Home (Домашняя)</a></li>
+										<li><a href="product.html">Microsoft Windows 10 Professioanl</a></li>
+										<li><a href="product.html">Microsoft Windows 10 Home (Домашняя)</a></li>
+										<li><a href="product.html">Autodesk AutoCAD 2025 для Windows</a></li>
+									</ul>
+								</div>
+								<div class="search-result__box">
+									<a href="article.html" class="search-result__category">Статьи</a>
+									<ul class="search-result__list my-ul">
+										<li><a href="article.html">Как активировать Windows через командную строку</a></li>
+										<li><a href="article.html">Microsoft Office для Windows 10/11</a></li>
+										<li><a href="article.html">Как создать загрузочную флешку Windows 11</a></li>
+										<li><a href="article.html">Как создать загрузочную флешку Windows 10</a></li>
+										<li><a href="article.html">Установка и активация Microsoft Office 2021</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- <a href="tel:+78003019309" class="phone">+7 800 301 93 09</a> -->
+
+						<ul class="list-social my-ul">
+							<li><a href="#" class="link-social"><img src="img/whatsapp.svg" alt=""></a></li>
+							<li><a href="#" class="link-social"><img src="img/tg.svg" alt=""></a></li>
+						</ul>
+
+						<a href="#" class="btn-burger">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#burger"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<section class="page page-information page-faq">
+				<div class="container">
+					<nav class="nav-breadcrumb">
+						<ul class="breadcrumb my-ul">
+							<li><a href="index.html">Главная</a></li>
+							<li><span>Вопрос – ответ</span></li>
+						</ul>
+					</nav>
+
+					<div class="page-faq-wrapper">
+						<h1>Вопрос – ответ</h1>
+						<div class="page-faq-wrapper__content">
+
+							<div class="tabs">
+								<ul class="tabs__caption tabs__caption-product my-ul">
+									<li class="active">
+										Все
+									</li>
+									<li>
+										Доставка и оплата
+									</li>
+									<li>Обмен и возврат</li>
+									<li>Гарантии</li>
+									<li>Про софт</li>
+								</ul>
+
+								<div class="tabs__content active">
+									<div class="faq-category">
+										<div class="faq-category__name">Доставка и оплата</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Если я оплачу сейчас, то когда вы отправите мне ключ?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Я хочу оплатить с расчётного счёта. Это возможно?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Могу исправить неверно указанную почту?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="faq-category">
+										<div class="faq-category__name">Обмен и возврат</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Как происходит обмен и возврат?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Я хочу оплатить с расчётного счёта. Это возможно?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Могу исправить неверно указанную почту?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="faq-category">
+										<div class="faq-category__name">Гарантии</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Какие гарантии, что я получу свой заказ?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="faq-category">
+										<div class="faq-category__name">О продукте</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Чем отличается ваша версии программы от официальной?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Я могу скачать и установить программу до покупки ключа?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Почему у ваших товаров такая цены</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Как понять что этот ключ мне подойдёт?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tabs__content">
+									<div class="faq-category">
+										<div class="faq-category__name">Доставка и оплата</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Если я оплачу сейчас, то когда вы отправите мне ключ?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Я хочу оплатить с расчётного счёта. Это возможно?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Могу исправить неверно указанную почту?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									
+									</div>
+								</div>
+
+								<div class="tabs__content">
+									<div class="faq-category">
+										<div class="faq-category__name">Обмен и возврат</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Как происходит обмен и возврат?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Я хочу оплатить с расчётного счёта. Это возможно?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Могу исправить неверно указанную почту?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									
+									</div>
+								</div>
+
+								<div class="tabs__content">
+									<div class="faq-category">
+										<div class="faq-category__name">Гарантии</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Какие гарантии, что я получу свой заказ?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tabs__content">
+									<div class="faq-category">
+										<div class="faq-category__name">О продукте</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Чем отличается ваша версии программы от официальной?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Я могу скачать и установить программу до покупки ключа?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Почему у ваших товаров такая цены</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+										<div class="panel_heading">
+											<div class="block_title">
+												<h3>Как понять что этот ключ мне подойдёт?</h3>
+											</div>
+											<div class="block_hover">
+												<div class="box-text">
+													<p>В нашем интернет-магазине реализована автоматическая отправка писем с заказами, поэтому
+														Вы получите свой заказ в течение
+														1 минуты после оплаты в любое время суток.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="page-faq-wrapper__sidebar">
+							<div class="help-product-box">
+								<h3>Помощь <br>всегда рядом</h3>
+								<div class="box-text">
+									<p>Напишите в чат и мы поможем определиться с подходящей версией продукта для вас!</p>
+								</div>
+								<a href="#callbackModal" class="btn btn-sm btn-white open_modal">Написать</a>
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+			</section>
+
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+
+					<div class="footer-box footer-box-first">
+						<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+						<div class="footer-contacts">
+							<a href="mailto:sale@digi-keys.ru" class="mail-link">
+								<svg class="svg-icon mail-link__icon">
+									<use xlink:href="img/sprite.svg#mail"></use>
+								</svg>
+								<span>sale@digi-keys.ru</span>
+							</a>
+							<a href="tel:+78003019309" class="phone-link">
+								<svg class="svg-icon phone-link__icon">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+								<span>8 800 301 93 09</span>
+							</a>
+						</div>
+						<ul class="my-ul requisites-list">
+							<li>ОГРН: 1053600591197</li>
+							<li>ИНН: 7743013902</li>
+							<li>ИП: Пащенко Э.Л.</li>
+						</ul>
+					</div>
+
+					<div class="footer-wrapper">
+
+						<div class="footer-box">
+							<h3 class="footer-box__title">Каталог товаров</h3>
+							<h3 class="footer-box__title footer-box__title-toggle">Каталог товаров <svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom-footer"></use>
+								</svg></h3>
+							<div class="footer-menu-wrapper">
+
+								<ul class="footer-box__menu my-ul">
+									<li><a href="catalog-new.html">Microsoft Windows</a></li>
+									<li><a href="catalog-new.html">Microsoft Office</a></li>
+									<li><a href="catalog-new.html">Windows Server</a></li>
+									<li><a href="catalog-new.html">Приложения Microsoft</a></li>
+									<li><a href="catalog-new.html">Autodesk</a></li>
+								</ul>
+								<ul class="footer-box__menu my-ul">
+									<li><a href="catalog-new.html">SQL Server</a></li>
+									<li><a href="catalog-new.html">Adobe</a></li>
+									<li><a href="catalog-new.html">Прочее</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="footer-box">
+							<h3 class="footer-box__title">Информация</h3>
+							<h3 class="footer-box__title footer-box__title-toggle">Информация
+
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom-footer"></use>
+								</svg>
+							</h3>
+							<div class="footer-menu-wrapper">
+								<ul class="footer-box__menu my-ul">
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">Обмен и возврат</a></li>
+									<li><a href="#">Скидки</a></li>
+									<li><a href="news.html">Статьи</a></li>
+									<li><a href="distributions.html">Дистрибутивы</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-box">
+							<h3 class="footer-box__title">Компания</h3>
+							<h3 class="footer-box__title footer-box__title-toggle">Компания <svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom-footer"></use>
+								</svg></h3>
+							<div class="footer-menu-wrapper">
+								<ul class="footer-box__menu my-ul">
+									<li><a href="about.html">О магазине</a></li>
+									<li><a href="#">Поддержка</a></li>
+									<li><a href="#">Юр. лицам</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="copyright">
+						<p>© DIGI-KEYS.RU, 2021-2023. Все права защищены</p>
+					</div>
+					<ul class="document-list my-ul">
+						<li><a href="#" class="link-documents" target="_blank">Договор оферты</a></li>
+						<li><a href="politics.html" class="link-documents" target="_blank">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.inputmask.latest.min.js"></script>
+	<script src="js/imask.min.js"></script>
+	<script src="js/countUp.js"></script>
+	<script src="js/wow.js"></script>
+
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
