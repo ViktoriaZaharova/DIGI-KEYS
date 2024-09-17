@@ -308,6 +308,9 @@ header.active-search .search-result {
   border: 1.5px solid #161616;
   border-radius: 12px;
 }
+.link-social img {
+  image-rendering: optimizeQuality;
+}
 
 .btn-clear-search {
   width: 24px;
