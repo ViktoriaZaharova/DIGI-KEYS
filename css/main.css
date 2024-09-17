@@ -3957,3 +3957,178 @@
   border-radius: 8px 8px 0 0;
   background: linear-gradient(to right, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%);
 }
+
+.page-thanks-order h1 {
+  margin: 0 auto 24px;
+}
+
+.thanks-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  width: 124px;
+  height: 124px;
+}
+.thanks-animation img {
+  width: 100%;
+  height: 100%;
+}
+
+.thanks-order__content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 24px 24px 10px 10px;
+  padding: 80px;
+  text-align: center;
+  background: url("../img/thanks-bg.png") no-repeat center bottom;
+  background-size: cover;
+}
+.thanks-order__content-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 648px;
+}
+.thanks-order__content .btn-group {
+  justify-content: center;
+}
+.thanks-order__content .box-text {
+  margin: 24px auto;
+  font-size: 18px;
+}
+
+.order-information {
+  background: #fff;
+  width: 100%;
+  border-radius: 16px;
+  padding: 24px;
+}
+.order-information__list p, .order-information__list span {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+.order-information__list p {
+  padding: 0 8px 0 0;
+}
+.order-information__list span {
+  padding: 0 0 0 8px;
+}
+.order-information__list li {
+  position: relative;
+  z-index: 1;
+}
+.order-information__list li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: url("../img/line-characteristics.svg") no-repeat left center;
+  background-size: cover;
+  bottom: 3px;
+  left: 0;
+}
+
+.promocode-box {
+  width: 100%;
+  margin: 16px 0 0;
+  padding: 26px;
+  border-radius: 24px;
+  color: #fff;
+  background: linear-gradient(to right, rgb(24, 24, 27) 0%, rgb(52, 42, 65));
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.promocode-box p {
+  margin: 32px auto 0;
+  display: block;
+  font-size: 18px;
+}
+
+.countdown-time2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+.countdown-time2 .labelformat {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.countdown-time2 .timerDisplay {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.countdown-time2 .displaySection {
+  border: none;
+  width: auto;
+  flex: 1;
+  padding: 0 18px 0 0;
+  position: relative;
+}
+.countdown-time2 .displaySection:last-child {
+  padding: 0;
+}
+.countdown-time2 .displaySection::after {
+  content: ":";
+  display: inline-block;
+  position: absolute;
+  right: 7px;
+  top: 20px;
+}
+.countdown-time2 .numberDisplay {
+  font-size: 24px;
+  color: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.countdown-time2 .periodDisplay {
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 8px 0 0;
+  text-transform: lowercase;
+}
+
+.sales-box {
+  width: 100%;
+  background: linear-gradient(to right, rgba(237, 247, 243, 0.6) 0%, rgba(157, 207, 252, 0.2) 100%);
+  border-radius: 24px;
+  padding: 24px;
+}
+.sales-box h3 {
+  margin: 0 0 24px;
+  font-size: 22px;
+}
+.sales-box .description-text {
+  margin: 24px 0 0;
+  font-size: 12px;
+  color: #767676;
+}
+.sales-box .link-copy-acticle {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.copy-box {
+  width: 100%;
+  background: #fff;
+  padding: 16px 24px;
+  border-radius: 12px;
+}

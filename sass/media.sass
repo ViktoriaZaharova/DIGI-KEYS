@@ -108,7 +108,7 @@
 		margin: 0 0 32px
 
 	.product-image-wrapper
-		margin: 0		
+		margin: 0
 
 	.product-image
 		height: 721px
@@ -197,7 +197,7 @@
 			width: 100%
 			display: none
 		.list-characteristics
-			margin: 0 auto 0 0 
+			margin: 0 auto 0 0
 			width: calc(50% - 7.5px)
 		.btn-buy
 			width: calc(50% - 7.5px)
@@ -377,10 +377,31 @@
 		top: 0
 		left: 0
 		margin: 0 0 24px
-		.btn 
+		.btn
 			margin: 0 0 0 auto
 
-		
+	.page-thanks-order
+		margin: 0 0 32px		
+
+	.sales-promo-wrapper
+		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+
+	.sales-box
+		width: calc(50% - 8px)
+		margin: 0 auto 0 0
+
+	.promocode-box
+		width: calc(50% - 8px)
+		margin: 0
+
+	.thanks-order__content
+		padding: 32px 24px 64px
+
+	.thanks-order__content-wrapper
+		max-width: 672px		
 
 @media only screen and (max-width: 992px)
 	.col-50
@@ -1014,7 +1035,7 @@
 
 	.faq, .articles-product
 		margin: 32px 0
-	
+
 	.articles-product
 		width: 100%
 
@@ -2010,7 +2031,53 @@
 			font-size: 24px
 
 	.reviews-modal-slide__photo
-		height: 240px		
+		height: 240px
+
+	.sales-box
+		width: 100%
+		margin: 0 auto 16px
+		padding: 24px 16px
+		border-radius: 12px
+		h3
+			font-size: 18px
+			margin: 0 auto 16px
+		.description-text
+			margin: 16px auto 0	
+
+	.promocode-box
+		width: 100%
+		padding: 24px
+		border-radius: 12px
+
+		p
+			margin: 24px auto 0
+			
+	.countdown-time2
+		.displaySection
+			&:after
+				top: 16px
+		.numberDisplay
+			height: 56px
+			font-size: 22px
+			
+	.thanks-animation
+		width: 80px
+		height: 80px
+
+	.thanks-order__content
+		padding: 32px 16px 48px
+		background: url("../img/thanks-bg-mobile.png") no-repeat center bottom
+		.btn-group
+			flex-direction: column
+			.btn
+				width: 100%
+				margin: 0 auto 8px
+				&:last-child
+					margin: 0 auto	
+
+	.order-information
+		padding: 24px 16px
+		border-radius: 12px										
 
 @media only screen and (max-width: 480px)
 
@@ -2059,4 +2126,4 @@
 		min-width: 300px
 
 	.reviews-product-box
-		padding: 16px	
+		padding: 16px

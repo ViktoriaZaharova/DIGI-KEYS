@@ -511,6 +511,12 @@ $(".countdown-time1").countdowntimer({
 	// currentTime: true,
 });
 
+$(".countdown-time2").countdowntimer({
+	hours : 1,
+    labelsFormat: true,
+    displayFormat: "HMS",
+});
+
 // tabs
 $(function () {
 
