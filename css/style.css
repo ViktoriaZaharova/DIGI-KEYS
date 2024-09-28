@@ -306,6 +306,27 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%) border-box;
 }
 
+.btn-border-gradient {
+  border-block: 8px;
+  border: 1.5px solid transparent;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%) border-box;
+}
+.btn-border-gradient span {
+  background: linear-gradient(to right, #976efc 0%, #640dc6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+.btn-border-gradient:hover, .btn-border-gradient:focus {
+  background: transparent;
+  border-color: #7C0DC6;
+}
+.btn-border-gradient:hover span, .btn-border-gradient:focus span {
+  background: transparent;
+  color: #7C0DC6;
+  -webkit-text-fill-color: inherit;
+}
+
 .btn-transparent {
   background: transparent;
   color: #161616;

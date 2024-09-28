@@ -697,7 +697,7 @@
 
 .promo-label-hit
 	// background: #fff
-	background: linear-gradient(to right, rgba(245,223,255,.2) 0%,rgba(157,207,252,.2) 100%)
+	background: linear-gradient(to right, rgba(245,223,255,.3) 0%,rgba(157,207,252,.3) 100%)
 	color: #363636
 
 .promo-label-sale
@@ -2240,11 +2240,18 @@
 // news page
 .page-news
 	h1
-		margin: 0 0 16px
+		width: 100%
+		margin: 0 0 32px
 	.box-text
 		max-width: 475px
 	.title-wrapper
 		margin: 0 0 8px
+	.help-product-box
+		position: relative
+		top: 0
+	.article-subscibe
+		height: auto
+		min-height: 478px
 
 .list-filter
 	display: flex
@@ -2269,18 +2276,18 @@
 .news-box
 	width: 100%
 	height: 100%
-	border-radius: 8px
+	border-radius: 16px
 	&__image
 		position: relative
 		z-index: 1
 		width: 100%
-		height: 240px
+		height: 160px
 		@include d-flex
 		img
 			width: 100%
 			height: 100%
 			object-fit: cover
-			border-radius: 8px
+			border-radius: 16px
 		&-footer
 			width: 100%
 			padding: 16px
@@ -2288,38 +2295,42 @@
 			left: 0
 			bottom: 0
 	&__body
-		padding: 24px 0 0 0
+		padding: 16px 0 0 0
 		display: flex
 		align-items: flex-start
 		flex-wrap: wrap
 	&__info
+		width: 100%
 		display: flex
 		align-items: center
 		flex-wrap: wrap
-		background: #fff
-		border-radius: 6px
-		padding: 8px 14px
-		color: #161616
+		color: #767676
 		font-size: 12px
 		font-weight: 300
-		width: fit-content
-		span
+		margin: 8px 0 0
+		li
+			width: fit-content
 			display: flex
 			align-items: center
+			margin: 0
 			&:after
 				content: ''
 				display: inline-block
 				margin: 0 8px
-				background: #767676
+				background: #363636
 				width: 4px
 				height: 4px
 				border-radius: 50%
 			&:last-child
 				&:after
 					display: none
+		a
+			color: #363636
+			&:hover
+				color: $accent
 	&__title
-		font-size: 20px
-		font-weight: 500
+		font-size: 16px
+		font-weight: normal
 		color: #161616
 		&:hover
 			color: $accent
@@ -2340,14 +2351,110 @@
 		font-weight: 300
 
 .news-box-max
-	.list-category-news
-		margin: 0 0 0 auto
-		width: fit-content
+	border-radius: 24px
+	height: auto
+	border: 1.5px solid transparent
+	background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgba(245, 223, 255, 0.2), rgba(157, 207, 252, 0.2)) border-box
+	display: flex
+	align-items: center
+	overflow: hidden
+	.news-box__image
+		@include d-flex
+		width: 314px
+		height: 268px
+		img
+			max-height: 100%
 	.news-box__body
-		flex-wrap: nowrap
-	.list-category-news
-		flex-wrap: nowrap
-		white-space: nowrap
+		width: calc(100% - 314px)
+		padding: 0 0 0 16px
+		flex-direction: column
+		align-items: flex-start
+	.promo-label-list
+		justify-content: flex-start
+		margin: 0 0 19px
+	.news-box__title
+		font-size: 28px
+		font-weight: 600
+		color: #161616
+		&:hover
+			color: $accent
+	.price
+		align-items: flex-end
+		margin: 24px 0 0
+		width: 100%
+	.old-price
+		margin: 0 0 3px 16px
+
+		font-weight: normal
+	.new-price
+		font-size: 28px
+		font-weight: 600
+
+		background: linear-gradient(to right, #976efc 0%,#640dc6 100%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		sup
+			font-weight: normal
+			font-size: 14px
+
+.news-box-title
+	width: 100%
+	border-radius: 24px
+	padding: 24px
+	height: auto
+	margin: 0 0 32px
+	background: linear-gradient(0deg, #EFF7FE, #EFF7FE), radial-gradient(100% 605.92% at 0% 0%, rgba(245, 223, 255, 0.2) 0%, rgba(157, 207, 252, 0.2) 100%)
+	.news-box__title
+		font-size: 28px
+		font-weight: 600
+		max-width: 622px
+		margin: 0 0 16px
+
+.news-sidebar-box
+	width: 100%
+	margin: 0 0 32px
+	&:last-child
+		margin: 0
+	h4
+		margin: 0 0 24px
+		font-size: 18px
+		font-weight: 500
+
+.list-news
+	width: 100%
+	>li
+		width: 100%
+		margin: 0 0 24px
+		&:last-child
+			margin: 0
+	.news-box__info
+		margin: 8px 0 0
+	&__link
+		width: 100%
+		font-size: 16px
+		color: #161616
+		&:hover
+			color: $accent
+
+.list-tags
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 14px
+	li
+		width: fit-content
+		margin: 0 8px 8px 0
+		&:last-child
+			margin: 0
+	a
+		padding: 10px 12px
+		color: #767676
+		border-radius: 8px
+		background: #F8F8F8
+		&:hover
+			background: $accent
+			color: #fff
 
 .news-box-min
 	padding: 24px 16px
@@ -2385,6 +2492,8 @@
 // page-acticle
 .page-acticle
 	overflow-x: hidden
+	.nav-breadcrumb
+		margin: 0 0 48px
 	h1
 		width: 100%
 		margin: 0 0 16px
@@ -2393,7 +2502,6 @@
 		font-weight: 600
 		line-height: 36px
 		letter-spacing: -0.005em
-		text-align: left
 	h2
 		margin: 20px 0 10px
 		font-family: "Montserrat", sans-serif

@@ -398,6 +398,10 @@
   .thanks-order__content-wrapper {
     max-width: 672px;
   }
+  .page-news .help-product-box {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 @media only screen and (max-width: 992px) {
   .col-50 {
@@ -777,6 +781,9 @@
   .seo-section {
     margin: 0 0 32px;
   }
+  .page-news {
+    margin-bottom: 32px;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -914,8 +921,16 @@
     background: #F8F3FC;
     color: #7C0DC6;
   }
-  .news-row .col-30, .news-row .col-25 {
-    width: 50%;
+  .news-box-max {
+    padding: 27px 0;
+  }
+  .news-box-max .news-box__image {
+    width: 229px;
+    height: 196px;
+  }
+  .news-box-max .news-box__body {
+    width: calc(100% - 229px);
+    padding: 0 0 0 16px;
   }
   .btn-load {
     margin: 20px auto 0;
@@ -1102,6 +1117,9 @@
   .requisites-list {
     margin: 0 0 0 20px;
   }
+  .thanks-order__content {
+    padding: 60px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .mb-16 {
@@ -1245,6 +1263,28 @@
   }
   .news-card__img {
     height: 200px;
+  }
+  .news-box-title .news-box__title {
+    font-size: 22px;
+  }
+  .news-box-max {
+    padding: 24px 16px;
+  }
+  .news-box-max .news-box__image {
+    display: none;
+  }
+  .news-box-max .news-box__body {
+    padding: 0;
+    width: 100%;
+  }
+  .news-box-max .promo-label-list {
+    margin: 0 0 9px;
+  }
+  .news-box-max .news-box__title {
+    font-size: 22px;
+  }
+  .news-box-max .price {
+    margin: 16px 0 0;
   }
   .m-100 {
     margin: 80px 0;

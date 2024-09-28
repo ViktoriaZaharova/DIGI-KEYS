@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DIGI-KEYS</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<div class="overlay-bg"></div>
+			<div class="mobile-menu">
+				<div class="mobile-menu__head">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+					<div class="mobile-menu__close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></div>
+				</div>
+
+				<div class="mobile-menu__body">
+					<div class="search-wrapper">
+						<form method="post" class="form-search">
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+							<label><input type="text" name="search" placeholder="Поиск ПО, дистрибутивов и т.д"></label>
+
+						</form>
+						<div class="search-result">
+							<div class="search-result__box search-result__box-error">
+								<div class="box-text">
+									<p>К сожалению, по вашему запросу ничего не было найдено</p>
+								</div>
+							</div>
+							<div class="search-result__box">
+								<a href="catalog.html" class="search-result__category">Каталог</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="product.html">Microsoft Windows 11 Professioanl</a></li>
+									<li><a href="product.html">Microsoft Windows 11 Home (Домашняя)</a></li>
+									<li><a href="product.html">Microsoft Windows 10 Professioanl</a></li>
+									<li><a href="product.html">Microsoft Windows 10 Home (Домашняя)</a></li>
+									<li><a href="product.html">Autodesk AutoCAD 2025 для Windows</a></li>
+								</ul>
+							</div>
+							<div class="search-result__box">
+								<a href="article.html" class="search-result__category">Статьи</a>
+								<ul class="search-result__list my-ul">
+									<li><a href="article.html">Как активировать Windows через командную строку</a></li>
+									<li><a href="article.html">Microsoft Office для Windows 10/11</a></li>
+									<li><a href="article.html">Как создать загрузочную флешку Windows 11</a></li>
+									<li><a href="article.html">Как создать загрузочную флешку Windows 10</a></li>
+									<li><a href="article.html">Установка и активация Microsoft Office 2021</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="mobile-menu-list my-ul">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle btn btn-accent btn-catalog-mobile">
+								<span>Каталог</span>
+								<svg class="svg-icon svg-icon__arrow">
+									<use xlink:href="img/sprite.svg#arrow-menu-catalog"></use>
+								</svg>
+							</a>
+
+							<div class="dropdown-menu">
+								<ul class="sidebar-menu my-ul">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Microsoft Windows</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle"">
+																								<span>Microsoft Office</span>
+																								<svg class=" svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Офисные приложения</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Офисные приложения</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Windows Server</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Windows Server</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Антивирусы</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Антивирусы</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Прочее</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-menu"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Прочее</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">
+								<span>Информация</span>
+
+								<svg class="svg-icon svg-icon__arrow">
+									<use xlink:href="img/sprite.svg#arrow-menu"></use>
+								</svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="about.html" class="dropdown-item">О магазине</a>
+								<a href="information.html" class="dropdown-item">Юр. лицам</a>
+								<a href="article.html" class="dropdown-item">Статьи</a>
+							</div>
+						</li>
+						<li><a href="reviews.html">
+								Отзывы</a></li>
+						<li><a href="#">Юр.лицам</a></li>
+						<li><a href="contacts.html">
+								Контакты</a></li>
+					</ul>
+
+					<div class="mobile-menu__footer">
+						<a href="tel:+78003019309" class="color-accent link-phone">
+							+7 800 301 93 09
+						</a>
+
+						<ul class="list-social my-ul">
+							<li><a href="#" class="link-social"><img src="img/tg.svg" alt=""></a></li>
+						</ul>
+						<a href="#" class="btn btn-border-dark">Написать</a>
+					</div>
+				</div>
+			</div>
+
+			<header>
+				<div class="special-position">
+					<div class="container">
+						<a href="#" class="special-position__link" target="_blank">Специально для тебя скидка на Microsoft
+							Windows
+							10
+							Pro!</a>
+						<div class="special-position__close"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="header-top">
+					<div class="container">
+						<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+						<div class="dropdown-catalog">
+							<a href="#" class="btn btn-accent btn-catalog">
+								<svg class="svg-icon btn-catalog__icon">
+									<use xlink:href="img/sprite.svg#burger-icon"></use>
+								</svg>
+								<svg class="svg-icon btn-catalog__icon btn-catalog__icon-close">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+								<span class="btn-catalog__text">Каталог</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-catalog">
+								<ul class="sidebar-menu my-ul">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Microsoft Windows</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Windows 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Windows 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle"">
+																													<span>Microsoft Office</span>
+																													<svg class=" svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Microsoft Office 2021</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2019</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2016</a>
+											<a href="#" class="dropdown-item">Microsoft Office 2013</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Офисные приложения</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Офисные приложения</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Windows Server</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Windows Server</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Антивирусы</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Антивирусы</a>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle">
+											<span>Прочее</span>
+											<svg class="svg-icon dropdown-toggle__icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</a>
+										<div class="dropdown-menu">
+											<a href="#" class="dropdown-item">Прочее</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<nav class="nav-menu">
+							<ul class="menu my-ul">
+								<li class="dropdown-my">
+									<a href="#" class="dropdown-my-toggle">
+										<span>Покупателям</span>
+										<svg class="svg-icon dropdown-toggle__icon">
+											<use xlink:href="img/sprite.svg#arrow-menu"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="about.html" class="dropdown-item">О магазине</a>
+										<a href="article.html" class="dropdown-item">Статьи</a>
+									</div>
+								</li>
+								<li><a href="distributions.html">Дистрибутивы</a></li>
+								<li><a href="information.html">Юридическим лицам</a></li>
+								<li><a href="reviews.html">Отзывы</a></li>
+							</ul>
+						</nav>
+
+						<div class="search-wrapper">
+							<form method="post" class="form-search">
+								<button type="submit"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></button>
+								<label><input type="text" name="search" placeholder="Поиск ПО, дистрибутивов и т.д"></label>
+								<a href="#" class="btn-clear-search"><img src="img/clear-search.svg" alt=""></a>
+							</form>
+
+							<div class="search-result">
+								<div class="search-result__box search-result__box-error">
+									<div class="box-text">
+										<p>К сожалению, по вашему запросу ничего не было найдено</p>
+									</div>
+								</div>
+								<div class="search-result__box">
+									<a href="catalog.html" class="search-result__category">Каталог</a>
+									<ul class="search-result__list my-ul">
+										<li><a href="product.html">Microsoft Windows 11 Professioanl</a></li>
+										<li><a href="product.html">Microsoft Windows 11 Home (Домашняя)</a></li>
+										<li><a href="product.html">Microsoft Windows 10 Professioanl</a></li>
+										<li><a href="product.html">Microsoft Windows 10 Home (Домашняя)</a></li>
+										<li><a href="product.html">Autodesk AutoCAD 2025 для Windows</a></li>
+									</ul>
+								</div>
+								<div class="search-result__box">
+									<a href="article.html" class="search-result__category">Статьи</a>
+									<ul class="search-result__list my-ul">
+										<li><a href="article.html">Как активировать Windows через командную строку</a></li>
+										<li><a href="article.html">Microsoft Office для Windows 10/11</a></li>
+										<li><a href="article.html">Как создать загрузочную флешку Windows 11</a></li>
+										<li><a href="article.html">Как создать загрузочную флешку Windows 10</a></li>
+										<li><a href="article.html">Установка и активация Microsoft Office 2021</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- <a href="tel:+78003019309" class="phone">+7 800 301 93 09</a> -->
+
+						<ul class="list-social my-ul">
+							<li><a href="#" class="link-social">
+									<object type="image/svg+xml" data="img/whatsapp.svg" width="100%" height="100%"></object>
+								</a></li>
+							<li><a href="#" class="link-social"><img src="img/tg.svg" alt=""></a></li>
+						</ul>
+
+						<a href="#" class="btn-burger">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#burger"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<section class="page page-news">
+				<div class="container">
+					<nav class="nav-breadcrumb">
+						<ul class="breadcrumb my-ul">
+							<li><a href="index.html">Главная</a></li>
+							<li><span>Статьи</span></li>
+						</ul>
+					</nav>
+					<h1>Статьи</h1>
+
+					<div class="w-100">
+						<div class="row news-row">
+							<div class="col-75">
+								<div class="news-box news-box-title">
+									<a href="article.html" class="news-box__title">Особенности и преимущества Microsoft Office 2024 сборки
+										LTSC в сравнении 365</a>
+
+									<ul class="news-box__info my-ul">
+										<li><a href="#">Инструкции</a></li>
+										<li><span>11 июля</span></li>
+									</ul>
+
+								</div>
+
+								<div class="w-100">
+									<div class="row">
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-1.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Как использовать команду Fillet в AutoCAD:
+														полное руководство</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Инструкции</a></li>
+														<li><span>7 июля</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-2.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Особенности новой функции Recall в Windows 11 и
+														инструкция по её отключению</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Инструкции</a></li>
+														<li><span>10 июля</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-3.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Новые функции и возможности в Linux Mint 22</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Новости</a></li>
+														<li><span>10 июля</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-4.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Почему выбрать Autodesk AutoCAD 2025: полное
+														руководство и преимущества</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>7 июля</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-5.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Новое поколение Adobe Firefly: введение модели
+														Image 3</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>7 июля</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-6.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Обновления и нововведения в Windows Server
+														2025: преимущества перед версией 2022</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>6 июля</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-100 mb-40">
+											<div class="news-box news-box-max">
+												<a href="article.html" class="news-box__image">
+													<img src="img/product4.png" alt="">
+												</a>
+												<div class="news-box__body">
+													<ul class="promo-label-list my-ul">
+														<li>
+															<div class="promo-label promo-label-hit">
+																<img src="img/fire-icon.png" alt="">
+																<span>Хит продаж</span>
+															</div>
+														</li>
+													</ul>
+
+													<a href="article.html" class="news-box__title">Microsoft Office 2019 Professional Plus</a>
+													<div class="subtitle-product">— бессрочный ключ с привязкой</div>
+													<div class="price">
+														<div class="new-price">1590 <sup>₽</sup></div>
+														<div class="old-price">1780 <sup>₽</sup></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-7.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Родительский контроль в Windows: что это такое и как его настроить</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Инструкции</a></li>
+														<li><span>24 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-8.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Как использовать продукты Adobe и Microsoft в Linux?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Инструкции</a></li>
+														<li><span>24 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-9.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Активатор Windows: в чём опасность?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>24 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-100 mb-40 d-tablet">
+											<div class="help-product-box news-sidebar-box">
+												
+												<div class="box-text">
+													<h3>Не можете выбрать?</h3>
+													<p>Напишите в чат, и мы поможем с выбором ключа</p>
+												</div>
+												<a href="#callbackModal" class="btn btn-sm btn-white open_modal">Написать</a>
+											</div>
+										</div>
+
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-10.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Windows для одного языка что это?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>24 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-11.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Windows Server или аналоги Linux в 2024?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>21 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-12.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Windows 12: когда выйдет?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Новости</a></li>
+														<li><span>21 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-100 mb-40">
+											<div class="news-box news-box-max">
+												<a href="article.html" class="news-box__image">
+													<img src="img/product-business1.png" alt="">
+												</a>
+												<div class="news-box__body">
+													<ul class="promo-label-list my-ul">
+														<li>
+															<div class="promo-label promo-label-hit">
+																<img src="img/fire-icon.png" alt="">
+																<span>Хит продаж</span>
+															</div>
+														</li>
+													</ul>
+
+													<a href="article.html" class="news-box__title">Microsoft Windows 10 Home</a>
+													<div class="price">
+														<div class="new-price">1450 <sup>₽</sup></div>
+														<div class="old-price">1690 <sup>₽</sup></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-7.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Родительский контроль в Windows: что это такое и как его настроить</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Инструкции</a></li>
+														<li><span>24 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-8.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Как использовать продукты Adobe и Microsoft в Linux?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Инструкции</a></li>
+														<li><span>24 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-9.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Активатор Windows: в чём опасность?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>24 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-10.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Windows для одного языка что это?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>24 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-11.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Windows Server или аналоги Linux в 2024?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Обзоры</a></li>
+														<li><span>21 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-30 mb-40">
+											<div class="news-box">
+												<a href="article.html" class="news-box__image">
+													<img src="img/news1-12.jpg" alt="">
+												</a>
+												<div class="news-box__body">
+													<a href="article.html" class="news-box__title">Windows 12: когда выйдет?</a>
+													<ul class="news-box__info my-ul">
+														<li><a href="#">Новости</a></li>
+														<li><span>21 июня</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-25 d-pc">
+								<div class="popular-news news-sidebar-box">
+									<h4>Популярное</h4>
+									<ul class="list-news my-ul">
+										<li>
+											<a href="#" class="list-news__link">Что выбрать MacOS или Windows?</a>
+											<ul class="news-box__info my-ul">
+												<li><a href="#">Инструкции</a></li>
+												<li><span>7 июля</span></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" class="list-news__link">Как оптимизировать Windows 11 для удобства эксплуатации</a>
+											<ul class="news-box__info my-ul">
+												<li><a href="#">Решение проблем</a></li>
+												<li><span>7 июля</span></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" class="list-news__link">Government Edition для желающих использовать Windows 11 на
+												слабом ПК</a>
+											<ul class="news-box__info my-ul">
+												<li><a href="#">Новости</a></li>
+												<li><span>11 июля</span></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="popular-news news-sidebar-box">
+									<h4>Теги</h4>
+									<ul class="list-tags my-ul">
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Инструкции</a></li>
+										<li><a href="#">Обзоры</a></li>
+										<li><a href="#">Решение проблем</a></li>
+										<li><a href="#">Windows</a></li>
+										<li><a href="#">Microsoft Office</a></li>
+										<li><a href="#">Linux</a></li>
+									</ul>
+								</div>
+								<div class="help-product-box news-sidebar-box">
+									<h3>Не можете выбрать?</h3>
+									<div class="box-text">
+										<p>Напиши и мы поможем определить подходящий для вас продукт.</p>
+									</div>
+									<a href="#callbackModal" class="btn btn-sm btn-white open_modal">Написать</a>
+								</div>
+
+								<div class="article-subscibe news-sidebar-box">
+									<div class="article-subscibe__img"><img src="img/distribution-img.png" alt=""></div>
+									<h3>Проверяем дистрибутивы на вирусы</h3>
+									<a href="#" class="article-subscibe__link btn btn-white">
+										<span>Все дистрибутивы</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-rotate"></use>
+										</svg>
+									</a>
+									<!-- <form method="post">
+										<label><input type="text" placeholder="Все дистрибутивы" name="title"></label>
+										<button type="submit" class="btn btn-accent"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-rotate"></use>
+											</svg></button>
+									</form> -->
+								</div>
+
+								<div class="popular-news news-sidebar-box">
+									<h4>Популярное</h4>
+									<ul class="list-news my-ul">
+										<li>
+											<a href="#" class="list-news__link">Что выбрать MacOS или Windows?</a>
+											<ul class="news-box__info my-ul">
+												<li><a href="#">Инструкции</a></li>
+												<li><span>7 июля</span></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" class="list-news__link">Как оптимизировать Windows 11 для удобства эксплуатации</a>
+											<ul class="news-box__info my-ul">
+												<li><a href="#">Решение проблем</a></li>
+												<li><span>7 июля</span></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" class="list-news__link">Government Edition для желающих использовать Windows 11 на
+												слабом ПК</a>
+											<ul class="news-box__info my-ul">
+												<li><a href="#">Новости</a></li>
+												<li><span>11 июля</span></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="popular-news news-sidebar-box">
+									<h4>Теги</h4>
+									<ul class="list-tags my-ul">
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Инструкции</a></li>
+										<li><a href="#">Обзоры</a></li>
+										<li><a href="#">Решение проблем</a></li>
+										<li><a href="#">Windows</a></li>
+										<li><a href="#">Microsoft Office</a></li>
+										<li><a href="#">Linux</a></li>
+									</ul>
+								</div>
+								<div class="help-product-box news-sidebar-box">
+									<h3>Не можете выбрать?</h3>
+									<div class="box-text">
+										<p>Напишите в чат, и мы поможем с выбором ключа</p>
+									</div>
+									<a href="#callbackModal" class="btn btn-sm btn-white open_modal">Написать</a>
+								</div>
+							</div>
+
+						
+						</div>
+
+					</div>
+
+					<div class="w-100"><a href="#" class="btn btn-border-gradient btn-load"><span>Показать ещё</span></a></div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+
+					<div class="footer-box footer-box-first">
+						<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+						<div class="footer-contacts">
+							<a href="mailto:sale@digi-keys.ru" class="mail-link">
+								<svg class="svg-icon mail-link__icon">
+									<use xlink:href="img/sprite.svg#mail"></use>
+								</svg>
+								<span>sale@digi-keys.ru</span>
+							</a>
+							<a href="tel:+78003019309" class="phone-link">
+								<svg class="svg-icon phone-link__icon">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+								<span>8 800 301 93 09</span>
+							</a>
+						</div>
+						<ul class="my-ul requisites-list">
+							<li>ОГРН: 1053600591197</li>
+							<li>ИНН: 7743013902</li>
+							<li>ИП: Пащенко Э.Л.</li>
+						</ul>
+					</div>
+
+					<div class="footer-wrapper">
+
+						<div class="footer-box">
+							<h3 class="footer-box__title">Каталог товаров</h3>
+							<h3 class="footer-box__title footer-box__title-toggle">Каталог товаров <svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom-footer"></use>
+								</svg></h3>
+							<div class="footer-menu-wrapper">
+
+								<ul class="footer-box__menu my-ul">
+									<li><a href="catalog-new.html">Microsoft Windows</a></li>
+									<li><a href="catalog-new.html">Microsoft Office</a></li>
+									<li><a href="catalog-new.html">Windows Server</a></li>
+									<li><a href="catalog-new.html">Приложения Microsoft</a></li>
+									<li><a href="catalog-new.html">Autodesk</a></li>
+								</ul>
+								<ul class="footer-box__menu my-ul">
+									<li><a href="catalog-new.html">SQL Server</a></li>
+									<li><a href="catalog-new.html">Adobe</a></li>
+									<li><a href="catalog-new.html">Прочее</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="footer-box">
+							<h3 class="footer-box__title">Информация</h3>
+							<h3 class="footer-box__title footer-box__title-toggle">Информация
+
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom-footer"></use>
+								</svg>
+							</h3>
+							<div class="footer-menu-wrapper">
+								<ul class="footer-box__menu my-ul">
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">Обмен и возврат</a></li>
+									<li><a href="#">Скидки</a></li>
+									<li><a href="news.html">Статьи</a></li>
+									<li><a href="distributions.html">Дистрибутивы</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-box">
+							<h3 class="footer-box__title">Компания</h3>
+							<h3 class="footer-box__title footer-box__title-toggle">Компания <svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#arrow-bottom-footer"></use>
+								</svg></h3>
+							<div class="footer-menu-wrapper">
+								<ul class="footer-box__menu my-ul">
+									<li><a href="about.html">О магазине</a></li>
+									<li><a href="#">Поддержка</a></li>
+									<li><a href="#">Юр. лицам</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="copyright">
+						<p>© DIGI-KEYS.RU, 2021-2023. Все права защищены</p>
+					</div>
+					<ul class="document-list my-ul">
+						<li><a href="#" class="link-documents" target="_blank">Договор оферты</a></li>
+						<li><a href="politics.html" class="link-documents" target="_blank">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.inputmask.latest.min.js"></script>
+	<script src="js/imask.min.js"></script>
+	<script src="js/countUp.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
