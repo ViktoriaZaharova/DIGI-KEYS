@@ -2494,16 +2494,16 @@
 	overflow-x: hidden
 	.nav-breadcrumb
 		margin: 0 0 48px
-	h1
+	h1, .h1
 		width: 100%
-		margin: 0 0 16px
+		margin: 0
 		font-family: "Montserrat", sans-serif
 		font-size: 28px
 		font-weight: 600
 		line-height: 36px
 		letter-spacing: -0.005em
-	h2
-		margin: 20px 0 10px
+	h2, .h2
+		margin: 0 0 16px
 		font-family: "Montserrat", sans-serif
 		font-size: 22px
 		font-weight: 500
@@ -2517,79 +2517,176 @@
 		line-height: 26px
 		letter-spacing: -0.005em
 		text-align: left
-	&-line
-		width: 100%
-		display: flex
-		align-items: center
-		flex-wrap: wrap
-		border-top: 1.3px solid #F8F3FC
-		border-bottom: 1.3px solid #F8F3FC
-		margin: 0 0 32px
-		padding: 16px 0
+	// &-line
+	// 	width: 100%
+	// 	display: flex
+	// 	align-items: center
+	// 	flex-wrap: wrap
+	// 	border-top: 1.3px solid #F8F3FC
+	// 	border-bottom: 1.3px solid #F8F3FC
+	// 	margin: 0 0 32px
+	// 	padding: 16px 0
 
+	// 	&:last-child
+	// 		margin: 0
+	// 	.list-category-news
+	// 		margin: 0 16px 0 auto
+	// 	.list-category-news, .news-box__report
+	// 		width: fit-content
+	// 	.news-box__report
+	// 		justify-content: flex-start
+	// 		div
+	// 			display: flex
+	// 			align-items: center
+	// 			&:after
+	// 				content: ''
+	// 				display: inline-block
+	// 				border-radius: 50%
+	// 				margin: 0 8px
+	// 				background: #000
+	// 				width: 4px
+	// 				height: 4px
+	// 			&:last-child
+	// 				&:after
+	// 					display: none
+	// 	.link-share
+	// 		margin: 0
+	.box-text
+		font-size: 18px
+		margin: 0 0 32px
 		&:last-child
 			margin: 0
-		.list-category-news
-			margin: 0 16px 0 auto
-		.list-category-news, .news-box__report
-			width: fit-content
-		.news-box__report
-			justify-content: flex-start
-			div
-				display: flex
-				align-items: center
-				&:after
-					content: ''
-					display: inline-block
-					border-radius: 50%
-					margin: 0 8px
-					background: #000
-					width: 4px
-					height: 4px
-				&:last-child
-					&:after
-						display: none
-		.link-share
-			margin: 0
-	.box-text
-		ol, ul
-			margin: 0 0 15px
-			padding: 0 0 0 30px
 		p
-			line-height: 2
-			// margin: 0 0 15px
-			margin: 0 0 32px
-			font-family: "Montserrat", sans-serif
-			font-size: 18px
-			font-weight: 400
-			line-height: 28px
-			letter-spacing: -0.005em
-			text-align: left
-		a
+			margin: 0 0 16px
+			&:last-child
+				margin: 0
+		>ol, >ul
+			margin: 0 0 16px
+			padding: 0 0 0 20px
+			li
+				margin: 0 0 16px
+				&:last-child
+					margin: 0
+		.copy-line
+			margin: 8px 0 0
+			p
+				margin: 0
+		>a
 			display: initial
 			text-decoration: underline
 			color: #7C0DC6
-		h3
-			margin: 10px 0 15px
-
-		.product-line__icon, .btn
+		.link-article
 			display: flex
-			align-items: center
-			justify-content: center
-		.product-line__icon
-			img
-				margin: 0
-				border: none
-				border-radius: 0
-		.product-line__name, .btn
 			text-decoration: none
-		.product-line__name
-			color: #363636
+		.product-line-article__name
+			text-decoration: none
+			color: #161616
+			&:hover
+				color: $accent
+		h3
+			width: 100%
+			margin: 0 0 16px
+		.list-decimal, .list-dots
+			&__title
+				margin: 0
+				font-weight: 500
+	.list-tags
+		margin: 0 0 32px
+		&:last-child
+			margin: 0
+		// .product-line__icon, .btn
+		// 	display: flex
+		// 	align-items: center
+		// 	justify-content: center
+		// .product-line__icon
+		// 	img
+		// 		margin: 0
+		// 		border: none
+		// 		border-radius: 0
+		// .product-line__name, .btn
+		// 	text-decoration: none
+		// .product-line__name
+		// 	color: #363636
 
-		img
-			margin-bottom: 15px
-			border: 1px solid #F6EAFF
+		// img
+		// 	margin-bottom: 15px
+		// 	border: 1px solid #F6EAFF
+		// 	border-radius: 8px
+
+.list-decimal, .list-dots
+	&__title
+		margin: 0
+		font-weight: 500
+	li
+		&::marker
+			font-weight: 500
+
+.link-article
+	display: flex
+	align-items: center
+	margin: 16px 0 0
+	font-size: 16px
+	svg
+		stroke: $accent
+		width: 24px
+		height: 24px
+		min-width: 24px
+		margin: 0 0 0 8px
+
+.article-menu
+	width: 100%
+	position: relative
+	z-index: 1
+	padding: 0 0 0 12px
+	font-size: 16px
+	line-height: 22px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 4px
+		height: 100%
+		background: #F8F8F8
+		border-radius: 8px
+	li
+		margin: 0 0 16px
+		width: 100%
+		&:last-child
+			margin: 0
+	&__link
+		width: 100%
+		position: relative
+		z-index: 1
+		color: #363636
+		&::before
+			content: ''
+			position: absolute
+			left: -12px
+			width: 4px
+			height: 0
 			border-radius: 8px
+			background: linear-gradient(to right, rgb(151, 110, 252) 0%, rgb(100, 13, 198) 100%)
+			transition: .3s ease
+		&:hover, &:focus, &.active
+			color: #363636
+			&::before
+				height: 100%
+
+.article-title-wrapper
+	width: 100%
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: flex-start
+	margin: 0 0 32px
+	background: #F8F8F8
+	border-radius: 24px
+	padding: 60px 24px
+	.news-box__info
+		margin: 0 auto 16px
+		justify-content: center
 
 .article-image
 	width: 100%
@@ -2608,14 +2705,15 @@
 
 .copy-line
 	width: 100%
-	margin: 32px 0
+	margin: 16px 0
 	display: flex
 	align-items: center
 	flex-wrap: wrap
 	background: #F8F8F8
-	border-radius: 8px
-	padding: 16px
-	font-size: 12px
+	color: #161616
+	border-radius: 12px
+	padding: 14.5px 24px
+	font-size: 16px
 
 .link-copy
 	@include d-flex
@@ -2627,6 +2725,62 @@
 	margin: 0 0 0 auto
 	&:hover
 		stroke: $accent
+
+.product-line-article
+	width: 100%
+	display: flex
+	align-items: center
+	margin: 0 0 8px
+	padding: 24px
+	border-radius: 16px
+
+	border: 1.5px solid transparent
+	background: linear-gradient(white, white) padding-box, linear-gradient(to right, rgba(245, 223, 255, 0.2), rgba(157, 207, 252, 0.2)) border-box
+	&:last-child
+		margin: 0
+	&__left
+		display: flex
+		align-items: center
+	&__name
+		padding: 0 0 0 16px
+		color: #161616
+		max-width: 336px
+		font-size: 18px
+		line-height: normal
+		&:hover
+			color: $accent
+	&__img
+		width: 64px
+		height: 64px
+		min-width: 64px
+		@include d-flex
+	&__right
+		margin-left: auto
+	&__info
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		font-size: 16px
+		.chats-link
+			text-decoration: none
+			display: flex
+			align-items: center
+			margin-left: 8px
+	.price-wrapper
+		display: flex
+		align-items: flex-end
+		margin: 8px 0 0	
+		.old-price
+			margin: 0 0 0 16px
+		.new-price
+			background: linear-gradient(to right, #976efc 0%, #640dc6 100%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent		
+			font-size: 22px
+			font-weight: 600
+			span
+				font-weight: normal
+				font-size: 14px
 
 .product-line
 	width: 100%
@@ -2658,23 +2812,63 @@
 		&:hover
 			color: $accent
 
-.page-acticle-line-footer
-	margin: 40px 0 100px
-	.list-rating
-		a
-			fill: #D9D9D9
+// .page-acticle-line-footer
+// 	margin: 40px 0 100px
+// 	.list-rating
+// 		a
+// 			fill: #D9D9D9
 
-.article-evaluation, .schare-box
+.article-evaluation
+	background: #F8F8F8
+	border-radius: 24px
+	text-align: center
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: flex-start
+	padding: 24px
+	font-size: 12px
+	font-weight: 500
+	margin: 0 0 32px
+	&:last-child
+		margin: 0
+	h3
+		text-align: center
+		margin: 0 auto 16px
+	.box-text
+		margin: 16px auto 24px
+		max-width: 300px
+		color: #363636
+		font-size: 16px
+		font-weight: normal
+		line-height: normal
+	.list-rating
+		font-size: 16px
+		li
+			margin: 0 32px 0 0
+			&:last-child
+				margin: 0
+		a
+			color: #363636
+
+			&:hover
+				color: $accent
+		span
+			display: block
+			margin: 8px auto 0
+
+.also-articles
+	margin: 120px 0 0
+
+.schare-box
 	display: flex
 	align-items: center
 	flex-wrap: wrap
 	font-size: 12px
 	font-weight: 500
+	margin: 0 auto 0 0
 	p
 		margin: 0 24px 0 0
-
-.schare-box
-	margin: 0 auto 0 0
 	&-links
 		display: flex
 		align-items: center
@@ -2698,8 +2892,8 @@
 			&:after
 				display: none
 
-.grecaptcha-badge
-	visibility: hidden
+// .grecaptcha-badge
+// 	visibility: hidden
 
 // distributions	
 
