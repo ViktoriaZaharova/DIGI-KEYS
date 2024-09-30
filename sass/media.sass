@@ -407,6 +407,55 @@
 		display: flex
 		align-items: flex-end
 
+	.also-articles
+		margin: 32px 0 0
+		.row-scroll
+			flex-wrap: nowrap
+			width: calc( 100% + 16px )
+			overflow-x: auto
+			.col-25
+				width: 332px 
+		.news-box
+			width: 316px	
+
+	.page-acticle	
+		padding: 90px 0 0
+		.nav-breadcrumb
+			margin: 32px 0	
+		.col-50
+			width: 100%	
+
+	.article-menu
+		display: flex
+		align-items: start
+		padding: 0
+		overflow-x: auto
+		position: relative
+		top: 0
+		&::before
+			left: 0
+			top: auto
+			bottom: 0
+			width: 100%
+			height: 4px
+		li
+			margin: 0
+		&__link
+			padding: 12px 8px
+			white-space: nowrap
+			&::before
+				left: 0
+				top: auto
+				bottom: 0
+				width: 0
+				height: 1.5px
+			&:hover, &:focus, &.active
+				color: #6512CB
+				&::before
+					width: 100%
+					height: 1.5px
+
+
 @media only screen and (max-width: 992px)
 	.col-50
 		width: 100%
@@ -810,6 +859,12 @@
 	.page-news
 		margin-bottom: 32px
 
+	.also-articles
+		margin: 32px 0
+
+	
+			
+
 @media only screen and (max-width: 768px)
 	header
 		position: fixed
@@ -1067,7 +1122,7 @@
 
 	.row-scroll
 		flex-wrap: nowrap
-		overflow-y: auto
+		overflow-x: auto
 
 	.warranty-box-product
 		display: flex
@@ -1114,6 +1169,9 @@
 	.block_title
 		align-items: center
 
+	.also-articles
+		margin: 32px 0 0	
+
 @media only screen and (max-width: 710px)
 	.search-wrapper
 		max-width: 300px
@@ -1150,20 +1208,20 @@
 		.box-text
 			margin: 8px 0 32px
 
-	.article-evaluation
-		width: 100%
-		margin: 16px 0 0
+	// .article-evaluation
+	// 	width: 100%
+	// 	margin: 16px 0 0
 
-	.page-acticle-line
-		.news-box__report
-			width: 100%
-			order: 1
-			margin: 16px 0 0
-		.list-category-news
-			margin: 0 auto 0 0
+	// .page-acticle-line
+	// 	.news-box__report
+	// 		width: 100%
+	// 		order: 1
+	// 		margin: 16px 0 0
+	// 	.list-category-news
+	// 		margin: 0 auto 0 0
 
-	.page-acticle h2
-		margin: 15px 0 10px
+	// .page-acticle h2
+	// 	margin: 15px 0 10px
 
 	.page-review-product
 		.col-70
@@ -1394,13 +1452,13 @@
 			display: none
 		.news-box__body
 			padding: 0
-			width: 100%	
+			width: 100%
 		.promo-label-list
 			margin: 0 0 9px
 		.news-box__title
 			font-size: 22px
 		.price
-			margin: 16px 0 0			
+			margin: 16px 0 0
 
 	.m-100
 		margin: 80px 0
@@ -2111,6 +2169,49 @@
 	.order-information
 		padding: 24px 16px
 		border-radius: 12px
+
+	.page-acticle
+		padding: 65px 0 0
+		.nav-breadcrumb	
+			margin: 30px 0 24px
+		h1, .h1
+			font-size: 24px	
+		h2, .h2
+			font-size: 18px
+		.box-text
+			font-size: 16px
+			line-height: 24px		
+
+	.article-title-wrapper
+		padding: 40px 16px		
+
+	.article-evaluation
+		padding: 24px 16px	
+
+	.also-articles
+		.row-scroll
+			display: block
+			margin: 0
+		h2
+			font-size: 24px		
+
+	.d-pc-tablet
+		display: none	
+
+	.article-products-slider
+		&.row-scroll
+			display: block	
+			margin: 0
+		.product-card .promo-label-list
+			top: 0		
+			justify-content: flex-end	
+
+	.breadcrumb-v2
+		flex-wrap: nowrap		
+
+	.breadcrumb
+		.d-mobile
+			display: inline-flex			
 
 @media only screen and (max-width: 480px)
 

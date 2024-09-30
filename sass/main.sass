@@ -2491,7 +2491,7 @@
 
 // page-acticle
 .page-acticle
-	overflow-x: hidden
+	// overflow-x: hidden
 	.nav-breadcrumb
 		margin: 0 0 48px
 	h1, .h1
@@ -2594,6 +2594,8 @@
 		margin: 0 0 32px
 		&:last-child
 			margin: 0
+	.news-sidebar-box
+		height: 100%		
 		// .product-line__icon, .btn
 		// 	display: flex
 		// 	align-items: center
@@ -2612,6 +2614,7 @@
 		// 	margin-bottom: 15px
 		// 	border: 1px solid #F6EAFF
 		// 	border-radius: 8px
+		
 
 .list-decimal, .list-dots
 	&__title
@@ -2635,7 +2638,8 @@
 
 .article-menu
 	width: 100%
-	position: relative
+	position: sticky
+	top: 100px
 	z-index: 1
 	padding: 0 0 0 12px
 	font-size: 16px
@@ -2859,6 +2863,8 @@
 
 .also-articles
 	margin: 120px 0 0
+	h2
+		font-size: 32px
 
 .schare-box
 	display: flex

@@ -218,6 +218,28 @@ $(window).on('load resize', function () {
 	} else {
 		$(".article-slider.slick-initialized").slick("unslick");
 	}
+
+	if ($(window).width() < 576) {
+		$('.also-articles-slider:not(.slick-initialized)').slick({
+			slidesToShow: 1,
+			// infinite: false,
+			swipeToSlide: true,
+			arrows: false,
+			dots: true,
+			variableWidth: true,
+		});
+		$('.article-products-slider:not(.slick-initialized)').slick({
+			slidesToShow: 2,
+			// infinite: false,
+			swipeToSlide: true,
+			arrows: false,
+			dots: true,
+			variableWidth: false,
+		});
+	} else {
+		$(".also-articles-slider.slick-initialized").slick("unslick");
+		$(".article-products-slider.slick-initialized").slick("unslick");
+	}
 });
 // slick active
 
@@ -424,8 +446,6 @@ $(function () {
 		$('body').addClass('no-scroll');
 	});
 
-
-
 	close.on('click', function () {
 		modal
 			.animate({
@@ -503,19 +523,43 @@ $(function () {
 
 });
 
-// timer
-$(".countdown-time1").countdowntimer({
-	dateAndTime: "2024/08/04 00:00:00",
-	displayFormat: "DHM",
-	labelsFormat: true,
-	// currentTime: true,
+
+
+// подсветка активного пункта меню при скролле
+$(function () {
+	var sections = $('.section-anchor'),
+		nav = $('.article-menu'),
+		nav_height = nav.outerHeight();
+
+	$(window).on('scroll', function () {
+		var cur_pos = $(this).scrollTop();
+
+		sections.each(function () {
+			var top = $(this).offset().top - nav_height,
+				bottom = top + $(this).outerHeight();
+
+			if (cur_pos >= top && cur_pos <= bottom) {
+				nav.find('a').removeClass('active');
+				sections.removeClass('active');
+
+				$(this).addClass('active');
+				nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+			}
+		});
+	});
+
+	nav.find('a').on('click', function () {
+		var $el = $(this)
+			, id = $el.attr('href');
+
+		$('html, body').animate({
+			scrollTop: $(id).offset().top - nav_height
+		}, 500);
+
+		return false;
+	});
 });
 
-$(".countdown-time2").countdowntimer({
-	hours : 1,
-    labelsFormat: true,
-    displayFormat: "HMS",
-});
 
 // tabs
 $(function () {
@@ -536,6 +580,19 @@ $(document).ready(function () {
 	});
 });
 
+// timer
+$(".countdown-time1").countdowntimer({
+	dateAndTime: "2024/08/04 00:00:00",
+	displayFormat: "DHM",
+	labelsFormat: true,
+	// currentTime: true,
+});
+
+$(".countdown-time2").countdowntimer({
+	hours: 1,
+	labelsFormat: true,
+	displayFormat: "HMS",
+});
 
 // price counterUp
 $(function () {
@@ -717,13 +774,13 @@ $('.link-text-show').on('click', function (e) {
 	}
 });
 
-$('.link-copy-acticle').on('click', function(e){
-e.preventDefault();
-$('.push-popup').addClass('active');
+$('.link-copy-acticle').on('click', function (e) {
+	e.preventDefault();
+	$('.push-popup').addClass('active');
 });
 
-setTimeout(function(){
-$('.push-popup').removeClass('active');
+setTimeout(function () {
+	$('.push-popup').removeClass('active');
 }, 3000);
 
 

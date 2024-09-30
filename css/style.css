@@ -770,6 +770,18 @@ a.color-accent:hover {
   font-weight: 400;
 }
 
+.breadcrumb-link-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumb-link-toggle svg {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  fill: #161616;
+}
+
 .sorting-wrapper {
   display: flex;
   align-items: center;

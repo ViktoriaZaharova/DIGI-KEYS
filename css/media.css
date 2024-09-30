@@ -402,6 +402,65 @@
     display: flex;
     align-items: flex-end;
   }
+  .also-articles {
+    margin: 32px 0 0;
+  }
+  .also-articles .row-scroll {
+    flex-wrap: nowrap;
+    width: calc(100% + 16px);
+    overflow-x: auto;
+  }
+  .also-articles .row-scroll .col-25 {
+    width: 332px;
+  }
+  .also-articles .news-box {
+    width: 316px;
+  }
+  .page-acticle {
+    padding: 90px 0 0;
+  }
+  .page-acticle .nav-breadcrumb {
+    margin: 32px 0;
+  }
+  .page-acticle .col-50 {
+    width: 100%;
+  }
+  .article-menu {
+    display: flex;
+    align-items: start;
+    padding: 0;
+    overflow-x: auto;
+    position: relative;
+    top: 0;
+  }
+  .article-menu::before {
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+  }
+  .article-menu li {
+    margin: 0;
+  }
+  .article-menu__link {
+    padding: 12px 8px;
+    white-space: nowrap;
+  }
+  .article-menu__link::before {
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 0;
+    height: 1.5px;
+  }
+  .article-menu__link:hover, .article-menu__link:focus, .article-menu__link.active {
+    color: #6512CB;
+  }
+  .article-menu__link:hover::before, .article-menu__link:focus::before, .article-menu__link.active::before {
+    width: 100%;
+    height: 1.5px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .col-50 {
@@ -784,6 +843,9 @@
   .page-news {
     margin-bottom: 32px;
   }
+  .also-articles {
+    margin: 32px 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -992,7 +1054,7 @@
   }
   .row-scroll {
     flex-wrap: nowrap;
-    overflow-y: auto;
+    overflow-x: auto;
   }
   .warranty-box-product {
     display: flex;
@@ -1046,6 +1108,9 @@
   .block_title {
     align-items: center;
   }
+  .also-articles {
+    margin: 32px 0 0;
+  }
 }
 @media only screen and (max-width: 710px) {
   .search-wrapper {
@@ -1078,21 +1143,6 @@
   }
   .contats-wrapper .box-text {
     margin: 8px 0 32px;
-  }
-  .article-evaluation {
-    width: 100%;
-    margin: 16px 0 0;
-  }
-  .page-acticle-line .news-box__report {
-    width: 100%;
-    order: 1;
-    margin: 16px 0 0;
-  }
-  .page-acticle-line .list-category-news {
-    margin: 0 auto 0 0;
-  }
-  .page-acticle h2 {
-    margin: 15px 0 10px;
   }
   .page-review-product .col-70 {
     width: 100%;
@@ -2037,6 +2087,52 @@
   .order-information {
     padding: 24px 16px;
     border-radius: 12px;
+  }
+  .page-acticle {
+    padding: 65px 0 0;
+  }
+  .page-acticle .nav-breadcrumb {
+    margin: 30px 0 24px;
+  }
+  .page-acticle h1, .page-acticle .h1 {
+    font-size: 24px;
+  }
+  .page-acticle h2, .page-acticle .h2 {
+    font-size: 18px;
+  }
+  .page-acticle .box-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .article-title-wrapper {
+    padding: 40px 16px;
+  }
+  .article-evaluation {
+    padding: 24px 16px;
+  }
+  .also-articles .row-scroll {
+    display: block;
+    margin: 0;
+  }
+  .also-articles h2 {
+    font-size: 24px;
+  }
+  .d-pc-tablet {
+    display: none;
+  }
+  .article-products-slider.row-scroll {
+    display: block;
+    margin: 0;
+  }
+  .article-products-slider .product-card .promo-label-list {
+    top: 0;
+    justify-content: flex-end;
+  }
+  .breadcrumb-v2 {
+    flex-wrap: nowrap;
+  }
+  .breadcrumb .d-mobile {
+    display: inline-flex;
   }
 }
 @media only screen and (max-width: 480px) {
