@@ -2563,10 +2563,22 @@
 		>ol, >ul
 			margin: 0 0 16px
 			padding: 0 0 0 20px
+			&:last-child
+				margin: 0
 			li
 				margin: 0 0 16px
 				&:last-child
 					margin: 0
+		.m-0
+			li
+				margin: 0		
+		.my-ul
+			padding: 0	
+			li
+				margin: 0		
+		video
+			width: 100%
+			margin: 16px 0 0		
 		.copy-line
 			margin: 8px 0 0
 			p
@@ -2575,6 +2587,8 @@
 			display: initial
 			text-decoration: underline
 			color: #7C0DC6
+		.link-copy-acticle, .text-button-click
+			display: inline-flex	
 		.link-article
 			display: flex
 			text-decoration: none
@@ -2615,6 +2629,14 @@
 		// 	border: 1px solid #F6EAFF
 		// 	border-radius: 8px
 		
+.text-button-click
+	border-radius: 8px
+	padding: 4px 8px
+	font-size: 14px
+	line-height: 1.4
+	font-weight: normal
+	color: #6512CB
+	background: linear-gradient(to right, rgba(245, 223, 255, 0.3) 0%, rgba(157, 207, 252, 0.3) 100%)
 
 .list-decimal, .list-dots
 	&__title
@@ -2692,16 +2714,29 @@
 		margin: 0 auto 16px
 		justify-content: center
 
+.article-title-wrapper-v2
+	text-align: left
+	padding: 0
+	border-radius: 0
+	background: transparent
+	align-items: flex-start
+	.news-box__info
+		margin: 0 0 16px
+		justify-content: flex-start	
+
 .article-image
 	width: 100%
 	margin: 32px 0
 	text-align: center
 	img
 		width: 100%
-		border-radius: 10px
+		border-radius: 24px
+		border: 1.5px solid #F8F8F8
 	&__name
 		margin: 16px auto 0
-
+		font-size: 16px
+		color: #363636
+		
 .comparison
 	margin: 32px 0
 	h3
